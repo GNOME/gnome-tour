@@ -56,7 +56,7 @@ impl Window {
             "/org/gnome/Tour/search.svg",
             gettext("Search"),
             gettext("Just type to search"),
-            gettext("In the activities view, just start tying to search for apps, settings and more."),
+            gettext("In the activities view, just start typing to search for apps, settings and more."),
         )));
 
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(

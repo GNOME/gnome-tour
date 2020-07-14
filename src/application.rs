@@ -33,6 +33,7 @@ impl Application {
                 app.quit();
             }),
         );
+
         // Start Tour
         utils::action(
             &self.app,
@@ -64,6 +65,7 @@ impl Application {
                 }
             }),
         );
+
         utils::action(
             &self.app,
             "previous-page",
@@ -75,6 +77,7 @@ impl Application {
                 }
             }),
         );
+
         self.app.set_accels_for_action("app.quit", &["<primary>q"]);
     }
 

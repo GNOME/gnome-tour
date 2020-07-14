@@ -1,3 +1,4 @@
+use crate::utils;
 use gettextrs::gettext;
 use gtk::prelude::*;
 use std::cell::RefCell;
@@ -34,7 +35,7 @@ impl Window {
     }
 
     fn init(&mut self) {
-        self.widget.set_default_size(920, 640);
+        self.widget.set_default_size(720, 500);
         self.widget.set_icon_name(Some(APP_ID));
 
         // Devel Profile
@@ -71,6 +72,7 @@ impl Window {
             gettext("View system information and settings"),
             gettext("Get an overview of the system status and quickly change settings."),
         )));
+
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
             "/org/gnome/Tour/software.svg",
             gettext("Software"),
@@ -78,10 +80,11 @@ impl Window {
             gettext("Discover great apps through search, browsing and our recommendations."),
         )));
 
+        let name = glib::get_os_info("NAME").unwrap_or("GNOME".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
             gettext("Tour Completed"),
-            gettext("That's it! We hope that you enjoy NAME OF DISTRO."),
+            utils::i18n_f("That's it! We hope that you enjoy {}.", &[&name]),
             gettext("To get more advice and tips, see the Help app."),
         );
         last_page.widget.get_style_context().add_class("last-page");

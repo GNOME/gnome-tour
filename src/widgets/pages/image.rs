@@ -34,7 +34,10 @@ impl ImagePageWidget {
         let container = gtk::Box::new(gtk::Orientation::Vertical, 12);
         container.set_halign(gtk::Align::Center);
         container.set_valign(gtk::Align::Center);
-        container.set_property_margin(48);
+        container.set_margin_bottom(48);
+        container.set_margin_top(12);
+        container.set_margin_start(12);
+        container.set_margin_end(12);
 
         let image = gtk::Image::from_resource(&resource_uri);
         image.set_valign(gtk::Align::Start);

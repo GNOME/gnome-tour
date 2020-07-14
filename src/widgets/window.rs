@@ -1,3 +1,4 @@
+use crate::utils;
 use gettextrs::gettext;
 use gtk::prelude::*;
 use std::cell::RefCell;
@@ -34,7 +35,7 @@ impl Window {
     }
 
     fn init(&mut self) {
-        self.widget.set_default_size(920, 640);
+        self.widget.set_default_size(720, 500);
         self.widget.set_icon_name(Some(APP_ID));
 
         // Devel Profile
@@ -47,22 +48,22 @@ impl Window {
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
             "/org/gnome/Tour/activities.svg",
             gettext("Activities Overview"),
-            gettext("Open Activities to start apps"),
-            gettext("You can also view open windows, search and use workspaces."),
+            gettext("Open Activities to launch apps"),
+            gettext("The activities view can also be used to switch windows and search."),
         )));
 
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
             "/org/gnome/Tour/search.svg",
             gettext("Search"),
-            gettext("In the Activities Overview, just start typing to search"),
-            gettext("Search can be used to launch apps, find settings, do calculations and much more."),
+            gettext("Just type to search"),
+            gettext("In the activities view, just start tying to search for apps, settings and more."),
         )));
 
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
             "/org/gnome/Tour/calendar.svg",
             gettext("Date & Time"),
-            gettext("Click the time to see your now and next"),
-            gettext("This includes notifications, media controls, calendar events, the weather and world clocks."),
+            gettext("Click the time to see notifications"),
+            gettext("The notifications popover also includes personal planning tools."),
         )));
 
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
@@ -71,18 +72,20 @@ impl Window {
             gettext("View system information and settings"),
             gettext("Get an overview of the system status and quickly change settings."),
         )));
+
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
             "/org/gnome/Tour/software.svg",
             gettext("Software"),
-            gettext("Find and install apps"),
-            gettext("The Software app makes it easy to find and install all the apps you need."),
+            gettext("Use Software to find and install apps"),
+            gettext("Discover great apps through search, browsing and our recommendations."),
         )));
 
+        let name = glib::get_os_info("NAME").unwrap_or("GNOME".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
-            gettext("Learn More"),
-            gettext("That's it! To learn more, see the Help"),
-            gettext("The help app contains information, tips and tricks."),
+            gettext("Tour Completed"),
+            utils::i18n_f("That's it! We hope that you enjoy {}.", &[&name]),
+            gettext("To get more advice and tips, see the Help app."),
         );
         last_page.widget.get_style_context().add_class("last-page");
         self.paginator.borrow_mut().add_page(Box::new(last_page));

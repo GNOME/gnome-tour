@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-07-12 11:11+0000\n"
-"PO-Revision-Date: 2020-07-13 13:18+0300\n"
+"POT-Creation-Date: 2020-07-14 17:40+0000\n"
+"PO-Revision-Date: 2020-07-16 14:27+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 "
-"< 20)) ? 1 : 2);;\n"
-"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
 "X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:7
@@ -51,111 +51,139 @@ msgstr "Persoană care salută și tur"
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
-#: src/widgets/pages/welcome.rs:42
-msgid ""
-"Hi there! If you are new to GNOME, you can take the tour to learn some "
-"essential features."
-msgstr ""
-"Bună! Dacă sunteți nou la GNOME, puteți să luați turul pentru a învăța "
-"niște funcționalități esențiale."
-
-#: src/widgets/pages/welcome.rs:52
-msgid "Take the Tour"
-msgstr "Ia turul"
-
-#: src/widgets/pages/welcome.rs:59
-msgid "No Thanks"
-msgstr "Nu mulțumesc"
-
-#: src/widgets/pages/welcome.rs:72
+#: src/widgets/pages/welcome.rs:25
 msgid "Welcome Tour"
 msgstr "Tur de bun venit"
 
-#: src/widgets/window.rs:61
+#: src/widgets/pages/welcome.rs:54
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Bună! Luați turul pentru a vă învăța drumul și pentru a descoperi "
+"funcționalități esențiale."
+
+#: src/widgets/pages/welcome.rs:64
+msgid "_No Thanks"
+msgstr "_Nu mulțumesc"
+
+#: src/widgets/pages/welcome.rs:72
+msgid "_Start Tour"
+msgstr "Î_ncepe turul"
+
+#: src/widgets/window.rs:50
 msgid "Activities Overview"
 msgstr "Prezentare generală a activităților"
 
-#: src/widgets/window.rs:62
-msgid "Open Activities to start apps"
-msgstr "Deschide Activități pentru a porni aplicații"
+#: src/widgets/window.rs:51
+msgid "Open Activities to launch apps"
+msgstr "Deschide Activități pentru a lansa aplicații"
 
-#: src/widgets/window.rs:63
-msgid "You can also view open windows, search and use workspaces."
+#: src/widgets/window.rs:52
+msgid "The activities view can also be used to switch windows and search."
 msgstr ""
-"Puteți, de asemenea, să vizualizați ferestrele deschise, să căutați și să "
-"utilizați spațiile de lucru."
+"Vizualizarea activități poate fi, de asemenea, utilizată pentru a comuta "
+"ferestre și pentru a căuta."
 
-#: src/widgets/window.rs:68
+#: src/widgets/window.rs:57
 msgid "Search"
 msgstr "Caută"
 
-#: src/widgets/window.rs:69
-msgid "In the Activities Overview, just start typing to search"
-msgstr ""
-"În prezentarea generală a activităților, doar începeți să tastați pentru a "
-"căuta"
+#: src/widgets/window.rs:58
+msgid "Just type to search"
+msgstr "Tastați pentru a căuta"
 
-#: src/widgets/window.rs:70
+#: src/widgets/window.rs:59
 msgid ""
-"Search can be used to launch apps, find settings, do calculations and much "
+"In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"Căutarea poate fi utilizată pentru a lansa aplicații, căuta configurări, "
-"face calcule și mult mai multe."
+"În vizualizarea activități, doar începeți să tastați pentru a căuta pentru "
+"aplicații, configurări și mai multe."
 
-#: src/widgets/window.rs:75
+#: src/widgets/window.rs:64
 msgid "Date & Time"
 msgstr "Data și ora"
 
-#: src/widgets/window.rs:76
-msgid "Click the time to see your now and next"
-msgstr "Apăsați clic pe oră pentru a vedea prezentul și următorul"
+#: src/widgets/window.rs:65
+msgid "Click the time to see notifications"
+msgstr "Apăsați clic pe oră pentru a vedea înștiințări"
 
-#: src/widgets/window.rs:77
-msgid ""
-"This includes notifications, media controls, calendar events, the weather "
-"and world clocks."
+#: src/widgets/window.rs:66
+msgid "The notifications popover also includes personal planning tools."
 msgstr ""
-"Acest lucru include înștiințări, controale media, evenimente de calendar, "
-"vremea și ceasurile globale."
+"Popover-ul înștiințărilor include, de asemenea, unelte de planificare "
+"personale."
 
-#: src/widgets/window.rs:82
+#: src/widgets/window.rs:71
 msgid "System Menu"
 msgstr "Meniul de sistem"
 
-#: src/widgets/window.rs:83
+#: src/widgets/window.rs:72
 msgid "View system information and settings"
 msgstr "Vizualizează informațiile de sistem și configurările"
 
-#: src/widgets/window.rs:84
+#: src/widgets/window.rs:73
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
 "Obține o prezentare generală a stării sistemului și schimbă configurările "
 "rapid."
 
-#: src/widgets/window.rs:88
+#: src/widgets/window.rs:78
 msgid "Software"
 msgstr "Software"
 
-#: src/widgets/window.rs:89
-msgid "Find and install apps"
-msgstr "Caută și instalează aplicații"
+#: src/widgets/window.rs:79
+msgid "Use Software to find and install apps"
+msgstr "Utilizează Software pentru a găsi și a instala aplicații"
 
-#: src/widgets/window.rs:90
-msgid ""
-"The Software app makes it easy to find and install all the apps you need."
+#: src/widgets/window.rs:80
+msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"Aplicația Software face mai ușor să găsiți și să instalați aplicațiile de "
-"care aveți nevoie."
+"Descoperă aplicații grozave prin căutare, navigare și recomandările noastre."
 
-#: src/widgets/window.rs:95
-msgid "Learn More"
-msgstr "Învață mai multe"
+#: src/widgets/window.rs:86
+msgid "Tour Completed"
+msgstr "Tur completat"
 
-#: src/widgets/window.rs:96
-msgid "That's it! To learn more, see the Help"
-msgstr "Asta e tot! Pentru a învăța mai multe, consultați Ajutorul"
+#: src/widgets/window.rs:88
+msgid "To get more advice and tips, see the Help app."
+msgstr ""
+"Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
 
-#: src/widgets/window.rs:97
-msgid "The help app contains information, tips and tricks."
-msgstr "Aplicația ajutor conține informații, chichițe și șmecherii."
+#~ msgid "Take the Tour"
+#~ msgstr "Ia turul"
+
+#~ msgid "You can also view open windows, search and use workspaces."
+#~ msgstr ""
+#~ "Puteți, de asemenea, să vizualizați ferestrele deschise, să căutați și să "
+#~ "utilizați spațiile de lucru."
+
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "Căutarea poate fi utilizată pentru a lansa aplicații, căuta configurări, "
+#~ "face calcule și mult mai multe."
+
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Acest lucru include înștiințări, controale media, evenimente de calendar, "
+#~ "vremea și ceasurile globale."
+
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "Aplicația Software face mai ușor să găsiți și să instalați aplicațiile de "
+#~ "care aveți nevoie."
+
+#~ msgid "Learn More"
+#~ msgstr "Învață mai multe"
+
+#~ msgid "That's it! To learn more, see the Help"
+#~ msgstr "Asta e tot! Pentru a învăța mai multe, consultați Ajutorul"
+
+#~ msgid "The help app contains information, tips and tricks."
+#~ msgstr "Aplicația ajutor conține informații, chichițe și șmecherii."

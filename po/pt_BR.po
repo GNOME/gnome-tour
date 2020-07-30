@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-07-14 17:40+0000\n"
-"PO-Revision-Date: 2020-07-18 08:28-0300\n"
+"POT-Creation-Date: 2020-07-19 12:03+0000\n"
+"PO-Revision-Date: 2020-07-30 17:06-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -17,6 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Gtranslator 3.36.0\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3
+msgid "Tour"
+msgstr "Tour"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Saudação & Tour"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "GNOME Tour"
@@ -38,26 +50,11 @@ msgstr "Janela principal"
 msgid "The GNOME Project"
 msgstr "O Projeto GNOME"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-msgid "Tour"
-msgstr "Tour"
-
-#: data/org.gnome.Tour.desktop.in.in:4
-msgid "Greeter & Tour"
-msgstr "Saudação & Tour"
-
-#: data/org.gnome.Tour.desktop.in.in:9
-msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;"
-
 #: src/widgets/pages/welcome.rs:25
 msgid "Welcome Tour"
 msgstr "Bem-vindo ao tour"
 
 #: src/widgets/pages/welcome.rs:54
-#| msgid ""
-#| "Hi there! If you are new to GNOME, you can take the tour to learn some "
-#| "essential features."
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
@@ -65,7 +62,6 @@ msgstr ""
 "Olá! Faça um tour para se situar no ambiente e descobrir recursos essenciais."
 
 #: src/widgets/pages/welcome.rs:64
-#| msgid "No Thanks"
 msgid "_No Thanks"
 msgstr "_Não obrigado"
 
@@ -73,12 +69,25 @@ msgstr "_Não obrigado"
 msgid "_Start Tour"
 msgstr "_Iniciar tour"
 
+#: src/widgets/paginator.rs:29
+#| msgid "Next"
+msgid "_Next"
+msgstr "_Próximo"
+
+#: src/widgets/paginator.rs:30
+#| msgid "Close"
+msgid "_Close"
+msgstr "_Fechar"
+
+#: src/widgets/paginator.rs:31
+msgid "_Previous"
+msgstr "_Anterior"
+
 #: src/widgets/window.rs:50
 msgid "Activities Overview"
 msgstr "Panorama de atividades"
 
 #: src/widgets/window.rs:51
-#| msgid "Open Activities to start apps"
 msgid "Open Activities to launch apps"
 msgstr "Abra Atividades para iniciar aplicativos"
 
@@ -97,7 +106,6 @@ msgid "Just type to search"
 msgstr "Basta digitar para pesquisar"
 
 #: src/widgets/window.rs:59
-#| msgid "In the Activities Overview, just start typing to search"
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
@@ -110,7 +118,6 @@ msgid "Date & Time"
 msgstr "Data & hora"
 
 #: src/widgets/window.rs:65
-#| msgid "Click the time to see your now and next"
 msgid "Click the time to see notifications"
 msgstr "Clique na hora para ver notificações"
 
@@ -138,7 +145,6 @@ msgid "Software"
 msgstr "Software"
 
 #: src/widgets/window.rs:79
-#| msgid "Find and install apps"
 msgid "Use Software to find and install apps"
 msgstr "Use o Programas para localizar e instalar aplicativos"
 
@@ -158,12 +164,6 @@ msgstr "Para obter mais conselho e dicas, veja o aplicativo Ajuda."
 
 #~ msgid "Take the Tour"
 #~ msgstr "Faça um tour"
-
-#~ msgid "Close"
-#~ msgstr "Fechar"
-
-#~ msgid "Next"
-#~ msgstr "Próximo"
 
 #~ msgid "You can also view open windows, search and use workspaces."
 #~ msgstr ""

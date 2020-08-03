@@ -14,6 +14,8 @@ flatpak:
 
 nightly:
   extends: '.publish_nightly'
+  dependencies: ['flatpak']
+  needs: ['flatpak']
 
 # Configure and run rustfmt
 # Exits and builds fails if on bad format

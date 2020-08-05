@@ -42,7 +42,6 @@ impl Window {
         if PROFILE == "Devel" {
             self.widget.get_style_context().add_class("devel");
         }
-
         self.paginator.borrow_mut().add_page(Box::new(WelcomePageWidget::new()));
 
         self.paginator.borrow_mut().add_page(Box::new(ImagePageWidget::new(
@@ -80,7 +79,7 @@ impl Window {
             gettext("Discover great apps through search, browsing and our recommendations."),
         )));
 
-        let name = glib::get_os_info("NAME").unwrap_or("GNOME".into());
+        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
             gettext("Tour Completed"),

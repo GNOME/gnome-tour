@@ -5,11 +5,12 @@ use std::cell::RefCell;
 use std::rc::Rc;
 
 use super::pages::Pageable;
-use libhandy::prelude::{CarouselExt, HeaderBarExt};
+use libhandy::prelude::{CarouselExt, CarouselIndicatorDotsExt, HeaderBarExt};
 
 pub struct PaginatorWidget {
     pub widget: gtk::Box,
     carousel: libhandy::Carousel,
+    carousel_dots: libhandy::CarouselIndicatorDots,
     headerbar: libhandy::HeaderBar,
     pages: RefCell<Vec<Box<dyn Pageable>>>,
     current_page: RefCell<u32>,
@@ -25,6 +26,7 @@ impl PaginatorWidget {
         let paginator = Rc::new(Self {
             widget,
             carousel: libhandy::Carousel::new(),
+            carousel_dots: libhandy::CarouselIndicatorDots::new(),
             headerbar: libhandy::HeaderBar::new(),
             next_btn: gtk::Button::with_label(&gettext("_Next")),
             close_btn: gtk::Button::with_label(&gettext("_Close")),
@@ -80,13 +82,13 @@ impl PaginatorWidget {
         self.next_btn.set_opacity(opacity_next);
         self.next_btn.set_visible(opacity_next > 0_f64);
 
-        let pages = &self.pages.borrow();
-        let page = pages.get(page_nr as usize).unwrap();
-        self.headerbar.set_title(Some(&page.get_title()));
+        self.headerbar.set_opacity(opacity_next);
         self.current_page.replace(page_nr);
     }
 
     fn init(&self, p: Rc<Self>) {
+        self.carousel_dots.show();
+        self.carousel_dots.set_carousel(Some(&self.carousel));
         self.carousel.set_property_expand(true);
         self.carousel.set_animation_duration(300);
         self.carousel.show();
@@ -116,9 +118,11 @@ impl PaginatorWidget {
         next_overlay.add_overlay(&self.close_btn);
         next_overlay.show();
 
+        self.headerbar.set_custom_title(Some(&self.carousel_dots));
         self.headerbar.pack_start(&self.previous_btn);
         self.headerbar.pack_end(&next_overlay);
         self.headerbar.set_show_close_button(false);
+        self.headerbar.set_opacity(0_f64);
         self.headerbar.show();
 
         self.widget.add(&self.headerbar);

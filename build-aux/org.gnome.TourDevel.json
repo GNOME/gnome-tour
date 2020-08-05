@@ -48,7 +48,7 @@
             "sources": [{
                 "type": "git",
                 "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
-                "branch": "0.83.0"
+                "commit": "2e37d49b8b851315f3044aa53ccec67088859d76"
             }]
         },
         {

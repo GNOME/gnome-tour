@@ -4,7 +4,7 @@ use gtk::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use super::pages::{ImagePageWidget, WelcomePageWidget};
+use super::pages::{ImagePageWidget, WelcomePageWidget, WelcomeVideoPageWidget};
 use super::paginator::PaginatorWidget;
 use crate::config::{APP_ID, PROFILE};
 
@@ -42,7 +42,7 @@ impl Window {
         if PROFILE == "Devel" {
             self.widget.get_style_context().add_class("devel");
         }
-        self.paginator.borrow_mut().add_page(WelcomePageWidget::new().widget.upcast::<gtk::Widget>());
+        self.paginator.borrow_mut().add_page(WelcomeVideoPageWidget::new().widget.upcast::<gtk::Widget>());
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(

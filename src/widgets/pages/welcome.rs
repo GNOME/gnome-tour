@@ -1,29 +1,14 @@
-use super::page::Pageable;
 use gettextrs::gettext;
 use gtk::prelude::*;
 
 pub struct WelcomePageWidget {
     pub widget: gtk::Box,
-    pub title: String,
-}
-
-impl Pageable for WelcomePageWidget {
-    fn get_widget(&self) -> gtk::Widget {
-        self.widget.clone().upcast::<gtk::Widget>()
-    }
-
-    fn get_title(&self) -> String {
-        self.title.clone()
-    }
 }
 
 impl WelcomePageWidget {
     pub fn new() -> Self {
         let widget = gtk::Box::new(gtk::Orientation::Vertical, 0);
-        let welcome_page = Self {
-            widget,
-            title: gettext("Welcome Tour"),
-        };
+        let welcome_page = Self { widget };
 
         welcome_page.init();
         welcome_page

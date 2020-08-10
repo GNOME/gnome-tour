@@ -11,6 +11,15 @@
    font-weight: 400;
    font-size: 12pt;
 }
+.video {
+  opacity: 0;
+}
+.video.playing {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
 
 .last-page {
   background-color: #4a86cf; /*GNOME blue*/

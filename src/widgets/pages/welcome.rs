@@ -6,12 +6,12 @@ use gio::FileExt;
 use gtk::prelude::*;
 
 pub struct WelcomePageWidget {
-    pub widget: gtk::Box,
+    pub widget: libhandy::WindowHandle,
 }
 
 impl WelcomePageWidget {
     pub fn new() -> Self {
-        let widget = gtk::Box::new(gtk::Orientation::Vertical, 0);
+        let widget = libhandy::WindowHandle::new();
         let welcome_page = Self { widget };
 
         welcome_page.init();
@@ -65,29 +65,31 @@ impl WelcomePageWidget {
     }
 
     fn init(&self) {
-        self.widget.set_property_expand(true);
-        self.widget.set_valign(gtk::Align::Center);
-        self.widget.set_halign(gtk::Align::Center);
-        self.widget.set_margin_top(24);
-        self.widget.set_margin_bottom(24);
+        let container = gtk::Box::new(gtk::Orientation::Vertical, 0);
+
+        container.set_property_expand(true);
+        container.set_valign(gtk::Align::Center);
+        container.set_halign(gtk::Align::Center);
+        container.set_margin_top(24);
+        container.set_margin_bottom(24);
 
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let version = glib::get_os_info("VERSION").unwrap_or_else(|| "3.36".into());
 
         let header = self.get_header_widget();
-        self.widget.add(&header);
+        container.add(&header);
 
         let title = gtk::Label::new(Some(&gettext(format!("Welcome to {} {}", name, version))));
         title.set_margin_top(36);
         title.get_style_context().add_class("large-title");
         title.show();
-        self.widget.add(&title);
+        container.add(&title);
 
         let text = gtk::Label::new(Some(&gettext("Hi there! Take the tour to learn your way around and discover essential features.")));
         text.get_style_context().add_class("body");
         text.set_margin_top(12);
         text.show();
-        self.widget.add(&text);
+        container.add(&text);
 
         let actions_container = gtk::Box::new(gtk::Orientation::Horizontal, 12);
         actions_container.set_halign(gtk::Align::Center);
@@ -113,7 +115,10 @@ impl WelcomePageWidget {
 
         actions_container.show();
 
-        self.widget.add(&actions_container);
+        container.add(&actions_container);
+
+        container.show();
+        self.widget.add(&container);
         self.widget.show();
     }
 }

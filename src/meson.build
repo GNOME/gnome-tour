@@ -6,6 +6,7 @@ global_conf.set_quoted('NAME_SUFFIX', name_suffix)
 global_conf.set_quoted('VERSION', version + version_suffix)
 global_conf.set_quoted('GETTEXT_PACKAGE', gettext_package)
 global_conf.set_quoted('LOCALEDIR', localedir)
+global_conf.set_quoted('VIDEO_PATH', get_option('video_path'))
 config = configure_file(
   input: 'config.rs.in',
   output: 'config.rs',
@@ -39,7 +40,6 @@ sources = files(
   'widgets/pages/image.rs',
   'widgets/pages/mod.rs',
   'widgets/pages/welcome.rs',
-  'widgets/pages/welcome_video.rs',
   'widgets/mod.rs',
   'widgets/paginator.rs',
   'widgets/window.rs',
@@ -50,6 +50,10 @@ sources = files(
   'utils.rs',
 )
 
+features = ''
+if get_option('video_path') != ''
+  features = '--features video'
+endif
 custom_target(
   'cargo-build',
   build_by_default: true,
@@ -66,6 +70,7 @@ custom_target(
     '@OUTPUT@',
     profile,
     meson.project_name(),
+    features
   ]
 )
 

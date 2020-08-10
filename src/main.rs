@@ -20,7 +20,9 @@ fn main() {
     glib::set_prgname(Some("Tour"));
 
     gtk::init().expect("Unable to start GTK3");
+    #[cfg(feature = "video")]
     gst::init().expect("Unable to start gst");
+
     static_resources::init().expect("Failed to initialize the resource file.");
 
     let app = Application::new();

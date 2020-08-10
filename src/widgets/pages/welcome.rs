@@ -3,65 +3,56 @@ use crate::config;
 use gettextrs::gettext;
 #[cfg(feature = "video")]
 use gio::FileExt;
+#[cfg(feature = "video")]
+use glib::{Receiver, Sender};
 use gtk::prelude::*;
+#[cfg(feature = "video")]
+use std::cell::RefCell;
+
+#[derive(PartialEq)]
+#[cfg(feature = "video")]
+pub enum Action {
+    VideoReady,
+}
 
 pub struct WelcomePageWidget {
     pub widget: libhandy::WindowHandle,
+    #[cfg(feature = "video")]
+    player: gst_player::Player,
+    #[cfg(feature = "video")]
+    receiver: RefCell<Option<Receiver<Action>>>,
+    #[cfg(feature = "video")]
+    sender: Sender<Action>,
 }
 
 impl WelcomePageWidget {
     pub fn new() -> Self {
         let widget = libhandy::WindowHandle::new();
-        let welcome_page = Self { widget };
+
+        #[cfg(feature = "video")]
+        let player = {
+            let dispatcher = gst_player::PlayerGMainContextSignalDispatcher::new(None);
+            let sink = gst::ElementFactory::make("gtksink", None).expect("Missing dependency: element gtksink is needed (usually, in gstreamer-plugins-good or in gst-plugin-gtk).");
+            let renderer = gst_player::PlayerVideoOverlayVideoRenderer::with_sink(&sink).upcast();
+            gst_player::Player::new(Some(&renderer), Some(&dispatcher.upcast::<gst_player::PlayerSignalDispatcher>()))
+        };
+        #[cfg(feature = "video")]
+        let (sender, r) = glib::MainContext::channel(glib::PRIORITY_DEFAULT);
+        #[cfg(feature = "video")]
+        let receiver = RefCell::new(Some(r));
+
+        let welcome_page = Self {
+            widget,
+            #[cfg(feature = "video")]
+            player,
+            #[cfg(feature = "video")]
+            sender,
+            #[cfg(feature = "video")]
+            receiver,
+        };
 
         welcome_page.init();
         welcome_page
-    }
-
-    #[cfg(not(feature = "video"))]
-    fn get_header_widget(&self) -> gtk::Widget {
-        let icon = glib::get_os_info("LOGO").unwrap_or_else(|| "start-here-symbolic".into());
-
-        let logo = gtk::Image::from_icon_name(Some(&icon), gtk::IconSize::Dialog);
-        logo.set_pixel_size(196);
-        logo.show();
-
-        logo.upcast::<gtk::Widget>()
-    }
-
-    #[cfg(feature = "video")]
-    fn get_header_widget(&self) -> gtk::Widget {
-        let dispatcher = gst_player::PlayerGMainContextSignalDispatcher::new(None);
-        let sink = gst::ElementFactory::make("gtksink", None).expect("Missing dependency: element gtksink is needed (usually, in gstreamer-plugins-good or in gst-plugin-gtk).");
-        let renderer = gst_player::PlayerVideoOverlayVideoRenderer::with_sink(&sink).upcast();
-        let player = gst_player::Player::new(Some(&renderer), Some(&dispatcher.upcast::<gst_player::PlayerSignalDispatcher>()));
-
-        let video_file = gio::File::new_for_path(config::VIDEO_PATH);
-        player.set_uri(&video_file.get_uri());
-
-        let video_widget = player
-            .get_pipeline()
-            .get_property("video-sink")
-            .unwrap()
-            .get::<gst::Element>()
-            .expect("The player of a VideoPlayerWidget should not use the default sink.")
-            .unwrap()
-            .get_property("widget")
-            .unwrap()
-            .get::<gtk::Widget>()
-            .unwrap()
-            .unwrap();
-
-        video_widget.set_size_request(-1, 300);
-        video_widget.set_property("ignore-alpha", &false).unwrap();
-        video_widget.show();
-
-        gtk::idle_add(clone!(@strong player => move || {
-            player.play();
-            glib::Continue(true)
-        }));
-
-        video_widget
     }
 
     fn init(&self) {
@@ -73,11 +64,72 @@ impl WelcomePageWidget {
         container.set_margin_top(24);
         container.set_margin_bottom(24);
 
+        #[cfg(not(feature = "video"))]
+        let header = {
+            let icon = glib::get_os_info("LOGO").unwrap_or_else(|| "start-here-symbolic".into());
+
+            let logo = gtk::Image::from_icon_name(Some(&icon), gtk::IconSize::Dialog);
+            logo.set_pixel_size(196);
+            logo.show();
+
+            logo.upcast::<gtk::Widget>()
+        };
+
+        #[cfg(feature = "video")]
+        let header = {
+            let video_widget = self
+                .player
+                .get_pipeline()
+                .get_property("video-sink")
+                .unwrap()
+                .get::<gst::Element>()
+                .expect("The player of a VideoPlayerWidget should not use the default sink.")
+                .unwrap()
+                .get_property("widget")
+                .unwrap()
+                .get::<gtk::Widget>()
+                .unwrap()
+                .unwrap();
+
+            video_widget.set_size_request(-1, 360);
+            video_widget.set_property("ignore-alpha", &false).unwrap();
+            video_widget.show();
+            video_widget.get_style_context().add_class("video");
+            video_widget
+        };
+
+        container.add(&header);
+
+        #[cfg(feature = "video")]
+        {
+            let receiver = self.receiver.borrow_mut().take().unwrap();
+            receiver.attach(None, move |action| {
+                if action == Action::VideoReady {
+                    header.get_style_context().add_class("playing");
+                }
+                glib::Continue(true)
+            });
+
+            let video_file = gio::File::new_for_path(config::VIDEO_PATH);
+            self.player.set_uri(&video_file.get_uri());
+
+            self.player.connect_state_changed(clone!(@strong self.sender as sender => move |_, state| {
+                if state == gst_player::PlayerState::Playing {
+                    sender.send(Action::VideoReady).unwrap();
+                }
+            }));
+
+            gtk::timeout_add(
+                500,
+                clone!(@strong self.player as player => move || {
+                    player.play();
+                    glib::Continue(true)
+                }),
+            );
+        };
+
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let version = glib::get_os_info("VERSION").unwrap_or_else(|| "3.36".into());
-
-        let header = self.get_header_widget();
-        container.add(&header);
 
         let title = gtk::Label::new(Some(&gettext(format!("Welcome to {} {}", name, version))));
         title.set_margin_top(36);

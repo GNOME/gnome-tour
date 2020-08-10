@@ -1,4 +1,8 @@
+#[cfg(feature = "video")]
+use crate::config;
 use gettextrs::gettext;
+#[cfg(feature = "video")]
+use gio::FileExt;
 use gtk::prelude::*;
 
 pub struct WelcomePageWidget {
@@ -14,6 +18,52 @@ impl WelcomePageWidget {
         welcome_page
     }
 
+    #[cfg(not(feature = "video"))]
+    fn get_header_widget(&self) -> gtk::Widget {
+        let icon = glib::get_os_info("LOGO").unwrap_or_else(|| "start-here-symbolic".into());
+
+        let logo = gtk::Image::from_icon_name(Some(&icon), gtk::IconSize::Dialog);
+        logo.set_pixel_size(196);
+        logo.show();
+
+        logo.upcast::<gtk::Widget>()
+    }
+
+    #[cfg(feature = "video")]
+    fn get_header_widget(&self) -> gtk::Widget {
+        let dispatcher = gst_player::PlayerGMainContextSignalDispatcher::new(None);
+        let sink = gst::ElementFactory::make("gtksink", None).expect("Missing dependency: element gtksink is needed (usually, in gstreamer-plugins-good or in gst-plugin-gtk).");
+        let renderer = gst_player::PlayerVideoOverlayVideoRenderer::with_sink(&sink).upcast();
+        let player = gst_player::Player::new(Some(&renderer), Some(&dispatcher.upcast::<gst_player::PlayerSignalDispatcher>()));
+
+        let video_file = gio::File::new_for_path(config::VIDEO_PATH);
+        player.set_uri(&video_file.get_uri());
+
+        let video_widget = player
+            .get_pipeline()
+            .get_property("video-sink")
+            .unwrap()
+            .get::<gst::Element>()
+            .expect("The player of a VideoPlayerWidget should not use the default sink.")
+            .unwrap()
+            .get_property("widget")
+            .unwrap()
+            .get::<gtk::Widget>()
+            .unwrap()
+            .unwrap();
+
+        video_widget.set_size_request(-1, 300);
+        video_widget.set_property("ignore-alpha", &false).unwrap();
+        video_widget.show();
+
+        gtk::idle_add(clone!(@strong player => move || {
+            player.play();
+            glib::Continue(true)
+        }));
+
+        video_widget
+    }
+
     fn init(&self) {
         self.widget.set_property_expand(true);
         self.widget.set_valign(gtk::Align::Center);
@@ -23,12 +73,9 @@ impl WelcomePageWidget {
 
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let version = glib::get_os_info("VERSION").unwrap_or_else(|| "3.36".into());
-        let icon = glib::get_os_info("LOGO").unwrap_or_else(|| "start-here-symbolic".into());
 
-        let logo = gtk::Image::from_icon_name(Some(&icon), gtk::IconSize::Dialog);
-        logo.set_pixel_size(196);
-        logo.show();
-        self.widget.add(&logo);
+        let header = self.get_header_widget();
+        self.widget.add(&header);
 
         let title = gtk::Label::new(Some(&gettext(format!("Welcome to {} {}", name, version))));
         title.set_margin_top(36);

@@ -4,6 +4,9 @@ version = "0.0.1"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
 edition = "2018"
 
+[features]
+video = ["gst_player", "gst"]
+
 [dependencies]
 glib = { version = "0.10", features = ["v2_64"] }
 gdk = "0.13"
@@ -18,7 +21,9 @@ anyhow = "1.0"
 [dependencies.gst_player]
 version = "0.16"
 package = "gstreamer-player"
+optional = true
 
 [dependencies.gst]
 version = "0.16"
 package = "gstreamer"
+optional = true

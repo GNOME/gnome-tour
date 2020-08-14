@@ -2,7 +2,9 @@ use crate::config;
 use crate::utils;
 use crate::widgets::Window;
 use gio::prelude::*;
+use glib::clone;
 use gtk::prelude::*;
+use log::info;
 use std::env;
 use std::{cell::RefCell, rc::Rc};
 

@@ -1,5 +1,6 @@
 use anyhow::Result;
 use gettextrs::gettext;
+use glib::clone;
 use gtk::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;

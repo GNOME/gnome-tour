@@ -1,0 +1,160 @@
+# Catalan translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-08-14 12:01+0000\n"
+"PO-Revision-Date: 2020-08-14 12:01+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3
+msgid "Tour"
+msgstr "Visita guiada"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Benvinguda i visita guiada"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "GNOME Tour"
+msgstr "Visita guiada del GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "Benvinguda i visita guiada del GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Una visita guiada i benvinguda per al GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Finestra principal"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:34
+msgid "The GNOME Project"
+msgstr "El projecte GNOME"
+
+#: src/widgets/pages/welcome.rs:25
+msgid "Welcome Tour"
+msgstr "Visita guiada de benvinguda"
+
+#: src/widgets/pages/welcome.rs:54
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Hola! Fes la visita guiada per a aprendre el teu camí i descobrir característiques "
+"essencials."
+
+#: src/widgets/pages/welcome.rs:64
+msgid "_No Thanks"
+msgstr "_No, gràcies"
+
+#: src/widgets/pages/welcome.rs:72
+msgid "_Start Tour"
+msgstr "_Comença la visita guiada"
+
+#: src/widgets/paginator.rs:32
+msgid "_Next"
+msgstr "_Següent"
+
+#: src/widgets/paginator.rs:33
+msgid "_Close"
+msgstr "_Tanca"
+
+#: src/widgets/paginator.rs:34
+msgid "_Previous"
+msgstr "_Anterior"
+
+#: src/widgets/window.rs:49
+msgid "Activities Overview"
+msgstr "Vista general de les activitats"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Obre Activitats per iniciar les aplicacions"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"La vista d'activitats també es pot utilitzar per canviar de finestra i de "
+"cerca."
+
+#: src/widgets/window.rs:56
+msgid "Search"
+msgstr "Cerca"
+
+#: src/widgets/window.rs:57
+msgid "Just type to search"
+msgstr "Simplement escriviu per cercar"
+
+#: src/widgets/window.rs:58
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"A la vista d'activitats, simplement comenceu a escriure per cercar "
+"aplicacions, paràmetres i més."
+
+#: src/widgets/window.rs:63
+msgid "Date & Time"
+msgstr "Data i hora"
+
+#: src/widgets/window.rs:64
+msgid "Click the time to see notifications"
+msgstr "Feu clic a l'hora per veure les notificacions"
+
+#: src/widgets/window.rs:65
+msgid "The notifications popover also includes personal planning tools."
+msgstr ""
+"Les notificacions emergents també inclouen eines de planificació personal."
+
+#: src/widgets/window.rs:70
+msgid "System Menu"
+msgstr "Menú del sistema"
+
+#: src/widgets/window.rs:71
+msgid "View system information and settings"
+msgstr "Visualitza la informació i els paràmetres del sistema"
+
+#: src/widgets/window.rs:72
+msgid "Get an overview of the system status and quickly change settings."
+msgstr ""
+"Obtén una visió general de l'estat del sistema i canvia ràpidament la "
+"configuració."
+
+#: src/widgets/window.rs:77
+msgid "Software"
+msgstr "Programari"
+
+#: src/widgets/window.rs:78
+msgid "Use Software to find and install apps"
+msgstr "Utilitza el Programari per trobar i instal·lar aplicacions"
+
+#: src/widgets/window.rs:79
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr ""
+"Descobriu les grans aplicacions mitjançant la cerca navegació i les nostres "
+"recomanacions."
+
+#: src/widgets/window.rs:85
+msgid "Tour Completed"
+msgstr "S'ha completat la visita guiada"
+
+#: src/widgets/window.rs:87
+msgid "To get more advice and tips, see the Help app."
+msgstr "Per obtenir més consells i consells vegeu l'aplicació Ajuda."

@@ -7,16 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-02-22 20:56+0000\n"
-"PO-Revision-Date: 2020-02-23 16:22+0200\n"
+"POT-Creation-Date: 2020-07-19 12:03+0000\n"
+"PO-Revision-Date: 2020-08-16 15:21+0300\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3
+msgid "Tour"
+msgstr "Tutustumiskierros"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Tutustumiskierros"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "GNOME Tour"
@@ -38,126 +50,143 @@ msgstr "Pääikkuna"
 msgid "The GNOME Project"
 msgstr "Gnome-projekti"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-msgid "Tour"
-msgstr "Tutustumiskierros"
-
-#: data/org.gnome.Tour.desktop.in.in:4
-msgid "Greeter & Tour"
-msgstr "Tutustumiskierros"
-
-#: data/org.gnome.Tour.desktop.in.in:9
-msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;"
-
-#: src/widgets/pages/welcome.rs:34
-msgid ""
-"Hi there! If you are new to GNOME, you can take the tour to learn some "
-"essential features."
-msgstr ""
-"Hei siellä! Jos Gnome on sinulle uusi tuttavuus, lähde "
-"tutustumiskierrokselle oppiaksesi oleelliset ominaisuudet."
-
-#: src/widgets/pages/welcome.rs:44
-msgid "Take the Tour"
-msgstr "Lähde tutustumiskierrokselle"
-
-#: src/widgets/pages/welcome.rs:51
-msgid "No Thanks"
-msgstr "Ei kiitos"
-
-#: src/widgets/headerbar.rs:30
-msgid "Close"
-msgstr "Sulje"
-
-#: src/widgets/headerbar.rs:32 src/widgets/headerbar.rs:67
-msgid "Next"
-msgstr "Seuraava"
-
-#: src/widgets/headerbar.rs:57
+#: src/widgets/pages/welcome.rs:25
 msgid "Welcome Tour"
 msgstr "Tutustumiskierros"
 
-#: src/widgets/window.rs:94
+#: src/widgets/pages/welcome.rs:54
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Hei siellä! Lähde tutustumiskierrokselle oppiaksesi oleelliset asiat ja "
+"ominaisuudet."
+
+#: src/widgets/pages/welcome.rs:64
+msgid "_No Thanks"
+msgstr "_Ei kiitos"
+
+#: src/widgets/pages/welcome.rs:72
+msgid "_Start Tour"
+msgstr "_Aloita tutustumiskierros"
+
+#: src/widgets/paginator.rs:29
+msgid "_Next"
+msgstr "_Seuraava"
+
+#: src/widgets/paginator.rs:30
+msgid "_Close"
+msgstr "_Sulje"
+
+#: src/widgets/paginator.rs:31
+msgid "_Previous"
+msgstr "_Edellinen"
+
+#: src/widgets/window.rs:50
 msgid "Activities Overview"
 msgstr "Toiminnot-yleisnäkymä"
 
-#: src/widgets/window.rs:95
-msgid "Open Activities to start apps"
+#: src/widgets/window.rs:51
+msgid "Open Activities to launch apps"
 msgstr "Napsauta Toiminnot käynnistääksesi sovelluksia"
 
-#: src/widgets/window.rs:96
-msgid "You can also view open windows, search and use workspaces."
-msgstr "Näet myös avoimet ikkunat, haun ja voit käyttää työtioja."
+#: src/widgets/window.rs:52
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"Toiminnot-näkymässä voi myös vaihtaa ikkunoiden välillä ja suorittaa hakuja."
 
-#: src/widgets/window.rs:101
+#: src/widgets/window.rs:57
 msgid "Search"
 msgstr "Haku"
 
-#: src/widgets/window.rs:102
-msgid "In the Activities Overview, just start typing to search"
-msgstr "Toiminnot-yleisnäkymässä kirjoittamalla aloitat haun"
+#: src/widgets/window.rs:58
+msgid "Just type to search"
+msgstr "Sen kuin vain kirjoitat hakeaksesi"
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:59
 msgid ""
-"Search can be used to launch apps, find settings, do calculations and much "
+"In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"Haulla voi käynnistää sovelluksia, etsiä asetuksia, tehdä laskutoimituksia "
-"ja paljon muuta."
+"Kun alat kirjoittamaan Toiminnot-näkymässä, voit etsiä sovelluksia, "
+"asetuksia ja paljon muuta."
 
-#: src/widgets/window.rs:108
+#: src/widgets/window.rs:64
 msgid "Date & Time"
 msgstr "Päivä ja aika"
 
-#: src/widgets/window.rs:109
-msgid "Click the time to see your now and next"
-msgstr "Napsauta kellonaikaa"
+#: src/widgets/window.rs:65
+msgid "Click the time to see notifications"
+msgstr "Napsauta kellonaikaa nähdäksesi ilmoitukset"
 
-#: src/widgets/window.rs:110
-msgid ""
-"This includes notifications, media controls, calendar events, the weather "
-"and world clocks."
-msgstr ""
-"Tämä sisältää ilmoitukset, mediaohjaimet, kalenteritapahtumat, sään ja "
-"maailmankellot."
+#: src/widgets/window.rs:66
+msgid "The notifications popover also includes personal planning tools."
+msgstr "Ilmoitusalue sisältää myös henkilökohtaisia suunnittelutyökaluja."
 
-#: src/widgets/window.rs:115
+#: src/widgets/window.rs:71
 msgid "System Menu"
 msgstr "Järjestelmävalikko"
 
-#: src/widgets/window.rs:116
+#: src/widgets/window.rs:72
 msgid "View system information and settings"
 msgstr "Katso järjestelmän tietoja ja asetuksia"
 
-#: src/widgets/window.rs:117
+#: src/widgets/window.rs:73
 msgid "Get an overview of the system status and quickly change settings."
-msgstr ""
-"Muodosta yleiskuva järjestelmän tilasta ja vaihda asetuksia nopeasti."
+msgstr "Muodosta yleiskuva järjestelmän tilasta ja vaihda asetuksia nopeasti."
 
-#: src/widgets/window.rs:121
+#: src/widgets/window.rs:78
 msgid "Software"
 msgstr "Ohjelmistot"
 
-#: src/widgets/window.rs:122
-msgid "Find and install apps"
-msgstr "Etsi ja asenna sovelluksia"
+#: src/widgets/window.rs:79
+msgid "Use Software to find and install apps"
+msgstr "Etsi ja asenna sovelluksia ohjelmistokeskuksen avulla"
 
-#: src/widgets/window.rs:123
-msgid ""
-"The Software app makes it easy to find and install all the apps you need."
+#: src/widgets/window.rs:80
+msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"Ohjelmistokeskuksen avulla löydät ja asennat tarvitsemasi sovellukset "
-"helposti."
+"Löydä ensiluokkaisia sovelluksia haun, selaamisen ja suosittelujen avulla."
 
-#: src/widgets/window.rs:128
-msgid "Learn More"
-msgstr "Lue lisää"
+#: src/widgets/window.rs:86
+msgid "Tour Completed"
+msgstr "Tutustumiskierros suoritettu"
 
-#: src/widgets/window.rs:129
-msgid "That's it! To learn more, see the Help"
-msgstr "Se siitä! Lisätietoja saat ohjesovelluksen avulla"
+#: src/widgets/window.rs:88
+msgid "To get more advice and tips, see the Help app."
+msgstr "Lisää ohjeita ja tietoa on saatavilla ohjesovelluksesta."
 
-#: src/widgets/window.rs:130
-msgid "The help app contains information, tips and tricks."
-msgstr "Ohje sisältää tietoa monista eri asioista ja vinkkejä."
+#~ msgid "Take the Tour"
+#~ msgstr "Lähde tutustumiskierrokselle"
+
+#~ msgid "You can also view open windows, search and use workspaces."
+#~ msgstr "Näet myös avoimet ikkunat, haun ja voit käyttää työtioja."
+
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "Haulla voi käynnistää sovelluksia, etsiä asetuksia, tehdä "
+#~ "laskutoimituksia ja paljon muuta."
+
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Tämä sisältää ilmoitukset, mediaohjaimet, kalenteritapahtumat, sään ja "
+#~ "maailmankellot."
+
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "Ohjelmistokeskuksen avulla löydät ja asennat tarvitsemasi sovellukset "
+#~ "helposti."
+
+#~ msgid "Learn More"
+#~ msgstr "Lue lisää"
+
+#~ msgid "That's it! To learn more, see the Help"
+#~ msgstr "Se siitä! Lisätietoja saat ohjesovelluksen avulla"
+
+#~ msgid "The help app contains information, tips and tricks."
+#~ msgstr "Ohje sisältää tietoa monista eri asioista ja vinkkejä."

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-17 08:35+0000\n"
-"PO-Revision-Date: 2020-08-17 12:19+0200\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-08-19 00:16+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 3.36.0\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Tour"
 
@@ -30,10 +30,6 @@ msgstr "Iniciador e tour"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "GNOME;GTK;"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "Tour de GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -51,40 +47,38 @@ msgstr "Pantalla principal"
 msgid "The GNOME Project"
 msgstr "O Proxecto GNOME"
 
-#: src/widgets/pages/welcome.rs:25
-msgid "Welcome Tour"
-msgstr "Tour de benvida"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+#| msgid "Welcome Tour"
+msgid "Welcome to {} {}"
+msgstr "Benvida a {} {}"
 
-#: src/widgets/pages/welcome.rs:54
+#: src/widgets/pages/welcome.rs:151
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
 msgstr ""
 "Hola! Realice o tour para aprender e descubrir as funcionalidades esenciais."
 
-#: src/widgets/pages/welcome.rs:64
+#: src/widgets/pages/welcome.rs:161
 msgid "_No Thanks"
 msgstr "_Non grazas"
 
-#: src/widgets/pages/welcome.rs:72
+#: src/widgets/pages/welcome.rs:169
 msgid "_Start Tour"
 msgstr "_Comezar tour"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:31
 msgid "_Next"
 msgstr "_Seguinte"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:32
 msgid "_Close"
 msgstr "_Pechar"
 
-#: src/widgets/paginator.rs:34
+#: src/widgets/paginator.rs:33
 msgid "_Previous"
 msgstr "_Anterior"
-
-#: src/widgets/window.rs:49
-msgid "Activities Overview"
-msgstr "Vista xeral de actividades"
 
 #: src/widgets/window.rs:50
 msgid "Open Activities to launch apps"
@@ -94,15 +88,11 @@ msgstr "Abra Actividades para inciar aplicacións"
 msgid "The activities view can also be used to switch windows and search."
 msgstr "A vista de actividades tamén se pode usar para trocar e buscar xanelas"
 
-#: src/widgets/window.rs:56
-msgid "Search"
-msgstr "Buscar"
-
-#: src/widgets/window.rs:57
+#: src/widgets/window.rs:60
 msgid "Just type to search"
 msgstr "Simplemente escriba para buscar"
 
-#: src/widgets/window.rs:58
+#: src/widgets/window.rs:61
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
@@ -110,52 +100,62 @@ msgstr ""
 "Na vista de actividades, só ten que escribir para buscar aplicacións, "
 "preferencias e máis."
 
-#: src/widgets/window.rs:63
-msgid "Date & Time"
-msgstr "Data e hora"
-
-#: src/widgets/window.rs:64
+#: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
 msgstr "Prema sobre a hora para ver as notificacións"
 
-#: src/widgets/window.rs:65
+#: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
 msgstr ""
 "A xanela emerxente de notificacións tamén inclúe ferramentas de "
 "planificación persoanais."
 
-#: src/widgets/window.rs:70
-msgid "System Menu"
-msgstr "Menú do sistema"
-
-#: src/widgets/window.rs:71
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Ver a información e configuración do sistema"
 
-#: src/widgets/window.rs:72
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
 "Obteña unha vista xeral do estado do sistema e cambie rapidamente as "
 "preferencias."
 
-#: src/widgets/window.rs:77
-msgid "Software"
-msgstr "Software"
-
-#: src/widgets/window.rs:78
+#: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
 msgstr "Use Software para atopar e instalar aplicacións"
 
-#: src/widgets/window.rs:79
+#: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
 "Descubra aplicacións moi útiles mediante a busca, navegando ou mediante as "
 "nosas recomendacións."
 
-#: src/widgets/window.rs:85
-msgid "Tour Completed"
-msgstr "Tour completado"
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "E isto é todo! Agardamos que lle gustara {}"
 
-#: src/widgets/window.rs:87
+#: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter máis consellos e trucos, consulte na aplicación «Axuda»"
+
+#~ msgid "GNOME Tour"
+#~ msgstr "Tour de GNOME"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Vista xeral de actividades"
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid "Date & Time"
+#~ msgstr "Data e hora"
+
+#~ msgid "System Menu"
+#~ msgstr "Menú do sistema"
+
+#~ msgid "Software"
+#~ msgstr "Software"
+
+#~ msgid "Tour Completed"
+#~ msgstr "Tour completado"

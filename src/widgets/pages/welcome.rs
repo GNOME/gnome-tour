@@ -4,6 +4,8 @@ use gettextrs::gettext;
 #[cfg(feature = "video")]
 use gio::FileExt;
 #[cfg(feature = "video")]
+use glib::clone;
+#[cfg(feature = "video")]
 use glib::{Receiver, Sender};
 use gtk::prelude::*;
 #[cfg(feature = "video")]

@@ -5,5 +5,5 @@ pub static NAME_SUFFIX: &str = @NAME_SUFFIX@;
 pub static VERSION: &str = @VERSION@;
 pub static GETTEXT_PACKAGE: &str = @GETTEXT_PACKAGE@;
 pub static LOCALEDIR: &str = @LOCALEDIR@;
-#[cfg(feature="video")]
+#[cfg(feature = "video")]
 pub static VIDEO_PATH: &str = @VIDEO_PATH@;

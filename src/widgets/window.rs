@@ -35,7 +35,7 @@ impl Window {
     }
 
     fn init(&mut self) {
-        self.widget.set_default_size(720, 500);
+        self.widget.set_default_size(960, 720);
         self.widget.set_icon_name(Some(APP_ID));
 
         // Devel Profile

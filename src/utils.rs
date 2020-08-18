@@ -17,7 +17,7 @@ where
 pub fn i18n_f(format: &str, args: &[&str]) -> String {
     let s = gettext(format);
     let mut parts = s.split("{}");
-    let mut output = parts.next().unwrap_or("").to_string();
+    let mut output = parts.next().unwrap_or_default().to_string();
     for (p, a) in parts.zip(args.iter()) {
         output += &(a.to_string() + &p.to_string());
     }

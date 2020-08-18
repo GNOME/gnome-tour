@@ -2,7 +2,6 @@
 <gresources>
   <gresource prefix="/org/gnome/Tour/">
       <file compressed="true" alias="style.css">resources/style.css</file>
-      <file alias="welcome.mp4">resources/assets/welcome.mp4</file>
       <file compressed="true" alias="activities.svg">resources/assets/activities.svg</file>
       <file compressed="true" alias="calendar.svg">resources/assets/calendar.svg</file>
       <file compressed="true" alias="search.svg">resources/assets/search.svg</file>

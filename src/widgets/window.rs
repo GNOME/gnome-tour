@@ -1,4 +1,4 @@
-use crate::utils;
+use crate::utils::i18n_f;
 use gettextrs::gettext;
 use gtk::prelude::*;
 use std::cell::RefCell;
@@ -97,7 +97,8 @@ impl Window {
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
-            utils::i18n_f("That's it! We hope that you enjoy {}.", &[&name]),
+            // Translators: The following string is formated as "We hope that you enjoy GNOME"
+            i18n_f("That's it! We hope that you enjoy {}.", &[&name]),
             gettext("To get more advice and tips, see the Help app."),
         );
         last_page.widget.get_style_context().add_class("last-page");

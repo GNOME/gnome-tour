@@ -1,5 +1,6 @@
 #[cfg(feature = "video")]
 use crate::config;
+use crate::utils::i18n_f;
 use gettextrs::gettext;
 #[cfg(feature = "video")]
 use gio::FileExt;
@@ -140,8 +141,8 @@ impl WelcomePageWidget {
 
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
         let version = glib::get_os_info("VERSION").unwrap_or_else(|| "3.36".into());
-
-        let title = gtk::Label::new(Some(&gettext(format!("Welcome to {} {}", name, version))));
+        // Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+        let title = gtk::Label::new(Some(&i18n_f("Welcome to {} {}", &[&name, &version])));
         title.set_margin_top(36);
         title.get_style_context().add_class("large-title");
         title.show();

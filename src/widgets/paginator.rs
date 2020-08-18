@@ -5,7 +5,6 @@ use gtk::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use super::pages::Pageable;
 use libhandy::prelude::{CarouselExt, CarouselIndicatorDotsExt, HeaderBarExt};
 
 pub struct PaginatorWidget {
@@ -13,7 +12,7 @@ pub struct PaginatorWidget {
     carousel: libhandy::Carousel,
     carousel_dots: libhandy::CarouselIndicatorDots,
     headerbar: libhandy::HeaderBar,
-    pages: RefCell<Vec<Box<dyn Pageable>>>,
+    pages: RefCell<Vec<gtk::Widget>>,
     current_page: RefCell<u32>,
     next_btn: gtk::Button,
     close_btn: gtk::Button,
@@ -57,9 +56,9 @@ impl PaginatorWidget {
         Ok(())
     }
 
-    pub fn add_page(&self, page: Box<dyn Pageable>) {
+    pub fn add_page(&self, page: gtk::Widget) {
         let page_nr = self.pages.borrow().len();
-        self.carousel.insert(&page.get_widget(), page_nr as i32);
+        self.carousel.insert(&page, page_nr as i32);
         self.pages.borrow_mut().push(page);
 
         self.update_position();
@@ -135,7 +134,7 @@ impl PaginatorWidget {
         if page_nr < self.carousel.get_n_pages() {
             let pages = &self.pages.borrow();
             let page = pages.get(page_nr as usize).unwrap();
-            self.carousel.scroll_to(&page.get_widget());
+            self.carousel.scroll_to(page);
         }
     }
 }

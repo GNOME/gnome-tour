@@ -13,6 +13,11 @@ dependency('gio-2.0', version: '>= 2.56')
 dependency('gdk-pixbuf-2.0')
 dependency('gtk+-3.0', version: '>= 3.16')
 
+if get_option('video_path') != ''
+  dependency('gstreamer-1.0', version: '>= 1.12')
+  dependency('gstreamer-video-1.0', version: '>= 1.12')
+  dependency('gstreamer-player-1.0', version: '>= 1.12')
+endif
 
 glib_compile_resources = find_program('glib-compile-resources', required: true)
 desktop_file_validate = find_program('desktop-file-validate', required: false)

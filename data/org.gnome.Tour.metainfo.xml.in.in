@@ -4,7 +4,7 @@
   <id>@app-id@</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <name>GNOME Tour</name>
+  <name>Tour</name>
   <summary>GNOME Tour and Greeter.</summary>
   <description>
     <p>A guided tour and greeter for GNOME.</p>

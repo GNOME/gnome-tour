@@ -1,26 +1,14 @@
-use super::page::Pageable;
 use gtk::prelude::*;
 
 pub struct ImagePageWidget {
     pub widget: gtk::Box,
-    pub title: String,
-}
-
-impl Pageable for ImagePageWidget {
-    fn get_widget(&self) -> gtk::Widget {
-        self.widget.clone().upcast::<gtk::Widget>()
-    }
-
-    fn get_title(&self) -> String {
-        self.title.clone()
-    }
 }
 
 impl ImagePageWidget {
-    pub fn new(resource_uri: &str, title: String, head: String, body: String) -> Self {
+    pub fn new(resource_uri: &str, head: String, body: String) -> Self {
         let widget = gtk::Box::new(gtk::Orientation::Vertical, 0);
 
-        let image_page = Self { widget, title };
+        let image_page = Self { widget };
 
         image_page.init(resource_uri, head, body);
         image_page
@@ -34,6 +22,7 @@ impl ImagePageWidget {
         let container = gtk::Box::new(gtk::Orientation::Vertical, 12);
         container.set_halign(gtk::Align::Center);
         container.set_valign(gtk::Align::Center);
+        container.set_vexpand(true);
         container.set_margin_bottom(48);
         container.set_margin_top(12);
         container.set_margin_start(12);

@@ -15,6 +15,7 @@ use std::cell::RefCell;
 #[cfg(feature = "video")]
 pub enum Action {
     VideoReady,
+    VideoUp,
 }
 
 pub struct WelcomePageWidget {
@@ -105,27 +106,34 @@ impl WelcomePageWidget {
         #[cfg(feature = "video")]
         {
             let receiver = self.receiver.borrow_mut().take().unwrap();
-            receiver.attach(None, move |action| {
-                if action == Action::VideoReady {
-                    header.get_style_context().add_class("playing");
-                }
-                glib::Continue(true)
-            });
+            receiver.attach(
+                None,
+                clone!(@strong self.player as player => move |action| {
+                    match action {
+                        Action::VideoReady => player.play(),
+                        Action::VideoUp => header.get_style_context().add_class("playing"),
+                    };
+                    glib::Continue(true)
+                }),
+            );
 
-            let video_file = gio::File::new_for_path(config::VIDEO_PATH);
-            self.player.set_uri(&video_file.get_uri());
-
-            self.player.connect_state_changed(clone!(@strong self.sender as sender => move |_, state| {
+            self.player.connect_state_changed(clone!(@strong self.sender as sender => move |_p,state| {
                 if state == gst_player::PlayerState::Playing {
-                    sender.send(Action::VideoReady).unwrap();
+                    sender.send(Action::VideoUp).unwrap();
                 }
             }));
 
+            self.player.connect_uri_loaded(clone!(@strong self.sender as sender => move |_p, _uri| {
+                sender.send(Action::VideoReady).unwrap();
+            }));
+            self.player.connect_end_of_stream(move |p| p.stop());
+
+            let video_file = gio::File::new_for_path(config::VIDEO_PATH);
             gtk::timeout_add(
                 500,
                 clone!(@strong self.player as player => move || {
-                    player.play();
-                    glib::Continue(true)
+                    player.set_uri(&video_file.get_uri());
+                    glib::Continue(false)
                 }),
             );
         };

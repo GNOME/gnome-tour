@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-07-19 12:03+0000\n"
-"PO-Revision-Date: 2020-07-20 17:56+0300\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-08-18 20:50+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -17,9 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.07.70\n"
+"X-Generator: Lokalize 20.11.70\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Тур"
 
@@ -30,10 +30,6 @@ msgstr "Тур і вітання"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;гноме;гном;жтека;гтк;"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "Тур GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -51,11 +47,13 @@ msgstr "Головне вікно"
 msgid "The GNOME Project"
 msgstr "Проєкт GNOME"
 
-#: src/widgets/pages/welcome.rs:25
-msgid "Welcome Tour"
-msgstr "Вітаємо у нашому «Турі»"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+#| msgid "Welcome Tour"
+msgid "Welcome to {} {}"
+msgstr "Вітаємо у {} {}"
 
-#: src/widgets/pages/welcome.rs:54
+#: src/widgets/pages/welcome.rs:151
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
@@ -63,48 +61,40 @@ msgstr ""
 "Привіт! Здійсніть тур робочим середовищем, щоб дізнатися про його основні "
 "можливості."
 
-#: src/widgets/pages/welcome.rs:64
+#: src/widgets/pages/welcome.rs:161
 msgid "_No Thanks"
 msgstr "_Ні, дякую"
 
-#: src/widgets/pages/welcome.rs:72
+#: src/widgets/pages/welcome.rs:169
 msgid "_Start Tour"
 msgstr "_Почати тур"
 
-#: src/widgets/paginator.rs:29
+#: src/widgets/paginator.rs:31
 msgid "_Next"
 msgstr "_Далі"
 
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:32
 msgid "_Close"
 msgstr "_Закрити"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Previous"
 msgstr "_Назад"
 
 #: src/widgets/window.rs:50
-msgid "Activities Overview"
-msgstr "Огляд діяльності"
-
-#: src/widgets/window.rs:51
 msgid "Open Activities to launch apps"
 msgstr "Відкрийте меню «Діяльність», щоб запустити програми"
 
-#: src/widgets/window.rs:52
+#: src/widgets/window.rs:51
 msgid "The activities view can also be used to switch windows and search."
 msgstr ""
 "Панеллю діяльності можна також скористатися для перемикання вікон і пошуку."
 
-#: src/widgets/window.rs:57
-msgid "Search"
-msgstr "Пошук"
-
-#: src/widgets/window.rs:58
+#: src/widgets/window.rs:60
 msgid "Just type to search"
 msgstr "Просто наберіть на клавіатурі ключ пошуку"
 
-#: src/widgets/window.rs:59
+#: src/widgets/window.rs:61
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
@@ -112,54 +102,43 @@ msgstr ""
 "У огляді діяльності ви можете просто почати вводити текст, щоб розпочати "
 "пошук програм, параметрів та інших даних."
 
-#: src/widgets/window.rs:64
-msgid "Date & Time"
-msgstr "Дата і час"
-
-#: src/widgets/window.rs:65
+#: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
 msgstr "Клацніть на панелі часу, щоб переглянути сповіщення"
 
-#: src/widgets/window.rs:66
+#: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
 msgstr ""
 "Накладна панель сповіщень містить також дані особистих засобів планування."
 
-#: src/widgets/window.rs:71
-msgid "System Menu"
-msgstr "Меню системи"
-
-#: src/widgets/window.rs:72
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Перегляд відомостей щодо системи та параметрів"
 
-#: src/widgets/window.rs:73
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
 "Ознайомтеся із оглядом стану системи та отримайте швидкий доступ до зміни "
 "параметрів."
 
-#: src/widgets/window.rs:78
-msgid "Software"
-msgstr "Програмне забезпечення"
-
-#: src/widgets/window.rs:79
+#: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
 msgstr ""
 "Скористайтеся програмою «Програмне забезпечення» для пошуку і встановлення "
 "програм"
 
-#: src/widgets/window.rs:80
+#: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
 "Знайдіть потрібні вам програми за допомогою пошуку, перегляду та наших "
 "рекомендацій."
 
-#: src/widgets/window.rs:86
-msgid "Tour Completed"
-msgstr "Тур завершено"
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Ось і все! Сподіваємося, вам сподобається {}."
 
-#: src/widgets/window.rs:88
+#: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Щоб отримати додаткові поради та підказки, зверніться до програми «Довідка»."

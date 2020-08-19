@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-07-19 12:03+0000\n"
-"PO-Revision-Date: 2020-08-16 11:36+0300\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-08-19 10:46+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Poedit 2.2.4\n"
 "X-POOTLE-MTIME: 1429307949.000000\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Tur"
 
@@ -32,10 +32,6 @@ msgstr "Karşılayıcı ve Tur"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "GNOME Turu"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -53,109 +49,112 @@ msgstr "Ana Pencere"
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
-#: src/widgets/pages/welcome.rs:25
-msgid "Welcome Tour"
-msgstr "Tura Hoş Geldiniz"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "{} {}’e Hoş Geldiniz"
 
-#: src/widgets/pages/welcome.rs:54
+#: src/widgets/pages/welcome.rs:151
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
-msgstr ""
-"Hu hu! Önemli özellikleri keşfetmek ve çevreyi öğrenmek tura "
-"katılın."
+msgstr "Hu hu! Önemli özellikleri keşfetmek ve çevreyi öğrenmek tura katılın."
 
-#: src/widgets/pages/welcome.rs:64
+#: src/widgets/pages/welcome.rs:161
 msgid "_No Thanks"
 msgstr "_Kalsın"
 
-#: src/widgets/pages/welcome.rs:72
+#: src/widgets/pages/welcome.rs:169
 msgid "_Start Tour"
 msgstr "Turu _Başlat"
 
-#: src/widgets/paginator.rs:29
+#: src/widgets/paginator.rs:31
 msgid "_Next"
 msgstr "_İleri"
 
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:32
 msgid "_Close"
 msgstr "_Kapat"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Previous"
 msgstr "_Önceki"
 
 #: src/widgets/window.rs:50
-msgid "Activities Overview"
-msgstr "Etkinlikler Genel Görünümü"
-
-#: src/widgets/window.rs:51
 msgid "Open Activities to launch apps"
 msgstr "Uygulamaları başlatmak için Etkinlikler’i açın"
 
-#: src/widgets/window.rs:52
+#: src/widgets/window.rs:51
 msgid "The activities view can also be used to switch windows and search."
 msgstr "Etkinlikler görünümü, pencereler arası geçiş ve aramada kullanılır."
 
-#: src/widgets/window.rs:57
-msgid "Search"
-msgstr "Arama"
-
-#: src/widgets/window.rs:58
+#: src/widgets/window.rs:60
 msgid "Just type to search"
 msgstr "Aramak için yazın"
 
-#: src/widgets/window.rs:59
+#: src/widgets/window.rs:61
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
-msgstr "Etkinlikler görünümünde uygulamaları, ayarları ve diğerlerini aramak için"
-"yalnızca yazın."
+msgstr ""
+"Etkinlikler görünümünde uygulamaları, ayarları ve diğerlerini aramak "
+"içinyalnızca yazın."
 
-#: src/widgets/window.rs:64
-msgid "Date & Time"
-msgstr "Tarih ve Zaman"
-
-#: src/widgets/window.rs:65
+#: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
 msgstr "Bildirimleri görmek için saate tıklayın"
 
-#: src/widgets/window.rs:66
+#: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
 msgstr "Bildirimler pencereceği, kişisel planlama araçlarını da içerir."
 
-#: src/widgets/window.rs:71
-msgid "System Menu"
-msgstr "Sistem Menüsü"
-
-#: src/widgets/window.rs:72
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Sistem bilgisini ve ayarları görüntüle"
 
-#: src/widgets/window.rs:73
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
 "Sistem durumuyla ilgili genel bilgi alın ve ayarları hızlıca değiştirin."
 
-#: src/widgets/window.rs:78
-msgid "Software"
-msgstr "Yazılım"
-
-#: src/widgets/window.rs:79
+#: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
 msgstr "Uygulama bulmak ve kurmak içinn Yazılımlar’ı kullanın"
 
-#: src/widgets/window.rs:80
+#: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "Arayarak, göz atarak ve önerilerimizi kullanarak harika uygulamalar keşfedin."
+msgstr ""
+"Arayarak, göz atarak ve önerilerimizi kullanarak harika uygulamalar keşfedin."
 
-#: src/widgets/window.rs:86
-msgid "Tour Completed"
-msgstr "Tur Tamamlandı"
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "İşte bu kadar! Umarız keyifle {} kullanırsınız."
 
-#: src/widgets/window.rs:88
+#: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bakın."
+
+#~ msgid "GNOME Tour"
+#~ msgstr "GNOME Turu"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Etkinlikler Genel Görünümü"
+
+#~ msgid "Search"
+#~ msgstr "Arama"
+
+#~ msgid "Date & Time"
+#~ msgstr "Tarih ve Zaman"
+
+#~ msgid "System Menu"
+#~ msgstr "Sistem Menüsü"
+
+#~ msgid "Software"
+#~ msgstr "Yazılım"
+
+#~ msgid "Tour Completed"
+#~ msgstr "Tur Tamamlandı"
 
 #~ msgid "Take the Tour"
 #~ msgstr "Tura Katıl"

@@ -1,0 +1,129 @@
+# Persian translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-08-19 14:10+0000\n"
+"PO-Revision-Date: 2020-08-19 21:00+0000\n"
+"Language-Team: Persian <fa@li.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "گردشگری"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "خوش‌آمدگویی و گردشگری"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;گنوم;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "خوش‌آمدگویی و گردشگری گنوم."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "یک خوش‌امدگویی و گردشگری راهنمادار برای گنوم."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "پنجرهٔ اصلی"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:34
+msgid "The GNOME Project"
+msgstr "پروژهٔ گنوم"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "به {} {} خوش آمدید"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr "سلام! برای آموختن راهتان در اطراف و کشف ویژگی‌های اساسی، گردش کنید."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_نه، ممنون"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_آغاز گردش"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_بعدی"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_بستن"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_پیشین"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "برای اجرای کاره‌ها، فعّالیت‌ها را بگشایید"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr "نمای فعّالیت‌ها می‌تواند برای تعویض پنجره‌ها و حست‌وجو نیز به کار رود"
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "برای جست‌وجو فقط کافیست بنویسید"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"برای جست‌وجوی کاره‌ها، تنظیمات و… کافیست در نمای فعّالیت‌ها شروع به نوشتن کنید."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "برای دیدن آگاهی‌ها، روی زمان کلیک کنید"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr "نمای آگاهی‌ها شامل ابزارهای برنامه‌ریزی شخصی نیز هست."
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "دیدن تنظیمات و اطّلاعات سامانه"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr "یک نمای کلّی از وضعیت سامانه گرفته و تنظیمات را به سرعت تغییر دهید."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "برای یافتن و نصب کاره‌ها، از نرم‌افزارها استفاده کنید"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr "با جست‌وجو، مرور و پیشنهادهایمان، کاره‌های عالی را کشف کنید."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "همین! امیدواریم از {} لذّت ببرید."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "برای گرفتن توصیه‌ها و نکته‌های بیش‌تر، کارهٔ راهنما را ببینید."

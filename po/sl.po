@@ -2,14 +2,14 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2020.
+# Matej Urbančič <mateju@svn.gnome.org>, + 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-05-30 11:31+0000\n"
-"PO-Revision-Date: 2020-06-05 08:43+0200\n"
+"POT-Creation-Date: 2020-08-19 14:10+0000\n"
+"PO-Revision-Date: 2020-08-20 10:20+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -19,19 +19,27 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
 msgstr "Vodič GNOME"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Pozdrav in vodenje po okolju"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;Vodnik;vodič;pozdrav;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
-msgstr ""
+msgstr "Vodič po okolju GNOME."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr ""
+msgstr "Pozdravno sporočilo in vodič po okolju GNOME."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:15
 msgid "Main Window"
@@ -41,117 +49,118 @@ msgstr "Glavno okno"
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-msgid "Tour"
-msgstr ""
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Dobrodošli v {} {}"
 
-#: data/org.gnome.Tour.desktop.in.in:4
-msgid "Greeter & Tour"
-msgstr ""
-
-#: data/org.gnome.Tour.desktop.in.in:9
-msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;Vodnik;vodič;pozdrav;"
-
-#: src/widgets/pages/welcome.rs:34
+#: src/widgets/pages/welcome.rs:151
 msgid ""
-"Hi there! If you are new to GNOME, you can take the tour to learn some "
-"essential features."
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
 msgstr ""
+"Pozdravljeni! Oglejte si predstavitev, odkrijte glavne možnosti namizja in "
+"se spoznajte z okoljem."
 
-#: src/widgets/pages/welcome.rs:44
-msgid "Take the Tour"
-msgstr ""
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_Ne, hvala"
 
-#: src/widgets/pages/welcome.rs:51
-msgid "No Thanks"
-msgstr "Ne, hvala"
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Začni predstavitev"
 
-#: src/widgets/headerbar.rs:30
-msgid "Close"
-msgstr "Zapri"
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Naprej"
 
-#: src/widgets/headerbar.rs:32 src/widgets/headerbar.rs:67
-msgid "Next"
-msgstr "Naprej"
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_Zapri"
 
-#: src/widgets/headerbar.rs:57
-msgid "Welcome Tour"
-msgstr ""
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Nazaj"
 
-#: src/widgets/window.rs:94
-msgid "Activities Overview"
-msgstr "Pregled dejavnosti"
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Odpri okno Dejavnosti za zaganjanje programov"
 
-#: src/widgets/window.rs:95
-msgid "Open Activities to start apps"
-msgstr ""
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr "Pogled Dejavnosti omogoča tudi preklapljanje oken in iskanje."
 
-#: src/widgets/window.rs:96
-msgid "You can also view open windows, search and use workspaces."
-msgstr ""
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Enostavno začnite tipkati za iskanje"
 
-#: src/widgets/window.rs:101
-msgid "Search"
-msgstr "Iskanje"
-
-#: src/widgets/window.rs:102
-msgid "In the Activities Overview, just start typing to search"
-msgstr ""
-
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:61
 msgid ""
-"Search can be used to launch apps, find settings, do calculations and much "
+"In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
+"V pogledu Dejavnosti enostavno začnete s tipkanjem za iskanje programov, "
+"nastavitev in še mnogo drugih stvari."
 
-#: src/widgets/window.rs:108
-msgid "Date & Time"
-msgstr "Datum in čas"
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Kliknite na prikaz časa za izpis obvestil"
 
-#: src/widgets/window.rs:109
-msgid "Click the time to see your now and next"
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
 msgstr ""
+"Pojavno okno obvestil vključuje tudi orodja za osebno načrtovanje nalog in "
+"dogodkov."
 
-#: src/widgets/window.rs:110
-msgid ""
-"This includes notifications, media controls, calendar events, the weather "
-"and world clocks."
-msgstr ""
-
-#: src/widgets/window.rs:115
-msgid "System Menu"
-msgstr "Sistemski meni"
-
-#: src/widgets/window.rs:116
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Pregled sistemskih podrobnosti in nastavitev"
 
-#: src/widgets/window.rs:117
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
+"Izkoristite pregled nad stanjem sistema in hitro spreminjanje nastavitev."
 
-#: src/widgets/window.rs:121
-msgid "Software"
-msgstr "Programska oprema"
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Uporabite posebno orodje za iskanje in nameščanje programov"
 
-#: src/widgets/window.rs:122
-msgid "Find and install apps"
-msgstr "Iskanje in nameščanje programov"
-
-#: src/widgets/window.rs:123
-msgid ""
-"The Software app makes it easy to find and install all the apps you need."
-msgstr "Program poenostavi iskanje in nameščanje različne programske opreme"
-
-#: src/widgets/window.rs:128
-msgid "Learn More"
-msgstr "Več podrobnosti"
-
-#: src/widgets/window.rs:129
-msgid "That's it! To learn more, see the Help"
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
+"Odkrijte odlično programsko opremo z iskanjem, brskanjem in s pregledom "
+"priporočil."
 
-#: src/widgets/window.rs:130
-msgid "The help app contains information, tips and tricks."
-msgstr ""
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "To je to! Prepričani smo, da boste z užitkom uporabljali {}."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Za več priporočil, namigov in nasvetov si oglejte pomoč za uporabo."
+
+#~ msgid "GNOME Tour"
+#~ msgstr "Vodič GNOME"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Pregled dejavnosti"
+
+#~ msgid "Search"
+#~ msgstr "Iskanje"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum in čas"
+
+#~ msgid "System Menu"
+#~ msgstr "Sistemski meni"
+
+#~ msgid "Software"
+#~ msgstr "Programska oprema"
+
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr "Program poenostavi iskanje in nameščanje različne programske opreme"
+
+#~ msgid "Learn More"
+#~ msgstr "Več podrobnosti"

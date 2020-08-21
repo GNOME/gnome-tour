@@ -107,7 +107,7 @@ impl Application {
     }
 
     pub fn run(&self) {
-        info!("GNOME Tour{} ({})", config::NAME_SUFFIX, config::APP_ID);
+        info!("GNOME Tour ({})", config::APP_ID);
         info!("Version: {} ({})", config::VERSION, config::PROFILE);
         info!("Datadir: {}", config::PKGDATADIR);
 

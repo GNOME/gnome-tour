@@ -1,6 +1,6 @@
 project('gnome-tour',
         'rust',
-        version: '3.37.1',
+        version: '3.37.91',
 	meson_version : '>= 0.50')
 
 i18n = import('i18n')
@@ -45,7 +45,6 @@ gettext_package = meson.project_name()
 
 if get_option('profile') == 'development'
   profile = 'Devel'
-  name_suffix = ' (Devel)'
   vcs_tag = run_command('git', 'rev-parse', '--short', 'HEAD').stdout().strip()
   if vcs_tag == ''
     version_suffix = '-devel'
@@ -54,7 +53,6 @@ if get_option('profile') == 'development'
   endif
 else
   profile = ''
-  name_suffix = ''
   version_suffix = ''
 endif
 

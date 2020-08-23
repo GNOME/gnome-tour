@@ -3,12 +3,12 @@
 # This file is distributed under the same license as the gnome-tour package.
 # Yuki Okushi <huyuumi.dev@gmail.com>, 2020.
 # sicklylife <translation@sicklylife.jp>, 2020.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-14 12:01+0000\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
 "PO-Revision-Date: 2020-08-16 04:18+0000\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "ツアー"
 
@@ -29,10 +29,6 @@ msgstr "案内とツアー"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "GNOME ツアー"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -50,40 +46,38 @@ msgstr "メインウィンドウ"
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
-#: src/widgets/pages/welcome.rs:25
-msgid "Welcome Tour"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+#, fuzzy
+#| msgid "Welcome Tour"
+msgid "Welcome to {} {}"
 msgstr "ウェルカムツアー"
 
-#: src/widgets/pages/welcome.rs:54
+#: src/widgets/pages/welcome.rs:151
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
-msgstr ""
-"こんにちは! ツアーを通して使い方を学び、基本的な機能を覚えましょう。"
+msgstr "こんにちは! ツアーを通して使い方を学び、基本的な機能を覚えましょう。"
 
-#: src/widgets/pages/welcome.rs:64
+#: src/widgets/pages/welcome.rs:161
 msgid "_No Thanks"
 msgstr "遠慮する(_N)"
 
-#: src/widgets/pages/welcome.rs:72
+#: src/widgets/pages/welcome.rs:169
 msgid "_Start Tour"
 msgstr "ツアーを始める(_S)"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:31
 msgid "_Next"
 msgstr "次へ(_N)"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:32
 msgid "_Close"
 msgstr "閉じる(_C)"
 
-#: src/widgets/paginator.rs:34
+#: src/widgets/paginator.rs:33
 msgid "_Previous"
 msgstr "前へ(_P)"
-
-#: src/widgets/window.rs:49
-msgid "Activities Overview"
-msgstr "アクティビティオーバービュー"
 
 #: src/widgets/window.rs:50
 msgid "Open Activities to launch apps"
@@ -94,15 +88,11 @@ msgid "The activities view can also be used to switch windows and search."
 msgstr ""
 "アクティビティビューでは、ウィンドウの切り替えや検索をすることもできます。"
 
-#: src/widgets/window.rs:56
-msgid "Search"
-msgstr "検索"
-
-#: src/widgets/window.rs:57
+#: src/widgets/window.rs:60
 msgid "Just type to search"
 msgstr "入力して検索する"
 
-#: src/widgets/window.rs:58
+#: src/widgets/window.rs:61
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
@@ -110,49 +100,58 @@ msgstr ""
 "アクティビティビューでは、キー入力するだけでアプリケーションや設定、その他い"
 "ろいろなものを検索することができます。"
 
-#: src/widgets/window.rs:63
-msgid "Date & Time"
-msgstr "日付と時刻"
-
-#: src/widgets/window.rs:64
+#: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
 msgstr "時刻をクリックして通知を確認する"
 
-#: src/widgets/window.rs:65
+#: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
 msgstr "通知のポップオーバーにはパーソナルプランニングツールも含まれています。"
 
-#: src/widgets/window.rs:70
-msgid "System Menu"
-msgstr "システムメニュー"
-
-#: src/widgets/window.rs:71
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "システム情報と設定を確認する"
 
-#: src/widgets/window.rs:72
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr "システムステータスの概要を確認し、手早く設定を変更します。"
 
-#: src/widgets/window.rs:77
-msgid "Software"
-msgstr "ソフトウェア"
-
-#: src/widgets/window.rs:78
+#: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
 msgstr "“ソフトウェア”を使ってアプリを探しインストールする"
 
-#: src/widgets/window.rs:79
+#: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"各カテゴリーやおすすめを見たり、検索したりして、すばらしいアプリケーション"
-"を見つけましょう。"
+"各カテゴリーやおすすめを見たり、検索したりして、すばらしいアプリケーションを"
+"見つけましょう。"
 
-#: src/widgets/window.rs:85
-msgid "Tour Completed"
-msgstr "ツアー終了"
-
-#: src/widgets/window.rs:87
-msgid "To get more advice and tips, see the Help app."
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
 msgstr ""
-"より詳しいアドバイスやヒントはヘルプアプリを参照してください。"
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "より詳しいアドバイスやヒントはヘルプアプリを参照してください。"
+
+#~ msgid "GNOME Tour"
+#~ msgstr "GNOME ツアー"
+
+#~ msgid "Activities Overview"
+#~ msgstr "アクティビティオーバービュー"
+
+#~ msgid "Search"
+#~ msgstr "検索"
+
+#~ msgid "Date & Time"
+#~ msgstr "日付と時刻"
+
+#~ msgid "System Menu"
+#~ msgstr "システムメニュー"
+
+#~ msgid "Software"
+#~ msgstr "ソフトウェア"
+
+#~ msgid "Tour Completed"
+#~ msgstr "ツアー終了"

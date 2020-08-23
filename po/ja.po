@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-08-16 04:18+0000\n"
+"PO-Revision-Date: 2020-08-23 23:30+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -48,10 +48,8 @@ msgstr "The GNOME Project"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:145
-#, fuzzy
-#| msgid "Welcome Tour"
 msgid "Welcome to {} {}"
-msgstr "ウェルカムツアー"
+msgstr "{} {} へようこそ"
 
 #: src/widgets/pages/welcome.rs:151
 msgid ""
@@ -129,7 +127,7 @@ msgstr ""
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
 #: src/widgets/window.rs:101
 msgid "That's it! We hope that you enjoy {}."
-msgstr ""
+msgstr "以上です。{} を楽しんでください。"
 
 #: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."

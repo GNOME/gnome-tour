@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-07-19 12:03+0000\n"
-"PO-Revision-Date: 2020-08-16 15:21+0300\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-08-23 10:01+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Tutustumiskierros"
 
@@ -29,10 +29,6 @@ msgstr "Tutustumiskierros"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "Gnomen tutustumiskierros"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -50,11 +46,13 @@ msgstr "Pääikkuna"
 msgid "The GNOME Project"
 msgstr "Gnome-projekti"
 
-#: src/widgets/pages/welcome.rs:25
-msgid "Welcome Tour"
-msgstr "Tutustumiskierros"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+#| msgid "Welcome Tour"
+msgid "Welcome to {} {}"
+msgstr "Tervetuloa, tämä on {} {}"
 
-#: src/widgets/pages/welcome.rs:54
+#: src/widgets/pages/welcome.rs:151
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
@@ -62,48 +60,40 @@ msgstr ""
 "Hei siellä! Lähde tutustumiskierrokselle oppiaksesi oleelliset asiat ja "
 "ominaisuudet."
 
-#: src/widgets/pages/welcome.rs:64
+#: src/widgets/pages/welcome.rs:161
 msgid "_No Thanks"
 msgstr "_Ei kiitos"
 
-#: src/widgets/pages/welcome.rs:72
+#: src/widgets/pages/welcome.rs:169
 msgid "_Start Tour"
 msgstr "_Aloita tutustumiskierros"
 
-#: src/widgets/paginator.rs:29
+#: src/widgets/paginator.rs:31
 msgid "_Next"
 msgstr "_Seuraava"
 
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:32
 msgid "_Close"
 msgstr "_Sulje"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Previous"
 msgstr "_Edellinen"
 
 #: src/widgets/window.rs:50
-msgid "Activities Overview"
-msgstr "Toiminnot-yleisnäkymä"
-
-#: src/widgets/window.rs:51
 msgid "Open Activities to launch apps"
 msgstr "Napsauta Toiminnot käynnistääksesi sovelluksia"
 
-#: src/widgets/window.rs:52
+#: src/widgets/window.rs:51
 msgid "The activities view can also be used to switch windows and search."
 msgstr ""
 "Toiminnot-näkymässä voi myös vaihtaa ikkunoiden välillä ja suorittaa hakuja."
 
-#: src/widgets/window.rs:57
-msgid "Search"
-msgstr "Haku"
-
-#: src/widgets/window.rs:58
+#: src/widgets/window.rs:60
 msgid "Just type to search"
 msgstr "Sen kuin vain kirjoitat hakeaksesi"
 
-#: src/widgets/window.rs:59
+#: src/widgets/window.rs:61
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
@@ -111,50 +101,60 @@ msgstr ""
 "Kun alat kirjoittamaan Toiminnot-näkymässä, voit etsiä sovelluksia, "
 "asetuksia ja paljon muuta."
 
-#: src/widgets/window.rs:64
-msgid "Date & Time"
-msgstr "Päivä ja aika"
-
-#: src/widgets/window.rs:65
+#: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
 msgstr "Napsauta kellonaikaa nähdäksesi ilmoitukset"
 
-#: src/widgets/window.rs:66
+#: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
 msgstr "Ilmoitusalue sisältää myös henkilökohtaisia suunnittelutyökaluja."
 
-#: src/widgets/window.rs:71
-msgid "System Menu"
-msgstr "Järjestelmävalikko"
-
-#: src/widgets/window.rs:72
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Katso järjestelmän tietoja ja asetuksia"
 
-#: src/widgets/window.rs:73
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr "Muodosta yleiskuva järjestelmän tilasta ja vaihda asetuksia nopeasti."
 
-#: src/widgets/window.rs:78
-msgid "Software"
-msgstr "Ohjelmistot"
-
-#: src/widgets/window.rs:79
+#: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
 msgstr "Etsi ja asenna sovelluksia ohjelmistokeskuksen avulla"
 
-#: src/widgets/window.rs:80
+#: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
 "Löydä ensiluokkaisia sovelluksia haun, selaamisen ja suosittelujen avulla."
 
-#: src/widgets/window.rs:86
-msgid "Tour Completed"
-msgstr "Tutustumiskierros suoritettu"
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Siinä kaikki! Toivottavasti {} vastaa odotuksiasi."
 
-#: src/widgets/window.rs:88
+#: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."
 msgstr "Lisää ohjeita ja tietoa on saatavilla ohjesovelluksesta."
+
+#~ msgid "GNOME Tour"
+#~ msgstr "Gnomen tutustumiskierros"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Toiminnot-yleisnäkymä"
+
+#~ msgid "Search"
+#~ msgstr "Haku"
+
+#~ msgid "Date & Time"
+#~ msgstr "Päivä ja aika"
+
+#~ msgid "System Menu"
+#~ msgstr "Järjestelmävalikko"
+
+#~ msgid "Software"
+#~ msgstr "Ohjelmistot"
+
+#~ msgid "Tour Completed"
+#~ msgstr "Tutustumiskierros suoritettu"
 
 #~ msgid "Take the Tour"
 #~ msgstr "Lähde tutustumiskierrokselle"

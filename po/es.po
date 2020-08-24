@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-02-10 14:37+0000\n"
-"PO-Revision-Date: 2020-02-11 08:56+0100\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-08-24 11:22+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -16,11 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.34.0\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "GNOME Tour"
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Tour"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Bienvenida y tour"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -38,130 +46,165 @@ msgstr "Ventana principal"
 msgid "The GNOME Project"
 msgstr "El Proyecto GNOME"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-msgid "Tour"
-msgstr "Tour"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+#| msgid "Welcome Tour"
+msgid "Welcome to {} {}"
+msgstr "Bienvenido a {} {}"
 
-#: data/org.gnome.Tour.desktop.in.in:4
-msgid "Greeter & Tour"
-msgstr "Bienvenida y tour"
-
-#: data/org.gnome.Tour.desktop.in.in:9
-msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;"
-
-#: src/widgets/pages/welcome.rs:34
+#: src/widgets/pages/welcome.rs:151
+#| msgid ""
+#| "Hi there! If you are new to GNOME, you can take the tour to learn some "
+#| "essential features."
 msgid ""
-"Hi there! If you are new to GNOME, you can take the tour to learn some "
-"essential features."
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
 msgstr ""
-"Bienvenido. Si es nuevo en GNOME puede hacer el tour para aprender algunas "
+"Bienvenido. Puede hacer tour para aprender y descubrir algunas "
 "funcionalidades esenciales."
 
-#: src/widgets/pages/welcome.rs:44
-msgid "Take the Tour"
-msgstr "Hacer el tour"
+#: src/widgets/pages/welcome.rs:161
+#| msgid "No Thanks"
+msgid "_No Thanks"
+msgstr "_No gracias"
 
-#: src/widgets/pages/welcome.rs:51
-msgid "No Thanks"
-msgstr "No gracias"
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Iniciar tour"
 
-#: src/widgets/headerbar.rs:28
-msgid "Close"
-msgstr "Cerrar"
+#: src/widgets/paginator.rs:31
+#| msgid "Next"
+msgid "_Next"
+msgstr "_Siguiente"
 
-#: src/widgets/headerbar.rs:30 src/widgets/headerbar.rs:62
-msgid "Next"
-msgstr "Siguiente"
+#: src/widgets/paginator.rs:32
+#| msgid "Close"
+msgid "_Close"
+msgstr "_Cerrar"
 
-#: src/widgets/headerbar.rs:52
-msgid "Welcome Tour"
-msgstr "Tour de bienvenida"
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Anterior"
 
-#: src/widgets/window.rs:94
-msgid "Activities Overview"
-msgstr "Vista de actividades"
-
-#: src/widgets/window.rs:95
-msgid "Open Activities to start apps"
+#: src/widgets/window.rs:50
+#| msgid "Open Activities to start apps"
+msgid "Open Activities to launch apps"
 msgstr "Abra la vista de Actividades para lanzar aplicaciones"
 
-#: src/widgets/window.rs:96
-msgid "You can also view open windows, search and use workspaces."
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
 msgstr ""
-"También puede ver las ventanas abiertas, buscar y usar las áreas de trabajo."
+"La vista de Actividades también se puede usar para cambiar entre ventanas y "
+"buscar."
 
-#: src/widgets/window.rs:101
-msgid "Search"
-msgstr "Buscar"
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Simplemente escriba para buscar"
 
-#: src/widgets/window.rs:102
-msgid "In the Activities Overview, just start typing to search"
-msgstr "En la vista de Actividades simplemente empiece a escribir para buscar"
-
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:61
+#| msgid "In the Activities Overview, just start typing to search"
 msgid ""
-"Search can be used to launch apps, find settings, do calculations and much "
+"In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"La búsqueda se puede usar para lanzar aplicaciones, buscar opciones de "
-"configuración, hacer cálculos y mucho más."
+"En la vista de Actividades simplemente empiece a escribir para buscar "
+"aplicaciones, opciones de configuración y más."
 
-#: src/widgets/window.rs:108
-msgid "Date & Time"
-msgstr "Fecha y Hora"
+#: src/widgets/window.rs:70
+#| msgid "Click the time to see your now and next"
+msgid "Click the time to see notifications"
+msgstr "Pulse en el reloj para ver las notificaciones"
 
-#: src/widgets/window.rs:109
-msgid "Click the time to see your now and next"
-msgstr "Pulse sobre el reloj para ver qué está pasando"
-
-#: src/widgets/window.rs:110
-msgid ""
-"This includes notifications, media controls, calendar events, the weather "
-"and world clocks."
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
 msgstr ""
-"Estro incluye notificaciones, controles multimedia, eventos del calendario, "
-"meteorología y relojes del mundo."
+"Las notificaciones emergentes también incluyen herramientas de planificación "
+"personal."
 
-#: src/widgets/window.rs:115
-msgid "System Menu"
-msgstr "Menú del sistema"
-
-#: src/widgets/window.rs:116
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Ver información y configuración del sistema"
 
-#: src/widgets/window.rs:117
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
 "Obtener una vista general del estado del sistema y modificar la "
 "configuración rápidamente."
 
-#: src/widgets/window.rs:121
-msgid "Software"
-msgstr "Software"
+#: src/widgets/window.rs:90
+#| msgid "Find and install apps"
+msgid "Use Software to find and install apps"
+msgstr "Use Software para buscar e instalar aplicaciones"
 
-#: src/widgets/window.rs:122
-msgid "Find and install apps"
-msgstr "Buscar e instalar aplicaciones"
-
-#: src/widgets/window.rs:123
-#| msgid ""
-#| "The Software app makese it easy to find and install all the apps you need."
-msgid ""
-"The Software app makes it easy to find and install all the apps you need."
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"La aplicación Software hace que sea muy sencillo buscar e instalar las "
-"aplicaciones que necesita."
+"Descubra aplicaciones geniales usando la búsqueda, explorando o siguiendo "
+"las recomendaciones."
 
-#: src/widgets/window.rs:128
-msgid "Learn More"
-msgstr "Aprender más"
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Eso es todo. Esperamos que disfrute de {}."
 
-#: src/widgets/window.rs:129
-msgid "That's it! To learn more, see the Help"
-msgstr "Eso es todo. Para aprender más, consulte la ayuda"
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Para obtener más consejos y pistas consulte la aplicación Ayuda."
 
-#: src/widgets/window.rs:130
-msgid "The help app contains information, tips and tricks."
-msgstr "Esta ayuda contiene información, consejos y trucos."
+#~ msgid "GNOME Tour"
+#~ msgstr "GNOME Tour"
+
+#~ msgid "Take the Tour"
+#~ msgstr "Hacer el tour"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Vista de actividades"
+
+#~ msgid "You can also view open windows, search and use workspaces."
+#~ msgstr ""
+#~ "También puede ver las ventanas abiertas, buscar y usar las áreas de "
+#~ "trabajo."
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "La búsqueda se puede usar para lanzar aplicaciones, buscar opciones de "
+#~ "configuración, hacer cálculos y mucho más."
+
+#~ msgid "Date & Time"
+#~ msgstr "Fecha y Hora"
+
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Estro incluye notificaciones, controles multimedia, eventos del "
+#~ "calendario, meteorología y relojes del mundo."
+
+#~ msgid "System Menu"
+#~ msgstr "Menú del sistema"
+
+#~ msgid "Software"
+#~ msgstr "Software"
+
+#~| msgid ""
+#~| "The Software app makese it easy to find and install all the apps you "
+#~| "need."
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "La aplicación Software hace que sea muy sencillo buscar e instalar las "
+#~ "aplicaciones que necesita."
+
+#~ msgid "Learn More"
+#~ msgstr "Aprender más"
+
+#~ msgid "That's it! To learn more, see the Help"
+#~ msgstr "Eso es todo. Para aprender más, consulte la ayuda"
+
+#~ msgid "The help app contains information, tips and tricks."
+#~ msgstr "Esta ayuda contiene información, consejos y trucos."

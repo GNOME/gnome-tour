@@ -1,0 +1,141 @@
+# Friulian translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Fabio Tomat <f.t.public@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-08-26 19:53+0000\n"
+"PO-Revision-Date: 2020-08-28 14:56+0200\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"Language: fur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Zîr"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Benvignût e zîr"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "Zîr di GNOME e benvignût."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Un zîr vuidât e il benvignût su GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Barcon principâl"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:35
+msgid "The GNOME Project"
+msgstr "Il progjet GNOME"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Benvignûts su {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Mandi! Fâs un zîr achì par orientâti e par scuvierzi funzionalitâts "
+"essenziâls."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_No gracie"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Scomence il zîr"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Sucessîf"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "Si_ere"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Precedent"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Vierç lis Ativitâts par inviâ aplicazions"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"La viodude des ativitâts e pues jessi doprade par passâ di un barcon a chel "
+"altri e par cirî."
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Al baste scrivi par cirî"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"Inte viodude des ativitâts, al baste tacâ a scrivi par cirî aplicazions, "
+"impostazions e altri."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Fâs clic su la ore par viodi lis notifichis"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr ""
+"Il ricuadri a comparse des notifichis al inclût ancje i struments pe "
+"planificazion personâl."
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "Viôt lis informazions di sisteme e lis impostazions"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr ""
+"Oten une panoramiche sul stât dal sisteme e cambie in mût svelt lis "
+"impostazions."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Dopre Software par cjatâ e instalâ aplicazions"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr ""
+"Scuvierç grandiosis aplicazions gracie ae ricercje, navigazion e aes nestris "
+"racomandazions."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Dut aculì! O sperin che tu ti gjoldedis {}."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr ""
+"Par otignî plui conseis e sugjeriments, bute un voli ae aplicazion Jutori."

@@ -1,0 +1,137 @@
+# Slovak translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Dušan Kazik <prescott66@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-09-03 08:23+0000\n"
+"PO-Revision-Date: 2020-09-03 11:45+0200\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Prehliadka"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Privítanie a prehliadka"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "Prehliadka a privítanie prostredia GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Ukážková prehliadka a privítanie pre prostredie GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Hlavné okno"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:35
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Vitajte v prostredí {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Zdravím! Prezrite si prehliadku, aby ste si osvojili svoj spôsob a objavili "
+"základné funkcie."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_Nie ďakujem"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Spustiť prehliadku"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "Ď_alšia"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_Zavrieť"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Predchádzajúca"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Otvorením Aktivít spustíte aplikácie"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"Zobrazenie aktivít môže byť tiež použité na prepínanie okien a vyhľadávanie."
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Na vyhľadávanie stačí písať"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"V zobrazení aktivít stačí začať písať a vyhľadáte aplikácie, nastavenia a "
+"iné."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Kliknutím na čas zobrazíte upozornenia"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr ""
+"Vyskakovacie okno s oznámeniami tiež obsahuje nástroje na osobné plánovanie"
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "Zobrazte systémové informácie a nastavenia"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr "Získajte prehľad o stave systému a rýchlo zmeňte nastavenia."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Použite aplikáciu Softvér na nájdenie a inštaláciu aplikácií"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr ""
+"Preskúmajte skvelé aplikácie prostredníctvom vyhľadávania, prehliadania a "
+"našich odporúčaní."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "To je všetko! Dúfame, že si užijete prostredie {}."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Na získanie viacerých rád a tipov si prezrite aplikáciu Pomocník."

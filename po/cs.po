@@ -84,7 +84,7 @@ msgstr "Otevřete Činnosti a můžete spouštět aplikace"
 
 #: src/widgets/window.rs:51
 msgid "The activities view can also be used to switch windows and search."
-msgstr "Zobrazení Činnosti může použít také k přepínání oken a k vyhledávání."
+msgstr "Zobrazení Činností může být použito také k přepínání oken a k vyhledávání."
 
 #: src/widgets/window.rs:60
 msgid "Just type to search"
@@ -116,7 +116,7 @@ msgstr "Získejte přehled o stavu systému a rychle si měňte nastavení."
 
 #: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
-msgstr "Použivejte Software k vyhledání a instalaci aplikací"
+msgstr "Používejte Software k vyhledání a instalaci aplikací"
 
 #: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
@@ -127,7 +127,7 @@ msgstr ""
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
 #: src/widgets/window.rs:101
 msgid "That's it! We hope that you enjoy {}."
-msgstr "A to je vše. Dofáme, že si {} užijete."
+msgstr "A to je vše. Doufáme, že si {} užijete."
 
 #: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."

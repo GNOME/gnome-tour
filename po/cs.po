@@ -127,7 +127,7 @@ msgstr ""
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
 #: src/widgets/window.rs:101
 msgid "That's it! We hope that you enjoy {}."
-msgstr "A to je vše. Doufáme, že si {} užijete."
+msgstr "A to je vše. Doufáme, že vám {} přinese pěkné zážitky."
 
 #: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."

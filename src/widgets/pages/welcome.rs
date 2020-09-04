@@ -140,7 +140,7 @@ impl WelcomePageWidget {
         };
 
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
-        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "3.36".into());
+        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
         // Translators: The following string is formated as "Welcome to GNOME 3.36" for example
         let title = gtk::Label::new(Some(&i18n_f("Welcome to {} {}", &[&name, &version])));
         title.set_margin_top(36);

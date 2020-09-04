@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"POT-Creation-Date: 2020-08-24 10:07+0000\n"
 "PO-Revision-Date: 2020-08-24 11:22+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -42,20 +42,16 @@ msgstr "Un tour guiado y una bienvenida a GNOME."
 msgid "Main Window"
 msgstr "Ventana principal"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
+#: data/org.gnome.Tour.metainfo.xml.in.in:35
 msgid "The GNOME Project"
 msgstr "El Proyecto GNOME"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:145
-#| msgid "Welcome Tour"
 msgid "Welcome to {} {}"
-msgstr "Bienvenido a {} {}"
+msgstr "Bienvenido/a a {} {}"
 
 #: src/widgets/pages/welcome.rs:151
-#| msgid ""
-#| "Hi there! If you are new to GNOME, you can take the tour to learn some "
-#| "essential features."
 msgid ""
 "Hi there! Take the tour to learn your way around and discover essential "
 "features."
@@ -64,7 +60,6 @@ msgstr ""
 "funcionalidades esenciales."
 
 #: src/widgets/pages/welcome.rs:161
-#| msgid "No Thanks"
 msgid "_No Thanks"
 msgstr "_No gracias"
 
@@ -73,12 +68,10 @@ msgid "_Start Tour"
 msgstr "_Iniciar tour"
 
 #: src/widgets/paginator.rs:31
-#| msgid "Next"
 msgid "_Next"
 msgstr "_Siguiente"
 
 #: src/widgets/paginator.rs:32
-#| msgid "Close"
 msgid "_Close"
 msgstr "_Cerrar"
 
@@ -87,7 +80,6 @@ msgid "_Previous"
 msgstr "_Anterior"
 
 #: src/widgets/window.rs:50
-#| msgid "Open Activities to start apps"
 msgid "Open Activities to launch apps"
 msgstr "Abra la vista de Actividades para lanzar aplicaciones"
 
@@ -102,7 +94,6 @@ msgid "Just type to search"
 msgstr "Simplemente escriba para buscar"
 
 #: src/widgets/window.rs:61
-#| msgid "In the Activities Overview, just start typing to search"
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
@@ -111,7 +102,6 @@ msgstr ""
 "aplicaciones, opciones de configuración y más."
 
 #: src/widgets/window.rs:70
-#| msgid "Click the time to see your now and next"
 msgid "Click the time to see notifications"
 msgstr "Pulse en el reloj para ver las notificaciones"
 
@@ -132,7 +122,6 @@ msgstr ""
 "configuración rápidamente."
 
 #: src/widgets/window.rs:90
-#| msgid "Find and install apps"
 msgid "Use Software to find and install apps"
 msgstr "Use Software para buscar e instalar aplicaciones"
 

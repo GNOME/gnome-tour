@@ -8,20 +8,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-02-23 14:23+0000\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
 "PO-Revision-Date: 2020-02-26 07:53+0100\n"
+"Last-Translator: Balázs Meskó <mesko.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list@gnome.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: Balázs Meskó <mesko.balazs at fsf dot hu>\n"
 "X-Generator: Lokalize 19.04.3\n"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "GNOME Bemutató"
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Bemutató"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Köszöntő és bemutató"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "GNOME;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -39,130 +47,161 @@ msgstr "Főablak"
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-msgid "Tour"
-msgstr "Bemutató"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+#| msgid "Welcome Tour"
+msgid "Welcome to {} {}"
+msgstr "Üdvözli a {} {}"
 
-#: data/org.gnome.Tour.desktop.in.in:4
-msgid "Greeter & Tour"
-msgstr "Köszöntő és bemutató"
-
-#: data/org.gnome.Tour.desktop.in.in:9
-msgid "Gnome;GTK;"
-msgstr "GNOME;GTK;"
-
-#: src/widgets/pages/welcome.rs:34
+#: src/widgets/pages/welcome.rs:151
+#| msgid ""
+#| "Hi there! If you are new to GNOME, you can take the tour to learn some "
+#| "essential features."
 msgid ""
-"Hi there! If you are new to GNOME, you can take the tour to learn some "
-"essential features."
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
 msgstr ""
-"Üdvözöljük! Ha még nem ismeri a GNOME-ot, akkor részt vehet a bemutatón, "
-"és megismerhet néhány létfontosságú funkciót."
+"Üdvözöljük! Vegyen részt a bemutatón, és ismerkedjen meg néhány "
+"létfontosságú funkcióval."
 
-#: src/widgets/pages/welcome.rs:44
-msgid "Take the Tour"
-msgstr "Bemutató elindítása"
+#: src/widgets/pages/welcome.rs:161
+#| msgid "No Thanks"
+msgid "_No Thanks"
+msgstr "Köszönöm, _nem"
 
-#: src/widgets/pages/welcome.rs:51
-msgid "No Thanks"
-msgstr "Köszönöm, nem"
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "Bemutató _indítása"
 
-#: src/widgets/headerbar.rs:30
-msgid "Close"
-msgstr "Bezárás"
+#: src/widgets/paginator.rs:31
+#| msgid "Next"
+msgid "_Next"
+msgstr "_Következő"
 
-#: src/widgets/headerbar.rs:32 src/widgets/headerbar.rs:67
-msgid "Next"
-msgstr "Következő"
+#: src/widgets/paginator.rs:32
+#| msgid "Close"
+msgid "_Close"
+msgstr "_Bezárás"
 
-#: src/widgets/headerbar.rs:57
-msgid "Welcome Tour"
-msgstr "Köszöntő bemutató"
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Előző"
 
-#: src/widgets/window.rs:94
-msgid "Activities Overview"
-msgstr "Tevékenységek áttekintése"
-
-#: src/widgets/window.rs:95
-msgid "Open Activities to start apps"
+#: src/widgets/window.rs:50
+#| msgid "Open Activities to start apps"
+msgid "Open Activities to launch apps"
 msgstr "Nyissa meg a Tevékenységeket az alkalmazások indításához"
 
-#: src/widgets/window.rs:96
-msgid "You can also view open windows, search and use workspaces."
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
 msgstr ""
-"Megtekintheti a nyitott ablakokat, kereshet és használhatja a "
-"munkaterületeket."
+"A tevékenységek nézet az ablakok közti váltásra és keresésre is használható."
 
-#: src/widgets/window.rs:101
-msgid "Search"
-msgstr "Keresés"
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Csak gépeljen a kereséshez"
 
-#: src/widgets/window.rs:102
-msgid "In the Activities Overview, just start typing to search"
-msgstr "Csak kezdjen gépelni a kereséshez a Tevékenységek áttekintőben"
-
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:61
+#| msgid "In the Activities Overview, just start typing to search"
 msgid ""
-"Search can be used to launch apps, find settings, do calculations and much "
+"In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"A keresés használható alkalmazások indításához, beállítások "
-"megtalálásához, számoláshoz és még sok mindenhez."
+"Csak kezdjen gépelni az alkalmazások, beállítások és egyebek kereséshez a "
+"Tevékenységek áttekintőben."
 
-#: src/widgets/window.rs:108
-msgid "Date & Time"
-msgstr "Dátum és idő"
+#: src/widgets/window.rs:70
+#| msgid "Click the time to see your now and next"
+msgid "Click the time to see notifications"
+msgstr "Kattintson az időre, hogy lássa az értesítéseket"
 
-#: src/widgets/window.rs:109
-msgid "Click the time to see your now and next"
-msgstr "Kattintson az időre, hogy lássa, mi van most és mi lesz később"
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr "A jegyzetek felugró személyes tervezési eszközöket is tartalmaz."
 
-#: src/widgets/window.rs:110
-msgid ""
-"This includes notifications, media controls, calendar events, the weather "
-"and world clocks."
-msgstr ""
-"Ez tartalmazza az értesítéseket, a médiavezérlőket, a naptáreseményeket, az "
-"időjárást és a világórát."
-
-#: src/widgets/window.rs:115
-msgid "System Menu"
-msgstr "Rendszermenü"
-
-#: src/widgets/window.rs:116
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "A rendszer-információk és beállítások megtekintése"
 
-#: src/widgets/window.rs:117
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr ""
-"Kapjon áttekintést a rendszer állapotáról és módosítsa gyorsan a "
+"Kapjon áttekintést a rendszer állapotáról, és módosítsa gyorsan a "
 "beállításokat."
 
-#: src/widgets/window.rs:121
-msgid "Software"
-msgstr "Szoftverek"
-
-#: src/widgets/window.rs:122
-msgid "Find and install apps"
-msgstr "Alkalmazások keresése és telepítése"
-
-#: src/widgets/window.rs:123
-msgid ""
-"The Software app makes it easy to find and install all the apps you need."
+#: src/widgets/window.rs:90
+#| msgid "Find and install apps"
+msgid "Use Software to find and install apps"
 msgstr ""
-"A Szoftverek alkalmazás egyszerűvé teszi a szükséges alkalmazások "
-"megtalálását és telepítését."
+"Használja a Szoftver programot alkalmazások kereséséhez és telepítéséhez"
 
-#: src/widgets/window.rs:128
-msgid "Learn More"
-msgstr "További információk"
-
-#: src/widgets/window.rs:129
-msgid "That's it! To learn more, see the Help"
-msgstr "Ennyi volt! További információkért nézze meg a súgót."
-
-#: src/widgets/window.rs:130
-msgid "The help app contains information, tips and tricks."
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"A súgó alkalmazás további információkat, tippeket és trükköket tartalmaz."
+"Fedezzen fel nagyszerű alkalmazásokat kereséssel, tallózással és az "
+"ajánlásainkkal."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Ennyi! Reméljük, hogy élvezi a {} használatát."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Hogy több tanácsot és tippet kapjon, nézze meg a Súgó alkalmazást."
+
+#~ msgid "GNOME Tour"
+#~ msgstr "GNOME Bemutató"
+
+#~ msgid "Take the Tour"
+#~ msgstr "Bemutató elindítása"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Tevékenységek áttekintése"
+
+#~ msgid "You can also view open windows, search and use workspaces."
+#~ msgstr ""
+#~ "Megtekintheti a nyitott ablakokat, kereshet és használhatja a "
+#~ "munkaterületeket."
+
+#~ msgid "Search"
+#~ msgstr "Keresés"
+
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "A keresés használható alkalmazások indításához, beállítások "
+#~ "megtalálásához, számoláshoz és még sok mindenhez."
+
+#~ msgid "Date & Time"
+#~ msgstr "Dátum és idő"
+
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Ez tartalmazza az értesítéseket, a médiavezérlőket, a naptáreseményeket, "
+#~ "az időjárást és a világórát."
+
+#~ msgid "System Menu"
+#~ msgstr "Rendszermenü"
+
+#~ msgid "Software"
+#~ msgstr "Szoftverek"
+
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "A Szoftverek alkalmazás egyszerűvé teszi a szükséges alkalmazások "
+#~ "megtalálását és telepítését."
+
+#~ msgid "Learn More"
+#~ msgstr "További információk"
+
+#~ msgid "That's it! To learn more, see the Help"
+#~ msgstr "Ennyi volt! További információkért nézze meg a súgót."
+
+#~ msgid "The help app contains information, tips and tricks."
+#~ msgstr ""
+#~ "A súgó alkalmazás további információkat, tippeket és trükköket tartalmaz."

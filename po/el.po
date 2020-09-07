@@ -1,0 +1,143 @@
+# Greek translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Efstathios Iosifidis <eiosifidis@gnome.org>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-09-07 19:50+0000\n"
+"PO-Revision-Date: 2020-09-08 00:13+0300\n"
+"Language-Team: Greek <gnome-el-list@gnome.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
+"X-Generator: Poedit 2.3\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Ξενάγηση"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Υποδοχή & Ξενάγηση"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "Ξενάγηση και Υποδοχή του GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Ξενάγηση και υποδοχή για το GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Κυρίως παράθυρο"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:36
+msgid "The GNOME Project"
+msgstr "Το έργο GNOME"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Καλώς ήρθατε στο {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Γεια σας! Θα ξεναγηθείτε ώστε να μάθετε πως να μετακινηθείτε στο σύστημα και "
+"να ανακαλύψετε βασικά χαρακτηριστικά."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "Ό_χι ευχαριστώ"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "Έ_ναρξη της ξενάγησης"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Επόμενο"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_Κλείσιμο"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Προηγούμενο"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Ανοίξτε τις Δραστηριότητες για να ξεκινήσετε εφαρμογές"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"Η προβολή δραστηριοτήτων μπορεί επίσης να χρησιμοποιηθεί για εναλλαγή "
+"παραθύρων και αναζήτηση."
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Απλώς πληκτρολογήστε για αναζήτηση"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"Στην προβολή δραστηριοτήτων, απλώς ξεκινήστε να πληκτρολογείτε για αναζήτηση "
+"εφαρμογών, ρυθμίσεων και άλλων."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Κάντε κλικ στην ώρα για να δείτε ειδοποιήσεις"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr ""
+"Το αναδυόμενο παράθυρο ειδοποιήσεων περιλαμβάνει επίσης προσωπικά εργαλεία "
+"σχεδιασμού."
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "Δείτε πληροφορίες και ρυθμίσεις συστήματος"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr ""
+"Δείτε μια επισκόπηση της κατάστασης του συστήματος και αλλάξτε γρήγορα τις "
+"ρυθμίσεις."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr ""
+"Χρησιμοποιήστε την εφαρμογή Λογισμικό για να βρείτε και να εγκαταστήσετε "
+"εφαρμογές"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr ""
+"Ανακαλύψτε εξαιρετικές εφαρμογές μέσω αναζήτησης, περιήγησης και των "
+"προτάσεών μας."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Αυτό είναι! Ελπίζουμε να σας αρέσει {}."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Για περισσότερες συμβουλές, ανατρέξτε στην εφαρμογή Βοήθεια."

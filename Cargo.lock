@@ -380,7 +380,7 @@ dependencies = [
 
 [[package]]
 name = "gnome-tour"
-version = "3.37.91"
+version = "3.37.92"
 dependencies = [
  "anyhow",
  "gdk",

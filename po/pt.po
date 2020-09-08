@@ -1,0 +1,141 @@
+# Portuguese translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Zeh <jvieira33@sapo.pt>, 2020.
+# José Vieira <jvieira33@sapo.pt>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-09-01 18:42+0000\n"
+"PO-Revision-Date: 2020-09-06 21:46+0100\n"
+"Last-Translator: José Vieira <jvieira33@sapo.pt>\n"
+"Language-Team: Portuguese <>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Apresentação"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Saudação e Apresentação"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "Apresentação e saudação do GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Uma apresentação e saudação para o GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Janela principal"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:35
+msgid "The GNOME Project"
+msgstr "Projeto GNOME"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Boas-vindas ao {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Olá! Siga a apresentação para se ambientar e descobrir funcionalidades "
+"essenciais."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_Não, obrigado"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Iniciar a apresentação"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Seguinte"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_Fechar"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Anterior"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Abrir Atividades para iniciar aplicações"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"A vista de atividades também pode ser usada para alternar entre janelas e "
+"pesquisa."
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Basta digitar para pesquisar"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"Na vista de atividades, basta começar a digitar para pesquisar por "
+"aplicações, configurações, etc."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Clicar no relógio para ver notificações"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr ""
+"A janela de notificações também inclui ferramentas para planeamento pessoal."
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "Ver informações e configurações do sistema"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr ""
+"Obter uma visão geral do estado do sistema e alterar configurações "
+"rapidamente."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Usar Aplicações para localizar e instalar aplicações"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr ""
+"Descobrir aplicações fantásticas através de pesquisa, navegação ou "
+"recomendações."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "E é tudo! Esperamos que usufrua do {}."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Para obter informação adicional e dicas, ver a Ajuda."

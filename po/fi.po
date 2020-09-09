@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-08-23 10:01+0300\n"
+"POT-Creation-Date: 2020-08-23 07:01+0000\n"
+"PO-Revision-Date: 2020-09-09 12:05+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -48,7 +48,6 @@ msgstr "Gnome-projekti"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:145
-#| msgid "Welcome Tour"
 msgid "Welcome to {} {}"
 msgstr "Tervetuloa, tämä on {} {}"
 
@@ -124,7 +123,8 @@ msgstr "Etsi ja asenna sovelluksia ohjelmistokeskuksen avulla"
 #: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"Löydä ensiluokkaisia sovelluksia haun, selaamisen ja suosittelujen avulla."
+"Löydä ensiluokkaisia sovelluksia hakutoiminnolla, selaamalla ja "
+"suosittelujen avulla."
 
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
 #: src/widgets/window.rs:101

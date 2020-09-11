@@ -18,7 +18,7 @@ To enable the feature, you need to build the application with
 meson _builddir -Dvideo_path=/absolute/path/to/the/video.mp4
 ```
 
-If you're testing the application using Builder, make sure to change the `config-opts` accordinagly & give the application filesystem access so it can play the video file.
+If you're testing the application using Builder, make sure to change the `config-opts` accordingly & give the application filesystem access so it can play the video file.
 
 Example:
 

@@ -7,19 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-02-16 12:21+0000\n"
-"PO-Revision-Date: 2020-02-20 15:04+0200\n"
-"Last-Translator: scootergrisen\n"
+"POT-Creation-Date: 2020-08-18 16:59+0000\n"
+"PO-Revision-Date: 2020-09-08 19:17+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
-msgid "GNOME Tour"
-msgstr "GNOME Rundvisning"
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Rundvisning"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Velkomst og rundvisning"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter."
@@ -37,125 +46,143 @@ msgstr "Hovedvindue"
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-msgid "Tour"
-msgstr "Rundvisning"
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Velkommen til {} {}"
 
-#: data/org.gnome.Tour.desktop.in.in:4
-msgid "Greeter & Tour"
-msgstr "Velkomst og rundvisning"
-
-#: data/org.gnome.Tour.desktop.in.in:9
-msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;"
-
-#: src/widgets/pages/welcome.rs:34
+#: src/widgets/pages/welcome.rs:151
 msgid ""
-"Hi there! If you are new to GNOME, you can take the tour to learn some "
-"essential features."
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
 msgstr ""
-"Hej med dig! Hvis GNOME er nyt for dig, så kan du tage denne rundvisning for "
-"at lære nogle af de essentielle funktioner at kende."
+"Hej med dig! Tag denne rundvisning for at lære at finde rundt og opdag "
+"essentielle funktioner."
 
-#: src/widgets/pages/welcome.rs:44
-msgid "Take the Tour"
-msgstr "Tag rundvisningen"
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_Nej tak"
 
-#: src/widgets/pages/welcome.rs:51
-msgid "No Thanks"
-msgstr "Nej tak"
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Start rundvisningen"
 
-#: src/widgets/headerbar.rs:30
-msgid "Close"
-msgstr "Luk"
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Næste"
 
-#: src/widgets/headerbar.rs:32 src/widgets/headerbar.rs:67
-msgid "Next"
-msgstr "Næste"
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_Luk"
 
-#: src/widgets/headerbar.rs:57
-msgid "Welcome Tour"
-msgstr "Velkomstrundvisning"
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Forrige"
 
-#: src/widgets/window.rs:94
-msgid "Activities Overview"
-msgstr "Aktivitetsoversigt"
-
-#: src/widgets/window.rs:95
-msgid "Open Activities to start apps"
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
 msgstr "Åbn Aktiviteter for at starte programmer"
 
-#: src/widgets/window.rs:96
-msgid "You can also view open windows, search and use workspaces."
-msgstr "Du kan også vise åbne vinduer, søge og bruge arbejdsområder."
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"Aktivitetsoversigten kan også bruges til at skifte mellem vinduer og søge."
 
-#: src/widgets/window.rs:101
-msgid "Search"
-msgstr "Søg"
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Skriv for at søge"
 
-#: src/widgets/window.rs:102
-msgid "In the Activities Overview, just start typing to search"
-msgstr "I Aktivitetsoversigten kan du blot begynde at skrive for at søge"
-
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:61
 msgid ""
-"Search can be used to launch apps, find settings, do calculations and much "
+"In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"Søgning kan bruges til at starte programmer, finde indstillinger, foretage "
-"udregninger og meget mere."
+"I aktivitetsoversigten kan du blot begynde at skrive for at søge efter "
+"programmer, indstillinger mm."
 
-#: src/widgets/window.rs:108
-msgid "Date & Time"
-msgstr "Dato & klokkeslæt"
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Klik på klokkeslættet for at se påmindelser"
 
-#: src/widgets/window.rs:109
-msgid "Click the time to see your now and next"
-msgstr "Klik på klokkeslættet for at se hvad der sker nu og senere"
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr "Påmindelsespopoveren inkluderer også personlige planlægningsværktøjer."
 
-#: src/widgets/window.rs:110
-msgid ""
-"This includes notifications, media controls, calendar events, the weather "
-"and world clocks."
-msgstr ""
-"Det inkluderer underretninger, mediestyringer, kalenderbegivenheder, vejret "
-"og verdensure."
-
-#: src/widgets/window.rs:115
-msgid "System Menu"
-msgstr "Systemmenu"
-
-#: src/widgets/window.rs:116
+#: src/widgets/window.rs:80
 msgid "View system information and settings"
 msgstr "Vis systeminformation og -indstillinger"
 
-#: src/widgets/window.rs:117
+#: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
 msgstr "Få et overblik over systemets status og ændr indstillingerne hurtigt."
 
-#: src/widgets/window.rs:121
-msgid "Software"
-msgstr "Software"
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Brug Software til at finde og installere programmer"
 
-#: src/widgets/window.rs:122
-msgid "Find and install apps"
-msgstr "Find og installer programmer"
-
-#: src/widgets/window.rs:123
-msgid ""
-"The Software app makes it easy to find and install all the apps you need."
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
 msgstr ""
-"Software-programmet gør det let at finde og installere alle de programmer du "
-"har brug for."
+"Opdag fantastiske programmer ved søgning, gennemgang og vore anbefalinger."
 
-#: src/widgets/window.rs:128
-msgid "Learn More"
-msgstr "Lær mere"
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Det var det! Vi håber, du vil nyde {}."
 
-#: src/widgets/window.rs:129
-msgid "That's it! To learn more, see the Help"
-msgstr "Det var det hele. Hvis du vil lære mere, så se Hjælp"
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Få flere råd og tips i programmet Hjælp."
 
-#: src/widgets/window.rs:130
-msgid "The help app contains information, tips and tricks."
-msgstr "Hjælp-programmet indeholder information, tips og tricks."
+#~ msgid "GNOME Tour"
+#~ msgstr "GNOME Rundvisning"
+
+#~ msgid "Take the Tour"
+#~ msgstr "Tag rundvisningen"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Aktivitetsoversigt"
+
+#~ msgid "You can also view open windows, search and use workspaces."
+#~ msgstr "Du kan også vise åbne vinduer, søge og bruge arbejdsområder."
+
+#~ msgid "Search"
+#~ msgstr "Søg"
+
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "Søgning kan bruges til at starte programmer, finde indstillinger, "
+#~ "foretage udregninger og meget mere."
+
+#~ msgid "Date & Time"
+#~ msgstr "Dato & klokkeslæt"
+
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Det inkluderer underretninger, mediestyringer, kalenderbegivenheder, "
+#~ "vejret og verdensure."
+
+#~ msgid "System Menu"
+#~ msgstr "Systemmenu"
+
+#~ msgid "Software"
+#~ msgstr "Software"
+
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "Software-programmet gør det let at finde og installere alle de programmer "
+#~ "du har brug for."
+
+#~ msgid "Learn More"
+#~ msgstr "Lær mere"
+
+#~ msgid "That's it! To learn more, see the Help"
+#~ msgstr "Det var det hele. Hvis du vil lære mere, så se Hjælp"
+
+#~ msgid "The help app contains information, tips and tricks."
+#~ msgstr "Hjælp-programmet indeholder information, tips og tricks."

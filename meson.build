@@ -1,6 +1,6 @@
 project('gnome-tour',
         'rust',
-        version: '3.37.92',
+        version: '3.38.0',
 	meson_version : '>= 0.50')
 
 i18n = import('i18n')

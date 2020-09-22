@@ -1,0 +1,128 @@
+# Chinese (Taiwan) translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-09-15 22:45+0000\n"
+"PO-Revision-Date: 2020-09-22 23:27+0800\n"
+"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "導覽"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "歡迎與導覽"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "GNOME 導覽與歡迎程式。"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "GNOME 的導覽與歡迎程式。"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "主視窗"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
+msgid "The GNOME Project"
+msgstr "GNOME 專案"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "歡迎來到 {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr "嗨！您好，請隨我四處看看，一起踏上重要功能的探索之旅。"
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "謝了不用(_N)"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "開始導覽(_S)"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "下一步(_N)"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "關閉(_C)"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "上一步(_P)"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "開啟「概覽」可以啟動程式"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr "活動的概覽檢視畫面也可以用來切換視窗或是搜尋。"
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "輸入即可搜尋"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr "在概覽檢視畫面中，只要開始輸入文字就能搜尋程式、設定或其他等等。"
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "點按時間可以查看通知"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr "通知彈出疊框也有包含個人規劃用的工具。"
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "檢視系統資訊與設定"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr "概覽系統狀態並快速變更設定。"
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "使用《軟體》可以尋找與安裝程式"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr "透過搜尋、瀏覽以及我們的推薦名單來探索好用的程式。"
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "就這樣！希望您能好好享受 {}。"
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "如果想要取得更多建議或要訣，請參見《求助》程式。"

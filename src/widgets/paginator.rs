@@ -71,7 +71,11 @@ impl PaginatorWidget {
 
         let opacity_close = (position - n_pages + 2_f64).max(0_f64);
         let opacity_previous = if position <= 1_f64 { position } else { 1_f64 };
-        let opacity_next = if position <= 1_f64 && position <= n_pages { position % n_pages } else { 1_f64 };
+        let opacity_next = if position <= 1_f64 && position <= n_pages {
+            position % n_pages
+        } else {
+            1_f64
+        };
 
         self.close_btn.set_opacity(opacity_close);
         self.close_btn.set_visible(opacity_close > 0_f64);
@@ -93,20 +97,25 @@ impl PaginatorWidget {
         self.carousel.set_animation_duration(300);
         self.carousel.show();
 
-        self.carousel.connect_property_position_notify(clone!(@weak p => move |_| {
-            p.update_position();
-        }));
+        self.carousel
+            .connect_property_position_notify(clone!(@weak p => move |_| {
+                p.update_position();
+            }));
 
         let btn_size_group = gtk::SizeGroup::new(gtk::SizeGroupMode::Horizontal);
         btn_size_group.add_widget(&self.previous_btn);
         btn_size_group.add_widget(&self.next_btn);
         btn_size_group.add_widget(&self.close_btn);
 
-        self.next_btn.get_style_context().add_class("suggested-action");
+        self.next_btn
+            .get_style_context()
+            .add_class("suggested-action");
         self.next_btn.set_use_underline(true);
         self.next_btn.set_action_name(Some("app.next-page"));
 
-        self.close_btn.get_style_context().add_class("suggested-action");
+        self.close_btn
+            .get_style_context()
+            .add_class("suggested-action");
         self.close_btn.set_use_underline(true);
         self.close_btn.set_action_name(Some("app.quit"));
 

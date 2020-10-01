@@ -15,7 +15,8 @@ pub struct Application {
 
 impl Application {
     pub fn new() -> Rc<Self> {
-        let app = gtk::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE).unwrap();
+        let app =
+            gtk::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE).unwrap();
 
         let application = Rc::new(Self {
             app,
@@ -89,13 +90,14 @@ impl Application {
             app.setup_css();
             app.setup_gactions(app.clone());
         }));
-        self.app.connect_activate(clone!(@weak app => move |gtk_app| {
-           let window = Window::new(&gtk_app);
-            gtk_app.add_window(&window.widget);
-            window.widget.present();
-            window.widget.show();
-            app.window.replace(Rc::new(Some(window)));
-        }));
+        self.app
+            .connect_activate(clone!(@weak app => move |gtk_app| {
+               let window = Window::new(&gtk_app);
+                gtk_app.add_window(&window.widget);
+                window.widget.present();
+                window.widget.show();
+                app.window.replace(Rc::new(Some(window)));
+            }));
     }
 
     fn setup_css(&self) {

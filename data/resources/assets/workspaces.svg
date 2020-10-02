@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="300"
+   width="600"
+   version="1.1"
+   id="svg5333"
+   sodipodi:docname="workspaces.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <g
+     id="g6806"
+     transform="translate(-2.840005)">
+    <g
+       id="g5359"
+       style="stroke:#62a0ea;stroke-opacity:1"
+       transform="rotate(90,1014.2546,754.61651)">
+      <path
+         style="fill:none;stroke:#62a0ea;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 485,1434.5198 v -30"
+         id="path5355"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#62a0ea;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 475,1414.5198 10,-10 10,10"
+         id="path5357"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <g
+       id="g5365"
+       style="stroke:#62a0ea;stroke-opacity:1"
+       transform="matrix(0,1,1,0,-1163.1911,-259.63806)">
+      <path
+         style="fill:none;stroke:#62a0ea;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 485,1434.5198 v -30"
+         id="path5361"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#62a0ea;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 475,1414.5198 10,-10 10,10"
+         id="path5363"
+         sodipodi:nodetypes="ccc" />
+    </g>
+  </g>
+  <metadata
+     id="metadata5337">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview5335"
+     showgrid="false"
+     inkscape:current-layer="svg5333" />
+  <defs
+     id="defs5299">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="a">
+      <path
+         fill="#1c71d8"
+         stroke-width="3"
+         stroke-linejoin="round"
+         stroke-miterlimit="10"
+         d="M30 10h540v300H30z"
+         id="path5296" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect5947"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,10,0,1 @ F,0,0,1,0,49.934383,0,1 @ F,0,0,1,0,10.249995,0,1 @ F,0,1,1,0,20.00002,0,1 @ F,0,0,1,0,7,0,1 @ F,0,0,1,0,7,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     clip-path="url(#a)"
+     transform="translate(0,-37.638222)"
+     id="g5329">
+    <rect
+       ry="8"
+       rx="8"
+       y="115"
+       x="245"
+       height="59.291"
+       width="115"
+       style="font-variation-settings:normal"
+       fill="#1c71d8"
+       paint-order="markers fill stroke"
+       id="rect5301" />
+    <rect
+       ry="3"
+       rx="3"
+       width="60"
+       height="40"
+       x="240"
+       y="120"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5303" />
+    <rect
+       y="110"
+       x="302"
+       height="70"
+       width="63"
+       rx="3"
+       ry="3"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5305" />
+    <rect
+       ry="8"
+       rx="8"
+       y="115"
+       x="120"
+       height="59.291"
+       width="115"
+       style="font-variation-settings:normal"
+       fill="#1c71d8"
+       paint-order="markers fill stroke"
+       id="rect5307" />
+    <path
+       id="rect5309"
+       style="font-variation-settings:normal;fill:#1c71d8;paint-order:markers fill stroke"
+       d="M 29.886226,115 102,115 c 4.432,0 8,3.568 8,8 v 43.291 c 0,4.432 -3.568,8 -8,8 l -72.113774,0 z"
+       sodipodi:nodetypes="csssscc" />
+    <rect
+       ry="0"
+       rx="0"
+       y="115"
+       x="370"
+       height="59.291"
+       width="115"
+       style="font-variation-settings:normal"
+       fill="#1c71d8"
+       paint-order="markers fill stroke"
+       id="rect5311" />
+    <path
+       id="rect5313"
+       style="font-variation-settings:normal;fill:#1c71d8;paint-order:markers fill stroke"
+       d="m 503,115 h 67 v 59.291 h -67 c -4.432,0 -8,-3.568 -8,-8 V 123 c 0,-4.432 3.568,-8 8,-8 z"
+       sodipodi:nodetypes="sccssss" />
+    <rect
+       ry="3"
+       rx="3"
+       width="40"
+       height="60"
+       x="135"
+       y="120"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5315" />
+    <rect
+       ry="3"
+       rx="3"
+       width="40"
+       height="25"
+       x="185"
+       y="120"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5317" />
+    <rect
+       y="110"
+       x="370"
+       height="70"
+       width="55"
+       rx="3"
+       ry="3"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5319" />
+    <rect
+       ry="3"
+       rx="3"
+       width="40"
+       height="50"
+       x="505"
+       y="110"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5321" />
+    <path
+       d="m 560,130 c -1.662,0 -3,1.338 -3,3 v 44 c 0,1.662 1.338,3 3,3 h 12 v -50 z m -520,0 c 1.662,0 3,1.338 3,3 v 24 c 0,1.662 -1.341,2.894 -3,3 H 28 v -30 z"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="path5323" />
+    <rect
+       ry="3"
+       rx="3"
+       width="40"
+       height="25"
+       x="60"
+       y="145"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5325" />
+    <rect
+       y="110"
+       x="430"
+       height="70"
+       width="55"
+       rx="3"
+       ry="3"
+       fill="#ffffff"
+       stroke="#62a0ea"
+       stroke-width="3"
+       stroke-linecap="round"
+       id="rect5327" />
+  </g>
+</svg>

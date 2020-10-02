@@ -49,8 +49,28 @@ impl Window {
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/activities.svg",
-                gettext("Open Activities to launch apps"),
-                gettext("The activities view can also be used to switch windows and search."),
+                gettext("Some things have changed since the last version"),
+                gettext("Easier application launching and window switching with the new overview layout. \nSee the new overview in the Activities corner."),
+            )
+            .widget
+            .upcast::<gtk::Widget>(),
+        );
+
+        self.paginator.borrow_mut().add_page(
+            ImagePageWidget::new(
+                "/org/gnome/Tour/favorites.svg",
+                gettext("Favourites are at the bottom"),
+                gettext("To see more apps, swipe up or click the dot grid icon."),
+            )
+            .widget
+            .upcast::<gtk::Widget>(),
+        );
+
+        self.paginator.borrow_mut().add_page(
+            ImagePageWidget::new(
+                "/org/gnome/Tour/workspaces.svg",
+                gettext("Workspaces are easier"),
+                gettext("To move between groups of windows, swipe or scroll or click next workspace."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -59,7 +79,7 @@ impl Window {
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/search.svg",
-                gettext("Just type to search"),
+                gettext("Search is still king"),
                 gettext("In the activities view, just start typing to search for apps, settings and more."),
             )
             .widget
@@ -68,29 +88,9 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/calendar.svg",
-                gettext("Click the time to see notifications"),
-                gettext("The notifications popover also includes personal planning tools."),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
-
-        self.paginator.borrow_mut().add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/status-menu.svg",
-                gettext("View system information and settings"),
-                gettext("Get an overview of the system status and quickly change settings."),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
-
-        self.paginator.borrow_mut().add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/software.svg",
-                gettext("Use Software to find and install apps"),
-                gettext("Discover great apps through search, browsing and our recommendations."),
+                "/org/gnome/Tour/touch.svg",
+                gettext("Touchpad gestures"),
+                gettext("The new arrangement comes with new touchpad gestures. Use four finger drags to move between workspaces, \nopen and close overview and view the app grid."),
             )
             .widget
             .upcast::<gtk::Widget>(),

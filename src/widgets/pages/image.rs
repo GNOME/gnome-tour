@@ -16,6 +16,7 @@ impl ImagePageWidget {
 
     fn init(&self, resource_uri: &str, head: String, body: String) {
         self.widget.set_property_expand(true);
+        self.widget.get_style_context().add_class("page");
         self.widget.set_halign(gtk::Align::Fill);
         self.widget.set_valign(gtk::Align::Fill);
 

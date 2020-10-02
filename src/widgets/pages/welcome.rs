@@ -73,13 +73,14 @@ impl WelcomePageWidget {
             .margin_top(24)
             .margin_bottom(24)
             .build();
+        self.widget.get_style_context().add_class("page");
+        self.widget.get_style_context().add_class("welcome-page");
 
         #[cfg(not(feature = "video"))]
         let header = {
             let icon = glib::get_os_info("LOGO").unwrap_or_else(|| "start-here-symbolic".into());
 
-            let logo = gtk::Image::from_icon_name(Some(&icon), gtk::IconSize::Dialog);
-            logo.set_pixel_size(196);
+            let logo = gtk::Image::from_resource("/org/gnome/Tour/blank.svg");
             logo.show();
 
             logo.upcast::<gtk::Widget>()
@@ -159,7 +160,7 @@ impl WelcomePageWidget {
         container.add(&title);
 
         let text = gtk::Label::new(Some(&gettext(
-            "Hi there! Take the tour to learn your way around and discover essential features.",
+            "Learn about new and essential features in GNOME 40.",
         )));
         text.get_style_context().add_class("body");
         text.set_margin_top(12);

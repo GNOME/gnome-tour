@@ -1,4 +1,3 @@
-use anyhow::Result;
 use gettextrs::gettext;
 use glib::clone;
 use gtk::prelude::*;
@@ -38,22 +37,22 @@ impl PaginatorWidget {
         paginator
     }
 
-    pub fn next(&self) -> Result<()> {
+    pub fn try_next(&self) -> Option<()> {
         let p = *self.current_page.borrow() + 1;
         if p == self.carousel.get_n_pages() {
-            anyhow::bail!("Already at the latest page");
+            return None;
         }
         self.set_page(p);
-        Ok(())
+        Some(())
     }
 
-    pub fn previous(&self) -> Result<()> {
+    pub fn try_previous(&self) -> Option<()> {
         let p = *self.current_page.borrow();
         if p == 0 {
-            anyhow::bail!("Already at the first page");
+            return None;
         }
         self.set_page(p - 1);
-        Ok(())
+        Some(())
     }
 
     pub fn add_page(&self, page: gtk::Widget) {

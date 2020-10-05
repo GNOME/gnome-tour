@@ -64,17 +64,23 @@ impl PaginatorWidget {
     }
 
     fn update_position(&self) {
-        let n_pages = self.carousel.get_n_pages() as f64;
         let position = self.carousel.get_position();
         let page_nr = position.round() as u32;
 
-        let opacity_close = (position - n_pages + 2_f64).max(0_f64);
-        let opacity_previous = if position <= 1_f64 { position } else { 1_f64 };
-        let opacity_next = if position <= 1_f64 && position <= n_pages {
-            position % n_pages
-        } else {
-            1_f64
-        };
+        let n_pages = self.carousel.get_n_pages() as f64;
+        let forelast_page = n_pages - 2.0;
+        let last_page = n_pages - 1.0;
+
+        let (opacity_close, opacity_previous, opacity_next) =
+            if (0.0 <= position) && (position < 1.0) {
+                (0.0, position, position)
+            } else if (1.0 <= position) && (position <= forelast_page) {
+                (0.0, 1.0, 1.0)
+            } else if (forelast_page < position) && (position <= last_page) {
+                (position - forelast_page, 1.0, 1.0)
+            } else {
+                panic!("Position of the carousel is outside the allowed range");
+            };
 
         self.close_btn.set_opacity(opacity_close);
         self.close_btn.set_visible(opacity_close > 0_f64);

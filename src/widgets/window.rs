@@ -42,7 +42,9 @@ impl Window {
         if PROFILE == "Devel" {
             self.widget.get_style_context().add_class("devel");
         }
-        self.paginator.borrow_mut().add_page(WelcomePageWidget::new().widget.upcast::<gtk::Widget>());
+        self.paginator
+            .borrow_mut()
+            .add_page(WelcomePageWidget::new().widget.upcast::<gtk::Widget>());
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
@@ -102,7 +104,9 @@ impl Window {
             gettext("To get more advice and tips, see the Help app."),
         );
         last_page.widget.get_style_context().add_class("last-page");
-        self.paginator.borrow_mut().add_page(last_page.widget.upcast::<gtk::Widget>());
+        self.paginator
+            .borrow_mut()
+            .add_page(last_page.widget.upcast::<gtk::Widget>());
 
         self.widget.add(&self.paginator.borrow().widget);
     }

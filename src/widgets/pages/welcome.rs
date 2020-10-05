@@ -36,9 +36,13 @@ impl WelcomePageWidget {
         #[cfg(feature = "video")]
         let player = {
             let dispatcher = gst_player::PlayerGMainContextSignalDispatcher::new(None);
-            let sink = gst::ElementFactory::make("gtksink", None).expect("Missing dependency: element gtksink is needed (usually, in gstreamer-plugins-good or in gst-plugin-gtk).");
+            let sink = gst::ElementFactory::make("gtksink", None)
+                .expect("Missing dependency: element gtksink is needed (usually, in gstreamer-plugins-good or in gst-plugin-gtk).");
             let renderer = gst_player::PlayerVideoOverlayVideoRenderer::with_sink(&sink).upcast();
-            gst_player::Player::new(Some(&renderer), Some(&dispatcher.upcast::<gst_player::PlayerSignalDispatcher>()))
+            gst_player::Player::new(
+                Some(&renderer),
+                Some(&dispatcher.upcast::<gst_player::PlayerSignalDispatcher>()),
+            )
         };
         #[cfg(feature = "video")]
         let (sender, r) = glib::MainContext::channel(glib::PRIORITY_DEFAULT);
@@ -120,15 +124,19 @@ impl WelcomePageWidget {
                 }),
             );
 
-            self.player.connect_state_changed(clone!(@strong self.sender as sender => move |_p,state| {
-                if state == gst_player::PlayerState::Playing {
-                    sender.send(Action::VideoUp).unwrap();
-                }
-            }));
+            self.player.connect_state_changed(
+                clone!(@strong self.sender as sender => move |_p,state| {
+                    if state == gst_player::PlayerState::Playing {
+                        sender.send(Action::VideoUp).unwrap();
+                    }
+                }),
+            );
 
-            self.player.connect_uri_loaded(clone!(@strong self.sender as sender => move |_p, _uri| {
-                sender.send(Action::VideoReady).unwrap();
-            }));
+            self.player.connect_uri_loaded(
+                clone!(@strong self.sender as sender => move |_p, _uri| {
+                    sender.send(Action::VideoReady).unwrap();
+                }),
+            );
             self.player.connect_end_of_stream(move |p| p.stop());
 
             let video_file = gio::File::new_for_path(config::VIDEO_PATH);
@@ -150,7 +158,9 @@ impl WelcomePageWidget {
         title.show();
         container.add(&title);
 
-        let text = gtk::Label::new(Some(&gettext("Hi there! Take the tour to learn your way around and discover essential features.")));
+        let text = gtk::Label::new(Some(&gettext(
+            "Hi there! Take the tour to learn your way around and discover essential features.",
+        )));
         text.get_style_context().add_class("body");
         text.set_margin_top(12);
         text.show();
@@ -180,7 +190,9 @@ impl WelcomePageWidget {
             .use_underline(true)
             .action_name("app.start-tour")
             .build();
-        start_tour_btn.get_style_context().add_class("suggested-action");
+        start_tour_btn
+            .get_style_context()
+            .add_class("suggested-action");
         start_tour_btn.show();
         actions_container.add(&start_tour_btn);
         actions_container.set_focus_child(Some(&start_tour_btn));

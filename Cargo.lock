@@ -382,7 +382,6 @@ dependencies = [
 name = "gnome-tour"
 version = "3.38.0"
 dependencies = [
- "anyhow",
  "gdk",
  "gettext-rs",
  "gio",

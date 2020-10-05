@@ -6,7 +6,7 @@ export CARGO_TARGET_DIR="$MESON_BUILD_ROOT"/target
 export CARGO_HOME="$CARGO_TARGET_DIR"/cargo-home
 FEATURES="$6"
 
-if [[ $4 = "Devel" ]]
+if [ $4 = "Devel" ]
 then
     echo "DEBUG MODE"
     cargo build --manifest-path \

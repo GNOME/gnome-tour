@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2020-09-15 22:45+0000\n"
+"PO-Revision-Date: 2020-09-17 22:37+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: Carmen Bianca BAKKER <carmen@carmenbianca.eu>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: eo\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "Rondvojaĝo"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Enkonduko & Rondvojaĝo"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter."
+msgstr "GNOME Rondvojaĝo kaj Enkonduko."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Gvida rondvojaĝo kaj enkonduko por GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Ĉefa fenestro"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
+msgid "The GNOME Project"
+msgstr "La projekto GNOME"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:145
+msgid "Welcome to {} {}"
+msgstr "Bonvenon al {} {}"
+
+#: src/widgets/pages/welcome.rs:151
+msgid ""
+"Hi there! Take the tour to learn your way around and discover essential "
+"features."
+msgstr ""
+"Saluton! Aliĝu al la rondvojaĝo por ekscii bazan uzadon kaj malkovri "
+"havendajn funkciojn."
+
+#: src/widgets/pages/welcome.rs:161
+msgid "_No Thanks"
+msgstr "_Ne, dankon"
+
+#: src/widgets/pages/welcome.rs:169
+msgid "_Start Tour"
+msgstr "_Komenci rondvojaĝon"
+
+#: src/widgets/paginator.rs:31
+msgid "_Next"
+msgstr "_Sekva"
+
+#: src/widgets/paginator.rs:32
+msgid "_Close"
+msgstr "_Fermi"
+
+#: src/widgets/paginator.rs:33
+msgid "_Previous"
+msgstr "_Antaŭa"
+
+#: src/widgets/window.rs:50
+msgid "Open Activities to launch apps"
+msgstr "Malfermi Agojn por lanĉi aplikaĵojn"
+
+#: src/widgets/window.rs:51
+msgid "The activities view can also be used to switch windows and search."
+msgstr ""
+"La Agoj-superrigardon oni povas ankaŭ uzi por ŝanĝi fenestrojn kaj serĉi."
+
+#: src/widgets/window.rs:60
+msgid "Just type to search"
+msgstr "Simple tajpu por serĉi"
+
+#: src/widgets/window.rs:61
+msgid ""
+"In the activities view, just start typing to search for apps, settings and "
+"more."
+msgstr ""
+"En la Agoj-superrigardo, simple komencu tajpadon por serĉi aplikaĵojn, "
+"agordojn, kaj pli."
+
+#: src/widgets/window.rs:70
+msgid "Click the time to see notifications"
+msgstr "Alklaku la tempon por vidi sciigojn"
+
+#: src/widgets/window.rs:71
+msgid "The notifications popover also includes personal planning tools."
+msgstr "La sciiga menuo ankaŭ inkluzivas ilojn por planado."
+
+#: src/widgets/window.rs:80
+msgid "View system information and settings"
+msgstr "Montri sistemajn informojn kaj agordojn"
+
+#: src/widgets/window.rs:81
+msgid "Get an overview of the system status and quickly change settings."
+msgstr "Akiru superrigardon de la sistema stato kaj rapide ŝanĝu agordojn."
+
+#: src/widgets/window.rs:90
+msgid "Use Software to find and install apps"
+msgstr "Uzu Programaron por trovi kaj instali aplikaĵojn"
+
+#: src/widgets/window.rs:91
+msgid "Discover great apps through search, browsing and our recommendations."
+msgstr "Trovu bonegajn aplikaĵojn tra serĉo, foliumado, kaj niaj rekomendoj."
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:101
+msgid "That's it! We hope that you enjoy {}."
+msgstr "Jen la fino de la rondvojaĝo! Ni esperas, ke vi ŝatos {}."
+
+#: src/widgets/window.rs:102
+msgid "To get more advice and tips, see the Help app."
+msgstr "Por pli da konsiloj, vidu la programon Helpo."

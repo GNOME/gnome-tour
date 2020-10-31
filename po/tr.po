@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-08-19 10:46+0300\n"
+"POT-Creation-Date: 2020-08-19 07:49+0000\n"
+"PO-Revision-Date: 2020-10-31 18:55+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4\n"
 "X-POOTLE-MTIME: 1429307949.000000\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
@@ -97,8 +97,7 @@ msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"Etkinlikler görünümünde uygulamaları, ayarları ve diğerlerini aramak "
-"içinyalnızca yazın."
+"Etkinlikler görünümünde yazarak uygulamaları, ayarları ve diğerlerini arayın."
 
 #: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
@@ -119,7 +118,7 @@ msgstr ""
 
 #: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
-msgstr "Uygulama bulmak ve kurmak içinn Yazılımlar’ı kullanın"
+msgstr "Uygulama bulmak ve kurmak için Yazılımlar’ı kullanın"
 
 #: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."

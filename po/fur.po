@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-26 19:53+0000\n"
-"PO-Revision-Date: 2020-08-28 14:56+0200\n"
-"Language-Team: Friulian <fur@li.org>\n"
+"POT-Creation-Date: 2020-08-28 12:57+0000\n"
+"PO-Revision-Date: 2020-11-21 06:55+0100\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
+"Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
@@ -51,12 +51,8 @@ msgid "Welcome to {} {}"
 msgstr "Benvignûts su {} {}"
 
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Mandi! Fâs un zîr achì par orientâti e par scuvierzi funzionalitâts "
-"essenziâls."
+msgid "Hi there! Take the tour to learn your way around and discover essential features."
+msgstr "Mandi! Fâs un zîr achì par orientâti e par scuvierzi funzionalitâts essenziâls."
 
 #: src/widgets/pages/welcome.rs:161
 msgid "_No Thanks"
@@ -84,21 +80,15 @@ msgstr "Vierç lis Ativitâts par inviâ aplicazions"
 
 #: src/widgets/window.rs:51
 msgid "The activities view can also be used to switch windows and search."
-msgstr ""
-"La viodude des ativitâts e pues jessi doprade par passâ di un barcon a chel "
-"altri e par cirî."
+msgstr "Si pues doprâ la viodude des ativitâts par passâ di un barcon a chel altri e par cirî."
 
 #: src/widgets/window.rs:60
 msgid "Just type to search"
 msgstr "Al baste scrivi par cirî"
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"Inte viodude des ativitâts, al baste tacâ a scrivi par cirî aplicazions, "
-"impostazions e altri."
+msgid "In the activities view, just start typing to search for apps, settings and more."
+msgstr "Inte viodude des ativitâts, al baste tacâ a scrivi par cirî aplicazions, impostazions e altri."
 
 #: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
@@ -106,9 +96,7 @@ msgstr "Fâs clic su la ore par viodi lis notifichis"
 
 #: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
-msgstr ""
-"Il ricuadri a comparse des notifichis al inclût ancje i struments pe "
-"planificazion personâl."
+msgstr "Il ricuadri a comparse pes notifichis al inclût ancje i struments pe planificazion personâl."
 
 #: src/widgets/window.rs:80
 msgid "View system information and settings"
@@ -116,9 +104,7 @@ msgstr "Viôt lis informazions di sisteme e lis impostazions"
 
 #: src/widgets/window.rs:81
 msgid "Get an overview of the system status and quickly change settings."
-msgstr ""
-"Oten une panoramiche sul stât dal sisteme e cambie in mût svelt lis "
-"impostazions."
+msgstr "Oten une panoramiche sul stât dal sisteme e cambie in mût svelt lis impostazions."
 
 #: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
@@ -126,16 +112,14 @@ msgstr "Dopre Software par cjatâ e instalâ aplicazions"
 
 #: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
-msgstr ""
-"Scuvierç grandiosis aplicazions gracie ae ricercje, navigazion e aes nestris "
-"racomandazions."
+msgstr "Scuvierç grandiosis aplicazions gracie ae ricercje, navigazion e aes nestris racomandazions."
 
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
 #: src/widgets/window.rs:101
 msgid "That's it! We hope that you enjoy {}."
-msgstr "Dut aculì! O sperin che tu ti gjoldedis {}."
+msgstr "Dut aculì! O sperin che tu ti gjoldis {}."
 
 #: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."
-msgstr ""
-"Par otignî plui conseis e sugjeriments, bute un voli ae aplicazion Jutori."
+msgstr "Par otignî plui conseis e sugjeriments, bute un voli ae aplicazion Jutori."
+

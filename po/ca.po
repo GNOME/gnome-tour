@@ -16,8 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-#: data/org.gnome.Tour.metainfo.xml.in.in:7
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Visita guiada"
 
@@ -81,29 +80,29 @@ msgstr "_Anterior"
 
 #: src/widgets/window.rs:50
 msgid "Open Activities to launch apps"
-msgstr "Obre Activitats per iniciar les aplicacions"
+msgstr "Obre Activitats per a iniciar les aplicacions"
 
 #: src/widgets/window.rs:51
 msgid "The activities view can also be used to switch windows and search."
 msgstr ""
-"La vista d'activitats també es pot utilitzar per canviar de finestra i de "
+"La vista d'activitats també es pot utilitzar per a canviar de finestra i de "
 "cerca."
 
 #: src/widgets/window.rs:60
 msgid "Just type to search"
-msgstr "Simplement escriviu per cercar"
+msgstr "Simplement escriviu per a cercar"
 
 #: src/widgets/window.rs:61
 msgid ""
 "In the activities view, just start typing to search for apps, settings and "
 "more."
 msgstr ""
-"A la vista d'activitats, simplement comenceu a escriure per cercar "
+"A la vista d'activitats, simplement comenceu a escriure per a cercar "
 "aplicacions, paràmetres i més."
 
 #: src/widgets/window.rs:70
 msgid "Click the time to see notifications"
-msgstr "Feu clic a l'hora per veure les notificacions"
+msgstr "Feu clic a l'hora per a veure les notificacions"
 
 #: src/widgets/window.rs:71
 msgid "The notifications popover also includes personal planning tools."
@@ -122,7 +121,7 @@ msgstr ""
 
 #: src/widgets/window.rs:90
 msgid "Use Software to find and install apps"
-msgstr "Utilitza el Programari per trobar i instal·lar aplicacions"
+msgstr "Utilitza el Programari per a trobar i instal·lar aplicacions"
 
 #: src/widgets/window.rs:91
 msgid "Discover great apps through search, browsing and our recommendations."
@@ -138,5 +137,4 @@ msgstr "Això és tot! Esperem que gaudiu de {}."
 
 #: src/widgets/window.rs:102
 msgid "To get more advice and tips, see the Help app."
-msgstr "Per obtenir més consells i consells vegeu l'aplicació Ajuda."
-
+msgstr "Per a obtenir més consells i consells vegeu l'aplicació Ajuda."

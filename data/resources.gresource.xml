@@ -2,11 +2,12 @@
 <gresources>
   <gresource prefix="/org/gnome/Tour/">
       <file compressed="true" alias="style.css">resources/style.css</file>
-      <file compressed="true" alias="activities.svg">resources/assets/activities.svg</file>
-      <file compressed="true" alias="favorites.svg">resources/assets/favorites.svg</file>
-      <file compressed="true" alias="search.svg">resources/assets/search.svg</file>
-      <file compressed="true" alias="touch.svg">resources/assets/touch.svg</file>
+      <file compressed="true" alias="start.svg">resources/assets/start.svg</file>
+      <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
       <file compressed="true" alias="workspaces.svg">resources/assets/workspaces.svg</file>
+      <file compressed="true" alias="makeyourown.svg">resources/assets/makeyourown.svg</file>
+      <file compressed="true" alias="updown.svg">resources/assets/updown.svg</file>
+      <file compressed="true" alias="leftright.svg">resources/assets/leftright.svg</file>
       <file compressed="true" alias="ready-to-go.svg">resources/assets/ready-to-go.svg</file>
   </gresource>
 </gresources>

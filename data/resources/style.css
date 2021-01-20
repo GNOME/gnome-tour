@@ -20,11 +20,20 @@
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
+/* pages */
+.page { color: #fff }
+  .welcome-page { color: #000; }
+  .page:nth-child(2) { background: linear-gradient(to right, #3584e4, #1a5fb4); } /* overview */
+  .page:nth-child(3) { background: linear-gradient(to right, #613583, #813d9c); } /* customize */
+  .page:nth-child(4) { background: linear-gradient(to right, #e66100, #c64600); } /* workspaces */
+  .page:nth-child(5) { background: linear-gradient(to right, #2ec27e, #26a269); } /* left right */
+  .page:nth-child(6) { background: linear-gradient(to right, #e66100, #c64600); } /* up down */
+  .last-page {
+    background-color: #4a86cf; /*GNOME blue*/
+  }
 
-.last-page {
-  background-color: #4a86cf; /*GNOME blue*/
-}
+  .last-page .page-title, .last-page .page-body {
+    color: white;
+  }
 
-.last-page .page-title, .last-page .page-body {
-  color: white;
-}
+

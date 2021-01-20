@@ -77,7 +77,7 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/updown.svg",
+                "/org/gnome/Tour/blank.svg",
                 gettext("Up/Down for the Overview"),
                 gettext("on a touchpad, use three-finger vertical swipes. Try it!"),
             )
@@ -87,7 +87,7 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/leftright.svg",
+                "/org/gnome/Tour/blank.svg",
                 gettext("Left/Right for Workspaces"),
                 gettext("On a touchpad, use three-finger horizontal swipes. Try it!"),
             )

@@ -1,5 +1,5 @@
 {
-    "app-id": "org.gnome.TourDevel",
+    "app-id" : "org.gnome.TourDevel",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "3.36",
     "sdk" : "org.gnome.Sdk",
@@ -23,13 +23,15 @@
         ],
         "env" : {
             "CARGO_HOME" : "/run/build/gnome-tour/cargo",
-            "RUST_BACKTRACE" : "1"
+            "RUST_BACKTRACE" : "1",
+            "GTK_DEBUG" : "interactive"
         }
     },
-    "modules" : [{
-            "name": "libhandy",
-            "buildsystem": "meson",
-            "config-opts": [
+    "modules" : [
+        {
+            "name" : "libhandy",
+            "buildsystem" : "meson",
+            "config-opts" : [
                 "-Dintrospection=disabled",
                 "-Dgtk_doc=false",
                 "-Dtests=false",
@@ -37,15 +39,17 @@
                 "-Dvapi=false",
                 "-Dglade_catalog=disabled"
             ],
-            "cleanup": [
+            "cleanup" : [
                 "/include",
                 "/lib/pkgconfig"
             ],
-            "sources": [{
-                "type": "git",
-                "url": "https://gitlab.gnome.org/GNOME/libhandy.git",
-                "commit": "94313c206258860b2428712e7ece1d02c5177857"
-            }]
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libhandy.git",
+                    "commit" : "94313c206258860b2428712e7ece1d02c5177857"
+                }
+            ]
         },
         {
             "name" : "gnome-tour",
@@ -62,4 +66,3 @@
         }
     ]
 }
-

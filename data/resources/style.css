@@ -43,7 +43,7 @@
     background-repeat: repeat-x;
     background-image: url('/org/gnome/Tour/start-bg.svg'), url('/org/gnome/Tour/start-bg-bg.svg');
     background-position: -1400px 0, -600px 0; /* wasn't able to properly loop with relative offsets */
-    animation: welcome-bg-move 30s linear infinite;
+    animation: welcome-bg-move 60s linear infinite;
   }
 
   /* .page:nth-child(2) { background: linear-gradient(to right, #3584e4, #1a5fb4); }  overview */

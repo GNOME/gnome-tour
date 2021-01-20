@@ -21,13 +21,23 @@
   transition-timing-function: ease-in-out;
 }
 /* pages */
-.page { color: #fff }
-  .welcome-page { color: #000; }
-  .page:nth-child(2) { background: linear-gradient(to right, #3584e4, #1a5fb4); } /* overview */
-  .page:nth-child(3) { background: linear-gradient(to right, #613583, #813d9c); } /* customize */
-  .page:nth-child(4) { background: linear-gradient(to right, #e66100, #c64600); } /* workspaces */
-  .page:nth-child(5) { background: linear-gradient(to right, #2ec27e, #26a269); } /* left right */
-  .page:nth-child(6) { background: linear-gradient(to right, #e66100, #c64600); } /* up down */
+.page { color: #000; }
+  .welcome-page {
+    color: #000;
+    background-repeat: repeat-x;
+    background-image: url('/org/gnome/Tour/start-bg.svg'), url('/org/gnome/Tour/start-bg-bg.svg');
+    background-position: -1400px 0, -1000px 0; /* relative units not supported */
+    animation: welcome-bg-move 30s linear infinite;
+  }
+  @keyframes welcome-bg-move {
+    from { background-position: -1400px 0, -1000px 0; }
+    to { background-position: 0 0; }
+  }
+  /* .page:nth-child(2) { background: linear-gradient(to right, #3584e4, #1a5fb4); }  overview */
+  .page:nth-child(3) { color: #fff; background: linear-gradient(to right, #613583, #813d9c); }  /* customize */
+  /* .page:nth-child(4) { background: linear-gradient(to right, #e66100, #c64600); }  workspaces */
+  .page:nth-child(5) { color: #fff; background: linear-gradient(to right, #2ec27e, #26a269); } /* left right */
+  .page:nth-child(6) { color: #fff; background: linear-gradient(to right, #e66100, #c64600); } /* up down */
   .last-page {
     background-color: #4a86cf; /*GNOME blue*/
   }

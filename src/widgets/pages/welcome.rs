@@ -73,6 +73,8 @@ impl WelcomePageWidget {
             .margin_top(24)
             .margin_bottom(24)
             .build();
+        self.widget.get_style_context().add_class("page");
+        self.widget.get_style_context().add_class("welcome-page");
 
         #[cfg(not(feature = "video"))]
         let header = {

@@ -19,29 +19,25 @@
      id="defs2">
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient944"
-       id="linearGradient946"
-       x1="1220"
-       y1="370.56281"
-       x2="1220"
-       y2="-9.4371881"
+       xlink:href="#linearGradient10562"
+       id="linearGradient10564"
+       x1="-1179.9999"
+       y1="1314.5198"
+       x2="-940.00006"
+       y2="1314.5198"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.45200731,0,0,0.668569,970.98197,20.70928)" />
+       gradientTransform="matrix(1.1441504,0,0,1.1441504,1059.5347,-574.0084)" />
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient944">
+       id="linearGradient10562">
       <stop
-         style="stop-color:#3584e4;stop-opacity:1;"
+         style="stop-color:#3580e4;stop-opacity:1"
          offset="0"
-         id="stop940" />
+         id="stop10558" />
       <stop
-         style="stop-color:#1b61b7;stop-opacity:1;"
-         offset="0.92955256"
-         id="stop4204" />
-      <stop
-         style="stop-color:#1a5fb4;stop-opacity:1"
+         style="stop-color:#8abfdd;stop-opacity:1"
          offset="1"
-         id="stop942" />
+         id="stop10560" />
     </linearGradient>
   </defs>
   <sodipodi:namedview
@@ -52,9 +48,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="560"
-     inkscape:cx="400"
-     inkscape:zoom="0.35"
+     inkscape:cy="290.78483"
+     inkscape:cx="365.09196"
+     inkscape:zoom="1.4"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      borderopacity="1"
@@ -64,7 +60,16 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid900" />
@@ -104,10 +109,11 @@
      inkscape:label="Layer 1"
      transform="translate(-620,9.4371882)">
     <circle
-       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:url(#linearGradient946);fill-opacity:1;stroke-width:0.72166;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
-       id="path16"
-       cx="930"
-       cy="171.09573"
-       r="155.12891" />
+       style="fill:url(#linearGradient10564);fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round"
+       id="path10517"
+       cx="-153.26483"
+       cy="930.00012"
+       r="137.298"
+       transform="rotate(-90)" />
   </g>
 </svg>

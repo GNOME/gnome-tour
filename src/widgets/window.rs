@@ -79,7 +79,7 @@ impl Window {
             ImagePageWidget::new(
                 "/org/gnome/Tour/blank.svg",
                 gettext("Up/Down for the Overview"),
-                gettext("on a touchpad, use three-finger vertical swipes. Try it!"),
+                gettext("On a touchpad, use three-finger vertical swipes. Try it!"),
             )
             .widget
             .upcast::<gtk::Widget>(),

@@ -3,9 +3,10 @@
   <gresource prefix="/org/gnome/Tour/">
       <file compressed="true" alias="style.css">resources/style.css</file>
       <file compressed="true" alias="blank.svg">resources/assets/blank.svg</file>
-      <file compressed="true" alias="start.svg">resources/assets/start.svg</file>
+      <file compressed="true" alias="start-fg.svg">resources/assets/start-fg.svg</file>
       <file compressed="true" alias="start-bg.svg">resources/assets/start-bg.svg</file>
       <file compressed="true" alias="start-bg-bg.svg">resources/assets/start-bg-bg.svg</file>
+    <file compressed="true" alias="start-bg-bg-bg.svg">resources/assets/start-bg-bg-bg.svg</file>
       <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
       <file compressed="true" alias="workspaces.svg">resources/assets/workspaces.svg</file>
       <file compressed="true" alias="makeyourown.svg">resources/assets/makeyourown.svg</file>

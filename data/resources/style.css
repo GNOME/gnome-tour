@@ -23,8 +23,8 @@
 /* pages */
 
 @keyframes welcome-bg-move {
-    from { background-position: center 30%, -1400px 0, -600px 0, center 30%; }
-    to { background-position: center 30%, 0 0, 0 0, center 30%; }
+    from { background-position: center 30%, -1400px 30%, -600px 20%, center 30%; }
+    to { background-position: center 30%, 0 30%, 0 20%, center 30%; }
   }
 
 @keyframes up-and-down {
@@ -44,7 +44,7 @@
                       url('/org/gnome/Tour/start-bg.svg'),
                       url('/org/gnome/Tour/start-bg-bg.svg'),
                       url('/org/gnome/Tour/start-bg-bg-bg.svg');
-    background-position: center 30%, -1400px 0, -600px 0, center 30%; /* wasn't able to properly loop with relative offsets */
+    background-position: center 30%, -1400px 30%, -600px 20%, center 30%; /* wasn't able to properly loop with relative offsets */
     animation: welcome-bg-move 60s linear infinite;
   }
 

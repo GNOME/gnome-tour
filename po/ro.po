@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-11-20 10:55+0100\n"
+"POT-Creation-Date: 2021-01-30 13:40+0000\n"
+"PO-Revision-Date: 2021-01-30 18:53+0100\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -17,9 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: data/org.gnome.Tour.desktop.in.in:3
 msgid "Tour"
 msgstr "Tur"
 
@@ -31,115 +31,145 @@ msgstr "Persoană care salută și tur"
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "Tur și persoană care salută GNOME."
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:10
-msgid "A guided tour and greeter for GNOME."
-msgstr "Un tur ghidat și o persoană care salută pentru GNOME."
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Fereastra principală"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
-msgid "The GNOME Project"
-msgstr "Proiectul GNOME"
-
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
+#: src/widgets/pages/welcome.rs:156
 msgid "Welcome to {} {}"
 msgstr "Bine ați venit {} {}"
 
-#: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Bună! Luați turul pentru a vă învăța drumul și pentru a descoperi "
-"funcționalități esențiale."
+#: src/widgets/pages/welcome.rs:163
+msgid "Learn about new and essential features in GNOME 40."
+msgstr "Aflați despre funcționalitățile noi și esențiale din GNOME 40."
 
-#: src/widgets/pages/welcome.rs:161
+#: src/widgets/pages/welcome.rs:178
 msgid "_No Thanks"
 msgstr "_Nu mulțumesc"
 
-#: src/widgets/pages/welcome.rs:169
+#: src/widgets/pages/welcome.rs:188
 msgid "_Start Tour"
 msgstr "Î_ncepe turul"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:30
 msgid "_Next"
 msgstr "_Următor"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:31
 msgid "_Close"
 msgstr "În_chide"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:32
 msgid "_Previous"
 msgstr "_Anterior"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Deschide Activități pentru a lansa aplicații"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr ""
-"Vizualizarea activități poate fi, de asemenea, utilizată pentru a comuta "
-"ferestre și pentru a căuta."
+msgid "Get an Overview"
+msgstr "Obțineți o vedere de ansamblu"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Tastați pentru a căuta"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Apăsați Activități pentru a vedea ferestrele deschise și aplicațiile."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"În vizualizarea activități, doar începeți să tastați pentru a căuta pentru "
-"aplicații, configurări și mai multe."
+msgid "Make Apps Your Own"
+msgstr "Însușiți-vă aplicațiile"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Apăsați clic pe oră pentru a vedea înștiințări"
+#: src/widgets/window.rs:62
+msgid "Arrange your apps so they make sense for you."
+msgstr "Aranjați aplicațiile în felul în care vă este de folos."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr ""
-"Popover-ul înștiințărilor include, de asemenea, unelte de planificare "
-"personale."
+msgid "Keep on Top with Workspaces"
+msgstr "Fiți la curent cu spațiile de lucru"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Vizualizează informațiile de sistem și configurările"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Organizați ușor ferestrele cu noua vizualizare de spații de lucru."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr ""
-"Obține o prezentare generală a stării sistemului și schimbă configurările "
-"rapid."
+msgid "Up/Down for the Overview"
+msgstr "Sus/jos pentru vederea de ansmablu"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Utilizează Software pentru a găsi și a instala aplicații"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr ""
+"Cu un touchpad, folosiți tragerile verticale cu trei degete. Încercați-le!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
+msgid "Left/Right for Workspaces"
+msgstr "Stânga/dreapta pentru spații de lucru"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
-"Descoperă aplicații grozave prin căutare, navigare și recomandările noastre."
+"Cu un touchpad, folosiți tragerile orizontale cu trei degete. Încercați-le!"
 
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
+#: src/widgets/window.rs:102
 msgid "That's it! We hope that you enjoy {}."
 msgstr "Atât! Sperăm să vă placă {}."
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
+
+#~ msgid "GNOME Tour and Greeter."
+#~ msgstr "Tur și persoană care salută GNOME."
+
+#~ msgid "A guided tour and greeter for GNOME."
+#~ msgstr "Un tur ghidat și o persoană care salută pentru GNOME."
+
+#~ msgid "Main Window"
+#~ msgstr "Fereastra principală"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "Proiectul GNOME"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Bună! Luați turul pentru a vă învăța drumul și pentru a descoperi "
+#~ "funcționalități esențiale."
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr ""
+#~ "Vizualizarea activități poate fi, de asemenea, utilizată pentru a comuta "
+#~ "ferestre și pentru a căuta."
+
+#~ msgid "Just type to search"
+#~ msgstr "Tastați pentru a căuta"
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "În vizualizarea activități, doar începeți să tastați pentru a căuta "
+#~ "pentru aplicații, configurări și mai multe."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Apăsați clic pe oră pentru a vedea înștiințări"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr ""
+#~ "Popover-ul înștiințărilor include, de asemenea, unelte de planificare "
+#~ "personale."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Vizualizează informațiile de sistem și configurările"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr ""
+#~ "Obține o prezentare generală a stării sistemului și schimbă configurările "
+#~ "rapid."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "Utilizează Software pentru a găsi și a instala aplicații"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Descoperă aplicații grozave prin căutare, navigare și recomandările "
+#~ "noastre."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "Tur GNOME"

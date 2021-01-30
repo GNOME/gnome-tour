@@ -45,12 +45,11 @@ impl Window {
         self.paginator
             .borrow_mut()
             .add_page(WelcomePageWidget::new().widget.upcast::<gtk::Widget>());
-
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/activities.svg",
-                gettext("Open Activities to launch apps"),
-                gettext("The activities view can also be used to switch windows and search."),
+                "/org/gnome/Tour/overview.svg",
+                gettext("Get an Overview"),
+                gettext("Press Activities to see open windows and apps."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -58,9 +57,9 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/search.svg",
-                gettext("Just type to search"),
-                gettext("In the activities view, just start typing to search for apps, settings and more."),
+                "/org/gnome/Tour/makeyourown.svg",
+                gettext("Make Apps Your Own"),
+                gettext("Arrange your apps so they make sense for you."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -68,9 +67,9 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/calendar.svg",
-                gettext("Click the time to see notifications"),
-                gettext("The notifications popover also includes personal planning tools."),
+                "/org/gnome/Tour/workspaces.svg",
+                gettext("Keep on Top with Workspaces"),
+                gettext("Easily organise windows with the new workspaces view."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -78,9 +77,9 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/status-menu.svg",
-                gettext("View system information and settings"),
-                gettext("Get an overview of the system status and quickly change settings."),
+                "/org/gnome/Tour/blank.svg",
+                gettext("Up/Down for the Overview"),
+                gettext("On a touchpad, use three-finger vertical swipes. Try it!"),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -88,9 +87,9 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/software.svg",
-                gettext("Use Software to find and install apps"),
-                gettext("Discover great apps through search, browsing and our recommendations."),
+                "/org/gnome/Tour/blank.svg",
+                gettext("Left/Right for Workspaces"),
+                gettext("On a touchpad, use three-finger horizontal swipes. Try it!"),
             )
             .widget
             .upcast::<gtk::Widget>(),

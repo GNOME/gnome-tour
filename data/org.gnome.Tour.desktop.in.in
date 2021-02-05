@@ -10,4 +10,3 @@ Keywords=Gnome;GTK;
 Icon=@icon@
 StartupNotify=true
 OnlyShowIn=GNOME;
-NoDisplay=true

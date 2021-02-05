@@ -167,41 +167,6 @@ impl WelcomePageWidget {
         text.show();
         container.add(&text);
 
-        let actions_container = gtk::BoxBuilder::new()
-            .orientation(gtk::Orientation::Horizontal)
-            .spacing(12)
-            .halign(gtk::Align::Center)
-            .margin_top(36)
-            .build();
-
-        let skip_tour_btn = gtk::ButtonBuilder::new()
-            .label(&gettext("_No Thanks"))
-            .height_request(40)
-            .width_request(180)
-            .use_underline(true)
-            .action_name("app.skip-tour")
-            .build();
-        skip_tour_btn.show();
-        actions_container.add(&skip_tour_btn);
-
-        let start_tour_btn = gtk::ButtonBuilder::new()
-            .label(&gettext("_Start Tour"))
-            .height_request(40)
-            .width_request(180)
-            .use_underline(true)
-            .action_name("app.start-tour")
-            .build();
-        start_tour_btn
-            .get_style_context()
-            .add_class("suggested-action");
-        start_tour_btn.show();
-        actions_container.add(&start_tour_btn);
-        actions_container.set_focus_child(Some(&start_tour_btn));
-
-        actions_container.show();
-
-        container.add(&actions_container);
-
         container.show();
         self.widget.add(&container);
         self.widget.show();

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-01-30 13:40+0000\n"
-"PO-Revision-Date: 2021-01-30 15:47+0200\n"
+"POT-Creation-Date: 2021-02-05 22:00+0000\n"
+"PO-Revision-Date: 2021-02-06 08:50+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 20.11.70\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Тур"
 
@@ -30,6 +30,23 @@ msgstr "Тур і вітання"
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;гноме;гном;жтека;гтк;"
 
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+#| msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
+msgstr "Екскурсія і вітання GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Екскурсія і вітання GNOME з гідом."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Головне вікно"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
+msgid "The GNOME Project"
+msgstr "Проєкт GNOME"
+
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:156
 msgid "Welcome to {} {}"
@@ -37,8 +54,7 @@ msgstr "Вітаємо у {} {}"
 
 #: src/widgets/pages/welcome.rs:163
 msgid "Learn about new and essential features in GNOME 40."
-msgstr ""
-"Дізнайтеся більше про нові та основні можливості GNOME 40."
+msgstr "Дізнайтеся більше про нові та основні можливості GNOME 40."
 
 #: src/widgets/pages/welcome.rs:178
 msgid "_No Thanks"
@@ -62,28 +78,23 @@ msgstr "_Назад"
 
 #: src/widgets/window.rs:51
 msgid "Get an Overview"
-msgstr ""
-"Огляд діяльності"
+msgstr "Огляд діяльності"
 
 #: src/widgets/window.rs:52
-#| msgid "Open Activities to launch apps"
 msgid "Press Activities to see open windows and apps."
 msgstr "Натисніть кнопку «Діяльність», щоб переглянути вікна та програми."
 
 #: src/widgets/window.rs:61
 msgid "Make Apps Your Own"
-msgstr ""
-"Зручний доступ до програм"
+msgstr "Зручний доступ до програм"
 
 #: src/widgets/window.rs:62
 msgid "Arrange your apps so they make sense for you."
-msgstr ""
-"Упорядкуйте ваші пункти програм так, як вам зручно."
+msgstr "Упорядкуйте ваші пункти програм так, як вам зручно."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
-msgstr ""
-"Висококласна робота з робочими просторами"
+msgstr "Висококласна робота з робочими просторами"
 
 #: src/widgets/window.rs:72
 msgid "Easily organise windows with the new workspaces view."
@@ -92,23 +103,23 @@ msgstr ""
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
-msgstr ""
-"Вгору-вниз для огляду"
+msgstr "Вгору-вниз для огляду"
 
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
-"На сенсорній панелі можна скористатися трипальцевими вертикальними рухами. Спробуйте!"
+"На сенсорній панелі можна скористатися трипальцевими вертикальними рухами. "
+"Спробуйте!"
 
 #: src/widgets/window.rs:91
 msgid "Left/Right for Workspaces"
-msgstr ""
-"Ліворуч-праворуч для пересування робочими просторами"
+msgstr "Ліворуч-праворуч для пересування робочими просторами"
 
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
-"На сенсорній панелі можна скористатися трипальцевими горизонтальними рухами. Спробуйте!"
+"На сенсорній панелі можна скористатися трипальцевими горизонтальними рухами. "
+"Спробуйте!"
 
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
 #: src/widgets/window.rs:102
@@ -119,18 +130,6 @@ msgstr "Ось і все! Сподіваємося, вам сподобаєть�
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Щоб отримати додаткові поради та підказки, зверніться до програми «Довідка»."
-
-#~ msgid "GNOME Tour and Greeter."
-#~ msgstr "Екскурсія і вітання GNOME."
-
-#~ msgid "A guided tour and greeter for GNOME."
-#~ msgstr "Екскурсія і вітання GNOME з гідом."
-
-#~ msgid "Main Window"
-#~ msgstr "Головне вікно"
-
-#~ msgid "The GNOME Project"
-#~ msgstr "Проєкт GNOME"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

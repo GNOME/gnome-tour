@@ -1,21 +1,21 @@
 include:
-  - project: 'gnome/citemplates'
-    file: 'flatpak/flatpak-ci-initiative-sdk-extensions.yml'
+  - project: "gnome/citemplates"
+    file: "flatpak/flatpak-ci-initiative-sdk-extensions.yml"
 
 flatpak:
-  image: 'registry.gitlab.gnome.org/gnome/gnome-runtime-images/rust_bundle:3.36'
+  image: "registry.gitlab.gnome.org/gnome/gnome-runtime-images/rust_bundle:master"
   variables:
     BUNDLE: "org.gnome.TourDevel.flatpak"
     MANIFEST_PATH: "build-aux/org.gnome.TourDevel.json"
     FLATPAK_MODULE: "gnome-tour"
     APP_ID: "org.gnome.TourDevel"
     RUNTIME_REPO: "https://nightly.gnome.org/gnome-nightly.flatpakrepo"
-  extends: '.flatpak'
+  extends: ".flatpak"
 
 nightly:
-  extends: '.publish_nightly'
-  dependencies: ['flatpak']
-  needs: ['flatpak']
+  extends: ".publish_nightly"
+  dependencies: ["flatpak"]
+  needs: ["flatpak"]
 
 # Configure and run rustfmt
 # Exits and builds fails if on bad format

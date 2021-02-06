@@ -1,0 +1,125 @@
+# Punjabi translation for gnome-tour.
+# Copyright (C) 2021 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+#
+# A S Alam <amanpreet.alam@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2021-02-06 08:48+0000\n"
+"PO-Revision-Date: 2021-02-06 09:59-0800\n"
+"Last-Translator: A S Alam <aalam@satluj.org>\n"
+"Language-Team: Punjabi <punjab-translation@googlegroups.com>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+msgid "Tour"
+msgstr "ਟੂਰ"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "ਸਵਾਗਤ ਤੇ ਟੂਰ"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "ਗਨੋਮ;ਜੀਟੀਕੇ;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "ਗਨੋਮ ਟੂਰ ਤੇ ਸਵਾਗਤੀ"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "ਗਨੋਮ ਲਈ ਸੇਧ ਦਿੰਦਾ ਟੂਰ ਤੇ ਸਵਾਗਤੀ ਹੈ।"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "ਮੁੱਖ ਵਿੰਡੋ"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
+msgid "The GNOME Project"
+msgstr "ਗਨੋਮ ਪਰੋਜੈਕਟ"
+
+#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
+#: src/widgets/pages/welcome.rs:156
+msgid "Welcome to {} {}"
+msgstr "{} {} ਲਈ ਜੀ ਆਇਆਂ ਨੂੰ"
+
+#: src/widgets/pages/welcome.rs:163
+msgid "Learn about new and essential features in GNOME 40."
+msgstr "ਗਨੋਮ 40 ਵਿੱਚ ਨਵੇਂ ਅਤੇ ਜ਼ਰੂਰੀ ਫ਼ੀਚਰਾਂ ਬਾਰੇ ਸਿੱਖੋ।"
+
+#: src/widgets/pages/welcome.rs:178
+msgid "_No Thanks"
+msgstr "ਨਹੀਂ ਜੀ, ਧੰਨਵਾਦ(_N)"
+
+#: src/widgets/pages/welcome.rs:188
+msgid "_Start Tour"
+msgstr "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ(_S)"
+
+#: src/widgets/paginator.rs:30
+msgid "_Next"
+msgstr "ਅੱਗੇ(_N)"
+
+#: src/widgets/paginator.rs:31
+msgid "_Close"
+msgstr "ਬੰਦ ਕਰੋ(_C)"
+
+#: src/widgets/paginator.rs:32
+msgid "_Previous"
+msgstr "ਪਿੱਛੇ(_P)"
+
+#: src/widgets/window.rs:51
+msgid "Get an Overview"
+msgstr "ਸਾਰ ਵੇਖੋ"
+
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "ਖੁੱਲ੍ਹੀਆਂ ਵਿੰਡੋ ਅਤੇ ਐਪਾਂ ਵੇਖਣ ਲਈ ਸਰਗਰਮੀਆਂ ਨੂੰ ਦਬਾਓ।"
+
+#: src/widgets/window.rs:61
+msgid "Make Apps Your Own"
+msgstr "ਐਪਾਂ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲੋ"
+
+#: src/widgets/window.rs:62
+msgid "Arrange your apps so they make sense for you."
+msgstr "ਆਪਣੀਆਂ ਐਪਾਂ ਨੂੰ ਦਾ ਇੰਜ ਪਰਬੰਧ ਕਰੋ, ਜਿਸ ਨਾਲ ਤੁਹਾਨੂੰ ਸੌਖਾ ਲੱਗੇ।"
+
+#: src/widgets/window.rs:71
+msgid "Keep on Top with Workspaces"
+msgstr "ਵਰਕਸਪੇਸ ਨਾਲ ਕਾਬੂ ਪਾਓ"
+
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "ਨਵੀਂ ਵਰਕਸਪੇਸ ਝਲਕ ਨਾਲ ਵਿੰਡੋ ਦਾ ਸੌਖੀ ਤਰ੍ਹਾਂ ਇੰਤਜ਼ਾਮ ਕਰੋ।"
+
+#: src/widgets/window.rs:81
+msgid "Up/Down for the Overview"
+msgstr "ਸੰਖੇਪ ਝਲਕ ਲਈ ਉੱਤੇ/ਹੇਠਾਂ"
+
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "ਟੱਚ ਪੈਡ ਉੱਤੇ, 3 ਉਗਲਾਂ ਨਾਲ ਖੜ੍ਹਵੇਂ ਰੂਪ ਵਿੱਚ ਸਰਕਾਓ। ਵਰਤ ਕੇ ਵੇਖੋ!"
+
+#: src/widgets/window.rs:91
+msgid "Left/Right for Workspaces"
+msgstr "ਵਰਕਸਪੇਸਾਂ ਲਈ ਸੱਜੇ/ਖੱਬੇ"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "ਟੱਚ ਪੈਡ ਉੱਤੇ, 3 ਉਂਗਲਾਂ ਲੇਟਵੇਂ ਰੂਪ ਵਿੱਚ ਵਰਤੋਂ। ਵਰਤ ਕੇ ਵੇਖੋ!"
+
+#. Translators: The following string is formated as "We hope that you enjoy GNOME"
+#: src/widgets/window.rs:102
+msgid "That's it! We hope that you enjoy {}."
+msgstr "ਪੂਰਾ ਹੋ ਗਿਆ! ਸਾਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਤੁਸੀਂ {} ਦਾ ਆਨੰਦ ਮਾਣੋਗੇ।"
+
+#: src/widgets/window.rs:103
+msgid "To get more advice and tips, see the Help app."
+msgstr "ਹੋਰ ਸਲਾਹ ਤੇ ਟੋਟਕੇ ਲੈਣ ਲਈ, ਮਦਦ ਐਪ ਨੂੰ ਵੇਖੋ।"

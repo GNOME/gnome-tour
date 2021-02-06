@@ -1,13 +1,13 @@
 # Basque translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2020.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2020, 2021.
 #
 msgid ""
 msgstr "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-08-20 06:55+0000\n"
+"POT-Creation-Date: 2021-02-05 22:00+0000\n"
+"PO-Revision-Date: 2021-02-06 06:55+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -28,7 +28,7 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
 msgstr "GNOME Bisita eta Ongietorria"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
@@ -39,91 +39,133 @@ msgstr "GNOMEren bisita gidatua eta ongietorria"
 msgid "Main Window"
 msgstr "Leiho nagusia"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
 msgid "The GNOME Project"
 msgstr "GNOME proiektua"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
+#: src/widgets/pages/welcome.rs:156
 msgid "Welcome to {} {}"
 msgstr "Ongi etorri {} {} aplikaziora"
 
-#: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr "Kaixo! Egin bisita GNOME erabiltzen ikasteko eta funtsezko eginbideak ezagutzeko."
+#: src/widgets/pages/welcome.rs:163
+msgid "Learn about new and essential features in GNOME 40."
+msgstr "Ezagutu GNOME 40 bertsioaren eginbide berri eta funtsezkoenak."
 
-#: src/widgets/pages/welcome.rs:161
+#: src/widgets/pages/welcome.rs:178
 msgid "_No Thanks"
 msgstr "_Ez, eskerrik asko"
 
-#: src/widgets/pages/welcome.rs:169
+#: src/widgets/pages/welcome.rs:188
 msgid "_Start Tour"
 msgstr "Hasi _bisita"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:30
 msgid "_Next"
 msgstr "_Hurrengoa"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:31
 msgid "_Close"
 msgstr "_Itxi"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:32
 msgid "_Previous"
 msgstr "_Aurrekoa"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Ireki 'Jarduerak' aplikazioak abiarazteko"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr "Jardueren ikuspegia leihoz aldatzeko eta bilaketak egiteko ere erabili daiteke."
+msgid "Get an Overview"
+msgstr "Ikuspegi orokorra"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Idatzi zerbait bilaketa egiteko"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Sakatu 'Jarduerak' aplikazio eta leiho irekiak ikusteko."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr "Jardueren ikuspegian, hasi zerbait idazten aplikazioak, ezarpenak eta beste elementu batzuk aurkitzeko."
+msgid "Make Apps Your Own"
+msgstr "Zeureganatu aplikazioak"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Egin klik orduan jakinarazpenak ikusteko"
+#: src/widgets/window.rs:62
+msgid "Arrange your apps so they make sense for you."
+msgstr "Antolatu aplikazioak zentzuzkoen iruditzen zaizun eran."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "Jakinarazpenen bunbuiloak planifikazio pertsonalerako tresnak ere baditu."
+msgid "Keep on Top with Workspaces"
+msgstr "Eutsi goiari laneko areen bidez"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Bistaratu sistemaren informazioa eta ezarpenak"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Ordenatu leihoak errazago laneko areen ikuspegi berria erabilita."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Lortu sistemaren egoeraren ikuspegi orokorra eta aldatu ezarpenak zuzenean."
+msgid "Up/Down for the Overview"
+msgstr "Gora/behera ikuspegi orokorrerako"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Erabili Softwarea aplikazioak aurkitu eta instalatzeko"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "Ukipen-pantailetan, mugitu hiru hatz bertikalean. Probatu ezazu!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "Aurkitu aplikazio bikainak bai bilaketen bidez, aplikazioen zerrenda arakatuta edo gure gomendioei kasu eginda."
+msgid "Left/Right for Workspaces"
+msgstr "Eskuinera/ezkerrera laneko areak erabiltzeko"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontaleak. Probatu ezazu!"
 
 #. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
+#: src/widgets/window.rs:102
 msgid "That's it! We hope that you enjoy {}."
 msgstr "Hori da! Espero dugu {} gustuko izango duzula."
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Aholku eta argibide gehiago eskuratzeko, begiratu laguntza."
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Kaixo! Egin bisita GNOME erabiltzen ikasteko eta funtsezko eginbideak "
+#~ "ezagutzeko."
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr ""
+#~ "Jardueren ikuspegia leihoz aldatzeko eta bilaketak egiteko ere erabili "
+#~ "daiteke."
+
+#~ msgid "Just type to search"
+#~ msgstr "Idatzi zerbait bilaketa egiteko"
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "Jardueren ikuspegian, hasi zerbait idazten aplikazioak, ezarpenak eta "
+#~ "beste elementu batzuk aurkitzeko."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Egin klik orduan jakinarazpenak ikusteko"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr ""
+#~ "Jakinarazpenen bunbuiloak planifikazio pertsonalerako tresnak ere baditu."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Bistaratu sistemaren informazioa eta ezarpenak"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr ""
+#~ "Lortu sistemaren egoeraren ikuspegi orokorra eta aldatu ezarpenak "
+#~ "zuzenean."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "Erabili Softwarea aplikazioak aurkitu eta instalatzeko"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Aurkitu aplikazio bikainak bai bilaketen bidez, aplikazioen zerrenda "
+#~ "arakatuta edo gure gomendioei kasu eginda."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "GNOME Bisita"

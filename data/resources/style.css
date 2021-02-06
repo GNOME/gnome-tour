@@ -20,6 +20,11 @@
   transition-duration: 250ms;
   transition-timing-function: ease-in-out;
 }
+
+window .titlebar button {
+  min-width: 60px;
+}
+
 /* pages */
 
 @keyframes welcome-bg-move {

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-01-30 13:40+0000\n"
-"PO-Revision-Date: 2021-01-31 16:40+0100\n"
+"POT-Creation-Date: 2021-02-05 22:00+0000\n"
+"PO-Revision-Date: 2021-02-07 01:13+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Gtranslator 3.38.0\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Tour"
 
@@ -30,6 +30,23 @@ msgstr "Iniciador e tour"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "GNOME;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+#| msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
+msgstr "Percorrido e iniciador de GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Un tour guiado e inciador para GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Pantalla principal"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
+msgid "The GNOME Project"
+msgstr "O Proxecto GNOME"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:156
@@ -65,7 +82,6 @@ msgid "Get an Overview"
 msgstr "Obter unha vista xeral"
 
 #: src/widgets/window.rs:52
-#| msgid "Open Activities to launch apps"
 msgid "Press Activities to see open windows and apps."
 msgstr "Prema en Actividades para ver as xanelas e aplicacións abertas"
 
@@ -79,7 +95,7 @@ msgstr "Ordene as súas aplicacións para que teñan sentido para vostede"
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
-msgstr ""
+msgstr "Manter enriba cos Espazos de traballo"
 
 #: src/widgets/window.rs:72
 msgid "Easily organise windows with the new workspaces view."
@@ -110,18 +126,6 @@ msgstr "E isto é todo! Agardamos que lle gustara {}"
 #: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter máis consellos e trucos, consulte na aplicación «Axuda»"
-
-#~ msgid "GNOME Tour and Greeter."
-#~ msgstr "Tour e iniciador de GNOME"
-
-#~ msgid "A guided tour and greeter for GNOME."
-#~ msgstr "Un tour guiado e inciador para GNOME."
-
-#~ msgid "Main Window"
-#~ msgstr "Pantalla principal"
-
-#~ msgid "The GNOME Project"
-#~ msgstr "O Proxecto GNOME"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

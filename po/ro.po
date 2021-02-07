@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-01-30 13:40+0000\n"
-"PO-Revision-Date: 2021-01-30 18:53+0100\n"
+"POT-Creation-Date: 2021-02-05 22:00+0000\n"
+"PO-Revision-Date: 2021-02-07 10:25+0100\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -19,7 +19,7 @@ msgstr ""
 "20)) ? 1 : 2);;\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Tur"
 
@@ -30,6 +30,22 @@ msgstr "Persoană care salută și tur"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "Tur ce vă introduce în GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Un tur ghidat și o persoană care vă introduce în GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Fereastra principală"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
+msgid "The GNOME Project"
+msgstr "Proiectul GNOME"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:156
@@ -111,18 +127,6 @@ msgstr "Atât! Sperăm să vă placă {}."
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
-
-#~ msgid "GNOME Tour and Greeter."
-#~ msgstr "Tur și persoană care salută GNOME."
-
-#~ msgid "A guided tour and greeter for GNOME."
-#~ msgstr "Un tur ghidat și o persoană care salută pentru GNOME."
-
-#~ msgid "Main Window"
-#~ msgstr "Fereastra principală"
-
-#~ msgid "The GNOME Project"
-#~ msgstr "Proiectul GNOME"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

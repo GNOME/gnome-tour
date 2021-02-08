@@ -43,15 +43,6 @@ window .titlebar button {
 }
 
 .page { color: #000; }
-  .welcome-page {
-    background-repeat: no-repeat, repeat-x, repeat-x, no-repeat;
-    background-image: url('/org/gnome/Tour/start-fg.svg'),
-                      url('/org/gnome/Tour/start-bg.svg'),
-                      url('/org/gnome/Tour/start-bg-bg.svg'),
-                      url('/org/gnome/Tour/start-bg-bg-bg.svg');
-    background-position: center 30%, -1400px 0, -600px 0, center 30%; /* wasn't able to properly loop with relative offsets */
-    animation: welcome-bg-move 60s linear infinite;
-  }
 
   /* .page:nth-child(2) { background: linear-gradient(to right, #3584e4, #1a5fb4); }  overview */
   .page:nth-child(3) {  }  /* customize */

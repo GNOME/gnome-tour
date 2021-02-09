@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-01-30 13:40+0000\n"
-"PO-Revision-Date: 2021-02-01 11:04+0100\n"
+"POT-Creation-Date: 2021-02-05 22:00+0000\n"
+"PO-Revision-Date: 2021-02-09 16:17+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 3.38.0\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 msgid "Tour"
 msgstr "Tour"
 
@@ -29,6 +29,23 @@ msgstr "Bienvenida y tour"
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+#| msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME Tour y bienvenida"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Un tour guiado y una bienvenida a GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Ventana principal"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
+msgid "The GNOME Project"
+msgstr "El Proyecto GNOME"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
 #: src/widgets/pages/welcome.rs:156
@@ -65,7 +82,6 @@ msgid "Get an Overview"
 msgstr "Obtener una visión general"
 
 #: src/widgets/window.rs:52
-#| msgid "Open Activities to launch apps"
 msgid "Press Activities to see open windows and apps."
 msgstr ""
 "Pulse en Actividades para ver todas las ventanas y aplicaciones abiertas."
@@ -115,18 +131,6 @@ msgstr "Eso es todo. Esperamos que disfrute de {}."
 #: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obtener más consejos y pistas consulte la aplicación Ayuda."
-
-#~ msgid "GNOME Tour and Greeter."
-#~ msgstr "GNOME Tour y bienvenida."
-
-#~ msgid "A guided tour and greeter for GNOME."
-#~ msgstr "Un tour guiado y una bienvenida a GNOME."
-
-#~ msgid "Main Window"
-#~ msgstr "Ventana principal"
-
-#~ msgid "The GNOME Project"
-#~ msgstr "El Proyecto GNOME"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

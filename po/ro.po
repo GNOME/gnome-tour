@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-05 22:00+0000\n"
-"PO-Revision-Date: 2021-02-07 10:25+0100\n"
+"POT-Creation-Date: 2021-02-11 13:19+0000\n"
+"PO-Revision-Date: 2021-02-11 17:23+0100\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -48,31 +48,27 @@ msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
+#: src/widgets/pages/welcome.rs:154
 msgid "Welcome to {} {}"
 msgstr "Bine ați venit {} {}"
 
-#: src/widgets/pages/welcome.rs:163
+#: src/widgets/pages/welcome.rs:161
 msgid "Learn about new and essential features in GNOME 40."
 msgstr "Aflați despre funcționalitățile noi și esențiale din GNOME 40."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Nu mulțumesc"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "Î_ncepe"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "Î_ncepe turul"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Următor"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "În_chide"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Anterior"
 
@@ -127,6 +123,9 @@ msgstr "Atât! Sperăm să vă placă {}."
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Nu mulțumesc"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

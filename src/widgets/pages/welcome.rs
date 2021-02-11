@@ -148,17 +148,18 @@ impl WelcomePageWidget {
             );
         };
 
-        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
-        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
-        // Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-        let title = gtk::Label::new(Some(&i18n_f("Welcome to {} {}", &[&name, &version])));
+        let title = gtk::Label::new(Some(&gettext("Start the Tour")));
         title.set_margin_top(36);
         title.get_style_context().add_class("large-title");
         title.show();
         container.add(&title);
 
-        let text = gtk::Label::new(Some(&gettext(
-            "Learn about new and essential features in GNOME 40.",
+        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
+        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
+        // Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+        let text = gtk::Label::new(Some(&i18n_f(
+            "Learn about new and essential features in {} {}.",
+            &[&name, &version],
         )));
         text.get_style_context().add_class("body");
         text.set_margin_top(12);

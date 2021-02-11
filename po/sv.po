@@ -1,15 +1,15 @@
 # Swedish translation for gnome-tour.
 # Copyright © 2020-2021 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2020.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2020, 2021.
 # Luna Jernberg <droidbittin@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-05 22:00+0000\n"
-"PO-Revision-Date: 2021-02-06 01:43+0100\n"
+"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"PO-Revision-Date: 2021-02-11 18:54+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -20,6 +20,7 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Rundtur"
 
@@ -47,32 +48,27 @@ msgstr "Huvudfönster"
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "Välkommen till {} {}"
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Starta rundturen"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Lär dig om nya och viktiga funktioner i GNOME 40."
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Lär dig om nya och viktiga funktioner i {} {}."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Nej tack"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Starta"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Starta rundtur"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Nästa"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "S_täng"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Föregående"
 
@@ -89,8 +85,8 @@ msgid "Make Apps Your Own"
 msgstr "Gör program till dina egna"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
-msgstr "Ordna dina program så att de är vettiga för dig."
+msgid "Arrange the app grid so it makes sense for you."
+msgstr "Arrangera programrutnätet så att det är vettigt för dig."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -116,14 +112,19 @@ msgstr "Vänster/höger för arbetsytor"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Använd horisontella svep med tre fingrar på en styrplatta. Testa nu!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Det var allt! Hoppas du har trevligt med {}."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Det var allt! Hoppas du har trevligt med {} {}."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "För mer råd och tips, se programmet Hjälp."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Välkommen till {} {}"
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Nej tack"
 
 #~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
 #~ msgstr "Hej du! Ta rundturen för att lära dig hitta och upptäck viktiga funktioner."

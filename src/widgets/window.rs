@@ -59,7 +59,7 @@ impl Window {
             ImagePageWidget::new(
                 "/org/gnome/Tour/makeyourown.svg",
                 gettext("Make Apps Your Own"),
-                gettext("Arrange your apps so they make sense for you."),
+                gettext("Arrange the app grid so it makes sense for you."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -96,10 +96,14 @@ impl Window {
         );
 
         let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
+        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
-            // Translators: The following string is formated as "We hope that you enjoy GNOME"
-            i18n_f("That's it! We hope that you enjoy {}.", &[&name]),
+            // Translators: The following string is formatted as "We hope that you enjoy GNOME 40"
+            i18n_f(
+                "That's it! We hope that you enjoy {} {}.",
+                &[&name, &version],
+            ),
             gettext("To get more advice and tips, see the Help app."),
         );
         last_page.widget.get_style_context().add_class("last-page");

@@ -151,6 +151,7 @@ impl PaginatorWidget {
         let start_overlay = gtk::Overlay::new();
         start_overlay.add(&self.start_btn);
         start_overlay.add_overlay(&next_overlay);
+        start_overlay.set_overlay_pass_through(&next_overlay, true);
         start_overlay.show();
 
         let btn_size_group = gtk::SizeGroup::new(gtk::SizeGroupMode::Horizontal);

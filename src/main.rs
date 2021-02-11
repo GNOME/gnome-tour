@@ -16,7 +16,7 @@ fn main() {
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
     textdomain(GETTEXT_PACKAGE);
 
-    glib::set_application_name("Tour");
+    glib::set_application_name(&gettext("Tour"));
     glib::set_prgname(Some("Tour"));
 
     gtk::init().expect("Unable to start GTK3");

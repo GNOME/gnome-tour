@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-05 22:00+0000\n"
-"PO-Revision-Date: 2021-02-07 01:13+0100\n"
+"POT-Creation-Date: 2021-02-11 13:19+0000\n"
+"PO-Revision-Date: 2021-02-11 17:32+0100\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -32,7 +32,6 @@ msgid "Gnome;GTK;"
 msgstr "GNOME;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-#| msgid "GNOME Tour and Greeter."
 msgid "GNOME Tour and Greeter"
 msgstr "Percorrido e iniciador de GNOME"
 
@@ -49,31 +48,28 @@ msgid "The GNOME Project"
 msgstr "O Proxecto GNOME"
 
 #. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
+#: src/widgets/pages/welcome.rs:154
 msgid "Welcome to {} {}"
 msgstr "Benvida a {} {}"
 
-#: src/widgets/pages/welcome.rs:163
+#: src/widgets/pages/welcome.rs:161
 msgid "Learn about new and essential features in GNOME 40."
 msgstr "Saber máis sobre as características novas e esenciais en GNOME 40."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Non grazas"
+#: src/widgets/paginator.rs:32
+#| msgid "_Start Tour"
+msgid "_Start"
+msgstr "_Comezar"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Comezar tour"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Seguinte"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Pechar"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Anterior"
 
@@ -126,6 +122,9 @@ msgstr "E isto é todo! Agardamos que lle gustara {}"
 #: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter máis consellos e trucos, consulte na aplicación «Axuda»"
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Non grazas"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

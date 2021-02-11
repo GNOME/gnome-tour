@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-05 22:00+0000\n"
-"PO-Revision-Date: 2021-02-06 08:50+0200\n"
+"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"PO-Revision-Date: 2021-02-11 22:41+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -19,6 +19,7 @@ msgstr ""
 "X-Generator: Lokalize 20.11.70\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Тур"
 
@@ -31,7 +32,6 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;гноме;гном;жтека;гтк;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-#| msgid "GNOME Tour and Greeter."
 msgid "GNOME Tour and Greeter"
 msgstr "Екскурсія і вітання GNOME"
 
@@ -47,32 +47,30 @@ msgstr "Головне вікно"
 msgid "The GNOME Project"
 msgstr "Проєкт GNOME"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "Вітаємо у {} {}"
+#: src/widgets/pages/welcome.rs:151
+#| msgid "_Start Tour"
+msgid "Start the Tour"
+msgstr "Почати тур"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Дізнайтеся більше про нові та основні можливості GNOME 40."
+#: src/widgets/pages/welcome.rs:161
+#| msgid "Learn about new and essential features in GNOME 40."
+msgid "Learn about new and essential features in {} {}."
+msgstr "Дізнайтеся більше про нові та основні можливості {} {}."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Ні, дякую"
+#: src/widgets/paginator.rs:32
+#| msgid "_Start Tour"
+msgid "_Start"
+msgstr "_Почати"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Почати тур"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Далі"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Закрити"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Назад"
 
@@ -89,8 +87,9 @@ msgid "Make Apps Your Own"
 msgstr "Зручний доступ до програм"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
-msgstr "Упорядкуйте ваші пункти програм так, як вам зручно."
+#| msgid "Arrange your apps so they make sense for you."
+msgid "Arrange the app grid so it makes sense for you."
+msgstr "Упорядкуйте таблицю програм так, як вам зручно."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -121,15 +120,21 @@ msgstr ""
 "На сенсорній панелі можна скористатися трипальцевими горизонтальними рухами. "
 "Спробуйте!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Ось і все! Сподіваємося, вам сподобається {}."
+#: src/widgets/window.rs:104
+#| msgid "That's it! We hope that you enjoy {}."
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Ось і все! Сподіваємося, вам сподобається {} {}."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Щоб отримати додаткові поради та підказки, зверніться до програми «Довідка»."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Вітаємо у {} {}"
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Ні, дякую"
 
 #~ msgid ""
 #~ "Hi there! Take the tour to learn your way around and discover essential "

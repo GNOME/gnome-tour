@@ -78,8 +78,6 @@ impl WelcomePageWidget {
 
         #[cfg(not(feature = "video"))]
         let header = {
-            let icon = glib::get_os_info("LOGO").unwrap_or_else(|| "start-here-symbolic".into());
-
             let logo = gtk::Image::from_resource("/org/gnome/Tour/welcome.svg");
             logo.show();
 

@@ -39,6 +39,7 @@ sources = files(
   'widgets/pages/image.rs',
   'widgets/pages/mod.rs',
   'widgets/pages/welcome.rs',
+  'widgets/gsd.rs',
   'widgets/mod.rs',
   'widgets/paginator.rs',
   'widgets/window.rs',

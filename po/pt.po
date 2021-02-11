@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-05 22:00+0000\n"
-"PO-Revision-Date: 2021-02-06 21:28+0000\n"
+"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"PO-Revision-Date: 2021-02-11 18:00+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.gnome.org/teams/pt/>\n"
 "Language: pt\n"
@@ -19,9 +19,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Apresentação"
 
@@ -49,32 +50,27 @@ msgstr "Janela principal"
 msgid "The GNOME Project"
 msgstr "Projeto GNOME"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "Bem-vindo ao {} {}"
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Iniciar a apresentação"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Aprenda acerca das funcionalidades novas e essenciais do GNOME 40."
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Aprenda acerca das funcionalidades novas e essenciais no {} {}."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Não, obrigado"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Iniciar"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Iniciar a apresentação"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Seguinte"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Fechar"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Anterior"
 
@@ -91,8 +87,8 @@ msgid "Make Apps Your Own"
 msgstr "Faça das aplicações as suas"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
-msgstr "Organize as suas aplicações para que façam sentido para si."
+msgid "Arrange the app grid so it makes sense for you."
+msgstr "Organize a grelha de aplicações para que faça sentido para si."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -118,14 +114,19 @@ msgstr "Esquerda/Direita para áreas de trabalho"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Num painel de toque, usar deslizes horizontais de três dedos. Experimente!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "E é tudo! Esperamos que desfrute do {}."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "E é tudo! Esperamos que desfrute do {} {}."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter informação adicional e dicas, veja a Ajuda."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Bem-vindo ao {} {}"
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Não, obrigado"
 
 #~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
 #~ msgstr "Olá! Siga a apresentação para ambientar-se e descobrir as funcionalidades essenciais."

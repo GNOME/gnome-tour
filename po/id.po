@@ -1,14 +1,14 @@
 # Indonesian translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2020.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-01-30 13:40+0000\n"
-"PO-Revision-Date: 2021-02-01 17:50+0700\n"
+"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"PO-Revision-Date: 2021-02-12 15:54+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Tur"
 
@@ -29,32 +30,43 @@ msgstr "Penyapa & Tur"
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "Selamat datang di {} {}"
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME Tur dan Penyapa"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Pelajari tentang fitur baru dan penting di GNOME 40."
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Tur terpandu dan penyapa untuk GNOME."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Tidak, Terima Kasih"
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Jendela Utama"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Mulai Tur"
+#: data/org.gnome.Tour.metainfo.xml.in.in:37
+msgid "The GNOME Project"
+msgstr "Proyek GNOME"
 
-#: src/widgets/paginator.rs:30
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Mulai Tur"
+
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Pelajari tentang fitur baru dan penting di {} {}."
+
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Mulai"
+
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "Sela_njutnya"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "T_utup"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Sebelumnya"
 
@@ -71,8 +83,8 @@ msgid "Make Apps Your Own"
 msgstr "Jadikan Aplikasi Anda Sendiri"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
-msgstr "Atur aplikasi Anda sehingga masuk akal untuk Anda."
+msgid "Arrange the app grid so it makes sense for you."
+msgstr "Atur kisi aplikasi sehingga masuk akal bagi Anda."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -98,26 +110,19 @@ msgstr "Kiri/Kanan untuk Ruang Kerja"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Di touchpad, gunakan usap horizontal tiga jari. Cobalah!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Itu saja! Kami berharap bahwa Anda menikmati {}."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Itu saja! Kami berharap bahwa Anda menikmati {} {}."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Untuk mendapatkan saran dan tips lainnya, lihat aplikasi bantuan."
 
-#~ msgid "GNOME Tour and Greeter."
-#~ msgstr "GNOME Tur dan Penyapa."
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Selamat datang di {} {}"
 
-#~ msgid "A guided tour and greeter for GNOME."
-#~ msgstr "Tur terpandu dan penyapa untuk GNOME."
-
-#~ msgid "Main Window"
-#~ msgstr "Jendela Utama"
-
-#~ msgid "The GNOME Project"
-#~ msgstr "Proyek GNOME"
+#~ msgid "_No Thanks"
+#~ msgstr "_Tidak, Terima Kasih"
 
 #~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
 #~ msgstr "Hai yang di sana! Ambil tur untuk mempelajari jalan sekitar Anda dan menemukan fitur penting."

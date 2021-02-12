@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 13:19+0000\n"
-"PO-Revision-Date: 2021-02-11 17:23+0100\n"
+"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"PO-Revision-Date: 2021-02-12 11:22+0100\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -20,6 +20,7 @@ msgstr ""
 "X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Tur"
 
@@ -47,14 +48,13 @@ msgstr "Fereastra principală"
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:154
-msgid "Welcome to {} {}"
-msgstr "Bine ați venit {} {}"
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Începeți turul"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Aflați despre funcționalitățile noi și esențiale din GNOME 40."
+msgid "Learn about new and essential features in {} {}."
+msgstr "Aflați despre funcționalitățile noi și esențiale din {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -85,7 +85,7 @@ msgid "Make Apps Your Own"
 msgstr "Însușiți-vă aplicațiile"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
+msgid "Arrange the app grid so it makes sense for you."
 msgstr "Aranjați aplicațiile în felul în care vă este de folos."
 
 #: src/widgets/window.rs:71
@@ -114,15 +114,17 @@ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Cu un touchpad, folosiți tragerile orizontale cu trei degete. Încercați-le!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Atât! Sperăm să vă placă {}."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Atât! Sperăm să vă placă {} {}."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Bine ați venit {} {}"
 
 #~ msgid "_No Thanks"
 #~ msgstr "_Nu mulțumesc"
@@ -194,9 +196,6 @@ msgstr ""
 
 #~ msgid "Tour Completed"
 #~ msgstr "Tur completat"
-
-#~ msgid "Take the Tour"
-#~ msgstr "Ia turul"
 
 #~ msgid "You can also view open windows, search and use workspaces."
 #~ msgstr ""

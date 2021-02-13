@@ -20,7 +20,7 @@ pub enum Action {
 }
 
 pub struct WelcomePageWidget {
-    pub widget: libhandy::WindowHandle,
+    pub widget: gtk::Box,
     #[cfg(feature = "video")]
     player: gst_player::Player,
     #[cfg(feature = "video")]
@@ -31,7 +31,7 @@ pub struct WelcomePageWidget {
 
 impl WelcomePageWidget {
     pub fn new() -> Self {
-        let widget = libhandy::WindowHandle::new();
+        let widget = gtk::Box::new(gtk::Orientation::Horizontal, 0);
 
         #[cfg(feature = "video")]
         let player = {

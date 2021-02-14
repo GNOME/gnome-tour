@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-06 08:48+0000\n"
-"PO-Revision-Date: 2021-02-06 09:59-0800\n"
+"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"PO-Revision-Date: 2021-02-13 17:09-0800\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjab-translation@googlegroups.com>\n"
 "Language: pa\n"
@@ -19,6 +19,7 @@ msgstr ""
 "X-Generator: Lokalize 20.08.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "ਟੂਰ"
 
@@ -46,32 +47,30 @@ msgstr "ਮੁੱਖ ਵਿੰਡੋ"
 msgid "The GNOME Project"
 msgstr "ਗਨੋਮ ਪਰੋਜੈਕਟ"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "{} {} ਲਈ ਜੀ ਆਇਆਂ ਨੂੰ"
+#: src/widgets/pages/welcome.rs:151
+#| msgid "_Start Tour"
+msgid "Start the Tour"
+msgstr "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "ਗਨੋਮ 40 ਵਿੱਚ ਨਵੇਂ ਅਤੇ ਜ਼ਰੂਰੀ ਫ਼ੀਚਰਾਂ ਬਾਰੇ ਸਿੱਖੋ।"
+#: src/widgets/pages/welcome.rs:161
+#| msgid "Learn about new and essential features in GNOME 40."
+msgid "Learn about new and essential features in {} {}."
+msgstr "{} {} ਵਿੱਚ ਨਵੇਂ ਅਤੇ ਜ਼ਰੂਰੀ ਫ਼ੀਚਰਾਂ ਬਾਰੇ ਸਿੱਖੋ।"
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "ਨਹੀਂ ਜੀ, ਧੰਨਵਾਦ(_N)"
+#: src/widgets/paginator.rs:32
+#| msgid "_Start Tour"
+msgid "_Start"
+msgstr "ਸ਼ੁਰੂ ਕਰੋ(_S)"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ(_S)"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "ਅੱਗੇ(_N)"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "ਬੰਦ ਕਰੋ(_C)"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "ਪਿੱਛੇ(_P)"
 
@@ -88,12 +87,13 @@ msgid "Make Apps Your Own"
 msgstr "ਐਪਾਂ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲੋ"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
-msgstr "ਆਪਣੀਆਂ ਐਪਾਂ ਨੂੰ ਦਾ ਇੰਜ ਪਰਬੰਧ ਕਰੋ, ਜਿਸ ਨਾਲ ਤੁਹਾਨੂੰ ਸੌਖਾ ਲੱਗੇ।"
+#| msgid "Arrange your apps so they make sense for you."
+msgid "Arrange the app grid so it makes sense for you."
+msgstr "ਐਪ ਜਾਲ ਦਾ ਇੰਤਜ਼ਾਮ ਜਿਵੇਂ ਤੁਹਾਨੂੰ ਸੌਖਾ ਲੱਗੇ, ਉਂਝ ਕਰੋ।"
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
-msgstr "ਵਰਕਸਪੇਸ ਨਾਲ ਕਾਬੂ ਪਾਓ"
+msgstr "ਵਰਕਸਪੇਸ ਬਾਰੇ ਸਮਝੋ"
 
 #: src/widgets/window.rs:72
 msgid "Easily organise windows with the new workspaces view."
@@ -115,11 +115,17 @@ msgstr "ਵਰਕਸਪੇਸਾਂ ਲਈ ਸੱਜੇ/ਖੱਬੇ"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "ਟੱਚ ਪੈਡ ਉੱਤੇ, 3 ਉਂਗਲਾਂ ਲੇਟਵੇਂ ਰੂਪ ਵਿੱਚ ਵਰਤੋਂ। ਵਰਤ ਕੇ ਵੇਖੋ!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "ਪੂਰਾ ਹੋ ਗਿਆ! ਸਾਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਤੁਸੀਂ {} ਦਾ ਆਨੰਦ ਮਾਣੋਗੇ।"
+#: src/widgets/window.rs:104
+#| msgid "That's it! We hope that you enjoy {}."
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "ਪੂਰਾ ਹੋ ਗਿਆ! ਸਾਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਤੁਸੀਂ {} {} ਦਾ ਆਨੰਦ ਮਾਣੋਗੇ।"
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "ਹੋਰ ਸਲਾਹ ਤੇ ਟੋਟਕੇ ਲੈਣ ਲਈ, ਮਦਦ ਐਪ ਨੂੰ ਵੇਖੋ।"
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "{} {} ਲਈ ਜੀ ਆਇਆਂ ਨੂੰ"
+
+#~ msgid "_No Thanks"
+#~ msgstr "ਨਹੀਂ ਜੀ, ਧੰਨਵਾਦ(_N)"

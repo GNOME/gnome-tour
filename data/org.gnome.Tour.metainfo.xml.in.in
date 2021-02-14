@@ -10,28 +10,29 @@
     <p>A guided tour and greeter for GNOME.</p>
   </description>
   <screenshots>
-      <screenshot type="default">
-        <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/master/data/resources/screenshots/screenshot1.png</image>
-        <caption>Main Window</caption>
-      </screenshot>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/master/data/resources/screenshots/screenshot1.png</image>
+      <caption>Main Window</caption>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-tour</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-tour/issues</url>
   <url type="donation">http://www.gnome.org/friends/</url>
   <content_rating type="oars-1.0" />
   <releases>
+    <release version="40.beta" date="2021-02-14" type="developement" />
     <release version="3.38.0" date="2020-09-15" />
     <release version="3.37.92" date="2020-09-08" type="developement" />
     <release version="3.37.91" date="2020-08-21" type="developement" />
     <release version="0.0.1" date="2020-03-01" />
   </releases>
   <kudos>
-      <!--
+    <!--
         GNOME Software kudos:
         https://gitlab.gnome.org/GNOME/gnome-software/blob/master/doc/kudos.md
       -->
-      <kudo>ModernToolkit</kudo>
-      <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>HiDpiIcon</kudo>
   </kudos>
   <project_group>GNOME</project_group>
   <developer_name>The GNOME Project</developer_name>

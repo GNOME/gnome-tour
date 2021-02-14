@@ -1,6 +1,6 @@
 project('gnome-tour',
         'rust',
-        version: '3.38.0',
+        version: '40.beta',
 	meson_version : '>= 0.50')
 
 i18n = import('i18n')
@@ -26,12 +26,7 @@ appstream_util = find_program('appstream-util', required: false)
 cargo = find_program('cargo', required: false)
 cargo_script = find_program('build-aux/cargo.sh')
 
-
 version = meson.project_version()
-version_array = version.split('.')
-major_version = version_array[0].to_int()
-minor_version = version_array[1].to_int()
-version_micro = version_array[2].to_int()
 
 prefix = get_option('prefix')
 bindir = prefix / get_option('bindir')

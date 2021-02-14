@@ -1,6 +1,6 @@
 [package]
 name = "gnome-tour"
-version = "3.38.0"
+version = "40.0.0"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
 edition = "2018"
 
@@ -13,7 +13,7 @@ gdk = "0.13"
 gtk = { version = "0.9", features= ["v3_16"] }
 gio = "0.9"
 log = "0.4"
-gettext-rs = { version = "0.4", features = ["gettext-system"] }
+gettext-rs = { version = "0.5", features = ["gettext-system"] }
 libhandy = "0.7"
 pretty_env_logger = "0.4"
 

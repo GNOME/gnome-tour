@@ -76,7 +76,7 @@ impl PaginatorWidget {
         let last_page = n_pages - 1.0;
 
         let (opacity_finish, opacity_previous, opacity_start, opacity_next) =
-            if (0.0 <= position) && (position < 1.0) {
+            if (0.0..1.0).contains(&position) {
                 (0.0, position, 1.0, position)
             } else if (0.0 <= position) && (position <= forelast_page) {
                 (0.0, 1.0, 1f64 - position, 1.0)

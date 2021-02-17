@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-01 15:16+0000\n"
-"PO-Revision-Date: 2021-02-02 21:06+0100\n"
+"POT-Creation-Date: 2021-02-16 23:42+0000\n"
+"PO-Revision-Date: 2021-02-17 18:53+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -21,7 +21,8 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 2.4.1\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Vodič GNOME"
 
@@ -33,32 +34,43 @@ msgstr "Pozdrav in uvod"
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;Vodnik;vodič;pozdrav;"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "Dobrodošli v {} {}"
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "Vodič GNOME"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Spoznajte nove in pomembne novosti v GNOME 40."
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Vodena predstavitev in dobrodošlica v namizje GNOME:"
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Ne, hvala"
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Glavno okno"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Začni z vodenjem"
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
-#: src/widgets/paginator.rs:30
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Začni z vodenjem"
+
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Spoznajte nove in pomembne novosti {} {}."
+
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Začni"
+
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Naslednji"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Zapri"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Predhodni"
 
@@ -75,7 +87,7 @@ msgid "Make Apps Your Own"
 msgstr "Prilagodite programe svojim zahtevam"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
+msgid "Arrange the app grid so it makes sense for you."
 msgstr "Razpostavite programe po svojih pravilih."
 
 #: src/widgets/window.rs:71
@@ -106,20 +118,19 @@ msgstr ""
 "Na sledilni ploščici lahko uporabite triprsten poteg za vodoraven pomik. "
 "Poskusite!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "In to je to! Upamo, da boste uživali v {}."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "In to je to! Upamo, da boste uživali v {} {}."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Za več nasvetov in namigov si oglejte Pomoč."
 
-#~ msgid "Main Window"
-#~ msgstr "Glavno okno"
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Dobrodošli v {} {}"
 
-#~ msgid "The GNOME Project"
-#~ msgstr "Projekt GNOME"
+#~ msgid "_No Thanks"
+#~ msgstr "_Ne, hvala"
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "Pogled Dejavnosti omogoča tudi preklapljanje oken in iskanje."
@@ -139,9 +150,6 @@ msgstr "Za več nasvetov in namigov si oglejte Pomoč."
 
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Iskanje in nameščanje programov"
-
-#~ msgid "GNOME Tour"
-#~ msgstr "Vodič GNOME"
 
 #~ msgid "Activities Overview"
 #~ msgstr "Pregled dejavnosti"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
-"PO-Revision-Date: 2021-02-11 22:41+0200\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-02-19 13:08+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -43,22 +43,19 @@ msgstr "Екскурсія і вітання GNOME з гідом."
 msgid "Main Window"
 msgstr "Головне вікно"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Проєкт GNOME"
 
 #: src/widgets/pages/welcome.rs:151
-#| msgid "_Start Tour"
 msgid "Start the Tour"
 msgstr "Почати тур"
 
 #: src/widgets/pages/welcome.rs:161
-#| msgid "Learn about new and essential features in GNOME 40."
 msgid "Learn about new and essential features in {} {}."
 msgstr "Дізнайтеся більше про нові та основні можливості {} {}."
 
 #: src/widgets/paginator.rs:32
-#| msgid "_Start Tour"
 msgid "_Start"
 msgstr "_Почати"
 
@@ -87,8 +84,8 @@ msgid "Make Apps Your Own"
 msgstr "Зручний доступ до програм"
 
 #: src/widgets/window.rs:62
-#| msgid "Arrange your apps so they make sense for you."
-msgid "Arrange the app grid so it makes sense for you."
+#| msgid "Arrange the app grid so it makes sense for you."
+msgid "Arrange the app grid to your liking."
 msgstr "Упорядкуйте таблицю програм так, як вам зручно."
 
 #: src/widgets/window.rs:71
@@ -121,7 +118,6 @@ msgstr ""
 "Спробуйте!"
 
 #: src/widgets/window.rs:104
-#| msgid "That's it! We hope that you enjoy {}."
 msgid "That's it! We hope that you enjoy {} {}."
 msgstr "Ось і все! Сподіваємося, вам сподобається {} {}."
 

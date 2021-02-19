@@ -59,7 +59,7 @@ impl Window {
             ImagePageWidget::new(
                 "/org/gnome/Tour/makeyourown.svg",
                 gettext("Make Apps Your Own"),
-                gettext("Arrange the app grid so it makes sense for you."),
+                gettext("Arrange the app grid to your liking."),
             )
             .widget
             .upcast::<gtk::Widget>(),

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
-"PO-Revision-Date: 2021-02-12 11:22+0100\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-02-21 12:26+0100\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -44,7 +44,7 @@ msgstr "Un tur ghidat și o persoană care vă introduce în GNOME."
 msgid "Main Window"
 msgstr "Fereastra principală"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
@@ -85,8 +85,8 @@ msgid "Make Apps Your Own"
 msgstr "Însușiți-vă aplicațiile"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid so it makes sense for you."
-msgstr "Aranjați aplicațiile în felul în care vă este de folos."
+msgid "Arrange the app grid to your liking."
+msgstr "Aranjați grila de aplicații în felul în care vă place."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"

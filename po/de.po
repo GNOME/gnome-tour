@@ -3,17 +3,17 @@
 # This file is distributed under the same license as the gnome-tour package.
 #
 # Joerg Schachner <jschachner@mailbox.org>, 2020.
-# Christian Kirbach <christian.kirbach@gmail.com>, 2020,2021.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2020.
+# Christian Kirbach <christian.kirbach@gmail.com>, 2020,2021.
 # Philipp Kiemle <philipp.kiemle@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
-"PO-Revision-Date: 2021-02-11 21:20+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-02-24 01:23+0100\n"
+"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +47,7 @@ msgstr "Eine geführte Tour und Begrüßung für GNOME."
 msgid "Main Window"
 msgstr "Hauptfenster"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Das GNOME-Projekt"
 
@@ -89,7 +89,8 @@ msgid "Make Apps Your Own"
 msgstr "Machen Sie sich Apps zu eigen"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid so it makes sense for you."
+#| msgid "Arrange the app grid so it makes sense for you."
+msgid "Arrange the app grid to your liking."
 msgstr "Ordnen Sie das Anwendungsraster nach Ihrem Belieben an."
 
 #: src/widgets/window.rs:71

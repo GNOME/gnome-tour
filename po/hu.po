@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
-"PO-Revision-Date: 2021-02-16 02:21+0100\n"
-"Last-Translator: Balázs Meskó <mesko.balazs at fsf dot hu>\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-02-26 01:35+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +33,6 @@ msgid "Gnome;GTK;"
 msgstr "GNOME;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-#| msgid "GNOME Tour and Greeter."
 msgid "GNOME Tour and Greeter"
 msgstr "GNOME bemutató és köszöntő"
 
@@ -45,12 +44,11 @@ msgstr "Vezetett bemutató és köszöntő a GNOME számára."
 msgid "Main Window"
 msgstr "Főablak"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
 #: src/widgets/pages/welcome.rs:151
-#| msgid "_Start Tour"
 msgid "Start the Tour"
 msgstr "Bemutató indítása"
 
@@ -59,7 +57,6 @@ msgid "Learn about new and essential features in {} {}."
 msgstr "Ismerje meg a {} {} új és alapvető funkcióit."
 
 #: src/widgets/paginator.rs:32
-#| msgid "_Start Tour"
 msgid "_Start"
 msgstr "_Indítás"
 
@@ -80,7 +77,6 @@ msgid "Get an Overview"
 msgstr "Áttekintés"
 
 #: src/widgets/window.rs:52
-#| msgid "Open Activities to launch apps"
 msgid "Press Activities to see open windows and apps."
 msgstr ""
 "Nyomja meg a Tevékenységeket az ablakok és alkalmazások megtekintéséhez."
@@ -90,8 +86,9 @@ msgid "Make Apps Your Own"
 msgstr "Tegye sajátjává az alkalmazásokat"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid so it makes sense for you."
-msgstr "Rendezze úgy az alkalmazásrácsot, ahogy Önnek megfelel."
+#| msgid "Arrange the app grid so it makes sense for you."
+msgid "Arrange the app grid to your liking."
+msgstr "Rendezze az alkalmazásrácsot a tetszése szerint."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -118,7 +115,6 @@ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Érintőtáblán használja a háromujjas vízszintes seprést. Próbálja ki!"
 
 #: src/widgets/window.rs:104
-#| msgid "That's it! We hope that you enjoy {}."
 msgid "That's it! We hope that you enjoy {} {}."
 msgstr "Ennyi! Reméljük, hogy élvezi a {} {} használatát."
 

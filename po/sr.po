@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-09-03 10:22+0200\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-02-27 08:04+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
@@ -18,9 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Обилазак"
 
@@ -33,8 +34,8 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;Гном;ГТК;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "Гномова добродошлица и водич."
+msgid "GNOME Tour and Greeter"
+msgstr "Гномова добродошлица и водич"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -44,95 +45,130 @@ msgstr "Водич за Гном."
 msgid "Main Window"
 msgstr "Главни прозор"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Гномов пројекат"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "Добро дошли у {} {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr "Здраво! Започните обилазак да бисте научили основе."
+msgid "Start the Tour"
+msgstr "Покрени обилазак"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_Не, хвала"
+msgid "Learn about new and essential features in {} {}."
+msgstr "Сазнајте више о основним и новим могућностима у {} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "Покрени обила_зак"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Покрени"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Следеће"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Затвори"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Претходно"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Отворите Активности за покретање програма"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr "Дугме „Активности“ се може користити за промену прозора и за претрагу."
+msgid "Get an Overview"
+msgstr "Покрените преглед"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Само куцајте за почетак претраге"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Отворите Активности да бисте видели отворене прозоре и програме."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"У прегледу активности, само започните са куцањем за претраживање програма, "
-"подешавања и осталих ствари."
+msgid "Make Apps Your Own"
+msgstr "Направите програме које поседујете"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Кликните на време да бисте видели ваша обавештења"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "Преуредите мрежу програма по сопственој вољи."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "Искакући прозор обавештења такође садржи алатке за лично планирање."
+msgid "Keep on Top with Workspaces"
+msgstr "Држите при врху уз помоћ радних простора"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Погледајте податке о систему и подешавања"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Лагано уређујте прозоре уз помоћ новог прегледа радних простора."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Погледајте стање система и брзо промените подешавања."
+msgid "Up/Down for the Overview"
+msgstr "Стрелица горе или доле за преглед"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Користите „Програми“ апликацију за проналажење и инсталирање програма"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr ""
+"На додирној табли, користите вертикално превлачење са три прста. Пробајте!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
+msgid "Left/Right for Workspaces"
+msgstr "Стрелица лево или десно за радне просторе"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
-"Откријте одличне програме кроз претрагу, прегледање и користећи наше "
-"препоруке."
+"На додирној табли, користите хоризонтално превлачење са три прста. Пробајте!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "То је то! Надамо се да ће вам се свидети {}."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "То је то! Надамо се да ће вам се свидети {} {}."
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "За више савета и трикова, погледајте програм „Помоћ“."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Добро дошли у {} {}"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr "Здраво! Започните обилазак да бисте научили основе."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Не, хвала"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr ""
+#~ "Дугме „Активности“ се може користити за промену прозора и за претрагу."
+
+#~ msgid "Just type to search"
+#~ msgstr "Само куцајте за почетак претраге"
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "У прегледу активности, само започните са куцањем за претраживање "
+#~ "програма, подешавања и осталих ствари."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Кликните на време да бисте видели ваша обавештења"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "Искакући прозор обавештења такође садржи алатке за лично планирање."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Погледајте податке о систему и подешавања"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Погледајте стање система и брзо промените подешавања."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr ""
+#~ "Користите „Програми“ апликацију за проналажење и инсталирање програма"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Откријте одличне програме кроз претрагу, прегледање и користећи наше "
+#~ "препоруке."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "Гномов водич"

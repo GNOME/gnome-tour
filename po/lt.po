@@ -1,14 +1,14 @@
 # Lithuanian translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Aurimas Černius <aurisc4@gmail.com>, 2020.
+# Aurimas Černius <aurisc4@gmail.com>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-25 15:46+0000\n"
-"PO-Revision-Date: 2020-08-26 22:52+0300\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-02-27 14:30+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -17,9 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Turas"
 
@@ -32,8 +33,9 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "GNOME turas ir pasisveikinimas."
+#| msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME turas ir pasisveikinimas"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -43,94 +45,133 @@ msgstr "Turas su gidu ir pasisveikinimas GNOME aplinkai."
 msgid "Main Window"
 msgstr "Pagrindinis langas"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:35
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "GNOME projektas"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "Sveiki pradėję naudoti {} {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Sveiki! Pasinaudokite turi ir sužinokite, kur kas, bei aptikite pagrindines "
-"savybes."
+#| msgid "_Start Tour"
+msgid "Start the Tour"
+msgstr "Pradėti turą"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_Ne, ačiū"
+msgid "Learn about new and essential features in {} {}."
+msgstr "Sužinokite apie naujas bei esmines savybes {} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "_Pradėti turą"
+#: src/widgets/paginator.rs:32
+#| msgid "_Start Tour"
+msgid "_Start"
+msgstr "_Pradėti"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Kitas"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Užverti"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Ankstesnis"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Atverti veiklas programoms paleisti"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr "Veiklų rodinį taip pat galima naudoti langams keisti bei paieškai."
+msgid "Get an Overview"
+msgstr "Eiti į apžvalgą"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Tiesiog rašykite paieškai pradėti"
+#: src/widgets/window.rs:52
+#| msgid "Open Activities to launch apps"
+msgid "Press Activities to see open windows and apps."
+msgstr "Spauskite Apžvalga ir matysite atvertus langus bei programas."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"Veiklų rodinyje tiesiog pradėkite rašyti ir ieškosite programų, nustatymų ir "
-"t. t."
+msgid "Make Apps Your Own"
+msgstr "Pasidarykite savo programas"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Spauskite virš laiko pranešimams pamatyti"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "Surikiuokite programų tinklelį sau."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "Pranešimų langelyje taip pat yra asmeninio planavimo įrankiai."
+msgid "Keep on Top with Workspaces"
+msgstr "Išlaikykite viršuje su darbo sritimis"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Rodyti sistemos informaciją bei nustatymus"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Lengvai tvarkykite langus su nauju darbo sričių rodiniu."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Gaukite sistemos būsenos apžvalgą bei greitai keiskite nustatymus."
+msgid "Up/Down for the Overview"
+msgstr "Aukštyn/žemyn apžvalgoje"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Naudokite Programinę įrangą programoms surasti ir įdiegti"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr ""
+"Naudodami jutiklinį kilimėlį, naudokite vertikalius perbraukimus trimis "
+"pirštais. Pabandykite!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
+msgid "Left/Right for Workspaces"
+msgstr "Kairėn/dešinėn darbo srityse"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
-"Aptikite puikias programas naudodami paiešką, naršymą bei mūsų "
-"rekomendacijas."
+"Jutikliniame kilimėlyje, naudokite horizontalius perbraukimus trimis "
+"pirštais. Išbandykite!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Tai viskas! Tikimės, kad jums patiks {}."
+#: src/widgets/window.rs:104
+#| msgid "That's it! We hope that you enjoy {}."
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Tai viskas! Tikimės, kad jums patiks {} {}."
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daugiau patarimų galite gauti Žinyno programoje."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Sveiki pradėję naudoti {} {}"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Sveiki! Pasinaudokite turi ir sužinokite, kur kas, bei aptikite "
+#~ "pagrindines savybes."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Ne, ačiū"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr "Veiklų rodinį taip pat galima naudoti langams keisti bei paieškai."
+
+#~ msgid "Just type to search"
+#~ msgstr "Tiesiog rašykite paieškai pradėti"
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "Veiklų rodinyje tiesiog pradėkite rašyti ir ieškosite programų, nustatymų "
+#~ "ir t. t."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Spauskite virš laiko pranešimams pamatyti"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "Pranešimų langelyje taip pat yra asmeninio planavimo įrankiai."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Rodyti sistemos informaciją bei nustatymus"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Gaukite sistemos būsenos apžvalgą bei greitai keiskite nustatymus."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "Naudokite Programinę įrangą programoms surasti ir įdiegti"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Aptikite puikias programas naudodami paiešką, naršymą bei mūsų "
+#~ "rekomendacijas."

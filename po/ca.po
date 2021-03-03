@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
 "PO-Revision-Date: 2021-02-14 16:53+0100\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
@@ -42,7 +42,7 @@ msgstr "Una visita guiada i benvinguda per al GNOME."
 msgid "Main Window"
 msgstr "Finestra principal"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "El projecte GNOME"
 
@@ -83,7 +83,7 @@ msgid "Make Apps Your Own"
 msgstr "Personalitzeu les aplicacions i feu-les vostres"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid so it makes sense for you."
+msgid "Arrange the app grid to your liking."
 msgstr "Organitzeu la graella d'aplicacions al vostre gust."
 
 #: src/widgets/window.rs:71
@@ -92,7 +92,8 @@ msgstr "Controleu els espais de treball"
 
 #: src/widgets/window.rs:72
 msgid "Easily organise windows with the new workspaces view."
-msgstr "Organitzeu fàcilment les finestres amb la nova vista dels espais de treball."
+msgstr ""
+"Organitzeu fàcilment les finestres amb la nova vista dels espais de treball."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -108,7 +109,8 @@ msgstr "Esquerra/dreta per als espais de treball"
 
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Amb un ratolí tàctil, feu lliscar tres dits horitzontalment. Proveu-ho!"
+msgstr ""
+"Amb un ratolí tàctil, feu lliscar tres dits horitzontalment. Proveu-ho!"
 
 #: src/widgets/window.rs:104
 msgid "That's it! We hope that you enjoy {} {}."
@@ -124,32 +126,48 @@ msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
 #~ msgid "_No Thanks"
 #~ msgstr "_No, gràcies"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "Hola! Fes la visita guiada per a aprendre el teu camí i descobrir característiques essencials."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Hola! Fes la visita guiada per a aprendre el teu camí i descobrir "
+#~ "característiques essencials."
 
 #~ msgid "The activities view can also be used to switch windows and search."
-#~ msgstr "La vista d'activitats també es pot utilitzar per a canviar de finestra i de cerca."
+#~ msgstr ""
+#~ "La vista d'activitats també es pot utilitzar per a canviar de finestra i "
+#~ "de cerca."
 
 #~ msgid "Just type to search"
 #~ msgstr "Simplement escriviu per a cercar"
 
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
-#~ msgstr "A la vista d'activitats, simplement comenceu a escriure per a cercar aplicacions, paràmetres i més."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "A la vista d'activitats, simplement comenceu a escriure per a cercar "
+#~ "aplicacions, paràmetres i més."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Feu clic a l'hora per a veure les notificacions"
 
 #~ msgid "The notifications popover also includes personal planning tools."
-#~ msgstr "Les notificacions emergents també inclouen eines de planificació personal."
+#~ msgstr ""
+#~ "Les notificacions emergents també inclouen eines de planificació personal."
 
 #~ msgid "View system information and settings"
 #~ msgstr "Visualitza la informació i els paràmetres del sistema"
 
 #~ msgid "Get an overview of the system status and quickly change settings."
-#~ msgstr "Obtén una visió general de l'estat del sistema i canvia ràpidament la configuració."
+#~ msgstr ""
+#~ "Obtén una visió general de l'estat del sistema i canvia ràpidament la "
+#~ "configuració."
 
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Utilitza el Programari per a trobar i instal·lar aplicacions"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr "Descobriu les grans aplicacions mitjançant la cerca navegació i les nostres recomanacions."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Descobriu les grans aplicacions mitjançant la cerca navegació i les "
+#~ "nostres recomanacions."

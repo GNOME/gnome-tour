@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-01-30 13:40+0000\n"
-"PO-Revision-Date: 2021-01-31 09:26+0100\n"
-"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-08 14:26+0100\n"
+"Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Prohlídka"
 
@@ -29,32 +30,43 @@ msgstr "Uvítání a prohlídka"
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:156
-msgid "Welcome to {} {}"
-msgstr "Vítá vás {} {}"
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "Uvítání a prohlídka GNOME"
 
-#: src/widgets/pages/welcome.rs:163
-msgid "Learn about new and essential features in GNOME 40."
-msgstr "Seznamte se s novými a důležitými vlastnostmi GNOME 40."
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Prohlídka s průvodcem a uvítání do GNOME."
 
-#: src/widgets/pages/welcome.rs:178
-msgid "_No Thanks"
-msgstr "_Ne, děkuji"
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Hlavní okno"
 
-#: src/widgets/pages/welcome.rs:188
-msgid "_Start Tour"
-msgstr "_Začít prohlídku"
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
 
-#: src/widgets/paginator.rs:30
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Začít prohlídku"
+
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Seznamte se, jaké nové a důležité funkce přináší {} {}."
+
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "Z_ačít"
+
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Následující"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Zavřít"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Předchozí"
 
@@ -71,8 +83,8 @@ msgid "Make Apps Your Own"
 msgstr "Přizpůsobte si aplikace"
 
 #: src/widgets/window.rs:62
-msgid "Arrange your apps so they make sense for you."
-msgstr "Uspořádejte si aplikace, jak vám to vyhovuje."
+msgid "Arrange the app grid to your liking."
+msgstr "Uspořádejte si mřížku aplikací podle svých představ."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -80,8 +92,7 @@ msgstr "Vyznejte se díky pracovním plochám"
 
 #: src/widgets/window.rs:72
 msgid "Easily organise windows with the new workspaces view."
-msgstr ""
-"Udržujte si snadno pořádek v oknech pomocí nového zobrazení pracovních ploch."
+msgstr "Udržujte si snadno pořádek v oknech pomocí nového zobrazení pracovních ploch."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -99,12 +110,10 @@ msgstr "Vlevo/vpravo do pracovních ploch"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Na touchpadu použijte vodorovné máchnutí třemi prsty. Zkuste si to!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:102
-msgid "That's it! We hope that you enjoy {}."
-msgstr "A to je vše. Ať vám {} přinese skvělé zážitky."
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "A to je vše. Ať vám {} {} přinese skvělé zážitky."
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Další rady a tipy najdete v aplikaci Nápověda."
-

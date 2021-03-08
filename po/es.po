@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
-"PO-Revision-Date: 2021-02-15 10:38+0100\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-08 09:36+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -43,22 +43,19 @@ msgstr "Un tour guiado y una bienvenida a GNOME."
 msgid "Main Window"
 msgstr "Ventana principal"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "El Proyecto GNOME"
 
 #: src/widgets/pages/welcome.rs:151
-#| msgid "_Start Tour"
 msgid "Start the Tour"
 msgstr "Empezar el tour"
 
 #: src/widgets/pages/welcome.rs:161
-#| msgid "Learn about new and essential features in GNOME 40."
 msgid "Learn about new and essential features in {} {}."
 msgstr "Aprender más sobre las características nuevas y esenciales de {} {}."
 
 #: src/widgets/paginator.rs:32
-#| msgid "_Start Tour"
 msgid "_Start"
 msgstr "_Empezar"
 
@@ -88,9 +85,9 @@ msgid "Make Apps Your Own"
 msgstr "Hacer suyas las aplicaciones"
 
 #: src/widgets/window.rs:62
-#| msgid "Arrange your apps so they make sense for you."
-msgid "Arrange the app grid so it makes sense for you."
-msgstr "Organizar a su aplicaciones a su gusto."
+#| msgid "Arrange the app grid so it makes sense for you."
+msgid "Arrange the app grid to your liking."
+msgstr "Organizar la cuadrícula de aplicaciones a su gusto."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -122,7 +119,6 @@ msgstr ""
 "¡Pruébelo!"
 
 #: src/widgets/window.rs:104
-#| msgid "That's it! We hope that you enjoy {}."
 msgid "That's it! We hope that you enjoy {} {}."
 msgstr "Eso es todo. Esperamos que disfrute de {} {}."
 

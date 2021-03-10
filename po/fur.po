@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-11 17:36+0000\n"
-"PO-Revision-Date: 2021-02-16 08:51+0100\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-10 14:54+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -42,7 +42,7 @@ msgstr "Une visite vuidade e il benvignût su GNOME."
 msgid "Main Window"
 msgstr "Barcon principâl"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Il progjet GNOME"
 
@@ -83,8 +83,8 @@ msgid "Make Apps Your Own"
 msgstr "Rint personâls lis aplicazions"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid so it makes sense for you."
-msgstr "Met in ordin la gridele des aplicazions cussì che e vedi sens par te."
+msgid "Arrange the app grid to your liking."
+msgstr "Met in ordin la gridele des aplicazions a plasiment."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"

@@ -92,7 +92,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "कार्यस्थानसँग माथि राख्नुहोस्"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr "नयाँ कार्यस्थान दृश्यसँग सजिलै सञ्झ्याल व्यवस्थित गर्नुहोस् ।"
 
 #: src/widgets/window.rs:81

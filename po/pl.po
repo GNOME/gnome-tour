@@ -93,7 +93,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "Wydajnie pracuj dzięki obszarom roboczym"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr "Łatwo organizuj okna za pomocą nowego widoku obszarów roboczych."
 
 #: src/widgets/window.rs:81

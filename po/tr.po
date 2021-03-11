@@ -95,7 +95,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "Çalışma Alanlarından Bilgilen"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr "Yeni çalışma alanları görünümüyle pencereleri kolayca örgütle."
 
 #: src/widgets/window.rs:81

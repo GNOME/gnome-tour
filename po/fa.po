@@ -91,7 +91,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "با فضاهای کاری، در بالا بمانید"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr "با نمای فضای کاری جدید، پنجره‌ها را به راحتی مدیریت کنید."
 
 #: src/widgets/window.rs:81

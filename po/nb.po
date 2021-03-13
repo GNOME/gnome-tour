@@ -1,14 +1,14 @@
 # Norwegian Bokmål translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Kjartan Maraas <kmaraas@gnome.org>, 2020.
+# Kjartan Maraas <kmaraas@gnome.org>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-11-23 15:59+0000\n"
-"PO-Revision-Date: 2020-12-04 14:47+0100\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-13 18:13+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -18,6 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Omvisning"
 
@@ -30,7 +31,7 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
 msgstr "GNOME omvisning og velkomst."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
@@ -41,88 +42,78 @@ msgstr "En omvisning og velkomst til GNOME."
 msgid "Main Window"
 msgstr "Hovedvindu"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "GNOME prosjektet"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:155
-msgid "Welcome to {} {}"
-msgstr "Velkommen til {} {}"
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Start omvisning"
 
-#: src/widgets/pages/welcome.rs:162
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr "Hei! Bli med på omvisning for å lære om og utforske grunnleggende funksjonalitet."
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Lær om nye og viktige funksjoner i {} {}."
 
-#: src/widgets/pages/welcome.rs:177
-msgid "_No Thanks"
-msgstr "_Nei takk"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Start"
 
-#: src/widgets/pages/welcome.rs:187
-msgid "_Start Tour"
-msgstr "_Start omvisning"
-
-#: src/widgets/paginator.rs:30
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Neste"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Lukk"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Forrige"
 
-#: src/widgets/window.rs:52
-msgid "Open Activities to launch apps"
-msgstr "Åpne aktiviteter for å starte programmer"
+#: src/widgets/window.rs:51
+msgid "Get an Overview"
+msgstr "Få en oversikt"
 
-#: src/widgets/window.rs:53
-msgid "The activities view can also be used to switch windows and search."
-msgstr "Aktivitetsvisning kan også brukes til å bytte vinduer og til søk."
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Trykk på Aktiviteter for å se åpne vinduer og programmer."
+
+#: src/widgets/window.rs:61
+msgid "Make Apps Your Own"
+msgstr "Gjør programmene til dine egne"
 
 #: src/widgets/window.rs:62
-msgid "Just type to search"
-msgstr "Bare skriv for å søke"
+msgid "Arrange the app grid to your liking."
+msgstr "Tilpass rutenettet for programmer til dine ønsker."
 
-#: src/widgets/window.rs:63
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr "I aktivitetsvisning kan du bare starte å skrive for å søke etter programmer, innstillinger og mer."
+#: src/widgets/window.rs:71
+msgid "Keep on Top with Workspaces"
+msgstr "Få kontroll med arbeidsområder"
 
 #: src/widgets/window.rs:72
-msgid "Click the time to see notifications"
-msgstr "Klikk på klokken for å se varslinger"
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Organiser vinduer enkelt med den nye arbeidsområdevisningen."
 
-#: src/widgets/window.rs:73
-msgid "The notifications popover also includes personal planning tools."
-msgstr "Varslingsdialogen har også verktøy for personlig planlegging."
+#: src/widgets/window.rs:81
+msgid "Up/Down for the Overview"
+msgstr "Opp/ned for oversikten"
 
 #: src/widgets/window.rs:82
-msgid "View system information and settings"
-msgstr "Vis systeminformasjon og innstillinger"
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "Bruk vertikale dra-operasjoner med tre fingre på en berøringsskjerm. Prøv det!"
 
-#: src/widgets/window.rs:83
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Få oversikt over systemstatus og endre innstillinger raskt."
+#: src/widgets/window.rs:91
+msgid "Left/Right for Workspaces"
+msgstr "Venstre/høyre for arbeidsområder"
 
 #: src/widgets/window.rs:92
-msgid "Use Software to find and install apps"
-msgstr "Bruk Programvare for å finne og installere programmer"
-
-#: src/widgets/window.rs:93
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "Finn fantastiske programmer gjennom søk, bla gjennom utvalg eller se på våre anbefalinger."
-
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:103
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Det var det! Vi håper du liker {}."
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "Bruk horisontale dra-operasjoner med tre fingre på en berøringsskjerm. Prøv det!"
 
 #: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Det var det! Vi håper du liker {} {}."
+
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Se Hjelp applikasjonen for flere råd og tips."

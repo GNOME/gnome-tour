@@ -1,15 +1,15 @@
 # Polish translation for gnome-tour.
-# Copyright © 2020 the gnome-tour authors.
+# Copyright © 2020-2021 the gnome-tour authors.
 # This file is distributed under the same license as the gnome-tour package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2020.
-# Aviary.pl <community-poland@mozilla.org>, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2020-2021.
+# Aviary.pl <community-poland@mozilla.org>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-08-22 15:33+0200\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-13 19:19+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -20,6 +20,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Przewodnik"
 
@@ -32,7 +33,7 @@ msgid "Gnome;GTK;"
 msgstr "GNOME;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
 msgstr "Przewodnik po GNOME i ekran powitalny"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
@@ -43,96 +44,80 @@ msgstr "Przewodnik po środowisku GNOME i ekran powitalny."
 msgid "Main Window"
 msgstr "Główne okno"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "Witamy w systemie {} {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Cześć! Ten przewodnik pomoże Ci zacząć pracę i poznać niezbędne funkcje."
+msgid "Start the Tour"
+msgstr "Rozpocznij przewodnik"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_Nie, dziękuję"
+msgid "Learn about new and essential features in {} {}."
+msgstr "Poznaj nowe i niezbędne funkcje systemu {} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "_Rozpocznij przewodnik"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Rozpocznij"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Dalej"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "Za_mknij"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Wstecz"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Otwórz „Podgląd”, aby uruchamiać programy"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr ""
-"Ekran podglądu można używać także do przełączania okien i wyszukiwania."
+msgid "Get an Overview"
+msgstr "Miej oko na wszystko"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Zacznij pisać, aby wyszukać"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Kliknij „Podgląd”, aby zobaczyć otwarte okna i programy."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"Zacznij pisać na ekranie podglądu, aby znaleźć programy, ustawienia i nie "
-"tylko."
+msgid "Make Apps Your Own"
+msgstr "Ustaw programy po swojemu"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Kliknij zegar, aby zobaczyć powiadomienia"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "Uporządkuj siatkę programów wedle uznania."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "Obszar powiadomień zawiera także narzędzia do planowania dnia."
+msgid "Keep on Top with Workspaces"
+msgstr "Wydajnie pracuj dzięki obszarom roboczym"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Wyświetl informacje o komputerze i ustawienia"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Łatwo organizuj okna za pomocą nowego widoku obszarów roboczych."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Rzuć okiem na stan systemu i szybko zmieniaj ustawienia."
+msgid "Up/Down for the Overview"
+msgstr "W górę/w dół wyświetla ekran podglądu"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Użyj Menedżera oprogramowania do wyszukiwania i instalowania programów"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "Przeciągnij trzy palce w pionie na panelu dotykowym. Spróbuj!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr ""
-"Odkrywaj świetne programy za pomocą wyszukiwarki, przeglądarki i naszych "
-"rekomendacji."
+msgid "Left/Right for Workspaces"
+msgstr "W lewo/w prawo przełącza obszary robocze"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "Przeciągnij trzy palce w poziomie na panelu dotykowym. Spróbuj!"
+
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
 msgstr ""
-"Wszystko gotowe! Mamy nadzieję, że korzystanie z systemu {} przyniesie "
+"Wszystko gotowe! Mamy nadzieję, że korzystanie z systemu {} {} przyniesie "
 "radość."
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Program „Pomoc” zawiera więcej porad i wskazówek."

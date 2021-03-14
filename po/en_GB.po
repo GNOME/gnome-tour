@@ -1,15 +1,15 @@
 # British English translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Zander Brown <zbrown@gnome.org>, 2020.
-# Bruce Cowan <bruce@bcowan.me.uk>, 2020.
+# Zander Brown <zbrown@gnome.org>, 2020-2021.
+# Bruce Cowan <bruce@bcowan.me.uk>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-23 12:15+0000\n"
-"PO-Revision-Date: 2020-09-01 19:42+0100\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-14 11:20+0000\n"
 "Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
 "Language-Team: English - United Kingdom <en@li.org>\n"
 "Language: en_GB\n"
@@ -17,9 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Tour"
 
@@ -32,8 +33,8 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME Tour and Greeter"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -43,96 +44,134 @@ msgstr "A guided tour and greeter for GNOME."
 msgid "Main Window"
 msgstr "Main Window"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:35
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-#| msgid "Welcome Tour"
-msgid "Welcome to {} {}"
-msgstr "Welcome to {} {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
+#| msgid "_Start Tour"
+msgid "Start the Tour"
+msgstr "Start the Tour"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_No Thanks"
+#| msgid "Learn about new and essential features in GNOME 40."
+msgid "Learn about new and essential features in {} {}."
+msgstr "Learn about new and essential features in {} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "_Start Tour"
+#: src/widgets/paginator.rs:32
+#| msgid "_Start Tour"
+msgid "_Start"
+msgstr "_Start"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Next"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Close"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "_Previous"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Open Activities to launch apps"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr "The activities view can also be used to switch windows and search."
+msgid "Get an Overview"
+msgstr "Get an Overview"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Just type to search"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Press Activities to see open windows and apps."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
+msgid "Make Apps Your Own"
+msgstr "Make Apps Your Own"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Click the time to see notifications"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "Arrange the app grid to your liking."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "The notifications popover also includes personal planning tools."
+msgid "Keep on Top with Workspaces"
+msgstr "Keep on Top with Workspaces"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "View system information and settings"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Easily organise windows with the new workspaces view."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Get an overview of the system status and quickly change settings."
+msgid "Up/Down for the Overview"
+msgstr "Up/Down for the Overview"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Use Software to find and install apps"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "On a touchpad, use three-finger vertical swipes. Try it!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "Discover great apps through search, browsing and our recommendations."
+msgid "Left/Right for Workspaces"
+msgstr "Left/Right for Workspaces"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "That's it! We hope that you enjoy {}."
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "On a touchpad, use three-finger horizontal swipes. Try it!"
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:104
+#| msgid "That's it! We hope that you enjoy {}."
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "That's it! We hope that you enjoy {} {}."
+
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "To get more advice and tips, see the Help app."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Welcome to {} {}"
+
+#~ msgid "_No Thanks"
+#~ msgstr "_No Thanks"
+
+#~ msgid "Arrange your apps so they make sense for you."
+#~ msgstr "Arrange your apps so they make sense for you."
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr "The activities view can also be used to switch windows and search."
+
+#~ msgid "Just type to search"
+#~ msgstr "Just type to search"
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Click the time to see notifications"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "The notifications popover also includes personal planning tools."
+
+#~ msgid "View system information and settings"
+#~ msgstr "View system information and settings"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Get an overview of the system status and quickly change settings."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "Use Software to find and install apps"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Discover great apps through search, browsing and our recommendations."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "GNOME Tour"

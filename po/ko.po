@@ -2,135 +2,167 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # DaeHyun Sung <sungdh86@gmail.com>, 2020.
+# Changwoo Ryu <cwryu@debian.org>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-09-04 00:04+0900\n"
-"Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-21 19:41+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
-msgstr "투어"
+msgstr "둘러보기"
 
 #: data/org.gnome.Tour.desktop.in.in:4
 msgid "Greeter & Tour"
-msgstr "안내자 & 투어"
+msgstr "안내 및 둘러보기"
 
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;그놈;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "그놈 투어와 안내자."
+msgid "GNOME Tour and Greeter"
+msgstr "그놈 둘러보기 및 안내"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "그놈을 위한 안내 투어와 안내자."
+msgstr "그놈을 위한 안내 둘러보기와 안내."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:15
 msgid "Main Window"
 msgstr "메인 창"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "그놈 프로젝트"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "{} {}에 오신걸 환영합니다"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"여어, 안녕! 그놈을 새로 접하는 경우, 둘러보기를 통해 몇가지 기본 기능을 발견"
-"하고 배울 수 있습니다."
+msgid "Start the Tour"
+msgstr "둘러보기 시작"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "괜찮습니다(_N)"
+msgid "Learn about new and essential features in {} {}."
+msgstr "{} {}의 새로운 사항과 필수 기능을 알아봅니다."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
 msgstr "시작(_S)"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "다음(_N)"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "닫기(_C)"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "이전(_P)"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "앱 시작을 위한 현재 활동 열기"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr "이 현재 활동 보기는 창과 검색을 전환하는데 사용할 수 있습니다."
+msgid "Get an Overview"
+msgstr "요약 보기"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "입력하여 검색"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "현재 활동을 눌러 열려 있는 창과 앱을 봅니다."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"현재 현재 활동 뷰에서, 애플리케이션, 설정, 그외에 대하여 검색을 위해 검색어"
-"를 입력 시작합니다."
+msgid "Make Apps Your Own"
+msgstr "앱을 내게 맞추기"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "알림을 보려면 시간을 클릭하십시오"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "원하는 대로 앱 그리드를 조절합니다."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "알림 팝오버에는 개인 계획 도구도 포함되어 있습니다."
+msgid "Keep on Top with Workspaces"
+msgstr "작업 공간에서 항상 위에 놓기"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "시스템 정보와 설정 보기"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "새로운 작업 공간 뷰를 이용하면 쉽게 창을 정리합니다."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "시스템 상태의 개요를 얻고, 빠르게 설정을 바꿉니다."
+msgid "Up/Down for the Overview"
+msgstr "요약은 위/아래 화살표"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "그놈 소프트웨어를 사용하여 앱 찾기 및 설치하기"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "터치패드에서는 세 손가락으로 위아래로 스와이프합니다. 한 번 해 보세요!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "검색, 브라우징, 추천을 통해 가장 좋은 애플리케이션을 찾아보기."
+msgid "Left/Right for Workspaces"
+msgstr "작업 공간은 왼쪽/오른쪽 화살표"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "투어가 끝났습니다! 여러분이 {}을 즐기길 희망합니다."
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "터치패드에서는 세 손가락으로 좌우로 스와이프합니다. 한 번 해 보세요!"
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "둘러보기가 끝났습니다! 여러분이 {} {} 즐기길 바랍니다."
+
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
-msgstr "더 많은 충고와 팁을 보려면, 도움말 앱을 보기 바랍니다."
+msgstr "더 많은 조언과 팁을 보려면, 도움말 앱을 보기 바랍니다."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "{} {}에 오신걸 환영합니다"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "여어, 안녕! 그놈을 새로 접하는 경우, 둘러보기를 통해 몇가지 기본 기능을 발"
+#~ "견하고 배울 수 있습니다."
+
+#~ msgid "_No Thanks"
+#~ msgstr "괜찮습니다(_N)"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr "이 현재 활동 보기는 창과 검색을 전환하는데 사용할 수 있습니다."
+
+#~ msgid "Just type to search"
+#~ msgstr "입력하여 검색"
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "현재 현재 활동 뷰에서, 애플리케이션, 설정, 그외에 대하여 검색을 위해 검색"
+#~ "어를 입력 시작합니다."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "알림을 보려면 시간을 클릭하십시오"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "알림 팝오버에는 개인 계획 도구도 포함되어 있습니다."
+
+#~ msgid "View system information and settings"
+#~ msgstr "시스템 정보와 설정 보기"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "시스템 상태의 개요를 얻고, 빠르게 설정을 바꿉니다."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "그놈 소프트웨어를 사용하여 앱 찾기 및 설치하기"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr "검색, 브라우징, 추천을 통해 가장 좋은 애플리케이션을 찾아보기."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "그놈 투어"

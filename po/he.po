@@ -8,18 +8,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-09-26 12:06+0000\n"
-"PO-Revision-Date: 2020-09-29 01:26+0300\n"
-"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-03-31 15:11+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "סיור מודרך"
 
@@ -32,8 +33,8 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "סיור מודרך ב־GNOME"
+msgid "GNOME Tour and Greeter"
+msgstr "סיור מודרך וקבלת פנים ב־GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -47,86 +48,110 @@ msgstr "חלון ראשי"
 msgid "The GNOME Project"
 msgstr "מיזם GNOME"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "ברוך בואך אל ‏{}‏ {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"שלום! השתמשו בסיור המודרך על מנת ללמוד על הדרך שלך ב־GNOME ולגלות תכונות "
-"מהותיות."
+msgid "Start the Tour"
+msgstr "התחלת הסיור"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_לא תודה"
+msgid "Learn about new and essential features in {} {}."
+msgstr "תיאור היכולות החדשות והחיוניות ב־{} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "ה_תחלת הסיור"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "ה_תחלה"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_הבא"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_סגירה"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "ה_קודם"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "פתיחת פעילויות לשיגור יישומים"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr "תצוגת פעילויות יכולה לשמש גם כמעבר בין חלונות וכן לחיפוש."
+msgid "Get an Overview"
+msgstr "הצגת סקירה"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "יש רק להקליד כדי לחפש"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "יש ללחוץ על פעילויות כדי לצפות ביישומים ובחלונות פתוחים."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr "בתצוגת פעילויות, יש רק להקליד על מנת לחפש יישומים, הגדרות ועוד."
+msgid "Make Apps Your Own"
+msgstr "התאמת יישומים לטעמך"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "יש ללחוץ על התאריך על מנת לצפות בהתרעות"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "סידור רשת היישומים בדרך הנוחה לך."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "בועת ההתרעות כוללת גם תכניות פרטיות וכלים."
+msgid "Keep on Top with Workspaces"
+msgstr "מרחבי עבודה משאירים אותך במרכז העניינים"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "הצגת מידע והגדרות מערכת"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "ניתן לסדר חלונות בקלות עם תצוגת מרחבי העבודה החדשה."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "קבלת סקירה על מצב המערכת ושינוי מהיר של הגדרות."
+msgid "Up/Down for the Overview"
+msgstr "למעלה/למטה לסקירה"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "שימוש בתכנה על מנת למצוא ולהתקין יישומים"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "במשטח מגע, ניתן להשתמש במשיכות אנכיות בשלוש אצבעות. כדאי לנסות!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "לגלות יישומים מדהימים על ידי חיפוש, דפדוף והמלצות שלנו."
+msgid "Left/Right for Workspaces"
+msgstr "שמאל/ימין למרחבי עבודה"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "זה הכל! אנחנו מקווים שנהנית מ־{}."
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "‫במשטח מגע, ניתן להשתמש במשיכות אופקיות בשלוש אצבעות. כדאי לנסות!"
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "זה הכול! מאחלים לך ליהנות מ־{}."
+
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "ברוך בואך אל ‏{}‏ {}"
+
+#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
+#~ msgstr "שלום! השתמשו בסיור המודרך על מנת ללמוד על הדרך שלך ב־GNOME ולגלות תכונות מהותיות."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_לא תודה"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr "תצוגת פעילויות יכולה לשמש גם כמעבר בין חלונות וכן לחיפוש."
+
+#~ msgid "Just type to search"
+#~ msgstr "יש רק להקליד כדי לחפש"
+
+#~ msgid "In the activities view, just start typing to search for apps, settings and more."
+#~ msgstr "בתצוגת פעילויות, יש רק להקליד על מנת לחפש יישומים, הגדרות ועוד."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "יש ללחוץ על התאריך על מנת לצפות בהתרעות"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "בועת ההתרעות כוללת גם תכניות פרטיות וכלים."
+
+#~ msgid "View system information and settings"
+#~ msgstr "הצגת מידע והגדרות מערכת"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "קבלת סקירה על מצב המערכת ושינוי מהיר של הגדרות."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "שימוש בתכנה על מנת למצוא ולהתקין יישומים"
+
+#~ msgid "Discover great apps through search, browsing and our recommendations."
+#~ msgstr "לגלות יישומים מדהימים על ידי חיפוש, דפדוף והמלצות שלנו."

@@ -1,14 +1,14 @@
 # Dutch translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Nathan Follens <nthn@unseen.is>, 2020.
+# Nathan Follens <nthn@unseen.is>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-08-18 16:59+0000\n"
-"PO-Revision-Date: 2020-08-25 17:45+0200\n"
+"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"PO-Revision-Date: 2021-04-01 20:53+0200\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
@@ -16,9 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Rondleiding"
 
@@ -31,8 +32,8 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "Rondleiding door en ontmoeting met Gnome."
+msgid "GNOME Tour and Greeter"
+msgstr "Rondleiding door en ontmoeting met Gnome"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -42,100 +43,117 @@ msgstr "Een gegidste rondleiding door en ontmoeting met Gnome."
 msgid "Main Window"
 msgstr "Hoofdvenster"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:34
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "Het Gnome-project"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "Welkom bij {} {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Hallo! Volg de rondleiding om snel uw weg te vinden en kennis te maken met "
-"enkele essentiële functies."
+msgid "Start the Tour"
+msgstr "Rondleiding beginnen"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_Nee bedankt"
+msgid "Learn about new and essential features in {} {}."
+msgstr "Kom meer te weten over nieuwe en essentiële functies in {} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "Rondleiding _beginnen"
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "_Beginnen"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "Volge_nde"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Sluiten"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "Vo_rige"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Open Activiteiten om toepassingen te starten"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr ""
-"Het activiteitenoverzicht kan ook gebruikt worden om van venster te "
-"wisselen, en om te zoeken."
+msgid "Get an Overview"
+msgstr "Verkrijg een overzicht"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Zoeken is heel eenvoudig: begin gewoon te typen"
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Open Activiteiten om geopende vensters en toepassingen te bekijken."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"In het activiteitenoverzicht kunt u heel eenvoudig beginnen te typen om te "
-"zoeken naar toepassingen, instellingen en meer."
+msgid "Make Apps Your Own"
+msgstr "Bemeester uw toepassingen"
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Klik op de tijd om de notificaties te bekijken"
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "Schik het toepassingsrooster naar uw wensen."
 
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr ""
-"De notificatiepop-up bevat ook hulpmiddelen voor uw persoonlijke planning."
+msgid "Keep on Top with Workspaces"
+msgstr "Hou het overzichtelijk met werkbladen"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Bekijk systeeminformatie en instellingen"
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "Organiseer uw vensters eenvoudig met het nieuwe werkbladoverzicht."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr ""
-"Verkrijg een overzicht van de systeemstatus en pas snel instellingen aan."
+msgid "Up/Down for the Overview"
+msgstr "Omhoog/omlaag voor het overzicht"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Gebruik Software om toepassingen te zoeken en installeren"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "Gebruik verticale veegbewegingen met drie vingers op een touchpad. Probeer het eens uit!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr ""
-"Ontdek uitstekende toepassingen via zoeken, bladeren en onze aanbevelingen."
+msgid "Left/Right for Workspaces"
+msgstr "Links/rechts voor werkbladen"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Dat is alles! We hopen dat u {} met plezier zult gebruiken."
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "Gebruik horizontale veegbewegingen met drie vingers op een touchpad. Probeer het eens uit!"
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Dat is alles! We hopen dat u {} {} met plezier zult gebruiken."
+
+#: src/widgets/window.rs:107
 msgid "To get more advice and tips, see the Help app."
 msgstr "Bekijk de Hulp-toepassing voor meer advies en tips."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Welkom bij {} {}"
+
+#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
+#~ msgstr "Hallo! Volg de rondleiding om snel uw weg te vinden en kennis te maken met enkele essentiële functies."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Nee bedankt"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr "Het activiteitenoverzicht kan ook gebruikt worden om van venster te wisselen, en om te zoeken."
+
+#~ msgid "Just type to search"
+#~ msgstr "Zoeken is heel eenvoudig: begin gewoon te typen"
+
+#~ msgid "In the activities view, just start typing to search for apps, settings and more."
+#~ msgstr "In het activiteitenoverzicht kunt u heel eenvoudig beginnen te typen om te zoeken naar toepassingen, instellingen en meer."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Klik op de tijd om de notificaties te bekijken"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "De notificatiepop-up bevat ook hulpmiddelen voor uw persoonlijke planning."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Bekijk systeeminformatie en instellingen"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Verkrijg een overzicht van de systeemstatus en pas snel instellingen aan."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "Gebruik Software om toepassingen te zoeken en installeren"
+
+#~ msgid "Discover great apps through search, browsing and our recommendations."
+#~ msgstr "Ontdek uitstekende toepassingen via zoeken, bladeren en onze aanbevelingen."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "Gnome Tour"
@@ -147,29 +165,19 @@ msgstr "Bekijk de Hulp-toepassing voor meer advies en tips."
 #~ msgstr "Activiteitenoverzicht"
 
 #~ msgid "You can also view open windows, search and use workspaces."
-#~ msgstr ""
-#~ "U kunt er ook uw open vensters bekijken, en uw werkruimten doorzoeken en "
-#~ "gebruiken."
+#~ msgstr "U kunt er ook uw open vensters bekijken, en uw werkruimten doorzoeken en gebruiken."
 
 #~ msgid "Search"
 #~ msgstr "Zoeken"
 
-#~ msgid ""
-#~ "Search can be used to launch apps, find settings, do calculations and "
-#~ "much more."
-#~ msgstr ""
-#~ "U kunt de zoekfunctie gebruiken om toepassingen te starten, instellingen "
-#~ "te vinden, berekeningen uit te voeren, en nog veel meer."
+#~ msgid "Search can be used to launch apps, find settings, do calculations and much more."
+#~ msgstr "U kunt de zoekfunctie gebruiken om toepassingen te starten, instellingen te vinden, berekeningen uit te voeren, en nog veel meer."
 
 #~ msgid "Date & Time"
 #~ msgstr "Datum en tijd"
 
-#~ msgid ""
-#~ "This includes notifications, media controls, calendar events, the weather "
-#~ "and world clocks."
-#~ msgstr ""
-#~ "Dit omvat meldingen, mediabesturingsknoppen, agenda-afspraken, het weer "
-#~ "en wereldklokken."
+#~ msgid "This includes notifications, media controls, calendar events, the weather and world clocks."
+#~ msgstr "Dit omvat meldingen, mediabesturingsknoppen, agenda-afspraken, het weer en wereldklokken."
 
 #~ msgid "System Menu"
 #~ msgstr "Systeemmenu"
@@ -177,11 +185,8 @@ msgstr "Bekijk de Hulp-toepassing voor meer advies en tips."
 #~ msgid "Software"
 #~ msgstr "Software"
 
-#~ msgid ""
-#~ "The Software app makes it easy to find and install all the apps you need."
-#~ msgstr ""
-#~ "De Software-toepassing laat u eenvoudig alle toepassingen die u maar "
-#~ "nodig kunt hebben zoeken en installeren."
+#~ msgid "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr "De Software-toepassing laat u eenvoudig alle toepassingen die u maar nodig kunt hebben zoeken en installeren."
 
 #~ msgid "Learn More"
 #~ msgstr "Kom meer te weten"

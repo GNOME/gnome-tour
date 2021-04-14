@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-24 19:15+0000\n"
-"PO-Revision-Date: 2021-03-11 14:43+0000\n"
+"POT-Creation-Date: 2021-03-11 14:44+0000\n"
+"PO-Revision-Date: 2021-04-14 20:37+0100\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Hugo Carvalho\n"
 "Language: pt\n"
@@ -104,7 +104,7 @@ msgstr "Acima/abaixo para a Visão Geral"
 
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Num painel de toque, usar deslizes verticais de três dedos. Experimente!"
+msgstr "Num painel tátil, usar deslizes verticais de três dedos. Experimente!"
 
 #: src/widgets/window.rs:91
 msgid "Left/Right for Workspaces"
@@ -112,7 +112,7 @@ msgstr "Esquerda/Direita para áreas de trabalho"
 
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Num painel de toque, usar deslizes horizontais de três dedos. Experimente!"
+msgstr "Num painel tátil, usar deslizes horizontais de três dedos. Experimente!"
 
 #: src/widgets/window.rs:104
 msgid "That's it! We hope that you enjoy {} {}."

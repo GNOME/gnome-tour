@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2021-04-01 18:54+0000\n"
+"PO-Revision-Date: 2021-04-17 21:14+0545\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ne\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
+msgid "Tour"
+msgstr "भ्रमण गर्नुहोस्"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "ग्रिटर र टुर"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "जिनोम;जिटिके;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "जिनोम टुर र ग्रिटर"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "जिनोमका लागि मार्गदर्शन टुर र ग्रिटर"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "मुख्य सञ्झ्याल"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
+msgid "The GNOME Project"
+msgstr "जिनोम परियोजना"
+
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "टुर सुरु गर्नुहोस्"
+
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "{} {} मा नयाँ र आवश्यक विशेषताका बारेमा सिक्नुहोस् ।."
+
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "सुरु गर्नुहोस्"
+
+#: src/widgets/paginator.rs:33
+msgid "_Next"
+msgstr "पछिल्लो"
+
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
+msgid "_Close"
+msgstr "बन्द गर्नुहोस्"
+
+#: src/widgets/paginator.rs:36
+msgid "_Previous"
+msgstr "अघिल्लो"
+
+#: src/widgets/window.rs:51
+msgid "Get an Overview"
+msgstr "अवलोकन प्राप्त गर्नुहोस्"
+
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "खुला सञ्झ्याल र अनुप्रयोग हेर्न क्रियाकलाप थिच्नुहोस् ।"
+
+#: src/widgets/window.rs:61
+msgid "Make Apps Your Own"
+msgstr "अनुप्रयोगलाई आफ्नो बनाउनुहोस्"
+
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "अनुप्रयोग ग्रिड तपाईँको रुचाइमा मिलाउनुहोस् ।"
+
+#: src/widgets/window.rs:71
+msgid "Keep on Top with Workspaces"
+msgstr "कार्यस्थानसँग माथि राख्नुहोस्"
+
+#: src/widgets/window.rs:72
+msgid "Easily organise windows with the new workspaces view."
+msgstr "नयाँ कार्यस्थान दृश्यसँग सजिलै सञ्झ्याल व्यवस्थित गर्नुहोस् ।"
+
+#: src/widgets/window.rs:81
+msgid "Up/Down for the Overview"
+msgstr "अवलोकनको लागि माथि/तल"
+
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "टचप्याडमा तीन औंला ठाडो स्वाइप प्रयोग गर्नुहोस्। प्रयास गर्नुहोस्!"
+
+#: src/widgets/window.rs:91
+msgid "Left/Right for Workspaces"
+msgstr "कार्यस्थानका लागि बायाँ/दायाँ"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "टचप्याडमा तीन औंला तेर्सो स्वाइप प्रयोग गर्नुहोस्। प्रयास गर्नुहोस्!"
+
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "त्यो यत्ति हो! हामीलाई आशा छ, तपाई {} {} बाट आनन्द लिनुहुन्छ ।."
+
+#: src/widgets/window.rs:107
+msgid "To get more advice and tips, see the Help app."
+msgstr "थप सल्लाह र सुझाव प्राप्त गर्न मद्दत अनुप्रयोग हेर्नुहोस्।"

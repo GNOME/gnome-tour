@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-10 14:54+0100\n"
+"POT-Creation-Date: 2021-03-10 13:56+0000\n"
+"PO-Revision-Date: 2021-05-01 10:08+0200\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -48,7 +48,7 @@ msgstr "Il progjet GNOME"
 
 #: src/widgets/pages/welcome.rs:151
 msgid "Start the Tour"
-msgstr "_Scomence la visite"
+msgstr "Scomence la visite"
 
 #: src/widgets/pages/welcome.rs:161
 msgid "Learn about new and essential features in {} {}."
@@ -72,7 +72,7 @@ msgstr "_Precedent"
 
 #: src/widgets/window.rs:51
 msgid "Get an Overview"
-msgstr "Oten une panoramiche"
+msgstr "Viôt une panoramiche"
 
 #: src/widgets/window.rs:52
 msgid "Press Activities to see open windows and apps."

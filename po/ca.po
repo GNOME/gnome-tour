@@ -91,7 +91,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "Controleu els espais de treball"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr ""
 "Organitzeu fàcilment les finestres amb la nova vista dels espais de treball."
 

@@ -95,7 +95,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "Maradjon felül a Munkaterületekkel"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr "Szervezze az ablakokat könnyedén az új munkaterületek nézettel."
 
 #: src/widgets/window.rs:81

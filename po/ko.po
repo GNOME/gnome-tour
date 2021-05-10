@@ -92,7 +92,7 @@ msgid "Keep on Top with Workspaces"
 msgstr "작업 공간에서 항상 위에 놓기"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
+msgid "Easily organize windows with the new workspaces view."
 msgstr "새로운 작업 공간 뷰를 이용하면 쉽게 창을 정리합니다."
 
 #: src/widgets/window.rs:81

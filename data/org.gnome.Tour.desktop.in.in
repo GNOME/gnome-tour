@@ -4,7 +4,7 @@ GenericName=Greeter & Tour
 Type=Application
 Exec=gnome-tour
 Terminal=false
-Categories=GNOME;GTK;
+Categories=GNOME;GTK;Documentation;Utility;
 Keywords=Gnome;GTK;
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=@icon@

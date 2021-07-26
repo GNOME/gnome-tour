@@ -1,0 +1,119 @@
+# Bulgarian translation of gnome-tour po-file.
+# Copyright (C) 2021 Alexander Shopov.
+# This file is distributed under the same license as the gnome-tour package.
+# Alexander Shopov <ash@kambanaria.org>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2021-07-04 14:41+0000\n"
+"PO-Revision-Date: 2021-07-26 23:13+0300\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
+msgid "Tour"
+msgstr "Обиколка"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Приветствие и обиколка"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "гном;gnome;gtk;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "Приветствие и обиколка в GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Приветствие и обиколка като с екскурзовод в GNOME."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:15
+msgid "Main Window"
+msgstr "Основен прозорец"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
+msgid "The GNOME Project"
+msgstr "Проектът GNOME"
+
+#: src/widgets/pages/welcome.rs:151
+msgid "Start the Tour"
+msgstr "Начало на обиколката"
+
+#: src/widgets/pages/welcome.rs:161
+msgid "Learn about new and essential features in {} {}."
+msgstr "Научете за новите и съществените възможности в {} {}."
+
+#: src/widgets/paginator.rs:32
+msgid "_Start"
+msgstr "На_чало"
+
+#: src/widgets/paginator.rs:33
+msgid "_Next"
+msgstr "_Нататък"
+
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
+msgid "_Close"
+msgstr "_Затваряне"
+
+#: src/widgets/paginator.rs:36
+msgid "_Previous"
+msgstr "На_зад"
+
+#: src/widgets/window.rs:51
+msgid "Get an Overview"
+msgstr "Общ преглед"
+
+#: src/widgets/window.rs:52
+msgid "Press Activities to see open windows and apps."
+msgstr "Натиснете „Дейности“, за да видите отворените прозорци и програми."
+
+#: src/widgets/window.rs:61
+msgid "Make Apps Your Own"
+msgstr "Приложения по ваш тертип"
+
+#: src/widgets/window.rs:62
+msgid "Arrange the app grid to your liking."
+msgstr "Подредете решетката с програми както ви харесва."
+
+#: src/widgets/window.rs:71
+msgid "Keep on Top with Workspaces"
+msgstr "Продуктивност чрез работни пространства"
+
+#: src/widgets/window.rs:72
+msgid "Easily organize windows with the new workspaces view."
+msgstr "Лесно подреждайте прозорците с новия изглед за работните пространства"
+
+#: src/widgets/window.rs:81
+msgid "Up/Down for the Overview"
+msgstr "Нагоре/надолу за прегледа"
+
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "Пробвайте да прокарате три пръста вертикално по сензорния панел!"
+
+#: src/widgets/window.rs:91
+msgid "Left/Right for Workspaces"
+msgstr "Наляво/надясно за работните плотове"
+
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "Пробвайте да прокарате три пръста хоризонтално по сензорния панел!"
+
+#: src/widgets/window.rs:104
+msgid "That's it! We hope that you enjoy {} {}."
+msgstr "Това е! Надяваме се {} {} да ви хареса."
+
+#: src/widgets/window.rs:107
+msgid "To get more advice and tips, see the Help app."
+msgstr "За още съвети и напътствия вижте помощта."

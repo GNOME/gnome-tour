@@ -48,14 +48,14 @@ window .titlebar button {
   .page:nth-child(3) {  }  /* customize */
   /* .page:nth-child(4) { background: linear-gradient(to right, #e66100, #c64600); }  workspaces */
 
-  .page:nth-child(5) { /* up down */
+  .page:nth-child(4) { /* up down */
     background: url('/org/gnome/Tour/hand-fg.svg'),
                 url('/org/gnome/Tour/updown-bg.svg');
     background-repeat: no-repeat;
     background-position: center 30%;
     animation: up-and-down 2s ease-in-out infinite alternate;
     }
-  .page:nth-child(6) {   /* left right */
+  .page:nth-child(5) {   /* left right */
     background: url('/org/gnome/Tour/hand-fg.svg'),
                 url('/org/gnome/Tour/leftright-bg.svg');
     background-repeat: no-repeat;

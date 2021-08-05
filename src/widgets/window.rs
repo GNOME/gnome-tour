@@ -49,7 +49,7 @@ impl Window {
             ImagePageWidget::new(
                 "/org/gnome/Tour/overview.svg",
                 gettext("Get an Overview"),
-                gettext("Press Activities to see open windows and apps."),
+                gettext("Press the Super key to see open windows and apps."),
             )
             .widget
             .upcast::<gtk::Widget>(),
@@ -57,19 +57,9 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
-                "/org/gnome/Tour/makeyourown.svg",
-                gettext("Make Apps Your Own"),
-                gettext("Arrange the app grid to your liking."),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
-
-        self.paginator.borrow_mut().add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/workspaces.svg",
-                gettext("Keep on Top with Workspaces"),
-                gettext("Easily organize windows with the new workspaces view."),
+                "/org/gnome/Tour/search.svg",
+                gettext("Just Type to Search"),
+                gettext("Type in the overview to search. Launch apps, find things."),
             )
             .widget
             .upcast::<gtk::Widget>(),

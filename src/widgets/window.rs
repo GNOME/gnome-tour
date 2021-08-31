@@ -69,7 +69,7 @@ impl Window {
             ImagePageWidget::new(
                 "/org/gnome/Tour/workspaces.svg",
                 gettext("Keep on Top with Workspaces"),
-                gettext("Easily organize windows with the new workspaces view."),
+                gettext("Easily organize windows with the workspaces view."),
             )
             .widget
             .upcast::<gtk::Widget>(),

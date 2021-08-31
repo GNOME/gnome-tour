@@ -99,11 +99,7 @@ impl Window {
         let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
-            // Translators: The following string is formatted as "We hope that you enjoy GNOME 40"
-            i18n_f(
-                "That's it. Have a nice day!",
-                &[&name, &version],
-            ),
+            gettext("That's it. Have a nice day!"),
             gettext("To get more advice and tips, see the Help app."),
         );
         last_page.widget.get_style_context().add_class("last-page");

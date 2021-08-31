@@ -67,6 +67,16 @@ impl Window {
 
         self.paginator.borrow_mut().add_page(
             ImagePageWidget::new(
+                "/org/gnome/Tour/workspaces.svg",
+                gettext("Keep on Top with Workspaces"),
+                gettext("Easily organize windows with the new workspaces view."),
+            )
+            .widget
+            .upcast::<gtk::Widget>(),
+        );
+
+        self.paginator.borrow_mut().add_page(
+            ImagePageWidget::new(
                 "/org/gnome/Tour/blank.svg",
                 gettext("Up/Down for the Overview"),
                 gettext("On a touchpad, use three-finger vertical swipes. Try it!"),
@@ -91,7 +101,7 @@ impl Window {
             "/org/gnome/Tour/ready-to-go.svg",
             // Translators: The following string is formatted as "We hope that you enjoy GNOME 40"
             i18n_f(
-                "That's it! We hope that you enjoy {} {}.",
+                "That's it. Have a nice day!",
                 &[&name, &version],
             ),
             gettext("To get more advice and tips, see the Help app."),

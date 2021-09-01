@@ -1,14 +1,14 @@
 # Persian translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Danial Behzadi <dani.behzi@ubuntu.com>, 2020.
+# Danial Behzadi <dani.behzi@ubuntu.com>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-07 04:33+0000\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-01 16:44+0430\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "Language: fa\n"
@@ -51,8 +51,8 @@ msgid "Start the Tour"
 msgstr "آغاز گردش"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "دربارهٔ ویژگی‌های جدید و ضروری {} {} بیاموزید."
+msgid "Learn about the key features in {} {}."
+msgstr "دربارهٔ ویژگی‌های جدید {} {} بیاموزید."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -75,24 +75,24 @@ msgid "Get an Overview"
 msgstr "گرفتن یک نمای کلّی"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "برای دیدن کاره‌ها و پنجره‌های باز، فعّالیت‌ها را بزنید."
+msgid "Press the Super key to see open windows and apps."
+msgstr "برای دیدن کاره‌ها و پنجره‌های باز، سوپر را بزنید."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "کاره‌ها را از آن خود کنید"
+msgid "Just Type to Search"
+msgstr "برای جست‌وجو، فقط بنویسید"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "شبکهٔ کاره‌ها را به سلیقهٔ خودتان مرتّب کنید."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "برای جست‌وجو، اجرای برنامه‌ّا و یافتن چیزها، در نمای کلّی بنویسید."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "با فضاهای کاری، در بالا بمانید"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "با نمای فضای کاری جدید، پنجره‌ها را به راحتی مدیریت کنید."
+msgid "Easily organize windows with the workspaces view."
+msgstr "با نمای فضاهای کاری، پنجره‌ها را به راحتی مدیریت کنید."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -110,13 +110,22 @@ msgstr "راست/چپ برای فضاهای کاری"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "روی یک صفحهٔ لمسی، از کشیدن افقی سه‌انگشتی استفاده کنید. بیازماییدش!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "همین! امیدواریم از {} {} لذّت ببرید."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "همین. روز خوبی داشته باشید!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "برای گرفتن توصیه‌ها و نکته‌های بیش‌تر، کارهٔ راهنما را ببینید."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "کاره‌ها را از آن خود کنید"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "شبکهٔ کاره‌ها را به سلیقهٔ خودتان مرتّب کنید."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "همین! امیدواریم از {} {} لذّت ببرید."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "به {} {} خوش آمدید"
@@ -129,9 +138,6 @@ msgstr "برای گرفتن توصیه‌ها و نکته‌های بیش‌تر
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "نمای فعّالیت‌ها می‌تواند برای تعویض پنجره‌ها و حست‌وجو نیز به کار رود"
-
-#~ msgid "Just type to search"
-#~ msgstr "برای جست‌وجو فقط کافیست بنویسید"
 
 #~ msgid "In the activities view, just start typing to search for apps, settings and more."
 #~ msgstr "برای جست‌وجوی کاره‌ها، تنظیمات و… کافیست در نمای فعّالیت‌ها شروع به نوشتن کنید."

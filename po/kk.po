@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-03-09 07:04+0000\n"
-"PO-Revision-Date: 2021-03-09 20:41+0500\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-01 16:17+0500\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -36,7 +36,7 @@ msgstr "GNOME туры және қарсы алу"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "GNOME үшін арналған тур және қарсы алушы"
+msgstr "GNOME үшін арналған тур және қарсы алушы."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:15
 msgid "Main Window"
@@ -51,8 +51,8 @@ msgid "Start the Tour"
 msgstr "Турды бастау"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "{} {} ішіндегі жаңа және маңызды мүмкіндіктері туралы біліңіз."
+msgid "Learn about the key features in {} {}."
+msgstr "{} {} ішіндегі маңызды мүмкіндіктер туралы біліңіз."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -75,24 +75,24 @@ msgid "Get an Overview"
 msgstr "Жалпы шолуды алу"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Ашық терезелер мен қолданбаларды көру үшін Көріністі басыңыз."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Ашық терезелер мен қолданбаларды көру үшін Super пернесін басыңыз."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Қолданбаларды өздік етіңіз"
+msgid "Just Type to Search"
+msgstr "Іздеу үшін теріңіз"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Қолданбалар торын таңдауыңызша реттеңіз."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Белсенділік көрінісінде іздеу үшін теріңіз. Қолданбаларды жөнелтіп, нәрселерді табыңыз."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Жұмыс орындарын толықтай қолданыңыз"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Жаңа жұмыс орындары көрінісімен терезелерді оңай реттеңіз."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Жұмыс орындары көрінісімен терезелерді оңай реттеңіз."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -110,10 +110,19 @@ msgstr "Жұмыс орындары үшін сол/оң жақты басыңы
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Тачпадта үш саусақты горизонталды өткізу қолданыңыз. Қазір көріңіз!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Ал, осы! {} {} пайдасы тиетініне сенімдіміз."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Ал, болды. Жақсы күн тілейміз!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Қосымша кеңестер алу үшін Көмек қолданбасын қараңыз."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Қолданбаларды өздік етіңіз"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Қолданбалар торын таңдауыңызша реттеңіз."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Ал, осы! {} {} пайдасы тиетініне сенімдіміз."

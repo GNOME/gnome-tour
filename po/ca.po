@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
 "PO-Revision-Date: 2021-02-14 16:53+0100\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.metainfo.xml.in.in:7 src/main.rs:19
 msgid "Tour"
 msgstr "Visita guiada"
 
@@ -51,8 +51,8 @@ msgid "Start the Tour"
 msgstr "Comenceu la visita guiada"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Descobriu les característiques noves i essencials del {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Descobriu les característiques essencials del {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -75,25 +75,26 @@ msgid "Get an Overview"
 msgstr "Obteniu una visió general"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Premeu Activitats per a veure les finestres i aplicacions obertes."
+msgid "Press the Super key to see open windows and apps."
+msgstr ""
+"Premeu la tecla Súper per a veure les finestres i aplicacions obertes."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Personalitzeu les aplicacions i feu-les vostres"
+msgid "Just Type to Search"
+msgstr "Simplement escriviu per a cercar"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Organitzeu la graella d'aplicacions al vostre gust."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Introduïu en el resum per a cercar. Inicia aplicacions, cerca coses."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Controleu els espais de treball"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
 msgstr ""
-"Organitzeu fàcilment les finestres amb la nova vista dels espais de treball."
+"Organitzeu fàcilment les finestres amb la vista dels espais de treball."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -112,13 +113,22 @@ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Amb un ratolí tàctil, feu lliscar tres dits horitzontalment. Proveu-ho!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Això és tot! Esperem que gaudiu del {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Això és. Bon dia!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Personalitzeu les aplicacions i feu-les vostres"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Organitzeu la graella d'aplicacions al vostre gust."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Això és tot! Esperem que gaudiu del {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Us donem la benvinguda a {} {}"
@@ -135,15 +145,12 @@ msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr ""
-#~ "La vista d'activitats també es pot utilitzar per a canviar de finestra i "
-#~ "de cerca."
-
-#~ msgid "Just type to search"
-#~ msgstr "Simplement escriviu per a cercar"
+#~ "La vista d'activitats també es pot utilitzar per a canviar de finestra i de "
+#~ "cerca."
 
 #~ msgid ""
-#~ "In the activities view, just start typing to search for apps, settings "
-#~ "and more."
+#~ "In the activities view, just start typing to search for apps, settings and "
+#~ "more."
 #~ msgstr ""
 #~ "A la vista d'activitats, simplement comenceu a escriure per a cercar "
 #~ "aplicacions, paràmetres i més."
@@ -166,8 +173,7 @@ msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Utilitza el Programari per a trobar i instal·lar aplicacions"
 
-#~ msgid ""
-#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgid "Discover great apps through search, browsing and our recommendations."
 #~ msgstr ""
-#~ "Descobriu les grans aplicacions mitjançant la cerca navegació i les "
-#~ "nostres recomanacions."
+#~ "Descobriu les grans aplicacions mitjançant la cerca navegació i les nostres "
+#~ "recomanacions."

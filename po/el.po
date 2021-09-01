@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-05 22:57+0200\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-01 17:41+0300\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Greek <gnome-el-list@gnome.org>\n"
 "Language: el\n"
@@ -52,8 +52,8 @@ msgid "Start the Tour"
 msgstr "Έναρξη της ξενάγησης"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Μάθετε σχετικά με τις νέες και βασικές δυνατότητες στο {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Μάθετε για τα βασικά χαρακτηριστικά στο {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -76,24 +76,27 @@ msgid "Get an Overview"
 msgstr "Δείτε μια επισκόπηση"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Πατήστε στο Δραστηριότητες για να δείτε τα ανοιχτά παράθυρα και τις εφαρμογές."
+msgid "Press the Super key to see open windows and apps."
+msgstr ""
+"Πατήστε το Super key για να δείτε τα ανοιχτά παράθυρα και τις εφαρμογές."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Κάντε τις εφαρμογές δικές σας"
+msgid "Just Type to Search"
+msgstr "Απλώς πληκτρολογήστε για αναζήτηση"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Τακτοποιήστε το πλέγμα εφαρμογών σύμφωνα με τις προτιμήσεις σας."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Πληκτρολογήστε στην επισκόπηση για αναζήτηση. Εκκινήστε εφαρμογές, βρείτε "
+"πράγματα."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Συνεχίστε με τους χώρους εργασίας"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Οργανώστε εύκολα τα παράθυρα με τη νέα προβολή των χώρων εργασίας."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Οργανώστε εύκολα τα παράθυρα με την προβολή των χώρων εργασίας."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -101,7 +104,9 @@ msgstr "Πάνω/Κάτω για την επισκόπηση"
 
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Στην επιφάνεια αφής, χρησιμοποιήστε κάθετη ολίσθηση τριών δακτύλων. Δοκίμασέ το!"
+msgstr ""
+"Στην επιφάνεια αφής, χρησιμοποιήστε κάθετη ολίσθηση τριών δακτύλων. Δοκίμασέ "
+"το!"
 
 #: src/widgets/window.rs:91
 msgid "Left/Right for Workspaces"
@@ -109,48 +114,75 @@ msgstr "Αριστερά/Δεξιά για χώρους εργασίας"
 
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Στην επιφάνεια αφής, χρησιμοποιήστε οριζόντια ολίσθηση τριών δακτύλων. Δοκίμασέ το!"
+msgstr ""
+"Στην επιφάνεια αφής, χρησιμοποιήστε οριζόντια ολίσθηση τριών δακτύλων. "
+"Δοκίμασέ το!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Αυτό είναι! Ελπίζουμε να σας αρέσει {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Αυτό είναι. Να έχετε μια όμορφη μέρα!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Για περισσότερες συμβουλές, ανατρέξτε στην εφαρμογή Βοήθεια."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Κάντε τις εφαρμογές δικές σας"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Τακτοποιήστε το πλέγμα εφαρμογών σύμφωνα με τις προτιμήσεις σας."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Αυτό είναι! Ελπίζουμε να σας αρέσει {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Καλώς ήρθατε στο {} {}"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "Γεια σας! Θα ξεναγηθείτε ώστε να μάθετε πως να μετακινηθείτε στο σύστημα και να ανακαλύψετε βασικά χαρακτηριστικά."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Γεια σας! Θα ξεναγηθείτε ώστε να μάθετε πως να μετακινηθείτε στο σύστημα "
+#~ "και να ανακαλύψετε βασικά χαρακτηριστικά."
 
 #~ msgid "_No Thanks"
 #~ msgstr "Ό_χι ευχαριστώ"
 
 #~ msgid "The activities view can also be used to switch windows and search."
-#~ msgstr "Η προβολή δραστηριοτήτων μπορεί επίσης να χρησιμοποιηθεί για εναλλαγή παραθύρων και αναζήτηση."
+#~ msgstr ""
+#~ "Η προβολή δραστηριοτήτων μπορεί επίσης να χρησιμοποιηθεί για εναλλαγή "
+#~ "παραθύρων και αναζήτηση."
 
-#~ msgid "Just type to search"
-#~ msgstr "Απλώς πληκτρολογήστε για αναζήτηση"
-
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
-#~ msgstr "Στην προβολή δραστηριοτήτων, απλώς ξεκινήστε να πληκτρολογείτε για αναζήτηση εφαρμογών, ρυθμίσεων και άλλων."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "Στην προβολή δραστηριοτήτων, απλώς ξεκινήστε να πληκτρολογείτε για "
+#~ "αναζήτηση εφαρμογών, ρυθμίσεων και άλλων."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Κάντε κλικ στην ώρα για να δείτε ειδοποιήσεις"
 
 #~ msgid "The notifications popover also includes personal planning tools."
-#~ msgstr "Το αναδυόμενο παράθυρο ειδοποιήσεων περιλαμβάνει επίσης προσωπικά εργαλεία σχεδιασμού."
+#~ msgstr ""
+#~ "Το αναδυόμενο παράθυρο ειδοποιήσεων περιλαμβάνει επίσης προσωπικά "
+#~ "εργαλεία σχεδιασμού."
 
 #~ msgid "View system information and settings"
 #~ msgstr "Δείτε πληροφορίες και ρυθμίσεις συστήματος"
 
 #~ msgid "Get an overview of the system status and quickly change settings."
-#~ msgstr "Δείτε μια επισκόπηση της κατάστασης του συστήματος και αλλάξτε γρήγορα τις ρυθμίσεις."
+#~ msgstr ""
+#~ "Δείτε μια επισκόπηση της κατάστασης του συστήματος και αλλάξτε γρήγορα "
+#~ "τις ρυθμίσεις."
 
 #~ msgid "Use Software to find and install apps"
-#~ msgstr "Χρησιμοποιήστε την εφαρμογή Λογισμικό για να βρείτε και να εγκαταστήσετε εφαρμογές"
+#~ msgstr ""
+#~ "Χρησιμοποιήστε την εφαρμογή Λογισμικό για να βρείτε και να εγκαταστήσετε "
+#~ "εφαρμογές"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr "Ανακαλύψτε εξαιρετικές εφαρμογές μέσω αναζήτησης, περιήγησης και των προτάσεών μας."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Ανακαλύψτε εξαιρετικές εφαρμογές μέσω αναζήτησης, περιήγησης και των "
+#~ "προτάσεών μας."

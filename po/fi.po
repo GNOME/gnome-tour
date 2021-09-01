@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-21 19:15+0200\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-01 22:50+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -52,8 +52,8 @@ msgid "Start the Tour"
 msgstr "Aloita kierros"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Tutustu mitä oleellisia ominaisuuksia {} {} sisältää."
+msgid "Learn about the key features in {} {}."
+msgstr "Lue mitä oleellisia ominaisuuksia {} {} sisältää."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -76,24 +76,24 @@ msgid "Get an Overview"
 msgstr "Muodosta yleiskuva"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Napsauta Toiminnot nähdäksesi avoinna olevat ikkunat ja sovellukset."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Paina Super-näppäintä nähdäksesi avoinna olevat ikkunat ja sovellukset."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Tee sinunkaupat sovellusten kanssa"
+msgid "Just Type to Search"
+msgstr "Sen kun vain kirjoitat hakeaksesi"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Järjestä sovellusruudukko haluamaasi järjestykseen."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Kirjoita yleisnäkymässä etsiäksesi. Käynnistä sovelluksia, löydä asioida."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Pysy huipulla työtilojen kanssa"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Järjestä ikkunat helposti uuden työtilanäkymän avulla."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Järjestä ikkunat vaivatta työtilanäkymän avulla."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -111,13 +111,22 @@ msgstr "Vasen/oikea työtiloille"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Käytä kolmen sormen vaakapyyhkäisyä kosketuslevyllä. Kokeile sitä!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Siinä kaikki! Toivottavasti {} {} on mieleesi."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Siinä kaikki. Hyvää päivänjatkoa!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Lisää ohjeita ja tietoa on saatavilla ohjesovelluksesta."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Tee sinunkaupat sovellusten kanssa"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Järjestä sovellusruudukko haluamaasi järjestykseen."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Siinä kaikki! Toivottavasti {} {} on mieleesi."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Tervetuloa, tämä on {} {}"
@@ -130,9 +139,6 @@ msgstr "Lisää ohjeita ja tietoa on saatavilla ohjesovelluksesta."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "Toiminnot-näkymässä voi myös vaihtaa ikkunoiden välillä ja suorittaa hakuja."
-
-#~ msgid "Just type to search"
-#~ msgstr "Sen kuin vain kirjoitat hakeaksesi"
 
 #~ msgid "In the activities view, just start typing to search for apps, settings and more."
 #~ msgstr "Kun alat kirjoittamaan Toiminnot-näkymässä, voit etsiä sovelluksia, asetuksia ja paljon muuta."

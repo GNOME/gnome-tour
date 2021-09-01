@@ -2,14 +2,14 @@
 <gresources>
   <gresource prefix="/org/gnome/Tour/">
       <file compressed="true" alias="style.css">resources/style.css</file>
-    <file compressed="true" alias="blank.svg">resources/assets/blank.svg</file>
       <file compressed="true" alias="welcome.svg">resources/assets/welcome.svg</file>
       <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
+      <file compressed="true" alias="search.svg">resources/assets/search.svg</file>
+      <file compressed="true" alias="blank.svg">resources/assets/blank.svg</file>
       <file compressed="true" alias="workspaces.svg">resources/assets/workspaces.svg</file>
-      <file compressed="true" alias="makeyourown.svg">resources/assets/makeyourown.svg</file>
-      <file compressed="true" alias="updown-bg.svg">resources/assets/updown-bg.svg</file>
-      <file compressed="true" alias="hand-fg.svg">resources/assets/hand-fg.svg</file>
-    <file compressed="true" alias="leftright-bg.svg">resources/assets/leftright-bg.svg</file>
       <file compressed="true" alias="ready-to-go.svg">resources/assets/ready-to-go.svg</file>
+      <file compressed="true" alias="hand-fg.svg">resources/assets/hand-fg.svg</file>
+      <file compressed="true" alias="updown-bg.svg">resources/assets/updown-bg.svg</file>
+      <file compressed="true" alias="leftright-bg.svg">resources/assets/leftright-bg.svg</file>
   </gresource>
 </gresources>

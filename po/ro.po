@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-21 12:26+0100\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-02 18:33+0200\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -53,8 +53,8 @@ msgid "Start the Tour"
 msgstr "Începeți turul"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Aflați despre funcționalitățile noi și esențiale din {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Aflați despre funcționalitățile esențiale din {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -77,24 +77,26 @@ msgid "Get an Overview"
 msgstr "Obțineți o vedere de ansamblu"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Apăsați Activități pentru a vedea ferestrele deschise și aplicațiile."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Apăsați tasta Super pentru a vedea ferestrele deschise și aplicațiile."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Însușiți-vă aplicațiile"
+msgid "Just Type to Search"
+msgstr "Doar tastați pentru a căuta"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Aranjați grila de aplicații în felul în care vă place."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Tastați în privirea de ansamblu pentru a căuta. Lansați aplicații și găsiți "
+"lucruri."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Fiți la curent cu spațiile de lucru"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Organizați ușor ferestrele cu noua vizualizare de spații de lucru."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Organizați ușor ferestrele cu vizualizarea de spații de lucru."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -114,14 +116,23 @@ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Cu un touchpad, folosiți tragerile orizontale cu trei degete. Încercați-le!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Atât! Sperăm să vă placă {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Asta este totul. Să aveți o zi plăcută!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Însușiți-vă aplicațiile"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Aranjați grila de aplicații în felul în care vă place."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Atât! Sperăm să vă placă {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Bine ați venit {} {}"
@@ -140,9 +151,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Vizualizarea activități poate fi, de asemenea, utilizată pentru a comuta "
 #~ "ferestre și pentru a căuta."
-
-#~ msgid "Just type to search"
-#~ msgstr "Tastați pentru a căuta"
 
 #~ msgid ""
 #~ "In the activities view, just start typing to search for apps, settings "

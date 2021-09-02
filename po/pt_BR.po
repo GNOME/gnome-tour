@@ -1,23 +1,23 @@
 # Brazilian Portuguese translation for gnome-tour.
 # Copyright (C) 2021 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2020-2021.
 # Enrico Nicoletto <liverig@gmail.com>, 2021.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-19 18:00-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-02 20:46-0300\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -53,8 +53,9 @@ msgid "Start the Tour"
 msgstr "Iniciar o tour"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Aprenda sobre os recursos novos e essenciais no {} {}."
+#| msgid "Learn about new and essential features in {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Aprenda sobre os recursos-chave no {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -77,24 +78,29 @@ msgid "Get an Overview"
 msgstr "Obtenha uma visão geral"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Pressione Atividades para janelas e aplicativos abertos."
+#| msgid "Press Activities to see open windows and apps."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Pressione a tecla Super para ver janelas e aplicativos abertos."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Aplicativos do seu jeito"
+#| msgid "Just type to search"
+msgid "Just Type to Search"
+msgstr "Basta digitar para pesquisar"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Organize a grade de aplicativos ao seu gosto."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Digite no panorama para pesquisar. Inicie aplicativos, encontre coisas."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Mantenha-se atualizado com espaços de trabalho"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Organize janelas facilmente com a nova visualização dos espaços de trabalho."
+#| msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
+msgstr ""
+"Organize janelas facilmente com a visualização dos espaços de trabalho."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -112,13 +118,22 @@ msgstr "Para esquerda/direita para espaços de trabalho"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Em um touchpad, deslize horizontalmente com três dedos. Experimente!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "É isso aí! Esperamos que você goste do {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "É isso aí. Tenha um ótimo dia!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter mais conselho e dicas, veja o aplicativo Ajuda."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Aplicativos do seu jeito"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Organize a grade de aplicativos ao seu gosto."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "É isso aí! Esperamos que você goste do {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Bem-vindo ao {} {}"
@@ -126,35 +141,49 @@ msgstr "Para obter mais conselho e dicas, veja o aplicativo Ajuda."
 #~ msgid "_No Thanks"
 #~ msgstr "_Não, obrigado"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "Olá! Faça um tour para se situar no ambiente e descobrir recursos essenciais."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Olá! Faça um tour para se situar no ambiente e descobrir recursos "
+#~ "essenciais."
 
 #~ msgid "The activities view can also be used to switch windows and search."
-#~ msgstr "A visão de atividades também pode ser usada para alternar entre janelas e pesquisa."
+#~ msgstr ""
+#~ "A visão de atividades também pode ser usada para alternar entre janelas e "
+#~ "pesquisa."
 
-#~ msgid "Just type to search"
-#~ msgstr "Basta digitar para pesquisar"
-
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
-#~ msgstr "No visão da atividades, basta começar a digitar para pesquisar por aplicativos, configurações e mais."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "No visão da atividades, basta começar a digitar para pesquisar por "
+#~ "aplicativos, configurações e mais."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Clique no relógio para ver notificações"
 
 #~ msgid "The notifications popover also includes personal planning tools."
-#~ msgstr "A janela de notificações também inclui ferramentas de planejamento pessoal."
+#~ msgstr ""
+#~ "A janela de notificações também inclui ferramentas de planejamento "
+#~ "pessoal."
 
 #~ msgid "View system information and settings"
 #~ msgstr "Veja informações e configurações do sistema"
 
 #~ msgid "Get an overview of the system status and quickly change settings."
-#~ msgstr "Obtenha uma visão geral do status do sistema e altere configurações rapidamente."
+#~ msgstr ""
+#~ "Obtenha uma visão geral do status do sistema e altere configurações "
+#~ "rapidamente."
 
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Use o Programas para localizar e instalar aplicativos"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr "Descubra aplicativos fantásticos por meio de pesquisa, navegação ou de nossas recomendações."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Descubra aplicativos fantásticos por meio de pesquisa, navegação ou de "
+#~ "nossas recomendações."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "Tour do GNOME"
@@ -181,17 +210,32 @@ msgstr "Para obter mais conselho e dicas, veja o aplicativo Ajuda."
 #~ msgstr "Faça um tour"
 
 #~ msgid "You can also view open windows, search and use workspaces."
-#~ msgstr "Você também pode ver janelas abertas, pesquisar e usar espaços de trabalho."
+#~ msgstr ""
+#~ "Você também pode ver janelas abertas, pesquisar e usar espaços de "
+#~ "trabalho."
 
-#~ msgid "Search can be used to launch apps, find settings, do calculations and much more."
-#~ msgstr "A pesquisa pode ser usada para iniciar aplicativos, encontrar configurações, fazer cálculos e muito mais."
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "A pesquisa pode ser usada para iniciar aplicativos, encontrar "
+#~ "configurações, fazer cálculos e muito mais."
 
-#~ msgid "This includes notifications, media controls, calendar events, the weather and world clocks."
-#~ msgstr "Isso inclui notificações, controles de mídia, eventos de calendário, a previsão do tempo e relógios mundiais."
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Isso inclui notificações, controles de mídia, eventos de calendário, a "
+#~ "previsão do tempo e relógios mundiais."
 
-#~| msgid "The Software app makese it easy to find and install all the apps you need."
-#~ msgid "The Software app makes it easy to find and install all the apps you need."
-#~ msgstr "O aplicativo Software facilita encontrar e instalar todos os aplicativos que você precisa."
+#~| msgid ""
+#~| "The Software app makese it easy to find and install all the apps you "
+#~| "need."
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "O aplicativo Software facilita encontrar e instalar todos os aplicativos "
+#~ "que você precisa."
 
 #~ msgid "Learn More"
 #~ msgstr "Saiba mais"

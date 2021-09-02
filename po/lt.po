@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-27 14:30+0200\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-02 18:14+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -33,7 +33,6 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-#| msgid "GNOME Tour and Greeter."
 msgid "GNOME Tour and Greeter"
 msgstr "GNOME turas ir pasisveikinimas"
 
@@ -50,16 +49,15 @@ msgid "The GNOME Project"
 msgstr "GNOME projektas"
 
 #: src/widgets/pages/welcome.rs:151
-#| msgid "_Start Tour"
 msgid "Start the Tour"
 msgstr "Pradėti turą"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
+#| msgid "Learn about new and essential features in {} {}."
+msgid "Learn about the key features in {} {}."
 msgstr "Sužinokite apie naujas bei esmines savybes {} {}."
 
 #: src/widgets/paginator.rs:32
-#| msgid "_Start Tour"
 msgid "_Start"
 msgstr "_Pradėti"
 
@@ -80,25 +78,28 @@ msgid "Get an Overview"
 msgstr "Eiti į apžvalgą"
 
 #: src/widgets/window.rs:52
-#| msgid "Open Activities to launch apps"
-msgid "Press Activities to see open windows and apps."
-msgstr "Spauskite Apžvalga ir matysite atvertus langus bei programas."
+#| msgid "Press Activities to see open windows and apps."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Spauskite Super klavišą ir matysite atvertus langus bei programas."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Pasidarykite savo programas"
+#| msgid "Just type to search"
+msgid "Just Type to Search"
+msgstr "Tiesiog rašykite paieškai pradėti"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Surikiuokite programų tinklelį sau."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Rašykite apžvalgoje paieškai pradėti. Paleiskite programas, raskite dalykus."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Išlaikykite viršuje su darbo sritimis"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Lengvai tvarkykite langus su nauju darbo sričių rodiniu."
+#| msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Lengvai tvarkykite langus su darbo sričių rodiniu."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -120,14 +121,23 @@ msgstr ""
 "Jutikliniame kilimėlyje, naudokite horizontalius perbraukimus trimis "
 "pirštais. Išbandykite!"
 
-#: src/widgets/window.rs:104
-#| msgid "That's it! We hope that you enjoy {}."
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Tai viskas! Tikimės, kad jums patiks {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Tai viskas, Geros dienos!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daugiau patarimų galite gauti Žinyno programoje."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Pasidarykite savo programas"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Surikiuokite programų tinklelį sau."
+
+#~| msgid "That's it! We hope that you enjoy {}."
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Tai viskas! Tikimės, kad jums patiks {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Sveiki pradėję naudoti {} {}"
@@ -144,9 +154,6 @@ msgstr "Daugiau patarimų galite gauti Žinyno programoje."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "Veiklų rodinį taip pat galima naudoti langams keisti bei paieškai."
-
-#~ msgid "Just type to search"
-#~ msgstr "Tiesiog rašykite paieškai pradėti"
 
 #~ msgid ""
 #~ "In the activities view, just start typing to search for apps, settings "

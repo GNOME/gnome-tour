@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-19 22:59+0100\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-03 12:48+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -53,8 +53,8 @@ msgid "Start the Tour"
 msgstr "Starta rundturen"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Lär dig om nya och viktiga funktioner i {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Lär dig om de viktigaste funktionerna i {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -77,24 +77,24 @@ msgid "Get an Overview"
 msgstr "Få en översikt"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Öppna Aktiviteter för att se öppna fönster och program."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Tryck på Super-tangenten för att se öppna fönster och program."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Gör program till dina egna"
+msgid "Just Type to Search"
+msgstr "Skriv något för att börja söka"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Arrangera programrutnätet så som du vill ha det."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Skriv i översikten för att söka. Starta program och hitta saker."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Håll dig uppdaterad med arbetsytor"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Ordna enkelt fönster med den nya arbetsytevyn."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Ordna enkelt fönster med arbetsytevyn."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -112,13 +112,22 @@ msgstr "Vänster/höger för arbetsytor"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Använd horisontella svep med tre fingrar på en styrplatta. Testa nu!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Det var allt! Hoppas du har trevligt med {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Det var allt. Ha det så bra!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "För mer råd och tips, se programmet Hjälp."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Gör program till dina egna"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Arrangera programrutnätet så som du vill ha det."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Det var allt! Hoppas du har trevligt med {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Välkommen till {} {}"
@@ -131,9 +140,6 @@ msgstr "För mer råd och tips, se programmet Hjälp."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "Aktivitetsvyn kan också användas för att växla fönster och för sökning."
-
-#~ msgid "Just type to search"
-#~ msgstr "Skriv för att börja söka"
 
 #~ msgid "In the activities view, just start typing to search for apps, settings and more."
 #~ msgstr "Börja bara skriva i aktivitetsvyn för att söka program, inställningar med mera."

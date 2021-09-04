@@ -6,8 +6,8 @@
 msgid ""
 msgstr "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-28 06:55+0000\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-04 06:55+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -49,8 +49,8 @@ msgid "Start the Tour"
 msgstr "Hasi bisita"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Ezagutu {} {} bertsioaren eginbide berri eta funtsezkoenak."
+msgid "Learn about the key features in {} {}."
+msgstr "Ezagutu {} {} bertsioaren eginbide nagusiak."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -73,24 +73,24 @@ msgid "Get an Overview"
 msgstr "Ikuspegi orokorra"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Sakatu 'Jarduerak' aplikazio eta leiho irekiak ikusteko."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Sakatu Super tekla aplikazio eta leiho irekiak ikusteko."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Zeureganatu aplikazioak"
+msgid "Just Type to Search"
+msgstr "Idatzi zerbait bilaketa egiteko"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Antolatu aplikazioen sareta nahi duzun eran."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Idatzi ikuspegi orokorrean bilaketa egiteko. Abiarazi aplikazioak, aurkitu gauzak."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Eutsi goiari laneko areen bidez"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Ordenatu leihoak errazago laneko areen ikuspegi berria erabilita."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Ordenatu leihoak errazago laneko areen ikuspegia erabilita."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -108,13 +108,22 @@ msgstr "Eskuinera/ezkerrera laneko areak erabiltzeko"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontaleak. Probatu ezazu!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Hori da dena! Espero dugu {} {} gustuko izango duzula."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Hori da dena. Ondo ibili!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Aholku eta argibide gehiago eskuratzeko, begiratu laguntza."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Zeureganatu aplikazioak"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Antolatu aplikazioen sareta nahi duzun eran."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Hori da dena! Espero dugu {} {} gustuko izango duzula."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Ongi etorri {} {} aplikaziora"
@@ -136,9 +145,6 @@ msgstr "Aholku eta argibide gehiago eskuratzeko, begiratu laguntza."
 #~ msgstr ""
 #~ "Jardueren ikuspegia leihoz aldatzeko eta bilaketak egiteko ere erabili "
 #~ "daiteke."
-
-#~ msgid "Just type to search"
-#~ msgstr "Idatzi zerbait bilaketa egiteko"
 
 #~ msgid ""
 #~ "In the activities view, just start typing to search for apps, settings "

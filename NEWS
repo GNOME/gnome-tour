@@ -1,3 +1,10 @@
+gnome-tour 41.rc
+===================
+* content: add back workspaces slide
+* Add assets for GNOME 41 (#41, #42, #45)
+* desktop: Add categories
+* Translations updates
+
 gnome-tour 40.0
 ===================
 * Adapt the pages for GNOME Shell changes

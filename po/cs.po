@@ -1,14 +1,15 @@
 # Czech translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
+#
 # Marek Černocký <marek@manet.cz>, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-08 14:26+0100\n"
+"POT-Creation-Date: 2021-09-05 16:03+0000\n"
+"PO-Revision-Date: 2021-09-05 22:22+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -51,8 +52,8 @@ msgid "Start the Tour"
 msgstr "Začít prohlídku"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Seznamte se, jaké nové a důležité funkce přináší {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Seznamte se s důležitými funkcemi, které {} {} přináší."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -75,24 +76,27 @@ msgid "Get an Overview"
 msgstr "Získejte přehled"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Zmáčkněte Činnosti, abyste viděli otevřená okna a aplikace."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Zmáčkněte klávesu Super, abyste viděli otevřená okna a aplikace."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Přizpůsobte si aplikace"
+msgid "Just Type to Search"
+msgstr "Hledejte pouhým psaním"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Uspořádejte si mřížku aplikací podle svých představ."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Začněte psát v přehledu činností. Tak můžete spouštět aplikace a hledat různé "
+"věci."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Vyznejte se díky pracovním plochám"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Udržujte si snadno pořádek v oknech pomocí nového zobrazení pracovních ploch."
+#| msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Udržujte si snadno pořádek v oknech pomocí zobrazení pracovních ploch."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -110,10 +114,11 @@ msgstr "Vlevo/vpravo do pracovních ploch"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Na touchpadu použijte vodorovné máchnutí třemi prsty. Zkuste si to!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "A to je vše. Ať vám {} {} přinese skvělé zážitky."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "A to je vše. Přejeme hezký den!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Další rady a tipy najdete v aplikaci Nápověda."
+

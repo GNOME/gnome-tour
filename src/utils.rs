@@ -1,9 +1,10 @@
 // based on https://gitlab.gnome.org/World/podcasts/-/blob/master/podcasts-gtk/src/i18n|utils.rs
 use gettextrs::gettext;
+use gtk::{gio, glib};
 
 pub fn action<T, F>(thing: &T, name: &str, action: F)
 where
-    T: gio::ActionMapExt,
+    T: gio::traits::ActionMapExt,
     for<'r, 's> F: Fn(&'r gio::SimpleAction, Option<&glib::Variant>) + 'static,
 {
     // Create a stateless, parameterless action

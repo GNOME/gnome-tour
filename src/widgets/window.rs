@@ -1,6 +1,8 @@
 use crate::utils::i18n_f;
 use gettextrs::gettext;
+use gtk::glib;
 use gtk::prelude::*;
+use libadwaita::traits::ApplicationWindowExt;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -9,14 +11,13 @@ use super::paginator::PaginatorWidget;
 use crate::config::{APP_ID, PROFILE};
 
 pub struct Window {
-    pub widget: libhandy::ApplicationWindow,
+    pub widget: libadwaita::ApplicationWindow,
     pub paginator: RefCell<Rc<PaginatorWidget>>,
 }
 
 impl Window {
-    pub fn new(app: &gtk::Application) -> Self {
-        let widget = libhandy::ApplicationWindow::new();
-        widget.set_application(Some(app));
+    pub fn new(app: &libadwaita::Application) -> Self {
+        let widget = libadwaita::ApplicationWindow::new(app);
 
         let paginator = RefCell::new(PaginatorWidget::new());
 
@@ -40,7 +41,7 @@ impl Window {
 
         // Devel Profile
         if PROFILE == "Devel" {
-            self.widget.get_style_context().add_class("devel");
+            self.widget.add_css_class("devel");
         }
         self.paginator
             .borrow_mut()
@@ -95,18 +96,19 @@ impl Window {
             .upcast::<gtk::Widget>(),
         );
 
-        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
-        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
+        let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
+        let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
             gettext("That's it. Have a nice day!"),
             gettext("To get more advice and tips, see the Help app."),
         );
-        last_page.widget.get_style_context().add_class("last-page");
+        last_page.widget.add_css_class("last-page");
         self.paginator
             .borrow_mut()
             .add_page(last_page.widget.upcast::<gtk::Widget>());
 
-        self.widget.add(&self.paginator.borrow().widget);
+        self.widget
+            .set_content(Some(&self.paginator.borrow().widget));
     }
 }

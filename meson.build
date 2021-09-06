@@ -11,8 +11,8 @@ base_id = 'org.gnome.Tour'
 dependency('glib-2.0', version: '>= 2.64')
 dependency('gio-2.0', version: '>= 2.56')
 dependency('gdk-pixbuf-2.0')
-dependency('gtk+-3.0', version: '>= 3.16')
-dependency('libhandy-1', version: '>= 1')
+dependency('gtk4', version: '>= 4.4')
+dependency('libadwaita-1', version: '>= 1')
 
 if get_option('video_path') != ''
   dependency('gstreamer-1.0', version: '>= 1.12')

@@ -1,22 +1,23 @@
 use crate::config;
 use crate::utils;
 use crate::widgets::Window;
-use gio::prelude::*;
-use glib::clone;
+use gtk::gdk;
+use gtk::gio::{self, prelude::*};
+use gtk::glib::{self, clone};
 use gtk::prelude::*;
 use log::info;
-use std::env;
 use std::{cell::RefCell, rc::Rc};
 
 pub struct Application {
-    app: gtk::Application,
+    app: libadwaita::Application,
     window: RefCell<Rc<Option<Window>>>,
 }
 
 impl Application {
     pub fn new() -> Rc<Self> {
         let app =
-            gtk::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE).unwrap();
+            libadwaita::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE);
+        app.set_resource_base_path(Some("/org/gnome/Tour"));
 
         let application = Rc::new(Self {
             app,
@@ -86,8 +87,6 @@ impl Application {
 
     fn setup_signals(&self, app: Rc<Self>) {
         self.app.connect_startup(clone!(@weak app => move |_| {
-            libhandy::init();
-            app.setup_css();
             app.setup_gactions(app.clone());
         }));
         self.app
@@ -100,20 +99,11 @@ impl Application {
             }));
     }
 
-    fn setup_css(&self) {
-        let p = gtk::CssProvider::new();
-        gtk::CssProvider::load_from_resource(&p, "/org/gnome/Tour/style.css");
-        if let Some(screen) = gdk::Screen::get_default() {
-            gtk::StyleContext::add_provider_for_screen(&screen, &p, 500);
-        }
-    }
-
     pub fn run(&self) {
         info!("GNOME Tour ({})", config::APP_ID);
         info!("Version: {} ({})", config::VERSION, config::PROFILE);
         info!("Datadir: {}", config::PKGDATADIR);
 
-        let args: Vec<String> = env::args().collect();
-        self.app.run(&args);
+        self.app.run();
     }
 }

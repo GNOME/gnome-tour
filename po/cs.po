@@ -77,7 +77,7 @@ msgstr "Získejte přehled"
 
 #: src/widgets/window.rs:52
 msgid "Press the Super key to see open windows and apps."
-msgstr "Zmáčkněte klávesu Super, abyste viděli otevřená okna a aplikace."
+msgstr "Po zmáčknutí klávesy Super uvidíte otevřená okna a aplikace."
 
 #: src/widgets/window.rs:61
 msgid "Just Type to Search"
@@ -86,17 +86,16 @@ msgstr "Hledejte pouhým psaním"
 #: src/widgets/window.rs:62
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
-"Začněte psát v přehledu činností. Tak můžete spouštět aplikace a hledat různé "
-"věci."
+"Stačí začít psát v přehledu činností. Tak můžete spouštět aplikace a hledat "
+"různé věci."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Vyznejte se díky pracovním plochám"
 
 #: src/widgets/window.rs:72
-#| msgid "Easily organize windows with the new workspaces view."
 msgid "Easily organize windows with the workspaces view."
-msgstr "Udržujte si snadno pořádek v oknech pomocí zobrazení pracovních ploch."
+msgstr "Udržet si pořádek v oknech je snadné pomocí zobrazení pracovních ploch."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"

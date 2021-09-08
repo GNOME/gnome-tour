@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2021-09-07 20:32+0000\n"
-"PO-Revision-Date: 2021-09-08 10:34+0200\n"
+"PO-Revision-Date: 2021-09-08 10:36+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -54,7 +54,7 @@ msgstr "Pokrenite vodič"
 
 #: src/widgets/pages/welcome.rs:161
 msgid "Learn about the key features in {} {}."
-msgstr "Saznajte o više o bitnim značajkama u {} {}."
+msgstr "Saznajte više o bitnim značajkama u {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"

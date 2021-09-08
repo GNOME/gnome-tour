@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-05 15:16+0000\n"
-"PO-Revision-Date: 2021-09-06 12:33+0200\n"
+"POT-Creation-Date: 2021-09-07 20:32+0000\n"
+"PO-Revision-Date: 2021-09-08 10:34+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -50,11 +50,11 @@ msgstr "GNOME projekt"
 
 #: src/widgets/pages/welcome.rs:151
 msgid "Start the Tour"
-msgstr "Pokreni vodič"
+msgstr "Pokrenite vodič"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Saznajte o novim i bitnim značajkama u {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Saznajte o više o bitnim značajkama u {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -74,51 +74,61 @@ msgstr "_Prijašnje"
 
 #: src/widgets/window.rs:51
 msgid "Get an Overview"
-msgstr ""
+msgstr "Pokrenite pregled"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Pritisnite aktivnosti kako bi vidjeli prozore i aplikacije."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Pritisnite Super tipku kako bi vidjeli otvorene prozore i aplikacije."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr ""
+msgid "Just Type to Search"
+msgstr "Jednostavno upišite pretragu"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
+msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
+"Upišite u pregledu pretragu. Pokrenite aplikacije i tražite druge stvari."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
-msgstr ""
+msgstr "Budite u toku na radnim prostorima"
 
 #: src/widgets/window.rs:72
-msgid "Easily organise windows with the new workspaces view."
-msgstr ""
+msgid "Easily organize windows with the workspaces view."
+msgstr "S lakoćom organizirajte prozore na radnim prostorima."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
-msgstr ""
+msgstr "Gore/Dolje povlačenje za pregled"
 
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr ""
+msgstr "Na touchpadu, koristite okomito povlačenje s tri prsta. Isprobajte!"
 
 #: src/widgets/window.rs:91
 msgid "Left/Right for Workspaces"
-msgstr ""
+msgstr "Lijevo/Desno povlačenje za radne prostore"
 
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr ""
+msgstr "Na touchpadu, koristite vodoravno povlačenje s tri prsta. Isprobajte!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "To je to! Nadamo se da ćete uživati {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "To bi bilo sve. Ugodan Vam dan!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Za više pomoći i savjeta, pogledajte aplikaciju Priručnik."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Prilagodite aplikacije"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Rasporedite prečace aplikacija po želji."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "To je to! Nadamo se da ćete uživati u {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Dobrodošli u {} {}"
@@ -137,9 +147,6 @@ msgstr "Za više pomoći i savjeta, pogledajte aplikaciju Priručnik."
 #~ msgstr ""
 #~ "Aktivnosti pogled može se još koristiti za prebacivanje prozora i "
 #~ "pretragu."
-
-#~ msgid "Just type to search"
-#~ msgstr "Jednostavno upišite pretragu"
 
 #~ msgid ""
 #~ "In the activities view, just start typing to search for apps, settings "

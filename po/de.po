@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-02-24 01:23+0100\n"
+"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"PO-Revision-Date: 2021-09-01 16:52+0200\n"
 "Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -56,8 +56,8 @@ msgid "Start the Tour"
 msgstr "Die Einführung starten"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Lernen Sie die neuen und wesentlichen Funktionen von {} {} kennen."
+msgid "Learn about the key features in {} {}."
+msgstr "Lernen Sie die wesentlichen Funktionen von {} {} kennen."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -80,27 +80,25 @@ msgid "Get an Overview"
 msgstr "Einen Überblick erhalten"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
+msgid "Press the Super key to see open windows and apps."
 msgstr ""
-"Klicken Sie auf »Aktivitäten«, um offene Fenster und Anwendungen zu sehen."
+"Drücken Sie die »Super«-Taste, um offene Fenster und Anwendungen zu sehen."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Machen Sie sich Apps zu eigen"
+msgid "Just Type to Search"
+msgstr "Fangen Sie zum Suchen einfach an zu tippen"
 
 #: src/widgets/window.rs:62
-#| msgid "Arrange the app grid so it makes sense for you."
-msgid "Arrange the app grid to your liking."
-msgstr "Ordnen Sie das Anwendungsraster nach Ihrem Belieben an."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Tippen Sie in der Übersicht, um zu suchen oder Anwendungen zu starten."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Mit Arbeitsflächen den Überblick behalten"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr ""
-"Organisieren Sie Fenster ganz einfach mit der neuen Arbeitsflächen-Ansicht."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Organisieren Sie Fenster ganz einfach mit der Arbeitsflächen-Ansicht."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -122,13 +120,23 @@ msgstr ""
 "Nutzen Sie mit einem Touchpad eine horizontale Wischgeste mit drei Fingern. "
 "Probieren Sie es aus!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Das war's! Wir wünschen Ihnen viel Freude mit {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Das war's. Haben Sie einen schönen Tag!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Weitere Erklärungen und Tipps finden Sie in der Hilfe-Anwendung."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Machen Sie sich Apps zu eigen"
+
+#~| msgid "Arrange the app grid so it makes sense for you."
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Ordnen Sie das Anwendungsraster nach Ihrem Belieben an."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Das war's! Wir wünschen Ihnen viel Freude mit {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Willkommen in {} {}"
@@ -149,9 +157,6 @@ msgstr "Weitere Erklärungen und Tipps finden Sie in der Hilfe-Anwendung."
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr ""
 #~ "In der Aktivitätenübersicht können Sie auch Fenster wechseln und suchen."
-
-#~ msgid "Just type to search"
-#~ msgstr "Fangen Sie zum Suchen einfach an zu tippen"
 
 #~| msgid "In the Activities Overview, just start typing to search"
 #~ msgid ""

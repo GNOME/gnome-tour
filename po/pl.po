@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-13 19:19+0100\n"
+"POT-Creation-Date: 2021-09-07 20:32+0000\n"
+"PO-Revision-Date: 2021-09-11 19:32+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -53,8 +53,8 @@ msgid "Start the Tour"
 msgstr "Rozpocznij przewodnik"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Poznaj nowe i niezbędne funkcje systemu {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Poznaj kluczowe funkcje systemu {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -77,24 +77,25 @@ msgid "Get an Overview"
 msgstr "Miej oko na wszystko"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Kliknij „Podgląd”, aby zobaczyć otwarte okna i programy."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Naciśnij przycisk Super, aby zobaczyć otwarte okna i programy."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Ustaw programy po swojemu"
+msgid "Just Type to Search"
+msgstr "Pisanie wyszukuje"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Uporządkuj siatkę programów wedle uznania."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Zacznij pisać na ekranie podglądu, aby wyszukać programy i inne rzeczy."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Wydajnie pracuj dzięki obszarom roboczym"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Łatwo organizuj okna za pomocą nowego widoku obszarów roboczych."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Łatwo organizuj okna za pomocą obszarów roboczych."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -112,12 +113,10 @@ msgstr "W lewo/w prawo przełącza obszary robocze"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Przeciągnij trzy palce w poziomie na panelu dotykowym. Spróbuj!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr ""
-"Wszystko gotowe! Mamy nadzieję, że korzystanie z systemu {} {} przyniesie "
-"radość."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "To wszystko. Miłego dnia!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Program „Pomoc” zawiera więcej porad i wskazówek."

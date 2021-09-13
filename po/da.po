@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-05-11 17:39+0000\n"
-"PO-Revision-Date: 2021-08-28 16:16+0200\n"
+"POT-Creation-Date: 2021-09-11 13:08+0000\n"
+"PO-Revision-Date: 2021-09-13 20:17+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -52,8 +52,8 @@ msgid "Start the Tour"
 msgstr "Start rundvisningen"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Lær om nye og essentielle funktionaliteter i {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Lær om de primære funktioner i {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -76,24 +76,24 @@ msgid "Get an Overview"
 msgstr "Se oversigten"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Tryk på Aktiviteter for at se åbne vinduer og programmer."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Tryk på Super-tasten for at se åbne vinduer og programmer."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Gør programmerne til dine egne"
+msgid "Just Type to Search"
+msgstr "Skriv for at søge"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Opstil programgitteret som det passer dig."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Skriv i oversigten for at søge. Kør programmer, find ting."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Få overblik med arbejdsområder"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Opstil let vinduer med den nye arbejdsområdevisning."
+msgid "Easily organize windows with the workspaces view."
+msgstr "Opstil let vinduer med arbejdsområdevisningen."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -111,13 +111,22 @@ msgstr "Venstre/højre for arbejdsområder"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "På en pegeplade bruges trefingers vandret strygning. Prøv det!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Det var det! Vi håber, du vil nyde {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Det var det. Hav en fortsat god dag!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Få flere råd og tips i programmet Hjælp."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Gør programmerne til dine egne"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Opstil programgitteret som det passer dig."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Det var det! Vi håber, du vil nyde {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Velkommen til {} {}"
@@ -130,9 +139,6 @@ msgstr "Få flere råd og tips i programmet Hjælp."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "Aktivitetsoversigten kan også bruges til at skifte mellem vinduer og søge."
-
-#~ msgid "Just type to search"
-#~ msgstr "Skriv for at søge"
 
 #~ msgid "In the activities view, just start typing to search for apps, settings and more."
 #~ msgstr "I aktivitetsoversigten kan du blot begynde at skrive for at søge efter programmer, indstillinger mm."

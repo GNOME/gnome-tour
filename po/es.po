@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-05 16:03+0000\n"
+"POT-Creation-Date: 2021-09-07 20:32+0000\n"
 "PO-Revision-Date: 2021-09-06 13:18+0200\n"
 "Last-Translator: Daniel Mustieles García <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -53,7 +53,6 @@ msgid "Start the Tour"
 msgstr "Empezar el tour"
 
 #: src/widgets/pages/welcome.rs:161
-#| msgid "Learn about new and essential features in {} {}."
 msgid "Learn about the key features in {} {}."
 msgstr "Aprender más sobre las características esenciales en {} {}."
 
@@ -78,13 +77,11 @@ msgid "Get an Overview"
 msgstr "Obtener una visión general"
 
 #: src/widgets/window.rs:52
-#| msgid "Press Activities to see open windows and apps."
 msgid "Press the Super key to see open windows and apps."
 msgstr ""
 "Pulse la tecla Súper para ver todas las ventanas y aplicaciones abiertas."
 
 #: src/widgets/window.rs:61
-#| msgid "Just type to search"
 msgid "Just Type to Search"
 msgstr "Simplemente escriba para buscar"
 
@@ -98,7 +95,6 @@ msgid "Keep on Top with Workspaces"
 msgstr "Estar al día con las áreas de trabajo"
 
 #: src/widgets/window.rs:72
-#| msgid "Easily organize windows with the new workspaces view."
 msgid "Easily organize windows with the workspaces view."
 msgstr ""
 "Organizar las ventanas fácilmente con la nueva vista de áreas de trabajo."
@@ -110,7 +106,7 @@ msgstr "Subir/baja en la vista general"
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
-"En un «touchpad» use los desplazamientos verticales con tres dedos. "
+"En un panel táctil use los desplazamientos verticales con tres dedos. "
 "¡Pruébelo!"
 
 #: src/widgets/window.rs:91
@@ -120,7 +116,7 @@ msgstr "Izquierda/derecha para áreas de trabajo"
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
-"En un «touchpad» use los desplazamientos horizontales con tres dedos. "
+"En un panel táctil use los desplazamientos horizontales con tres dedos. "
 "¡Pruébelo!"
 
 #: src/widgets/window.rs:102

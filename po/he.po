@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-31 15:11+0300\n"
+"POT-Creation-Date: 2021-09-07 20:32+0000\n"
+"PO-Revision-Date: 2021-09-23 12:04+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -30,11 +30,11 @@ msgstr "סיור מודרך וקבלת פנים"
 
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;"
+msgstr "‫Gnome;GTK;גנום;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter"
-msgstr "סיור מודרך וקבלת פנים ב־GNOME"
+msgstr "סיור מודרך וקבלת פנים ל־GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -53,8 +53,8 @@ msgid "Start the Tour"
 msgstr "התחלת הסיור"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "תיאור היכולות החדשות והחיוניות ב־{} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "תיאור יכולות המפתח ב־{} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -77,24 +77,24 @@ msgid "Get an Overview"
 msgstr "הצגת סקירה"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "יש ללחוץ על פעילויות כדי לצפות ביישומים ובחלונות פתוחים."
+msgid "Press the Super key to see open windows and apps."
+msgstr "לחיצה על מקש סופר (Windows) תציג את החלונות והיישומים הפתוחים."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "התאמת יישומים לטעמך"
+msgid "Just Type to Search"
+msgstr "יש להקליד לחיפוש"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "סידור רשת היישומים בדרך הנוחה לך."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "הקלדה בסקירה תבצע חיפוש. כך מפעילים יישומים ומוצאים כל מיני דברים."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "מרחבי עבודה משאירים אותך במרכז העניינים"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "ניתן לסדר חלונות בקלות עם תצוגת מרחבי העבודה החדשה."
+msgid "Easily organize windows with the workspaces view."
+msgstr "אפשר לארגן חלונות בקלות עם תצוגת מרחבי העבודה."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -112,13 +112,22 @@ msgstr "שמאל/ימין למרחבי עבודה"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "‫במשטח מגע, ניתן להשתמש במשיכות אופקיות בשלוש אצבעות. כדאי לנסות!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "זה הכול! מאחלים לך ליהנות מ־{}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "זה הכול. המשך יום נעים!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "התאמת יישומים לטעמך"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "סידור רשת היישומים בדרך הנוחה לך."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "זה הכול! מאחלים לך ליהנות מ־{}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "ברוך בואך אל ‏{}‏ {}"
@@ -131,9 +140,6 @@ msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "תצוגת פעילויות יכולה לשמש גם כמעבר בין חלונות וכן לחיפוש."
-
-#~ msgid "Just type to search"
-#~ msgstr "יש רק להקליד כדי לחפש"
 
 #~ msgid "In the activities view, just start typing to search for apps, settings and more."
 #~ msgstr "בתצוגת פעילויות, יש רק להקליד על מנת לחפש יישומים, הגדרות ועוד."

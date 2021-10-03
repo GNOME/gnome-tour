@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-07-04 14:41+0000\n"
-"PO-Revision-Date: 2021-07-26 23:13+0300\n"
+"POT-Creation-Date: 2021-09-27 02:02+0000\n"
+"PO-Revision-Date: 2021-10-03 15:33+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -51,8 +51,8 @@ msgid "Start the Tour"
 msgstr "Начало на обиколката"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "Научете за новите и съществените възможности в {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Научете за ключовите нововъведения в {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -75,24 +75,27 @@ msgid "Get an Overview"
 msgstr "Общ преглед"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Натиснете „Дейности“, за да видите отворените прозорци и програми."
+msgid "Press the Super key to see open windows and apps."
+msgstr ""
+"Натиснете клавиша „Super“ (⊞/⌘/🐧), за да видите отворените прозорци и "
+"програми."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Приложения по ваш тертип"
+msgid "Just Type to Search"
+msgstr "Направо въведете текст за търсене"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Подредете решетката с програми както ви харесва."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Въведете текст, за да търсите, стартирате програми, настроите системата."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Продуктивност чрез работни пространства"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Лесно подреждайте прозорците с новия изглед за работните пространства"
+msgid "Easily organize windows with the workspaces view."
+msgstr "Лесно подреждайте прозорците с изгледа за работните пространства"
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -110,10 +113,10 @@ msgstr "Наляво/надясно за работните плотове"
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Пробвайте да прокарате три пръста хоризонтално по сензорния панел!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Това е! Надяваме се {} {} да ви хареса."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Готово! Наслаждавайте се!"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "За още съвети и напътствия вижте помощта."

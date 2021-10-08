@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="/org/gnome/Tour/">
       <file compressed="true" alias="style.css">resources/style.css</file>
+      <file compressed="true" alias="style-dark.css">resources/style-dark.css</file>
       <file compressed="true" alias="welcome.svg">resources/assets/welcome.svg</file>
       <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
       <file compressed="true" alias="search.svg">resources/assets/search.svg</file>

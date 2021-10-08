@@ -15,8 +15,9 @@ impl ImagePageWidget {
     }
 
     fn init(&self, resource_uri: &str, head: String, body: String) {
-        self.widget.set_property_expand(true);
-        self.widget.get_style_context().add_class("page");
+        self.widget.set_hexpand(true);
+        self.widget.set_vexpand(true);
+        self.widget.add_css_class("page");
         self.widget.set_halign(gtk::Align::Fill);
         self.widget.set_valign(gtk::Align::Fill);
 
@@ -31,11 +32,15 @@ impl ImagePageWidget {
             .margin_start(12)
             .margin_end(12)
             .build();
+        let clamp = libadwaita::Clamp::new();
+        clamp.set_child(Some(&container));
 
-        let image = gtk::Image::from_resource(&resource_uri);
-        image.set_valign(gtk::Align::Start);
-        image.show();
-        container.add(&image);
+        let picture = gtk::PictureBuilder::new()
+            .can_shrink(false)
+            .keep_aspect_ratio(true)
+            .build();
+        picture.set_resource(Some(resource_uri));
+        container.append(&picture);
 
         let head_label = gtk::LabelBuilder::new()
             .label(&head)
@@ -43,9 +48,8 @@ impl ImagePageWidget {
             .valign(gtk::Align::Center)
             .margin_top(36)
             .build();
-        head_label.get_style_context().add_class("page-title");
-        head_label.show();
-        container.add(&head_label);
+        head_label.add_css_class("page-title");
+        container.append(&head_label);
 
         let body_label = gtk::LabelBuilder::new()
             .label(&body)
@@ -55,12 +59,9 @@ impl ImagePageWidget {
             .valign(gtk::Align::Center)
             .margin_top(12)
             .build();
-        body_label.get_style_context().add_class("page-body");
-        body_label.show();
-        container.add(&body_label);
+        body_label.add_css_class("page-body");
+        container.append(&body_label);
 
-        container.show();
-        self.widget.add(&container);
-        self.widget.show();
+        self.widget.append(&clamp);
     }
 }

@@ -1,4 +1,5 @@
 use gettextrs::*;
+use gtk::glib;
 
 mod application;
 mod config;

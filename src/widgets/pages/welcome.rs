@@ -4,10 +4,11 @@ use crate::utils::i18n_f;
 use gettextrs::gettext;
 #[cfg(feature = "video")]
 use gio::FileExt;
+use gtk::glib;
 #[cfg(feature = "video")]
-use glib::clone;
+use gtk::glib::clone;
 #[cfg(feature = "video")]
-use glib::{Receiver, Sender};
+use gtk::glib::{Receiver, Sender};
 use gtk::prelude::*;
 #[cfg(feature = "video")]
 use std::cell::RefCell;
@@ -67,19 +68,26 @@ impl WelcomePageWidget {
         let container = gtk::BoxBuilder::new()
             .orientation(gtk::Orientation::Vertical)
             .spacing(0)
-            .expand(true)
+            .hexpand(true)
+            .vexpand(true)
             .valign(gtk::Align::Center)
             .halign(gtk::Align::Center)
             .margin_top(24)
             .margin_bottom(24)
             .build();
-        self.widget.get_style_context().add_class("page");
-        self.widget.get_style_context().add_class("welcome-page");
+        self.widget.add_css_class("page");
+        self.widget.add_css_class("welcome-page");
+
+        let clamp = libadwaita::Clamp::new();
+        clamp.set_child(Some(&container));
 
         #[cfg(not(feature = "video"))]
         let header = {
-            let logo = gtk::Image::from_resource("/org/gnome/Tour/welcome.svg");
-            logo.show();
+            let logo = gtk::PictureBuilder::new()
+                .can_shrink(false)
+                .keep_aspect_ratio(true)
+                .build();
+            logo.set_resource(Some("/org/gnome/Tour/welcome.svg"));
 
             logo.upcast::<gtk::Widget>()
         };
@@ -103,11 +111,11 @@ impl WelcomePageWidget {
             video_widget.set_size_request(-1, 360);
             video_widget.set_property("ignore-alpha", &false).unwrap();
             video_widget.show();
-            video_widget.get_style_context().add_class("video");
+            video_widget.add_css_class("video");
             video_widget
         };
 
-        container.add(&header);
+        container.append(&header);
 
         #[cfg(feature = "video")]
         {
@@ -117,7 +125,7 @@ impl WelcomePageWidget {
                 clone!(@strong self.player as player => move |action| {
                     match action {
                         Action::VideoReady => player.play(),
-                        Action::VideoUp => header.get_style_context().add_class("playing"),
+                        Action::VideoUp => header.add_css_class("playing"),
                     };
                     glib::Continue(true)
                 }),
@@ -150,24 +158,20 @@ impl WelcomePageWidget {
 
         let title = gtk::Label::new(Some(&gettext("Start the Tour")));
         title.set_margin_top(36);
-        title.get_style_context().add_class("page-title");
-        title.show();
-        container.add(&title);
+        title.add_css_class("page-title");
+        container.append(&title);
 
-        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
-        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
+        let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
+        let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
         // Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
         let text = gtk::Label::new(Some(&i18n_f(
             "Learn about the key features in {} {}.",
             &[&name, &version],
         )));
-        text.get_style_context().add_class("body");
+        text.add_css_class("body");
         text.set_margin_top(12);
-        text.show();
-        container.add(&text);
+        container.append(&text);
 
-        container.show();
-        self.widget.add(&container);
-        self.widget.show();
+        self.widget.append(&clamp);
     }
 }

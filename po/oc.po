@@ -7,14 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-04-01 18:54+0000\n"
-"PO-Revision-Date: 2021-04-01 18:54+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2021-10-08 15:17+0000\n"
+"PO-Revision-Date: 2021-10-09 17:16+0200\n"
 "Language-Team: Occitan <totenoc@gmail.com>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Quentin PAGÈS\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:19
@@ -50,9 +51,8 @@ msgid "Start the Tour"
 msgstr "Començar la visita guidada"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr ""
-"Descobrissètz las novèlas foncionalitats essencialas aportadas dins {} {}."
+msgid "Learn about the key features in {} {}."
+msgstr "Descobrissètz las novèlas foncionalitats claus dins {} {}."
 
 #: src/widgets/paginator.rs:32
 msgid "_Start"
@@ -75,26 +75,28 @@ msgid "Get an Overview"
 msgstr "Ajatz una vista d’ensemble"
 
 #: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Quichatz sus Activitats per veire las fenèstras e aplicacions dobèrtas."
+msgid "Press the Super key to see open windows and apps."
+msgstr "Quichatz la tòca Super per veire las fenèstras e aplicacions dobèrtas."
 
 #: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Personalizatz vòstras aplicacions"
+msgid "Just Type to Search"
+msgstr "Picatz per recercar"
 
 #: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Organizatz la grasilha de las aplicacions segon vòstras preferéncias."
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"Picatz dins l’apercebut per recercar. Aviatz d’aplicacions, trobatz de "
+"causas."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
 msgstr "Gardatz lo contròtle amb los espacis de trabalh"
 
 #: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
 msgstr ""
-"Organizatz aisidament vòstras fenèstras gràcias a la novèla vista dels espacis de "
-"trabalh."
+"Organizatz aisidament vòstras fenèstras gràcias a la novèla vista dels "
+"espacis de trabalh."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -116,13 +118,23 @@ msgstr ""
 "Sus un pavat tactil, efectuatz de lisaments amb tres dets orizontals. "
 "Ensajatz !"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "Es acabat ! Esperam qu'aquò vos agradarà {} {}."
+#: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Acabat. Passatz una bona jornada !"
 
-#: src/widgets/window.rs:107
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per obténer d’ajuda o d'astúcias, ensajatz l’aplicacion Ajuda."
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Personalizatz vòstras aplicacions"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr ""
+#~ "Organizatz la grasilha de las aplicacions segon vòstras preferéncias."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "Es acabat ! Esperam qu'aquò vos agradarà {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Benvenguda dins {} {}"
@@ -131,26 +143,24 @@ msgstr "Per obténer d’ajuda o d'astúcias, ensajatz l’aplicacion Ajuda."
 #~ "Hi there! Take the tour to learn your way around and discover essential "
 #~ "features."
 #~ msgstr ""
-#~ "Bonjorn ! Fasètz lo torn de las foncionalitats essencialas per apréner "
-#~ "a las utilizar."
+#~ "Bonjorn ! Fasètz lo torn de las foncionalitats essencialas per apréner a "
+#~ "las utilizar."
 
 #~ msgid "_No Thanks"
 #~ msgstr "_Non mercé"
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr ""
-#~ "La vista d’ensemble de las activitats pòt tanben èsser utilizada per cambiar de "
-#~ "fenèstra o efectuar una recèrca."
-
-#~ msgid "Just type to search"
-#~ msgstr "La sasida amb lo clavièr àvia la recèrca"
+#~ "La vista d’ensemble de las activitats pòt tanben èsser utilizada per "
+#~ "cambiar de fenèstra o efectuar una recèrca."
 
 #~ msgid ""
 #~ "In the activities view, just start typing to search for apps, settings "
 #~ "and more."
 #~ msgstr ""
-#~ "Dins la vista d’ensemble de las activitats, començar de sasir una requèsta "
-#~ "àvia una recèrca dins las aplicacions, los paramètres e plan mai encara."
+#~ "Dins la vista d’ensemble de las activitats, començar de sasir una "
+#~ "requèsta àvia una recèrca dins las aplicacions, los paramètres e plan mai "
+#~ "encara."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Clicatz sus l’ora per veire las notificacions"
@@ -163,7 +173,8 @@ msgstr "Per obténer d’ajuda o d'astúcias, ensajatz l’aplicacion Ajuda."
 #~ msgstr "Afichar las informacions e reglatges del sistèma"
 
 #~ msgid "Get an overview of the system status and quickly change settings."
-#~ msgstr "Obtenètz un apercebut de l’estat del sistèma e cambiatz los paramètres."
+#~ msgstr ""
+#~ "Obtenètz un apercebut de l’estat del sistèma e cambiatz los paramètres."
 
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Utilizatz Logicials per recercar e installar de las aplicacions"
@@ -194,4 +205,3 @@ msgstr "Per obténer d’ajuda o d'astúcias, ensajatz l’aplicacion Ajuda."
 
 #~ msgid "Tour Completed"
 #~ msgstr "Fin de la visita"
-

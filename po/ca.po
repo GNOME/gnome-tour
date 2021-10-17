@@ -2,7 +2,7 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
-# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2020
+# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2020-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
@@ -85,7 +85,7 @@ msgstr "Simplement escriviu per a cercar"
 
 #: src/widgets/window.rs:62
 msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Introduïu en el resum per a cercar. Inicia aplicacions, cerca coses."
+msgstr "Introduïu en el resum per a cercar. Inicieu aplicacions, cerqueu coses."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -115,65 +115,9 @@ msgstr ""
 
 #: src/widgets/window.rs:102
 msgid "That's it. Have a nice day!"
-msgstr "Això és. Bon dia!"
+msgstr "Això és tot. Que tingueu un bon dia!"
 
 #: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
 
-#~ msgid "Make Apps Your Own"
-#~ msgstr "Personalitzeu les aplicacions i feu-les vostres"
-
-#~ msgid "Arrange the app grid to your liking."
-#~ msgstr "Organitzeu la graella d'aplicacions al vostre gust."
-
-#~ msgid "That's it! We hope that you enjoy {} {}."
-#~ msgstr "Això és tot! Esperem que gaudiu del {} {}."
-
-#~ msgid "Welcome to {} {}"
-#~ msgstr "Us donem la benvinguda a {} {}"
-
-#~ msgid "_No Thanks"
-#~ msgstr "_No, gràcies"
-
-#~ msgid ""
-#~ "Hi there! Take the tour to learn your way around and discover essential "
-#~ "features."
-#~ msgstr ""
-#~ "Hola! Fes la visita guiada per a aprendre el teu camí i descobrir "
-#~ "característiques essencials."
-
-#~ msgid "The activities view can also be used to switch windows and search."
-#~ msgstr ""
-#~ "La vista d'activitats també es pot utilitzar per a canviar de finestra i de "
-#~ "cerca."
-
-#~ msgid ""
-#~ "In the activities view, just start typing to search for apps, settings and "
-#~ "more."
-#~ msgstr ""
-#~ "A la vista d'activitats, simplement comenceu a escriure per a cercar "
-#~ "aplicacions, paràmetres i més."
-
-#~ msgid "Click the time to see notifications"
-#~ msgstr "Feu clic a l'hora per a veure les notificacions"
-
-#~ msgid "The notifications popover also includes personal planning tools."
-#~ msgstr ""
-#~ "Les notificacions emergents també inclouen eines de planificació personal."
-
-#~ msgid "View system information and settings"
-#~ msgstr "Visualitza la informació i els paràmetres del sistema"
-
-#~ msgid "Get an overview of the system status and quickly change settings."
-#~ msgstr ""
-#~ "Obtén una visió general de l'estat del sistema i canvia ràpidament la "
-#~ "configuració."
-
-#~ msgid "Use Software to find and install apps"
-#~ msgstr "Utilitza el Programari per a trobar i instal·lar aplicacions"
-
-#~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr ""
-#~ "Descobriu les grans aplicacions mitjançant la cerca navegació i les nostres "
-#~ "recomanacions."

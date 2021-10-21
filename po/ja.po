@@ -1,15 +1,16 @@
 # Japanese translation for gnome-tour.
-# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# Copyright (C) 2020-2021 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Yuki Okushi <huyuumi.dev@gmail.com>, 2020.
-# sicklylife <translation@sicklylife.jp>, 2020.
+# sicklylife <translation@sicklylife.jp>, 2020-2021.
+# sujiniku <sujinikusityuu@gmail.com>, 2021.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2021-10-08 15:17+0000\n"
-"PO-Revision-Date: 2020-08-23 23:30+0900\n"
+"PO-Revision-Date: 2021-10-21 23:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -32,10 +33,8 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-#, fuzzy
-#| msgid "GNOME Tour and Greeter."
 msgid "GNOME Tour and Greeter"
-msgstr "GNOME ツアーと案内"
+msgstr "GNOME のツアー/案内"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -50,20 +49,16 @@ msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
 #: src/widgets/pages/welcome.rs:151
-#, fuzzy
-#| msgid "_Start Tour"
 msgid "Start the Tour"
-msgstr "ツアーを始める(_S)"
+msgstr "ツアーを始める"
 
 #: src/widgets/pages/welcome.rs:161
 msgid "Learn about the key features in {} {}."
-msgstr ""
+msgstr "{} {} の主な機能について学びましょう。"
 
 #: src/widgets/paginator.rs:32
-#, fuzzy
-#| msgid "_Start Tour"
 msgid "_Start"
-msgstr "ツアーを始める(_S)"
+msgstr "始める(_S)"
 
 #: src/widgets/paginator.rs:33
 msgid "_Next"
@@ -79,21 +74,21 @@ msgstr "前へ(_P)"
 
 #: src/widgets/window.rs:51
 msgid "Get an Overview"
-msgstr ""
+msgstr "全体を見渡す"
 
 #: src/widgets/window.rs:52
 msgid "Press the Super key to see open windows and apps."
-msgstr ""
+msgstr "Super キーを押すと、開いているウィンドウ/アプリが表示されます。"
 
 #: src/widgets/window.rs:61
-#, fuzzy
-#| msgid "Just type to search"
 msgid "Just Type to Search"
 msgstr "入力して検索する"
 
 #: src/widgets/window.rs:62
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
+"オーバービュー画面でキー入力すると検索できます。アプリを起動したり、"
+"ファイルや設定項目を見つけることができます。"
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
@@ -105,23 +100,23 @@ msgstr ""
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
-msgstr ""
+msgstr "縦方向ジェスチャーでオーバービュー画面を操作する"
 
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr ""
+msgstr "3 本の指でタッチパッドを上下にスワイプしてみてください!"
 
 #: src/widgets/window.rs:91
 msgid "Left/Right for Workspaces"
-msgstr ""
+msgstr "横方向ジェスチャーでワークスペースを操作する"
 
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr ""
+msgstr "3 本の指でタッチパッドを左右にスワイプしてみてください!"
 
 #: src/widgets/window.rs:102
 msgid "That's it. Have a nice day!"
-msgstr ""
+msgstr "以上です。良い一日を!"
 
 #: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."

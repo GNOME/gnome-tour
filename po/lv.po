@@ -1,13 +1,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2020.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-09-11 00:41+0000\n"
-"PO-Revision-Date: 2020-09-13 09:36+0300\n"
+"POT-Creation-Date: 2021-10-08 15:17+0000\n"
+"PO-Revision-Date: 2021-10-27 10:26+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -16,9 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
 " 2);\n"
-"X-Generator: Lokalize 19.12.3\n"
+"X-Generator: Lokalize 21.08.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:19
 msgid "Tour"
 msgstr "Ceļvedis"
 
@@ -31,8 +32,9 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "GNOME ceļvedis un sveicējs."
+#| msgid "GNOME Tour and Greeter."
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME ceļvedis un sveicējs"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
@@ -42,91 +44,134 @@ msgstr "Ceļvedis un sveicējs GNOME darbvirsmai."
 msgid "Main Window"
 msgstr "Galvenais logs"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:37
+#: data/org.gnome.Tour.metainfo.xml.in.in:38
 msgid "The GNOME Project"
 msgstr "GNOME projekts"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "Laipni lūdzam {} {}"
-
 #: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr "Sveiks! Dosimies apskatīt darbvirsmu un tās būtiskākās iespējas."
+#| msgid "_Start Tour"
+msgid "Start the Tour"
+msgstr "Sākt ceļojumu"
 
 #: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_Nē, paldies"
+msgid "Learn about the key features in {} {}."
+msgstr "Uzziniet par galvenajām iespējām {} {}."
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "_Doties"
+#: src/widgets/paginator.rs:32
+#| msgid "_Start Tour"
+msgid "_Start"
+msgstr "_Sākt"
 
-#: src/widgets/paginator.rs:31
+#: src/widgets/paginator.rs:33
 msgid "_Next"
 msgstr "_Nākamais"
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
 msgid "_Close"
 msgstr "_Aizvērt"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:36
 msgid "_Previous"
 msgstr "Ie_priekšējais"
 
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Atveriet Aktivitātes, lai palaistu lietotnes"
-
 #: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr ""
-"Aktivitātes var arī izmantot meklēšanai un, lai pārslēgtos starp logiem."
+msgid "Get an Overview"
+msgstr "Iegūt pārskatu"
 
-#: src/widgets/window.rs:60
-msgid "Just type to search"
-msgstr "Vienkārši sāciet rakstīt, lai meklētu"
+#: src/widgets/window.rs:52
+msgid "Press the Super key to see open windows and apps."
+msgstr "Spiediet Super taustiņu, lai atvērtu logus un lietotnes."
 
 #: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
+#| msgid "Just type to search"
+msgid "Just Type to Search"
+msgstr "Vienkārši sāciet rakstīt, lai meklētu"
+
+#: src/widgets/window.rs:62
+msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
-"Aktivitāšu skatā sāciet rakstīt, lai meklētu lietotnes, iestatījumus un citas"
+"Lai meklētu, sāciet rakstīt pārskata režīmā. Palaidiet lietotnes, atrodiet"
 " lietas."
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Spiediet uz pulksteņa, lai redzētu paziņojumus"
-
 #: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "Paziņojumos parādīsies arī personīgie plānošanas rīki."
+msgid "Keep on Top with Workspaces"
+msgstr "Pārvaldiet darbvietas"
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Skatiet iestatījumus un informāciju par sistēmu"
+#: src/widgets/window.rs:72
+msgid "Easily organize windows with the workspaces view."
+msgstr "Viegli organizējiet logus darbtelpu skatā."
 
 #: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Iegūstiet sistēmas statusa pārskatu un ātri mainiet iestatījumus."
+msgid "Up/Down for the Overview"
+msgstr "Uz augšu/leju pārskatam"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Izmantojiet lietotni Programmatūra, lai atrastu un instalētu lietotnes"
+#: src/widgets/window.rs:82
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr ""
+"Uz skārienpaliktņa izmantojiet trīs pirkstu vertikālo vilkšanu. Pamēģiniet!"
 
 #: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "Atklājiet lieliskas lietotnes, meklējot un pārlūkojot mūsu ieteikumus."
+msgid "Left/Right for Workspaces"
+msgstr "Pa labi/kreisi darbvirsmām"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Tas arī viss! Mēs ceram, ka jums patiks {}."
+#: src/widgets/window.rs:92
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr ""
+"Uz skārienpaliktņa izmantojiet trīs pirkstu horizontālo vilkšanu. Pamēģiniet!"
 
 #: src/widgets/window.rs:102
+msgid "That's it. Have a nice day!"
+msgstr "Tas arī viss. Lai jums jauka diena!"
+
+#: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
 msgstr "Lai iegūtu palīdzību un padomus, skatiet Palīdzības lietotni."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Laipni lūdzam {} {}"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr "Sveiks! Dosimies apskatīt darbvirsmu un tās būtiskākās iespējas."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Nē, paldies"
+
+#~ msgid "Open Activities to launch apps"
+#~ msgstr "Atveriet Aktivitātes, lai palaistu lietotnes"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr ""
+#~ "Aktivitātes var arī izmantot meklēšanai un, lai pārslēgtos starp logiem."
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "Aktivitāšu skatā sāciet rakstīt, lai meklētu lietotnes, iestatījumus un "
+#~ "citas lietas."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Spiediet uz pulksteņa, lai redzētu paziņojumus"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "Paziņojumos parādīsies arī personīgie plānošanas rīki."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Skatiet iestatījumus un informāciju par sistēmu"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Iegūstiet sistēmas statusa pārskatu un ātri mainiet iestatījumus."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr ""
+#~ "Izmantojiet lietotni Programmatūra, lai atrastu un instalētu lietotnes"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Atklājiet lieliskas lietotnes, meklējot un pārlūkojot mūsu ieteikumus."
+
+#~ msgid "That's it! We hope that you enjoy {}."
+#~ msgstr "Tas arī viss! Mēs ceram, ka jums patiks {}."

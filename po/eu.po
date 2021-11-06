@@ -6,7 +6,7 @@
 msgid ""
 msgstr "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
+"POT-Creation-Date: 2021-10-27 15:00+0000\n"
 "PO-Revision-Date: 2021-09-04 06:55+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
@@ -16,7 +16,7 @@ msgstr "Project-Id-Version: gnome-tour master\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:20
 msgid "Tour"
 msgstr "Bisita"
 
@@ -44,75 +44,75 @@ msgstr "Leiho nagusia"
 msgid "The GNOME Project"
 msgstr "GNOME proiektua"
 
-#: src/widgets/pages/welcome.rs:151
+#: src/widgets/pages/welcome.rs:159
 msgid "Start the Tour"
 msgstr "Hasi bisita"
 
-#: src/widgets/pages/welcome.rs:161
+#: src/widgets/pages/welcome.rs:168
 msgid "Learn about the key features in {} {}."
 msgstr "Ezagutu {} {} bertsioaren eginbide nagusiak."
 
-#: src/widgets/paginator.rs:32
+#: src/widgets/paginator.rs:33
 msgid "_Start"
 msgstr "_Hasi"
 
-#: src/widgets/paginator.rs:33
+#: src/widgets/paginator.rs:35
 msgid "_Next"
 msgstr "H_urrengoa"
 
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
+#: src/widgets/paginator.rs:36 src/widgets/paginator.rs:37
 msgid "_Close"
 msgstr "_Itxi"
 
-#: src/widgets/paginator.rs:36
+#: src/widgets/paginator.rs:38
 msgid "_Previous"
 msgstr "_Aurrekoa"
 
-#: src/widgets/window.rs:51
+#: src/widgets/window.rs:52
 msgid "Get an Overview"
 msgstr "Ikuspegi orokorra"
 
-#: src/widgets/window.rs:52
+#: src/widgets/window.rs:53
 msgid "Press the Super key to see open windows and apps."
 msgstr "Sakatu Super tekla aplikazio eta leiho irekiak ikusteko."
 
-#: src/widgets/window.rs:61
+#: src/widgets/window.rs:62
 msgid "Just Type to Search"
 msgstr "Idatzi zerbait bilaketa egiteko"
 
-#: src/widgets/window.rs:62
+#: src/widgets/window.rs:63
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "Idatzi ikuspegi orokorrean bilaketa egiteko. Abiarazi aplikazioak, aurkitu gauzak."
 
-#: src/widgets/window.rs:71
+#: src/widgets/window.rs:72
 msgid "Keep on Top with Workspaces"
 msgstr "Eutsi goiari laneko areen bidez"
 
-#: src/widgets/window.rs:72
+#: src/widgets/window.rs:73
 msgid "Easily organize windows with the workspaces view."
 msgstr "Ordenatu leihoak errazago laneko areen ikuspegia erabilita."
 
-#: src/widgets/window.rs:81
+#: src/widgets/window.rs:82
 msgid "Up/Down for the Overview"
 msgstr "Gora/behera ikuspegi orokorrerako"
 
-#: src/widgets/window.rs:82
+#: src/widgets/window.rs:83
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "Ukipen-pantailetan, mugitu hiru hatz bertikalean. Probatu ezazu!"
 
-#: src/widgets/window.rs:91
+#: src/widgets/window.rs:92
 msgid "Left/Right for Workspaces"
 msgstr "Eskuinera/ezkerrera laneko areak erabiltzeko"
 
-#: src/widgets/window.rs:92
+#: src/widgets/window.rs:93
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontaleak. Probatu ezazu!"
+msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontalean. Probatu ezazu!"
 
-#: src/widgets/window.rs:102
+#: src/widgets/window.rs:103
 msgid "That's it. Have a nice day!"
 msgstr "Hori da dena. Ondo ibili!"
 
-#: src/widgets/window.rs:103
+#: src/widgets/window.rs:104
 msgid "To get more advice and tips, see the Help app."
 msgstr "Aholku eta argibide gehiago eskuratzeko, begiratu laguntza."
 

@@ -8,19 +8,19 @@ edition = "2018"
 video = ["gst_player", "gst"]
 
 [dependencies]
-gtk = { package = "gtk4", version = "0.3", features= ["v4_2"]}
+gtk = { git = "https://github.com/gtk-rs/gtk4-rs.git", package = "gtk4", version = "0.3", features= ["v4_2"]}
 log = "0.4"
 gettext-rs = { version = "0.6", features = ["gettext-system"] }
-libadwaita = "0.1.0-alpha-6"
+libadwaita = { git = "https://gitlab.gnome.org/World/Rust/libadwaita-rs.git" }
 pretty_env_logger = "0.4"
 
 [dependencies.gst_player]
-version = "0.17"
+git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs.git"
 package = "gstreamer-player"
 optional = true
 
 [dependencies.gst]
-version = "0.17"
+git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs.git"
 package = "gstreamer"
 optional = true
 

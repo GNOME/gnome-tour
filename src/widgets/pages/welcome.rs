@@ -65,7 +65,7 @@ impl WelcomePageWidget {
     }
 
     fn init(&self) {
-        let container = gtk::BoxBuilder::new()
+        let container = gtk::Box::builder()
             .orientation(gtk::Orientation::Vertical)
             .spacing(0)
             .hexpand(true)
@@ -83,7 +83,7 @@ impl WelcomePageWidget {
 
         #[cfg(not(feature = "video"))]
         let header = {
-            let logo = gtk::PictureBuilder::new()
+            let logo = gtk::Picture::builder()
                 .can_shrink(false)
                 .keep_aspect_ratio(true)
                 .build();

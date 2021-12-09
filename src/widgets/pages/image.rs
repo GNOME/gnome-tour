@@ -21,7 +21,7 @@ impl ImagePageWidget {
         self.widget.set_halign(gtk::Align::Fill);
         self.widget.set_valign(gtk::Align::Fill);
 
-        let container = gtk::BoxBuilder::new()
+        let container = gtk::Box::builder()
             .orientation(gtk::Orientation::Vertical)
             .spacing(12)
             .halign(gtk::Align::Center)
@@ -35,14 +35,14 @@ impl ImagePageWidget {
         let clamp = libadwaita::Clamp::new();
         clamp.set_child(Some(&container));
 
-        let picture = gtk::PictureBuilder::new()
+        let picture = gtk::Picture::builder()
             .can_shrink(false)
             .keep_aspect_ratio(true)
             .build();
         picture.set_resource(Some(resource_uri));
         container.append(&picture);
 
-        let head_label = gtk::LabelBuilder::new()
+        let head_label = gtk::Label::builder()
             .label(&head)
             .justify(gtk::Justification::Center)
             .valign(gtk::Align::Center)
@@ -51,7 +51,7 @@ impl ImagePageWidget {
         head_label.add_css_class("page-title");
         container.append(&head_label);
 
-        let body_label = gtk::LabelBuilder::new()
+        let body_label = gtk::Label::builder()
             .label(&body)
             .lines(2)
             .wrap(true)

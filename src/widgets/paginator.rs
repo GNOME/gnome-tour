@@ -27,9 +27,7 @@ impl PaginatorWidget {
             widget,
             carousel: libadwaita::Carousel::new(),
             carousel_dots: libadwaita::CarouselIndicatorDots::new(),
-            headerbar: gtk::HeaderBarBuilder::new()
-                .show_title_buttons(false)
-                .build(),
+            headerbar: gtk::HeaderBar::builder().show_title_buttons(false).build(),
             start_btn: gtk::Button::with_label(&gettext("_Start")),
             next_overlay: gtk::Overlay::new(),
             next_btn: gtk::Button::with_label(&gettext("_Next")),
@@ -115,7 +113,6 @@ impl PaginatorWidget {
         self.carousel_dots.set_carousel(Some(&self.carousel));
         self.carousel.set_hexpand(true);
         self.carousel.set_vexpand(true);
-        self.carousel.set_animation_duration(300);
 
         self.carousel
             .connect_position_notify(clone!(@weak p => move |_| {
@@ -170,7 +167,7 @@ impl PaginatorWidget {
         if page_nr < self.carousel.n_pages() {
             let pages = &self.pages.borrow();
             let page = pages.get(page_nr as usize).unwrap();
-            self.carousel.scroll_to(page);
+            self.carousel.scroll_to(page, true);
         }
     }
 }

@@ -29,6 +29,17 @@
     },
     "modules" : [
         {
+            "name" : "libadwaita",
+            "buildsystem" : "meson",
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "branch" : "main"
+                }
+            ]
+        },
+        {
             "name" : "gnome-tour",
             "buildsystem" : "meson",
             "config-opts" : [

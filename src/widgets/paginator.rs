@@ -113,6 +113,8 @@ impl PaginatorWidget {
         self.carousel_dots.set_carousel(Some(&self.carousel));
         self.carousel.set_hexpand(true);
         self.carousel.set_vexpand(true);
+        self.carousel
+            .set_scroll_params(&libadwaita::SpringParams::new(1.0, 0.5, 300.0));
 
         self.carousel
             .connect_position_notify(clone!(@weak p => move |_| {

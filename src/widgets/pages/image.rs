@@ -48,7 +48,7 @@ impl ImagePageWidget {
             .valign(gtk::Align::Center)
             .margin_top(36)
             .build();
-        head_label.add_css_class("page-title");
+        head_label.add_css_class("title-1");
         container.append(&head_label);
 
         let body_label = gtk::Label::builder()
@@ -59,7 +59,6 @@ impl ImagePageWidget {
             .valign(gtk::Align::Center)
             .margin_top(12)
             .build();
-        body_label.add_css_class("page-body");
         container.append(&body_label);
 
         self.widget.append(&clamp);

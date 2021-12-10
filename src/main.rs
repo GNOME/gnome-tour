@@ -14,8 +14,14 @@ fn main() {
     pretty_env_logger::init();
     // Prepare i18n
     setlocale(LocaleCategory::LcAll, "");
-    bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
-    textdomain(GETTEXT_PACKAGE);
+    bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR).expect(&format!(
+        "Unable to bind text domain for {}",
+        GETTEXT_PACKAGE
+    ));
+    textdomain(GETTEXT_PACKAGE).expect(&format!(
+        "Unable to switch to text domain {}",
+        GETTEXT_PACKAGE
+    ));
 
     glib::set_application_name(&gettext("Tour"));
     glib::set_prgname(Some("Tour"));

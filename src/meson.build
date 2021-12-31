@@ -53,6 +53,7 @@ features = ''
 if get_option('video_path') != ''
   features = '--features video'
 endif
+
 custom_target(
   'cargo-build',
   build_by_default: true,
@@ -69,7 +70,6 @@ custom_target(
     '@OUTPUT@',
     profile,
     meson.project_name(),
-    features
+    features,
   ]
 )
-

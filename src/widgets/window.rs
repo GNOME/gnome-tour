@@ -34,7 +34,7 @@ mod imp {
                 widget.add_css_class("devel");
             }
 
-            self.paginator.add_page(WelcomePageWidget::new().widget);
+            self.paginator.add_page(WelcomePageWidget::new());
             self.paginator.add_page(ImagePageWidget::new(
                 "/org/gnome/Tour/overview.svg",
                 gettext("Get an Overview"),

@@ -6,14 +6,16 @@ use std::rc::Rc;
 use super::pages::{ImagePageWidget, WelcomePageWidget};
 use super::paginator::PaginatorWidget;
 use crate::config::{APP_ID, PROFILE};
+use crate::Application;
 
+#[derive(Debug)]
 pub struct Window {
     pub widget: adw::ApplicationWindow,
     pub paginator: RefCell<Rc<PaginatorWidget>>,
 }
 
 impl Window {
-    pub fn new(app: &adw::Application) -> Self {
+    pub fn new(app: &Application) -> Self {
         let widget = adw::ApplicationWindow::new(app);
 
         let paginator = RefCell::new(PaginatorWidget::new());

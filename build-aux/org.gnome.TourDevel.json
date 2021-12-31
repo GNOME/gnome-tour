@@ -1,54 +1,46 @@
 {
-    "app-id" : "org.gnome.TourDevel",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "master",
-    "sdk" : "org.gnome.Sdk",
-    "sdk-extensions" : [
+    "app-id": "org.gnome.TourDevel",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "master",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command" : "gnome-tour",
-    "tags" : [
-        "nightly"
-    ],
-    "finish-args" : [
+    "command": "gnome-tour",
+    "finish-args": [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri"
     ],
-    "build-options" : {
-        "append-path" : "/usr/lib/sdk/rust-stable/bin",
-        "build-args" : [
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin",
+        "build-args": [
             "--share=network"
-        ],
-        "env" : {
-            "GTK_DEBUG" : "interactive",
-            "CARGO_HOME" : "/run/build/gnome-tour/cargo",
-            "RUST_BACKTRACE" : "1"
-        }
+        ]
     },
-    "modules" : [
+    "modules": [
         {
-            "name" : "libadwaita",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "libadwaita",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "branch" : "main"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+                    "branch": "main"
                 }
             ]
         },
         {
-            "name" : "gnome-tour",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "gnome-tour",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dprofile=development"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gnome-tour.git"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-tour.git"
                 }
             ]
         }

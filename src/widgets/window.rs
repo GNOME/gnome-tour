@@ -40,66 +40,44 @@ impl Window {
         if PROFILE == "Devel" {
             self.widget.add_css_class("devel");
         }
-        self.paginator
-            .add_page(WelcomePageWidget::new().widget.upcast::<gtk::Widget>());
-        self.paginator.add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/overview.svg",
-                gettext("Get an Overview"),
-                gettext("Press the Super key to see open windows and apps."),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
+        self.paginator.add_page(WelcomePageWidget::new().widget);
+        self.paginator.add_page(ImagePageWidget::new(
+            "/org/gnome/Tour/overview.svg",
+            gettext("Get an Overview"),
+            gettext("Press the Super key to see open windows and apps."),
+        ));
 
-        self.paginator.add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/search.svg",
-                gettext("Just Type to Search"),
-                gettext("Type in the overview to search. Launch apps, find things."),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
+        self.paginator.add_page(ImagePageWidget::new(
+            "/org/gnome/Tour/search.svg",
+            gettext("Just Type to Search"),
+            gettext("Type in the overview to search. Launch apps, find things."),
+        ));
 
-        self.paginator.add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/workspaces.svg",
-                gettext("Keep on Top with Workspaces"),
-                gettext("Easily organize windows with the workspaces view."),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
+        self.paginator.add_page(ImagePageWidget::new(
+            "/org/gnome/Tour/workspaces.svg",
+            gettext("Keep on Top with Workspaces"),
+            gettext("Easily organize windows with the workspaces view."),
+        ));
 
-        self.paginator.add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/blank.svg",
-                gettext("Up/Down for the Overview"),
-                gettext("On a touchpad, use three-finger vertical swipes. Try it!"),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
+        self.paginator.add_page(ImagePageWidget::new(
+            "/org/gnome/Tour/blank.svg",
+            gettext("Up/Down for the Overview"),
+            gettext("On a touchpad, use three-finger vertical swipes. Try it!"),
+        ));
 
-        self.paginator.add_page(
-            ImagePageWidget::new(
-                "/org/gnome/Tour/blank.svg",
-                gettext("Left/Right for Workspaces"),
-                gettext("On a touchpad, use three-finger horizontal swipes. Try it!"),
-            )
-            .widget
-            .upcast::<gtk::Widget>(),
-        );
+        self.paginator.add_page(ImagePageWidget::new(
+            "/org/gnome/Tour/blank.svg",
+            gettext("Left/Right for Workspaces"),
+            gettext("On a touchpad, use three-finger horizontal swipes. Try it!"),
+        ));
 
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
             gettext("That's it. Have a nice day!"),
             gettext("To get more advice and tips, see the Help app."),
         );
-        last_page.widget.add_css_class("last-page");
-        self.paginator
-            .add_page(last_page.widget.upcast::<gtk::Widget>());
+        last_page.add_css_class("last-page");
+        self.paginator.add_page(last_page);
 
         self.widget.set_content(Some(&self.paginator));
     }

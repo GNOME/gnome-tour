@@ -1,26 +1,54 @@
+use gtk::glib;
 use gtk::prelude::*;
+use gtk::subclass::prelude::*;
 
-pub struct ImagePageWidget {
-    pub widget: gtk::Box,
+mod imp {
+    use super::*;
+
+    #[derive(Debug, Default)]
+    pub struct ImagePageWidget;
+
+    #[glib::object_subclass]
+    impl ObjectSubclass for ImagePageWidget {
+        const NAME: &'static str = "ImagePageWidget";
+        type ParentType = gtk::Box;
+        type Type = super::ImagePageWidget;
+    }
+
+    impl ObjectImpl for ImagePageWidget {
+        fn constructed(&self, obj: &Self::Type) {
+            let layout_manager = obj
+                .layout_manager()
+                .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
+                .unwrap();
+            layout_manager.set_orientation(gtk::Orientation::Vertical);
+            obj.add_css_class("page");
+            self.parent_constructed(obj);
+        }
+    }
+    impl WidgetImpl for ImagePageWidget {}
+    impl BoxImpl for ImagePageWidget {}
+}
+
+glib::wrapper! {
+    pub struct ImagePageWidget(ObjectSubclass<imp::ImagePageWidget>)
+        @extends gtk::Widget, gtk::Box;
 }
 
 impl ImagePageWidget {
     pub fn new(resource_uri: &str, head: String, body: String) -> Self {
-        let widget = gtk::Box::new(gtk::Orientation::Vertical, 0);
-
-        let image_page = Self { widget };
-
+        let image_page = glib::Object::new::<Self>(&[
+            ("hexpand", &true),
+            ("vexpand", &true),
+            ("halign", &gtk::Align::Fill),
+            ("valign", &gtk::Align::Fill),
+        ])
+        .unwrap();
         image_page.init(resource_uri, head, body);
         image_page
     }
 
     fn init(&self, resource_uri: &str, head: String, body: String) {
-        self.widget.set_hexpand(true);
-        self.widget.set_vexpand(true);
-        self.widget.add_css_class("page");
-        self.widget.set_halign(gtk::Align::Fill);
-        self.widget.set_valign(gtk::Align::Fill);
-
         let container = gtk::Box::builder()
             .orientation(gtk::Orientation::Vertical)
             .spacing(12)
@@ -61,6 +89,6 @@ impl ImagePageWidget {
             .build();
         container.append(&body_label);
 
-        self.widget.append(&clamp);
+        self.append(&clamp);
     }
 }

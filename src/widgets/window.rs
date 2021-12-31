@@ -1,7 +1,5 @@
 use adw::prelude::*;
 use gettextrs::gettext;
-use std::cell::RefCell;
-use std::rc::Rc;
 
 use super::pages::{ImagePageWidget, WelcomePageWidget};
 use super::paginator::PaginatorWidget;
@@ -11,14 +9,14 @@ use crate::Application;
 #[derive(Debug)]
 pub struct Window {
     pub widget: adw::ApplicationWindow,
-    pub paginator: RefCell<Rc<PaginatorWidget>>,
+    pub paginator: PaginatorWidget,
 }
 
 impl Window {
     pub fn new(app: &Application) -> Self {
         let widget = adw::ApplicationWindow::new(app);
 
-        let paginator = RefCell::new(PaginatorWidget::new());
+        let paginator = PaginatorWidget::new();
 
         let mut window_widget = Window { widget, paginator };
 
@@ -27,11 +25,11 @@ impl Window {
     }
 
     pub fn start_tour(&self) {
-        self.paginator.borrow_mut().set_page(1);
+        self.paginator.set_page(1);
     }
 
     pub fn reset_tour(&self) {
-        self.paginator.borrow_mut().set_page(0);
+        self.paginator.set_page(0);
     }
 
     fn init(&mut self) {
@@ -43,9 +41,8 @@ impl Window {
             self.widget.add_css_class("devel");
         }
         self.paginator
-            .borrow_mut()
             .add_page(WelcomePageWidget::new().widget.upcast::<gtk::Widget>());
-        self.paginator.borrow_mut().add_page(
+        self.paginator.add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/overview.svg",
                 gettext("Get an Overview"),
@@ -55,7 +52,7 @@ impl Window {
             .upcast::<gtk::Widget>(),
         );
 
-        self.paginator.borrow_mut().add_page(
+        self.paginator.add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/search.svg",
                 gettext("Just Type to Search"),
@@ -65,7 +62,7 @@ impl Window {
             .upcast::<gtk::Widget>(),
         );
 
-        self.paginator.borrow_mut().add_page(
+        self.paginator.add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/workspaces.svg",
                 gettext("Keep on Top with Workspaces"),
@@ -75,7 +72,7 @@ impl Window {
             .upcast::<gtk::Widget>(),
         );
 
-        self.paginator.borrow_mut().add_page(
+        self.paginator.add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/blank.svg",
                 gettext("Up/Down for the Overview"),
@@ -85,7 +82,7 @@ impl Window {
             .upcast::<gtk::Widget>(),
         );
 
-        self.paginator.borrow_mut().add_page(
+        self.paginator.add_page(
             ImagePageWidget::new(
                 "/org/gnome/Tour/blank.svg",
                 gettext("Left/Right for Workspaces"),
@@ -102,10 +99,8 @@ impl Window {
         );
         last_page.widget.add_css_class("last-page");
         self.paginator
-            .borrow_mut()
             .add_page(last_page.widget.upcast::<gtk::Widget>());
 
-        self.widget
-            .set_content(Some(&self.paginator.borrow().widget));
+        self.widget.set_content(Some(&self.paginator));
     }
 }

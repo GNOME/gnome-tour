@@ -68,7 +68,7 @@ mod imp {
                 "next-page",
                 clone!(@weak application => move |_, _| {
                     let window = application.window();
-                    if window.paginator.borrow_mut().try_next().is_none() {
+                    if window.paginator.try_next().is_none() {
                         window.widget.close();
                     }
                 }),
@@ -79,7 +79,7 @@ mod imp {
                 "previous-page",
                 clone!(@weak application => move |_, _| {
                     let window = application.window();
-                    if window.paginator.borrow_mut().try_previous().is_none() {
+                    if window.paginator.try_previous().is_none() {
                         window.reset_tour();
                     }
                 }),

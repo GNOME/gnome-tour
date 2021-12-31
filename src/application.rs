@@ -8,14 +8,13 @@ use log::info;
 use std::{cell::RefCell, rc::Rc};
 
 pub struct Application {
-    app: libadwaita::Application,
+    app: adw::Application,
     window: RefCell<Rc<Option<Window>>>,
 }
 
 impl Application {
     pub fn new() -> Rc<Self> {
-        let app =
-            libadwaita::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE);
+        let app = adw::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE);
         app.set_resource_base_path(Some("/org/gnome/Tour"));
 
         let application = Rc::new(Self {

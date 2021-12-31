@@ -78,7 +78,7 @@ impl WelcomePageWidget {
         self.widget.add_css_class("page");
         self.widget.add_css_class("welcome-page");
 
-        let clamp = libadwaita::Clamp::new();
+        let clamp = adw::Clamp::new();
         clamp.set_child(Some(&container));
 
         #[cfg(not(feature = "video"))]

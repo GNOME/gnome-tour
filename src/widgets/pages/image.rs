@@ -32,7 +32,7 @@ impl ImagePageWidget {
             .margin_start(12)
             .margin_end(12)
             .build();
-        let clamp = libadwaita::Clamp::new();
+        let clamp = adw::Clamp::new();
         clamp.set_child(Some(&container));
 
         let picture = gtk::Picture::builder()

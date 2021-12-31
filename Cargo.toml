@@ -8,10 +8,10 @@ edition = "2018"
 video = ["gst_player", "gst"]
 
 [dependencies]
-gtk = { package = "gtk4", version = "0.3", features= ["v4_2"]}
+gtk = { package = "gtk4", git = "https://github.com/gtk-rs/gtk4-rs", features= ["v4_2"]}
 log = "0.4"
-gettext-rs = { version = "0.6", features = ["gettext-system"] }
-libadwaita = "0.1.0-beta-1"
+gettext-rs = { version = "0.7", features = ["gettext-system"] }
+adw = {package = "libadwaita", git = "https://gitlab.gnome.org/World/Rust/libadwaita-rs"}
 pretty_env_logger = "0.4"
 
 [dependencies.gst_player]

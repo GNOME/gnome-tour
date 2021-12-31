@@ -1,7 +1,5 @@
+use adw::prelude::*;
 use gettextrs::gettext;
-use gtk::glib;
-use gtk::prelude::*;
-use libadwaita::traits::ApplicationWindowExt;
 use std::cell::RefCell;
 use std::rc::Rc;
 
@@ -10,13 +8,13 @@ use super::paginator::PaginatorWidget;
 use crate::config::{APP_ID, PROFILE};
 
 pub struct Window {
-    pub widget: libadwaita::ApplicationWindow,
+    pub widget: adw::ApplicationWindow,
     pub paginator: RefCell<Rc<PaginatorWidget>>,
 }
 
 impl Window {
-    pub fn new(app: &libadwaita::Application) -> Self {
-        let widget = libadwaita::ApplicationWindow::new(app);
+    pub fn new(app: &adw::Application) -> Self {
+        let widget = adw::ApplicationWindow::new(app);
 
         let paginator = RefCell::new(PaginatorWidget::new());
 

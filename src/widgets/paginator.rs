@@ -6,8 +6,8 @@ use std::rc::Rc;
 
 pub struct PaginatorWidget {
     pub widget: gtk::Box,
-    carousel: libadwaita::Carousel,
-    carousel_dots: libadwaita::CarouselIndicatorDots,
+    carousel: adw::Carousel,
+    carousel_dots: adw::CarouselIndicatorDots,
     headerbar: gtk::HeaderBar,
     pages: RefCell<Vec<gtk::Widget>>,
     current_page: RefCell<u32>,
@@ -25,8 +25,8 @@ impl PaginatorWidget {
 
         let paginator = Rc::new(Self {
             widget,
-            carousel: libadwaita::Carousel::new(),
-            carousel_dots: libadwaita::CarouselIndicatorDots::new(),
+            carousel: adw::Carousel::new(),
+            carousel_dots: adw::CarouselIndicatorDots::new(),
             headerbar: gtk::HeaderBar::builder().show_title_buttons(false).build(),
             start_btn: gtk::Button::with_label(&gettext("_Start")),
             next_overlay: gtk::Overlay::new(),
@@ -114,7 +114,7 @@ impl PaginatorWidget {
         self.carousel.set_hexpand(true);
         self.carousel.set_vexpand(true);
         self.carousel
-            .set_scroll_params(&libadwaita::SpringParams::new(1.0, 0.5, 300.0));
+            .set_scroll_params(&adw::SpringParams::new(1.0, 0.5, 300.0));
 
         self.carousel
             .connect_position_notify(clone!(@weak p => move |_| {

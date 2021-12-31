@@ -29,7 +29,7 @@ mod imp {
     impl ObjectImpl for Application {}
     impl ApplicationImpl for Application {
         fn activate(&self, application: &Self::Type) {
-            let window = Window::new(&application);
+            let window = Window::new(application);
             application.add_window(&window);
             window.present();
             self.window.set(window.downgrade()).unwrap();
@@ -100,6 +100,7 @@ glib::wrapper! {
 }
 
 impl Application {
+    #[allow(clippy::new_without_default)]
     pub fn new() -> Self {
         glib::Object::new(&[
             ("application-id", &config::APP_ID),

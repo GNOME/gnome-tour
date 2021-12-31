@@ -34,6 +34,7 @@ mod imp {
         sender: Sender<Action>,
     }
 
+    #[allow(clippy::derivable_impls)]
     impl Default for WelcomePageWidget {
         fn default() -> Self {
             #[cfg(feature = "video")]
@@ -191,6 +192,7 @@ glib::wrapper! {
 }
 
 impl WelcomePageWidget {
+    #[allow(clippy::new_without_default)]
     pub fn new() -> Self {
         glib::Object::new(&[]).unwrap()
     }

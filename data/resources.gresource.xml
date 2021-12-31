@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/org/gnome/Tour/">
-      <file compressed="true" alias="style.css">resources/style.css</file>
-      <file compressed="true" alias="welcome.svg">resources/assets/welcome.svg</file>
-      <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
-      <file compressed="true" alias="search.svg">resources/assets/search.svg</file>
-      <file compressed="true" alias="blank.svg">resources/assets/blank.svg</file>
-      <file compressed="true" alias="workspaces.svg">resources/assets/workspaces.svg</file>
-      <file compressed="true" alias="ready-to-go.svg">resources/assets/ready-to-go.svg</file>
-      <file compressed="true" alias="hand-fg.svg">resources/assets/hand-fg.svg</file>
-      <file compressed="true" alias="updown-bg.svg">resources/assets/updown-bg.svg</file>
-      <file compressed="true" alias="leftright-bg.svg">resources/assets/leftright-bg.svg</file>
+    <file compressed="true" alias="style.css">resources/style.css</file>
+    <file compressed="true" alias="welcome.svg">resources/assets/welcome.svg</file>
+    <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
+    <file compressed="true" alias="search.svg">resources/assets/search.svg</file>
+    <file compressed="true" alias="blank.svg">resources/assets/blank.svg</file>
+    <file compressed="true" alias="workspaces.svg">resources/assets/workspaces.svg</file>
+    <file compressed="true" alias="ready-to-go.svg">resources/assets/ready-to-go.svg</file>
+    <file compressed="true" alias="hand-fg.svg">resources/assets/hand-fg.svg</file>
+    <file compressed="true" alias="updown-bg.svg">resources/assets/updown-bg.svg</file>
+    <file compressed="true" alias="leftright-bg.svg">resources/assets/leftright-bg.svg</file>
+  </gresource>
+  <gresource prefix="/org/gnome/Tour/icons/scalable/actions">
+    <file compressed="true" alias="left-large-symbolic.svg">resources/left-large-symbolic.svg</file>
+    <file compressed="true" alias="right-large-symbolic.svg">resources/right-large-symbolic.svg</file>
   </gresource>
 </gresources>

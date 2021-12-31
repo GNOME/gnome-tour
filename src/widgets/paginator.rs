@@ -21,8 +21,6 @@ mod imp {
         pub(super) next_overlay: gtk::Overlay,
         pub(super) next_btn: gtk::Button,
         pub(super) start_btn: gtk::Button,
-        pub(super) finish_btn: gtk::Button,
-        pub(super) close_btn: gtk::Button,
         pub(super) previous_btn: gtk::Button,
     }
 
@@ -31,13 +29,11 @@ mod imp {
             Self {
                 carousel: adw::Carousel::new(),
                 carousel_dots: adw::CarouselIndicatorDots::new(),
-                headerbar: gtk::HeaderBar::builder().show_title_buttons(false).build(),
-                start_btn: gtk::Button::with_label(&gettext("_Start")),
+                headerbar: gtk::HeaderBar::builder().show_title_buttons(true).build(),
+                start_btn: gtk::Button::from_icon_name(Some("right-large-symbolic")),
                 next_overlay: gtk::Overlay::new(),
-                next_btn: gtk::Button::with_label(&gettext("_Next")),
-                finish_btn: gtk::Button::with_label(&gettext("_Close")),
-                close_btn: gtk::Button::with_label(&gettext("_Close")),
-                previous_btn: gtk::Button::with_label(&gettext("_Previous")),
+                next_btn: gtk::Button::from_icon_name(Some("right-large-symbolic")),
+                previous_btn: gtk::Button::from_icon_name(Some("left-large-symbolic")),
                 pages: RefCell::new(Vec::new()),
                 current_page: Cell::new(0),
             }
@@ -59,6 +55,7 @@ mod imp {
                 .unwrap();
             layout_manager.set_orientation(gtk::Orientation::Vertical);
 
+            self.headerbar.add_css_class("flat");
             self.carousel_dots.set_carousel(Some(&self.carousel));
             self.carousel.set_hexpand(true);
             self.carousel.set_vexpand(true);
@@ -71,47 +68,56 @@ mod imp {
                 }));
             self.start_btn.add_css_class("suggested-action");
             self.start_btn.set_use_underline(true);
+            self.start_btn.set_valign(gtk::Align::Center);
             self.start_btn.set_action_name(Some("app.start-tour"));
+            self.start_btn.set_tooltip_text(Some(&gettext("Start")));
+            self.start_btn.add_css_class("circular");
 
-            self.next_btn.add_css_class("suggested-action");
+            self.next_btn.set_tooltip_text(Some(&gettext("Next")));
             self.next_btn.set_use_underline(true);
+            self.next_btn.set_valign(gtk::Align::Center);
             self.next_btn.set_action_name(Some("app.next-page"));
-
-            self.close_btn.set_use_underline(true);
-            self.close_btn.set_action_name(Some("app.quit"));
-
-            self.finish_btn.add_css_class("suggested-action");
-            self.finish_btn.set_use_underline(true);
-            self.finish_btn.set_action_name(Some("app.quit"));
+            self.next_btn.add_css_class("circular");
 
             self.previous_btn.set_use_underline(true);
+            self.previous_btn.set_valign(gtk::Align::Center);
             self.previous_btn.set_action_name(Some("app.previous-page"));
+            self.previous_btn
+                .set_tooltip_text(Some(&gettext("Previous")));
+            self.previous_btn.add_css_class("circular");
 
             self.next_overlay.set_child(Some(&self.next_btn));
-            self.next_overlay.add_overlay(&self.finish_btn);
+            self.next_overlay.set_valign(gtk::Align::Center);
             self.next_overlay.set_can_target(false);
 
             let previous_overlay = gtk::Overlay::new();
-            previous_overlay.set_child(Some(&self.close_btn));
+            previous_overlay.set_valign(gtk::Align::Center);
             previous_overlay.add_overlay(&self.previous_btn);
 
             let start_overlay = gtk::Overlay::new();
             start_overlay.set_child(Some(&self.start_btn));
+            start_overlay.set_valign(gtk::Align::Center);
             start_overlay.add_overlay(&self.next_overlay);
 
             let btn_size_group = gtk::SizeGroup::new(gtk::SizeGroupMode::Horizontal);
             btn_size_group.add_widget(&self.previous_btn);
-            btn_size_group.add_widget(&self.close_btn);
             btn_size_group.add_widget(&self.next_overlay);
             btn_size_group.add_widget(&start_overlay);
-            btn_size_group.add_widget(&self.finish_btn);
 
             self.headerbar.set_title_widget(Some(&self.carousel_dots));
-            self.headerbar.pack_start(&previous_overlay);
-            self.headerbar.pack_end(&start_overlay);
 
             obj.append(&self.headerbar);
-            obj.append(&self.carousel);
+            let container = gtk::Box::builder()
+                .orientation(gtk::Orientation::Horizontal)
+                .margin_start(12)
+                .margin_end(12)
+                .build();
+
+            container.append(&previous_overlay);
+            container.append(&self.carousel);
+            container.append(&start_overlay);
+
+            obj.append(&container);
 
             self.parent_constructed(obj);
         }
@@ -169,20 +175,21 @@ impl PaginatorWidget {
         let forelast_page = n_pages - 2.0;
         let last_page = n_pages - 1.0;
 
-        let (opacity_finish, opacity_previous, opacity_start, opacity_next, opacity_close) =
-            if (0.0..1.0).contains(&position) {
-                if position == 0.0 {
-                    (0.0, position, 1.0, position, 1.0)
-                } else {
-                    (0.0, position, 1.0, position, 1f64 - position)
-                }
-            } else if (0.0 <= position) && (position <= forelast_page) {
-                (0.0, 1.0, 1f64 - position, 1.0, 0.0)
-            } else if (forelast_page < position) && (position <= last_page) {
-                (position - forelast_page, 1.0, 0.0, 1.0, 0.0)
+        let (opacity_previous, opacity_start, opacity_next) = if (0.0..1.0).contains(&position) {
+            if position == 0.0 {
+                (position, 1.0, position)
             } else {
-                panic!("Position of the carousel is outside the allowed range");
-            };
+                (position, 1.0, position)
+            }
+        } else if (0.0 <= position) && (position <= forelast_page) {
+            (1.0, 0.0, 1.0)
+        } else if forelast_page >= position {
+            (1.0, 0.0, 1.0)
+        } else if position > forelast_page {
+            (1.0, 0.0, last_page - position)
+        } else {
+            panic!("Position of the carousel is outside the allowed range");
+        };
 
         imp.start_btn.set_opacity(opacity_start);
         imp.start_btn.set_visible(opacity_start > 0_f64);
@@ -191,14 +198,8 @@ impl PaginatorWidget {
         imp.next_btn.set_visible(opacity_next > 0_f64);
         imp.next_overlay.set_can_target(opacity_next > 0_f64);
 
-        imp.finish_btn.set_opacity(opacity_finish);
-        imp.finish_btn.set_visible(opacity_finish > 0_f64);
-
         imp.previous_btn.set_opacity(opacity_previous);
         imp.previous_btn.set_visible(opacity_previous > 0_f64);
-
-        imp.close_btn.set_opacity(opacity_close);
-        imp.start_btn.set_visible(opacity_close > 0_f64);
 
         imp.current_page.set(page_nr);
     }

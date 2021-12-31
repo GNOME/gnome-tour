@@ -212,3 +212,9 @@ impl PaginatorWidget {
         }
     }
 }
+
+impl Default for PaginatorWidget {
+    fn default() -> Self {
+        Self::new()
+    }
+}

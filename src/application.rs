@@ -16,7 +16,7 @@ mod imp {
 
     #[derive(Debug, Default)]
     pub struct Application {
-        pub(super) window: OnceCell<Window>,
+        pub(super) window: OnceCell<WeakRef<Window>>,
     }
 
     #[glib::object_subclass]
@@ -30,11 +30,12 @@ mod imp {
     impl ApplicationImpl for Application {
         fn activate(&self, application: &Self::Type) {
             let window = Window::new(&application);
-            application.add_window(&window.widget);
-            window.widget.present();
-            self.window.set(window);
+            application.add_window(&window);
+            window.present();
+            self.window.set(window.downgrade()).unwrap();
             self.parent_activate(application);
         }
+
         fn startup(&self, application: &Self::Type) {
             // Quit
             utils::action(
@@ -68,8 +69,8 @@ mod imp {
                 "next-page",
                 clone!(@weak application => move |_, _| {
                     let window = application.window();
-                    if window.paginator.try_next().is_none() {
-                        window.widget.close();
+                    if window.paginator().try_next().is_none() {
+                        window.close();
                     }
                 }),
             );
@@ -79,7 +80,7 @@ mod imp {
                 "previous-page",
                 clone!(@weak application => move |_, _| {
                     let window = application.window();
-                    if window.paginator.try_previous().is_none() {
+                    if window.paginator().try_previous().is_none() {
                         window.reset_tour();
                     }
                 }),
@@ -107,9 +108,8 @@ impl Application {
         .unwrap()
     }
 
-    fn window(&self) -> &Window {
-        // and_then(|w| w.upgrade())
-        self.imp().window.get().unwrap()
+    fn window(&self) -> Window {
+        self.imp().window.get().and_then(|w| w.upgrade()).unwrap()
     }
 
     pub fn run() {

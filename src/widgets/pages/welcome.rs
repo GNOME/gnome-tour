@@ -158,7 +158,7 @@ impl WelcomePageWidget {
 
         let title = gtk::Label::new(Some(&gettext("Start the Tour")));
         title.set_margin_top(36);
-        title.add_css_class("page-title");
+        title.add_css_class("title-1");
         container.append(&title);
 
         let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());

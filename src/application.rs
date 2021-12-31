@@ -1,7 +1,6 @@
 use crate::config;
 use crate::utils;
 use crate::widgets::Window;
-use gtk::gdk;
 use gtk::gio::{self, prelude::*};
 use gtk::glib::{self, clone};
 use gtk::prelude::*;

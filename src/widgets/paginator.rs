@@ -1,39 +1,39 @@
-use gettextrs::gettext;
 use gtk::prelude::*;
 use gtk::{
     glib::{self, clone},
     subclass::prelude::*,
 };
-use std::cell::RefCell;
 
 mod imp {
-    use std::cell::Cell;
-
     use super::*;
+    use std::cell::Cell;
+    use std::cell::RefCell;
 
-    #[derive(Debug)]
+    #[derive(Debug, gtk::CompositeTemplate)]
+    #[template(resource = "/org/gnome/Tour/ui/paginator.ui")]
     pub struct PaginatorWidget {
-        pub(super) carousel: adw::Carousel,
-        pub(super) carousel_dots: adw::CarouselIndicatorDots,
-        pub(super) headerbar: gtk::HeaderBar,
+        #[template_child]
+        pub(super) carousel: TemplateChild<adw::Carousel>,
         pub(super) pages: RefCell<Vec<gtk::Widget>>,
         pub(super) current_page: Cell<u32>,
-        pub(super) next_overlay: gtk::Overlay,
-        pub(super) next_btn: gtk::Button,
-        pub(super) start_btn: gtk::Button,
-        pub(super) previous_btn: gtk::Button,
+        #[template_child]
+        pub(super) next_overlay: TemplateChild<gtk::Overlay>,
+        #[template_child]
+        pub(super) next_btn: TemplateChild<gtk::Button>,
+        #[template_child]
+        pub(super) start_btn: TemplateChild<gtk::Button>,
+        #[template_child]
+        pub(super) previous_btn: TemplateChild<gtk::Button>,
     }
 
     impl Default for PaginatorWidget {
         fn default() -> Self {
             Self {
-                carousel: adw::Carousel::new(),
-                carousel_dots: adw::CarouselIndicatorDots::new(),
-                headerbar: gtk::HeaderBar::builder().show_title_buttons(true).build(),
-                start_btn: gtk::Button::from_icon_name(Some("right-large-symbolic")),
-                next_overlay: gtk::Overlay::new(),
-                next_btn: gtk::Button::from_icon_name(Some("right-large-symbolic")),
-                previous_btn: gtk::Button::from_icon_name(Some("left-large-symbolic")),
+                carousel: TemplateChild::default(),
+                start_btn: TemplateChild::default(),
+                next_overlay: TemplateChild::default(),
+                next_btn: TemplateChild::default(),
+                previous_btn: TemplateChild::default(),
                 pages: RefCell::new(Vec::new()),
                 current_page: Cell::new(0),
             }
@@ -45,6 +45,14 @@ mod imp {
         const NAME: &'static str = "PaginatorWidget";
         type ParentType = gtk::Box;
         type Type = super::PaginatorWidget;
+
+        fn class_init(klass: &mut Self::Class) {
+            Self::bind_template(klass);
+        }
+
+        fn instance_init(obj: &glib::subclass::InitializingObject<Self>) {
+            obj.init_template();
+        }
     }
 
     impl ObjectImpl for PaginatorWidget {
@@ -54,71 +62,12 @@ mod imp {
                 .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
                 .unwrap();
             layout_manager.set_orientation(gtk::Orientation::Vertical);
-
-            self.headerbar.add_css_class("flat");
-            self.carousel_dots.set_carousel(Some(&self.carousel));
-            self.carousel.set_hexpand(true);
-            self.carousel.set_vexpand(true);
             self.carousel
                 .set_scroll_params(&adw::SpringParams::new(1.0, 0.5, 300.0));
-
             self.carousel
                 .connect_position_notify(clone!(@weak obj => move |_| {
                     obj.update_position();
                 }));
-            self.start_btn.add_css_class("suggested-action");
-            self.start_btn.set_use_underline(true);
-            self.start_btn.set_valign(gtk::Align::Center);
-            self.start_btn.set_action_name(Some("app.start-tour"));
-            self.start_btn.set_tooltip_text(Some(&gettext("Start")));
-            self.start_btn.add_css_class("circular");
-
-            self.next_btn.set_tooltip_text(Some(&gettext("Next")));
-            self.next_btn.set_use_underline(true);
-            self.next_btn.set_valign(gtk::Align::Center);
-            self.next_btn.set_action_name(Some("app.next-page"));
-            self.next_btn.add_css_class("circular");
-
-            self.previous_btn.set_use_underline(true);
-            self.previous_btn.set_valign(gtk::Align::Center);
-            self.previous_btn.set_action_name(Some("app.previous-page"));
-            self.previous_btn
-                .set_tooltip_text(Some(&gettext("Previous")));
-            self.previous_btn.add_css_class("circular");
-
-            self.next_overlay.set_child(Some(&self.next_btn));
-            self.next_overlay.set_valign(gtk::Align::Center);
-            self.next_overlay.set_can_target(false);
-
-            let previous_overlay = gtk::Overlay::new();
-            previous_overlay.set_valign(gtk::Align::Center);
-            previous_overlay.add_overlay(&self.previous_btn);
-
-            let start_overlay = gtk::Overlay::new();
-            start_overlay.set_child(Some(&self.start_btn));
-            start_overlay.set_valign(gtk::Align::Center);
-            start_overlay.add_overlay(&self.next_overlay);
-
-            let btn_size_group = gtk::SizeGroup::new(gtk::SizeGroupMode::Horizontal);
-            btn_size_group.add_widget(&self.previous_btn);
-            btn_size_group.add_widget(&self.next_overlay);
-            btn_size_group.add_widget(&start_overlay);
-
-            self.headerbar.set_title_widget(Some(&self.carousel_dots));
-
-            obj.append(&self.headerbar);
-            let container = gtk::Box::builder()
-                .orientation(gtk::Orientation::Horizontal)
-                .margin_start(12)
-                .margin_end(12)
-                .build();
-
-            container.append(&previous_overlay);
-            container.append(&self.carousel);
-            container.append(&start_overlay);
-
-            obj.append(&container);
-
             self.parent_constructed(obj);
         }
     }

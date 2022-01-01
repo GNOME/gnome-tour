@@ -1,9 +1,8 @@
 use gettextrs::*;
-use gtk::glib;
+use gtk::{gio, glib};
 
 mod application;
 mod config;
-mod static_resources;
 mod utils;
 mod widgets;
 
@@ -26,7 +25,8 @@ fn main() {
     #[cfg(feature = "video")]
     gst::init().expect("Unable to start gst");
 
-    static_resources::init().expect("Failed to initialize the resource file.");
+    let res = gio::Resource::load(config::RESOURCES_FILE).expect("Could not load resources");
+    gio::resources_register(&res);
 
     Application::run()
 }

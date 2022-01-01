@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="/org/gnome/Tour/">
     <file compressed="true" alias="style.css">resources/style.css</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="ui/window.ui">resources/ui/window.ui</file>
     <file compressed="true" alias="welcome.svg">resources/assets/welcome.svg</file>
     <file compressed="true" alias="overview.svg">resources/assets/overview.svg</file>
     <file compressed="true" alias="search.svg">resources/assets/search.svg</file>

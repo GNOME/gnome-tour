@@ -12,9 +12,11 @@ mod imp {
     use crate::config;
     use adw::subclass::prelude::*;
 
-    #[derive(Debug, Default)]
+    #[derive(Debug, Default, gtk::CompositeTemplate)]
+    #[template(resource = "/org/gnome/Tour/ui/window.ui")]
     pub struct Window {
-        pub(super) paginator: PaginatorWidget,
+        #[template_child]
+        pub(super) paginator: TemplateChild<PaginatorWidget>,
     }
 
     #[glib::object_subclass]
@@ -22,11 +24,18 @@ mod imp {
         const NAME: &'static str = "Window";
         type Type = super::Window;
         type ParentType = adw::ApplicationWindow;
+
+        fn class_init(klass: &mut Self::Class) {
+            Self::bind_template(klass);
+        }
+
+        fn instance_init(obj: &glib::subclass::InitializingObject<Self>) {
+            obj.init_template();
+        }
     }
 
     impl ObjectImpl for Window {
         fn constructed(&self, widget: &Self::Type) {
-            widget.set_default_size(960, 720);
             widget.set_icon_name(Some(config::APP_ID));
 
             // Devel Profile
@@ -73,7 +82,6 @@ mod imp {
             last_page.add_css_class("last-page");
             self.paginator.add_page(last_page);
 
-            widget.set_content(Some(&self.paginator));
             self.parent_constructed(widget);
         }
     }

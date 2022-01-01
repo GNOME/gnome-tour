@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="Window" parent="AdwApplicationWindow">
+    <property name="default-width">960</property>
+    <property name="default-height">720</property>
+    <property name="content">
+      <object class="PaginatorWidget" id="paginator" />
+    </property>
+  </template>
+</interface>

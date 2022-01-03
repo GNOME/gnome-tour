@@ -32,6 +32,11 @@ mod imp {
             layout_manager.set_orientation(gtk::Orientation::Vertical);
             obj.add_css_class("page");
 
+            obj.set_hexpand(true);
+            obj.set_vexpand(true);
+            obj.set_halign(gtk::Align::Fill);
+            obj.set_valign(gtk::Align::Fill);
+
             let container = gtk::Box::builder()
                 .orientation(gtk::Orientation::Vertical)
                 .spacing(12)
@@ -146,16 +151,11 @@ glib::wrapper! {
 
 impl ImagePageWidget {
     pub fn new(resource_uri: &str, head: String, body: String) -> Self {
-        let image_page = glib::Object::new::<Self>(&[
-            ("hexpand", &true),
-            ("vexpand", &true),
-            ("halign", &gtk::Align::Fill),
-            ("valign", &gtk::Align::Fill),
+        glib::Object::new::<Self>(&[
             ("resource-uri", &resource_uri),
             ("head", &head),
             ("body", &body),
         ])
-        .unwrap();
-        image_page
+        .unwrap()
     }
 }

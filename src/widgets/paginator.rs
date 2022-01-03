@@ -45,6 +45,7 @@ mod imp {
         const NAME: &'static str = "PaginatorWidget";
         type ParentType = gtk::Box;
         type Type = super::PaginatorWidget;
+        type Interfaces = (gtk::Buildable,);
 
         fn class_init(klass: &mut Self::Class) {
             Self::bind_template(klass);
@@ -73,12 +74,27 @@ mod imp {
     }
     impl WidgetImpl for PaginatorWidget {}
     impl BoxImpl for PaginatorWidget {}
+    impl BuildableImpl for PaginatorWidget {
+        fn add_child(
+            &self,
+            buildable: &Self::Type,
+            builder: &gtk::Builder,
+            child: &glib::Object,
+            type_: Option<&str>,
+        ) {
+            if !self.carousel.is_bound() {
+                self.parent_add_child(buildable, builder, child, type_);
+            } else {
+                buildable.add_page(child.clone().downcast::<gtk::Widget>().unwrap());
+            }
+        }
+    }
 }
 
 glib::wrapper! {
     pub struct PaginatorWidget(ObjectSubclass<imp::PaginatorWidget>)
-        @extends gtk::Widget, gtk::Box;
-
+        @extends gtk::Widget, gtk::Box,
+        @implements gtk::Buildable;
 }
 
 impl PaginatorWidget {

@@ -1,15 +1,14 @@
 use adw::prelude::*;
-use gettextrs::gettext;
 use gtk::subclass::prelude::*;
 use gtk::{gio, glib};
 
-use super::pages::{ImagePageWidget, WelcomePageWidget};
 use super::paginator::PaginatorWidget;
 use crate::Application;
 
 mod imp {
     use super::*;
     use crate::config;
+    use crate::widgets::pages::{ImagePageWidget, WelcomePageWidget};
     use adw::subclass::prelude::*;
 
     #[derive(Debug, Default, gtk::CompositeTemplate)]
@@ -26,6 +25,8 @@ mod imp {
         type ParentType = adw::ApplicationWindow;
 
         fn class_init(klass: &mut Self::Class) {
+            WelcomePageWidget::static_type();
+            ImagePageWidget::static_type();
             Self::bind_template(klass);
         }
 
@@ -42,46 +43,6 @@ mod imp {
             if config::PROFILE == "Devel" {
                 widget.add_css_class("devel");
             }
-
-            self.paginator.add_page(WelcomePageWidget::new());
-            self.paginator.add_page(ImagePageWidget::new(
-                "/org/gnome/Tour/overview.svg",
-                gettext("Get an Overview"),
-                gettext("Press the Super key to see open windows and apps."),
-            ));
-
-            self.paginator.add_page(ImagePageWidget::new(
-                "/org/gnome/Tour/search.svg",
-                gettext("Just Type to Search"),
-                gettext("Type in the overview to search. Launch apps, find things."),
-            ));
-
-            self.paginator.add_page(ImagePageWidget::new(
-                "/org/gnome/Tour/workspaces.svg",
-                gettext("Keep on Top with Workspaces"),
-                gettext("Easily organize windows with the workspaces view."),
-            ));
-
-            self.paginator.add_page(ImagePageWidget::new(
-                "/org/gnome/Tour/blank.svg",
-                gettext("Up/Down for the Overview"),
-                gettext("On a touchpad, use three-finger vertical swipes. Try it!"),
-            ));
-
-            self.paginator.add_page(ImagePageWidget::new(
-                "/org/gnome/Tour/blank.svg",
-                gettext("Left/Right for Workspaces"),
-                gettext("On a touchpad, use three-finger horizontal swipes. Try it!"),
-            ));
-
-            let last_page = ImagePageWidget::new(
-                "/org/gnome/Tour/ready-to-go.svg",
-                gettext("That's it. Have a nice day!"),
-                gettext("To get more advice and tips, see the Help app."),
-            );
-            last_page.add_css_class("last-page");
-            self.paginator.add_page(last_page);
-
             self.parent_constructed(widget);
         }
     }

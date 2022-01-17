@@ -15,63 +15,52 @@
       </object>
     </child>
     <child>
-      <object class="GtkBox">
-        <property name="margin-start">12</property>
-        <property name="margin-end">12</property>
-        <child>
-          <object class="GtkOverlay" id="previous_overlay">
+      <object class="GtkOverlay" id="previous_overlay">
+        <property name="valign">center</property>
+        <child type="overlay">
+          <object class="GtkButton" id="previous_btn">
+            <property name="margin-start">12</property>
+            <property name="icon-name">left-large-symbolic</property>
+            <property name="halign">start</property>
             <property name="valign">center</property>
-            <child>
-              <object class="GtkButton" id="previous_btn">
-                <property name="icon-name">left-large-symbolic</property>
-                <property name="valign">center</property>
-                <property name="action-name">app.previous-page</property>
-                <property name="tooltip-text" translatable="yes">Previous</property>
-                <style>
-                  <class name="circular" />
-                </style>
-              </object>
-            </child>
+            <property name="action-name">app.previous-page</property>
+            <property name="tooltip-text" translatable="yes">Previous</property>
+            <style>
+              <class name="circular" />
+            </style>
+          </object>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="next_btn">
+            <property name="margin-end">12</property>
+            <property name="icon-name">right-large-symbolic</property>
+            <property name="halign">end</property>
+            <property name="valign">center</property>
+            <property name="action-name">app.next-page</property>
+            <property name="tooltip-text" translatable="yes">Next</property>
+            <style>
+              <class name="circular" />
+            </style>
+          </object>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="start_btn">
+            <property name="margin-end">12</property>
+            <property name="icon-name">right-large-symbolic</property>
+            <property name="halign">end</property>
+            <property name="valign">center</property>
+            <property name="action-name">app.start-tour</property>
+            <property name="tooltip-text" translatable="yes">Start</property>
+            <style>
+              <class name="suggested-action" />
+              <class name="circular" />
+            </style>
           </object>
         </child>
         <child>
           <object class="AdwCarousel" id="carousel">
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="start_overlay">
-            <property name="valign">center</property>
-            <child>
-              <object class="GtkButton" id="start_btn">
-                <property name="icon-name">right-large-symbolic</property>
-                <property name="valign">center</property>
-                <property name="action-name">app.start-tour</property>
-                <property name="tooltip-text" translatable="yes">Start</property>
-                <style>
-                  <class name="suggested-action" />
-                  <class name="circular" />
-                </style>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkOverlay" id="next_overlay">
-                <property name="valign">center</property>
-                <property name="can-target">false</property>
-                <child>
-                  <object class="GtkButton" id="next_btn">
-                    <property name="icon-name">right-large-symbolic</property>
-                    <property name="valign">center</property>
-                    <property name="action-name">app.next-page</property>
-                    <property name="tooltip-text" translatable="yes">Next</property>
-                    <style>
-                      <class name="circular" />
-                    </style>
-                  </object>
-                </child>
-              </object>
-            </child>
           </object>
         </child>
       </object>

@@ -17,8 +17,6 @@ mod imp {
         pub(super) pages: RefCell<Vec<gtk::Widget>>,
         pub(super) current_page: Cell<u32>,
         #[template_child]
-        pub(super) next_overlay: TemplateChild<gtk::Overlay>,
-        #[template_child]
         pub(super) next_btn: TemplateChild<gtk::Button>,
         #[template_child]
         pub(super) start_btn: TemplateChild<gtk::Button>,
@@ -31,7 +29,6 @@ mod imp {
             Self {
                 carousel: TemplateChild::default(),
                 start_btn: TemplateChild::default(),
-                next_overlay: TemplateChild::default(),
                 next_btn: TemplateChild::default(),
                 previous_btn: TemplateChild::default(),
                 pages: RefCell::new(Vec::new()),
@@ -142,9 +139,9 @@ impl PaginatorWidget {
 
         let (opacity_previous, opacity_start, opacity_next) = if (0.0..1.0).contains(&position) {
             if position == 0.0 {
-                (position, 1.0, position)
+                (position, 1.0 - position, position)
             } else {
-                (position, 1.0, position)
+                (position, 1.0 - position, position)
             }
         } else if (0.0 <= position) && (position <= forelast_page) {
             (1.0, 0.0, 1.0)
@@ -156,12 +153,18 @@ impl PaginatorWidget {
             panic!("Position of the carousel is outside the allowed range");
         };
 
+        // While transitioning to the last page the next button is still visible
+        // pressing it would crash the app so we make it not targetable.
+        let can_target_start = opacity_next < f64::EPSILON;
+        let can_target_next = opacity_next > 0_f64 && position < forelast_page;
+
         imp.start_btn.set_opacity(opacity_start);
         imp.start_btn.set_visible(opacity_start > 0_f64);
+        imp.start_btn.set_can_target(can_target_start);
 
         imp.next_btn.set_opacity(opacity_next);
         imp.next_btn.set_visible(opacity_next > 0_f64);
-        imp.next_overlay.set_can_target(opacity_next > 0_f64);
+        imp.next_btn.set_can_target(can_target_next);
 
         imp.previous_btn.set_opacity(opacity_previous);
         imp.previous_btn.set_visible(opacity_previous > 0_f64);

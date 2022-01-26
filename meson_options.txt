@@ -9,9 +9,3 @@ option (
   description: 'The build profile for GNOME Tour. One of "default" or "development".'
 )
 
-option(
-  'video_path',
-  type : 'string',
-  value: '',
-  description : 'Sets the absolute path of a welcome video'
-)

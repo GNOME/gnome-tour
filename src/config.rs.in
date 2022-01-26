@@ -5,5 +5,3 @@ pub static VERSION: &str = @VERSION@;
 pub static GETTEXT_PACKAGE: &str = @GETTEXT_PACKAGE@;
 pub static LOCALEDIR: &str = @LOCALEDIR@;
 pub const RESOURCES_FILE: &str = concat!(@PKGDATADIR@, "/resources.gresource");
-#[cfg(feature = "video")]
-pub static VIDEO_PATH: &str = @VIDEO_PATH@;

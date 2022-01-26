@@ -15,12 +15,6 @@ dependency('gdk-pixbuf-2.0')
 dependency('gtk4', version: '>= 4.4')
 dependency('libadwaita-1', version: '>= 1')
 
-if get_option('video_path') != ''
-  dependency('gstreamer-1.0', version: '>= 1.12')
-  dependency('gstreamer-video-1.0', version: '>= 1.12')
-  dependency('gstreamer-player-1.0', version: '>= 1.12')
-endif
-
 glib_compile_resources = find_program('glib-compile-resources', required: true)
 desktop_file_validate = find_program('desktop-file-validate', required: false)
 appstream_util = find_program('appstream-util', required: false)

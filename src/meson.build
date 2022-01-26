@@ -18,40 +18,37 @@ run_command(
   check: true
 )
 
-sources = files(
-  'widgets/pages/image.rs',
-  'widgets/pages/mod.rs',
-  'widgets/pages/welcome.rs',
-  'widgets/mod.rs',
-  'widgets/paginator.rs',
-  'widgets/window.rs',
-  'application.rs',
-  'config.rs',
-  'main.rs',
-  'utils.rs',
-)
 
-features = ''
-if get_option('video_path') != ''
-  features = '--features video'
+cargo_options = [ '--manifest-path', meson.project_source_root() / 'Cargo.toml' ]
+cargo_options += [ '--target-dir', meson.project_build_root() / 'src' ]
+
+if get_option('profile') == 'default'
+  cargo_options += [ '--release' ]
+  rust_target = 'release'
+  message('Building in release mode')
+else
+  rust_target = 'debug'
+  message('Building in debug mode')
 endif
 
-custom_target(
+cargo_env = [ 'CARGO_HOME=' + meson.project_build_root() / 'cargo-home' ]
+
+cargo_build = custom_target(
   'cargo-build',
   build_by_default: true,
-  input: sources,
+  build_always_stale: true,
   output: meson.project_name(),
   console: true,
   install: true,
   install_dir: bindir,
   depends: resources,
   command: [
-    cargo_script,
-    meson.project_build_root(),
-    meson.project_source_root(),
-    '@OUTPUT@',
-    profile,
-    meson.project_name(),
-    features,
+    'env',
+    cargo_env,
+    cargo, 'build',
+    cargo_options,
+    '&&',
+    'cp', 'src' / rust_target / meson.project_name(), '@OUTPUT@',
   ]
 )
+

@@ -22,6 +22,7 @@ mod imp {
         pub(super) start_btn: TemplateChild<gtk::Button>,
         #[template_child]
         pub(super) previous_btn: TemplateChild<gtk::Button>,
+        pub(super) going_backward: Cell<bool>,
     }
 
     impl Default for PaginatorWidget {
@@ -33,6 +34,7 @@ mod imp {
                 previous_btn: TemplateChild::default(),
                 pages: RefCell::new(Vec::new()),
                 current_page: Cell::new(0),
+                going_backward: Cell::new(false),
             }
         }
     }
@@ -138,14 +140,8 @@ impl PaginatorWidget {
         let last_page = n_pages - 1.0;
 
         let (opacity_previous, opacity_start, opacity_next) = if (0.0..1.0).contains(&position) {
-            if position == 0.0 {
-                (position, 1.0 - position, position)
-            } else {
-                (position, 1.0 - position, position)
-            }
-        } else if (0.0 <= position) && (position <= forelast_page) {
-            (1.0, 0.0, 1.0)
-        } else if forelast_page >= position {
+            (position, 1.0 - position, position)
+        } else if position <= forelast_page {
             (1.0, 0.0, 1.0)
         } else if position > forelast_page {
             (1.0, 0.0, last_page - position)
@@ -157,6 +153,8 @@ impl PaginatorWidget {
         // pressing it would crash the app so we make it not targetable.
         let can_target_start = opacity_next < f64::EPSILON;
         let can_target_next = opacity_next > 0_f64 && position <= forelast_page;
+
+        log::debug!("page number {}/{}", page_nr, last_page);
 
         imp.start_btn.set_opacity(opacity_start);
         imp.start_btn.set_visible(opacity_start > 0_f64);
@@ -174,6 +172,24 @@ impl PaginatorWidget {
 
     pub fn set_page(&self, page_nr: u32) {
         let imp = self.imp();
+        let total_pages = imp.carousel.n_pages();
+
+        if page_nr == total_pages - 1 {
+            imp.going_backward.set(true);
+        } else if page_nr == 0 {
+            imp.going_backward.set(false);
+        }
+
+        if !imp.going_backward.get() {
+            if page_nr == 0 {
+                imp.start_btn.grab_focus();
+            } else {
+                imp.next_btn.grab_focus();
+            }
+        } else {
+            imp.previous_btn.grab_focus();
+        }
+
         if page_nr < imp.carousel.n_pages() {
             let pages = &imp.pages.borrow();
             let page = pages.get(page_nr as usize).unwrap();

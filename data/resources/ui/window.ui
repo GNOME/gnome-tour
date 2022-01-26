@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="Window" parent="AdwApplicationWindow">
+    <property name="default-width">960</property>
+    <property name="default-height">720</property>
+    <property name="content">
+      <object class="PaginatorWidget" id="paginator">
+        <child>
+          <object class="ImagePageWidget">
+            <property name="resource-uri">/org/gnome/Tour/overview.svg</property>
+            <property name="head" translatable="yes">Get an Overview</property>
+            <property name="body" translatable="yes">Press the Super key to see open windows and apps.</property>
+          </object>
+        </child>
+        <child>
+          <object class="ImagePageWidget">
+            <property name="resource-uri">/org/gnome/Tour/search.svg</property>
+            <property name="head" translatable="yes">Just Type to Search</property>
+            <property name="body" translatable="yes">Type in the overview to search. Launch apps, find things.</property>
+          </object>
+        </child>
+        <child>
+          <object class="ImagePageWidget">
+            <property name="resource-uri">/org/gnome/Tour/workspaces.svg</property>
+            <property name="head" translatable="yes">Keep on Top with Workspaces</property>
+            <property name="body" translatable="yes">Easily organize windows with the workspaces view.</property>
+          </object>
+        </child>
+        <child>
+          <object class="ImagePageWidget">
+            <property name="resource-uri">/org/gnome/Tour/blank.svg</property>
+            <property name="head" translatable="yes">Up/Down for the Overview</property>
+            <property name="body" translatable="yes">On a touchpad, use three-finger vertical swipes. Try it!</property>
+          </object>
+        </child>
+        <child>
+          <object class="ImagePageWidget">
+            <property name="resource-uri">/org/gnome/Tour/blank.svg</property>
+            <property name="head" translatable="yes">Left/Right for Workspaces</property>
+            <property name="body" translatable="yes">On a touchpad, use three-finger horizontal swipes. Try it!</property>
+          </object>
+        </child>
+        <child>
+          <object class="ImagePageWidget">
+            <property name="resource-uri">/org/gnome/Tour/ready-to-go.svg</property>
+            <property name="head" translatable="yes">That's it. Have a nice day!</property>
+            <property name="body" translatable="yes">To get more advice and tips, see the Help app.</property>
+            <style>
+              <class name="last-page" />
+            </style>
+          </object>
+        </child>
+      </object>
+    </property>
+  </template>
+</interface>

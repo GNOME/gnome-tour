@@ -1,6 +1,7 @@
 data/org.gnome.Tour.desktop.in.in
 data/org.gnome.Tour.metainfo.xml.in.in
-src/main.rs
-src/widgets/pages/welcome.rs
+data/resources/ui/paginator.ui
+data/resources/ui/window.ui
+src/widgets/image_page.rs
 src/widgets/paginator.rs
-src/widgets/window.rs
+src/main.rs

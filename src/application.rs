@@ -1,108 +1,124 @@
 use crate::config;
 use crate::utils;
 use crate::widgets::Window;
-use gtk::gio::{self, prelude::*};
-use gtk::glib::{self, clone};
-use gtk::prelude::*;
+use adw::prelude::*;
+use gtk::{
+    gio,
+    glib::{self, clone},
+    subclass::prelude::*,
+};
 use log::info;
-use std::{cell::RefCell, rc::Rc};
 
-pub struct Application {
-    app: libadwaita::Application,
-    window: RefCell<Rc<Option<Window>>>,
+mod imp {
+    use super::*;
+    use adw::subclass::prelude::*;
+    use gtk::glib::{once_cell::sync::OnceCell, WeakRef};
+
+    #[derive(Debug, Default)]
+    pub struct Application {
+        pub(super) window: OnceCell<WeakRef<Window>>,
+    }
+
+    #[glib::object_subclass]
+    impl ObjectSubclass for Application {
+        const NAME: &'static str = "Application";
+        type ParentType = adw::Application;
+        type Type = super::Application;
+    }
+
+    impl ObjectImpl for Application {}
+    impl ApplicationImpl for Application {
+        fn activate(&self, application: &Self::Type) {
+            let window = Window::new(application);
+            application.add_window(&window);
+            window.present();
+            self.window.set(window.downgrade()).unwrap();
+            self.parent_activate(application);
+        }
+
+        fn startup(&self, application: &Self::Type) {
+            // Quit
+            utils::action(
+                application,
+                "quit",
+                clone!(@weak application => move |_, _| {
+                    application.quit();
+                }),
+            );
+
+            // Start Tour
+            utils::action(
+                application,
+                "start-tour",
+                clone!(@weak application => move |_, _| {
+                    application.window().start_tour();
+                }),
+            );
+
+            // Skip Tour
+            utils::action(
+                application,
+                "skip-tour",
+                clone!(@weak application => move |_, _| {
+                    application.quit();
+                }),
+            );
+
+            utils::action(
+                application,
+                "next-page",
+                clone!(@weak application => move |_, _| {
+                    let window = application.window();
+                    if window.paginator().try_next().is_none() {
+                        window.close();
+                    }
+                }),
+            );
+
+            utils::action(
+                application,
+                "previous-page",
+                clone!(@weak application => move |_, _| {
+                    let window = application.window();
+                    if window.paginator().try_previous().is_none() {
+                        window.reset_tour();
+                    }
+                }),
+            );
+            application.set_accels_for_action("app.quit", &["<Control>q"]);
+            application.set_accels_for_action("app.skip-tour", &["Escape"]);
+            self.parent_startup(application);
+        }
+    }
+    impl GtkApplicationImpl for Application {}
+    impl AdwApplicationImpl for Application {}
+}
+
+glib::wrapper! {
+    pub struct Application(ObjectSubclass<imp::Application>)
+        @extends gio::Application, gtk::Application, adw::Application,
+        @implements gio::ActionMap, gio::ActionGroup;
 }
 
 impl Application {
-    pub fn new() -> Rc<Self> {
-        let app =
-            libadwaita::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE);
-        app.set_resource_base_path(Some("/org/gnome/Tour"));
-
-        let application = Rc::new(Self {
-            app,
-            window: RefCell::new(Rc::new(None)),
-        });
-
-        application.setup_signals(application.clone());
-        application
+    #[allow(clippy::new_without_default)]
+    pub fn new() -> Self {
+        glib::Object::new(&[
+            ("application-id", &config::APP_ID),
+            ("resource-base-path", &Some("/org/gnome/Tour")),
+        ])
+        .unwrap()
     }
 
-    fn setup_gactions(&self, application: Rc<Self>) {
-        // Quit
-        utils::action(
-            &self.app,
-            "quit",
-            clone!(@strong self.app as app => move |_, _| {
-                app.quit();
-            }),
-        );
-
-        // Start Tour
-        utils::action(
-            &self.app,
-            "start-tour",
-            clone!(@strong application => move |_, _| {
-                if let Some(window) = &*application.window.borrow().clone() {
-                    window.start_tour();
-                }
-            }),
-        );
-
-        // Skip Tour
-        utils::action(
-            &self.app,
-            "skip-tour",
-            clone!(@strong self.app as app => move |_, _| {
-                app.quit();
-            }),
-        );
-
-        utils::action(
-            &self.app,
-            "next-page",
-            clone!(@strong application => move |_, _| {
-                if let Some(window) = &*application.window.borrow().clone() {
-                    if window.paginator.borrow_mut().try_next().is_none() {
-                        window.widget.close();
-                    }
-                }
-            }),
-        );
-
-        utils::action(
-            &self.app,
-            "previous-page",
-            clone!(@strong application => move |_, _| {
-                if let Some(window) = &*application.window.borrow().clone() {
-                    if window.paginator.borrow_mut().try_previous().is_none() {
-                        window.reset_tour();
-                    }
-                }
-            }),
-        );
-
-        self.app.set_accels_for_action("app.quit", &["<primary>q"]);
+    fn window(&self) -> Window {
+        self.imp().window.get().and_then(|w| w.upgrade()).unwrap()
     }
 
-    fn setup_signals(&self, app: Rc<Self>) {
-        self.app.connect_startup(clone!(@weak app => move |_| {
-            app.setup_gactions(app.clone());
-        }));
-        self.app
-            .connect_activate(clone!(@weak app => move |gtk_app| {
-               let window = Window::new(&gtk_app);
-                gtk_app.add_window(&window.widget);
-                window.widget.present();
-                window.widget.show();
-                app.window.replace(Rc::new(Some(window)));
-            }));
-    }
-
-    pub fn run(&self) {
+    pub fn run() {
         info!("GNOME Tour ({})", config::APP_ID);
         info!("Version: {} ({})", config::VERSION, config::PROFILE);
         info!("Datadir: {}", config::PKGDATADIR);
-
-        self.app.run();
+        let app = Self::new();
+        gtk::prelude::ApplicationExtManual::run(&app);
     }
 }

@@ -2,25 +2,13 @@
 name = "gnome-tour"
 version = "40.0.0"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
-[features]
-video = ["gst_player", "gst"]
 
 [dependencies]
-gtk = { package = "gtk4", version = "0.3", features= ["v4_2"]}
+gtk = { package = "gtk4", version = "0.4", features= ["v4_2"]}
 log = "0.4"
-gettext-rs = { version = "0.6", features = ["gettext-system"] }
-libadwaita = "0.1.0-beta-1"
+gettext-rs = { version = "0.7", features = ["gettext-system"] }
+adw = {package = "libadwaita", version = "0.1"}
 pretty_env_logger = "0.4"
-
-[dependencies.gst_player]
-version = "0.17"
-package = "gstreamer-player"
-optional = true
-
-[dependencies.gst]
-version = "0.17"
-package = "gstreamer"
-optional = true
 

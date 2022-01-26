@@ -22,8 +22,6 @@ fn main() {
     glib::set_prgname(Some("Tour"));
 
     gtk::init().expect("Unable to start GTK3");
-    #[cfg(feature = "video")]
-    gst::init().expect("Unable to start gst");
 
     let res = gio::Resource::load(config::RESOURCES_FILE).expect("Could not load resources");
     gio::resources_register(&res);

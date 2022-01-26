@@ -156,7 +156,7 @@ impl PaginatorWidget {
         // While transitioning to the last page the next button is still visible
         // pressing it would crash the app so we make it not targetable.
         let can_target_start = opacity_next < f64::EPSILON;
-        let can_target_next = opacity_next > 0_f64 && position < forelast_page;
+        let can_target_next = opacity_next > 0_f64 && position <= forelast_page;
 
         imp.start_btn.set_opacity(opacity_start);
         imp.start_btn.set_visible(opacity_start > 0_f64);

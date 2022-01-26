@@ -8,7 +8,7 @@ use crate::Application;
 mod imp {
     use super::*;
     use crate::config;
-    use crate::widgets::pages::{ImagePageWidget, WelcomePageWidget};
+    use crate::widgets::ImagePageWidget;
     use adw::subclass::prelude::*;
 
     #[derive(Debug, Default, gtk::CompositeTemplate)]
@@ -25,7 +25,6 @@ mod imp {
         type ParentType = adw::ApplicationWindow;
 
         fn class_init(klass: &mut Self::Class) {
-            WelcomePageWidget::static_type();
             ImagePageWidget::static_type();
             Self::bind_template(klass);
         }

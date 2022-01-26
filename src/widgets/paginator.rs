@@ -1,3 +1,5 @@
+use crate::{utils::i18n_f, widgets::ImagePageWidget};
+use gettextrs::gettext;
 use gtk::prelude::*;
 use gtk::{
     gdk,
@@ -70,6 +72,17 @@ mod imp {
                     obj.update_position();
                 }));
 
+            let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
+            let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
+            // Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+            let body = i18n_f("Learn about the key features in {} {}.", &[&name, &version]);
+            let welcome_page = ImagePageWidget::new(
+                "/org/gnome/Tour/welcome.svg",
+                gettext("Start the Tour"),
+                body,
+            );
+            obj.add_page(Some(-1), welcome_page);
+
             let controller = gtk::EventControllerKey::new();
             controller.connect_key_pressed(clone!(@weak obj => @default-return gtk::Inhibit(true), move |_controller, keyval, _keycode, _state| {
                 if keyval == gdk::Key::Right {
@@ -98,7 +111,7 @@ mod imp {
             if !self.carousel.is_bound() {
                 self.parent_add_child(buildable, builder, child, type_);
             } else {
-                buildable.add_page(child.clone().downcast::<gtk::Widget>().unwrap());
+                buildable.add_page(None, child.clone().downcast::<gtk::Widget>().unwrap());
             }
         }
     }
@@ -134,10 +147,10 @@ impl PaginatorWidget {
         Some(())
     }
 
-    pub fn add_page(&self, page: impl IsA<gtk::Widget>) {
+    pub fn add_page(&self, at: Option<i32>, page: impl IsA<gtk::Widget>) {
         let imp = self.imp();
         let page_nr = imp.pages.borrow().len();
-        imp.carousel.insert(&page, page_nr as i32);
+        imp.carousel.insert(&page, at.unwrap_or(page_nr as i32));
         imp.pages.borrow_mut().push(page.upcast());
 
         self.update_position();

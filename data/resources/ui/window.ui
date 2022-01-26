@@ -6,9 +6,6 @@
     <property name="content">
       <object class="PaginatorWidget" id="paginator">
         <child>
-          <object class="WelcomePageWidget" />
-        </child>
-        <child>
           <object class="ImagePageWidget">
             <property name="resource-uri">/org/gnome/Tour/overview.svg</property>
             <property name="head" translatable="yes">Get an Overview</property>

@@ -86,6 +86,7 @@ mod imp {
                 }),
             );
             application.set_accels_for_action("app.quit", &["<Control>q"]);
+            application.set_accels_for_action("app.skip-tour", &["Escape"]);
             self.parent_startup(application);
         }
     }

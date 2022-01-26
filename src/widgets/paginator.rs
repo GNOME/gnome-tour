@@ -1,5 +1,6 @@
 use gtk::prelude::*;
 use gtk::{
+    gdk,
     glib::{self, clone},
     subclass::prelude::*,
 };
@@ -68,6 +69,19 @@ mod imp {
                 .connect_position_notify(clone!(@weak obj => move |_| {
                     obj.update_position();
                 }));
+
+            let controller = gtk::EventControllerKey::new();
+            controller.connect_key_pressed(clone!(@weak obj => @default-return gtk::Inhibit(true), move |_controller, keyval, _keycode, _state| {
+                if keyval == gdk::Key::Right {
+                    obj.try_next();
+                } else if keyval == gdk::Key::Left {
+                    obj.try_previous();
+                }
+                gtk::Inhibit(false)
+            }));
+
+            obj.add_controller(&controller);
+
             self.parent_constructed(obj);
         }
     }

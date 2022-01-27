@@ -2,7 +2,7 @@
 name = "gnome-tour"
 version = "40.0.0"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
-edition = "2021"
+edition = "2018"
 
 
 [dependencies]

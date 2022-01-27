@@ -1,16 +1,17 @@
 # Brazilian Portuguese translation for gnome-tour.
-# Copyright (C) 2021 gnome-tour's COPYRIGHT HOLDER
+# Copyright (C) 2022 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Enrico Nicoletto <liverig@gmail.com>, 2021.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020-2021.
+# Matheus Barbosa <mdpb.matheus@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-02 20:46-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"POT-Creation-Date: 2022-01-26 19:41+0000\n"
+"PO-Revision-Date: 2022-01-26 17:10-0300\n"
+"Last-Translator: Matheus Barbosa <mdpb.matheus@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +21,7 @@ msgstr ""
 "X-Generator: Gtranslator 40.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Tour"
 
@@ -48,83 +49,79 @@ msgstr "Janela principal"
 msgid "The GNOME Project"
 msgstr "O Projeto GNOME"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "Iniciar o tour"
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Anterior"
 
-#: src/widgets/pages/welcome.rs:161
-#| msgid "Learn about new and essential features in {} {}."
-msgid "Learn about the key features in {} {}."
-msgstr "Aprenda sobre os recursos-chave no {} {}."
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Próximo"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Iniciar"
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Iniciar"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Próximo"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Fechar"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Anterior"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "Obtenha uma visão geral"
 
-#: src/widgets/window.rs:52
-#| msgid "Press Activities to see open windows and apps."
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "Pressione a tecla Super para ver janelas e aplicativos abertos."
 
-#: src/widgets/window.rs:61
-#| msgid "Just type to search"
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "Basta digitar para pesquisar"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Digite no panorama para pesquisar. Inicie aplicativos, encontre coisas."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "Mantenha-se atualizado com espaços de trabalho"
 
-#: src/widgets/window.rs:72
-#| msgid "Easily organize windows with the new workspaces view."
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr ""
 "Organize janelas facilmente com a visualização dos espaços de trabalho."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "Para cima/baixo para o panorama"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "Em um touchpad, deslize verticalmente com três dedos. Experimente!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "Para esquerda/direita para espaços de trabalho"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Em um touchpad, deslize horizontalmente com três dedos. Experimente!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "É isso aí. Tenha um ótimo dia!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter mais conselho e dicas, veja o aplicativo Ajuda."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/paginator.rs:78
+msgid "Learn about the key features in {} {}."
+msgstr "Aprenda sobre os recursos-chave no {} {}."
+
+#: src/widgets/paginator.rs:81
+msgid "Start the Tour"
+msgstr "Iniciar o tour"
+
+#~ msgid "_Close"
+#~ msgstr "_Fechar"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Aplicativos do seu jeito"

@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-10-08 15:17+0000\n"
-"PO-Revision-Date: 2021-10-09 17:16+0200\n"
+"POT-Creation-Date: 2022-01-26 19:41+0000\n"
+"PO-Revision-Date: 2022-01-27 23:37+0100\n"
+"Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Occitan <totenoc@gmail.com>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Quentin PAGÈS\n"
 "X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Visita guidada"
 
@@ -46,85 +46,85 @@ msgstr "Fenèstra principala"
 msgid "The GNOME Project"
 msgstr "Lo projècte GNOME"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "Començar la visita guidada"
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Precedent"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Descobrissètz las novèlas foncionalitats claus dins {} {}."
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Seguent"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Començar"
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Començar"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Seguent"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Tampar"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Precedent"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "Ajatz una vista d’ensemble"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "Quichatz la tòca Super per veire las fenèstras e aplicacions dobèrtas."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "Picatz per recercar"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Picatz dins l’apercebut per recercar. Aviatz d’aplicacions, trobatz de "
 "causas."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "Gardatz lo contròtle amb los espacis de trabalh"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr ""
 "Organizatz aisidament vòstras fenèstras gràcias a la novèla vista dels "
 "espacis de trabalh."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "Naut e bas per la vista d’ensemble"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "Sus un pavat tactil, efectuatz de lisaments amb tres dets verticals. "
 "Ensajatz !"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "Esquèrra e dreita pels espacis de trabalh"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Sus un pavat tactil, efectuatz de lisaments amb tres dets orizontals. "
 "Ensajatz !"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "Acabat. Passatz una bona jornada !"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per obténer d’ajuda o d'astúcias, ensajatz l’aplicacion Ajuda."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/paginator.rs:78
+msgid "Learn about the key features in {} {}."
+msgstr "Descobrissètz las novèlas foncionalitats claus dins {} {}."
+
+#: src/widgets/paginator.rs:81
+msgid "Start the Tour"
+msgstr "Començar la visita guidada"
+
+#~ msgid "_Close"
+#~ msgstr "_Tampar"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Personalizatz vòstras aplicacions"

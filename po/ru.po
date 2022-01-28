@@ -8,25 +8,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-23 09:04+0000\n"
-"PO-Revision-Date: 2021-09-25 21:17+0300\n"
-"Last-Translator: Melman <Alexmelman88@gmail.com>\n"
+"POT-Creation-Date: 2022-01-26 19:41+0000\n"
+"PO-Revision-Date: 2022-01-27 18:59+0300\n"
+"Last-Translator: Aleksandr Melman <Alexmelman88@gmail.com>\n"
 "Language-Team: Russian <Alexmelman88@gmail.com>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-DL-Team: ru\n"
 "X-DL-Module: gnome-tour\n"
 "X-DL-Branch: master\n"
 "X-DL-Domain: po\n"
 "X-DL-State: Translated\n"
-"X-Generator: Gtranslator 40.0\n"
+"X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Экскурсия"
 
@@ -36,7 +36,7 @@ msgstr "Приветствие и Экскурсия"
 
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;Гном;ГТК"
+msgstr "Gnome;GTK;Гном;ГТК;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter"
@@ -44,7 +44,7 @@ msgstr "GNOME Экскурсия и Приветствие"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "Управляемая экскурсия и приветсвие для GNOME"
+msgstr "Управляемая экскурсия и приветсвие для GNOME."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:15
 msgid "Main Window"
@@ -54,82 +54,80 @@ msgstr "Главное Окно"
 msgid "The GNOME Project"
 msgstr "Проект GNOME"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "Начать Экскурсию"
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Назад"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Узнайте о ключевых функциях в {} {}."
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Далее"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Начать"
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Начать"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Далее"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Закрыть"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Назад"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "Режим Обзора"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "Нажмите клавишу Super, чтобы видеть открытые окна и приложения."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "Просто введите слово для Поиска"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Введите критерий поиска в режиме обзора. Запускайте приложения, находите "
 "нужные вещи."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "Продолжите работу с Рабочими пространствами"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr "Легко управляйте окнами с помощью вида рабочих пространств."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "Вверх/Вниз в режиме Обзора"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "На сенсорной панели, используйте вертикальные движения тремя пальцами. "
 "Попробуйте!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "Влево/Вправо для Рабочих пространств"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "На сенсорной панели, используйте горизонтальные движения тремя пальцами. "
 "Попробуйте!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "Вот и все. Хорошего дня!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Чтобы получить дополнительные советы и рекомендации, обратитесь к приложению "
 "Справка."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/paginator.rs:78
+msgid "Learn about the key features in {} {}."
+msgstr "Узнайте о ключевых функциях в {} {}."
+
+#: src/widgets/paginator.rs:81
+msgid "Start the Tour"
+msgstr "Начать Экскурсию"
+

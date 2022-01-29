@@ -1,17 +1,18 @@
 # Japanese translation for gnome-tour.
-# Copyright (C) 2020-2021 gnome-tour's COPYRIGHT HOLDER
+# Copyright (C) 2020-2022 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Yuki Okushi <huyuumi.dev@gmail.com>, 2020.
-# sicklylife <translation@sicklylife.jp>, 2020-2021.
+# sicklylife <translation@sicklylife.jp>, 2020-2022.
 # sujiniku <sujinikusityuu@gmail.com>, 2021.
+# 小山田 純 <oyamadajun@outlook.jp>, 2022.
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2021-10-08 15:16+0000\n"
-"PO-Revision-Date: 2021-10-21 23:00+0900\n"
-"Last-Translator: sicklylife <translation@sicklylife.jp>\n"
+"PO-Revision-Date: 2022-01-28 22:42+0900\n"
+"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -52,25 +53,26 @@ msgstr "The GNOME Project"
 msgid "Start the Tour"
 msgstr "ツアーを始める"
 
-#: src/widgets/pages/welcome.rs:168
-msgid "Learn about the key features in {} {}."
-msgstr "{} {} の主な機能について学びましょう。"
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version} の主な機能について学びましょう。"
 
 #: src/widgets/paginator.rs:33
-msgid "_Start"
-msgstr "始める(_S)"
+msgid "Start"
+msgstr "始める"
 
 #: src/widgets/paginator.rs:35
-msgid "_Next"
-msgstr "次へ(_N)"
+msgid "Next"
+msgstr "次へ"
 
 #: src/widgets/paginator.rs:36 src/widgets/paginator.rs:37
 msgid "_Close"
 msgstr "閉じる(_C)"
 
 #: src/widgets/paginator.rs:38
-msgid "_Previous"
-msgstr "前へ(_P)"
+msgid "Previous"
+msgstr "前へ"
 
 #: src/widgets/window.rs:52
 msgid "Get an Overview"
@@ -92,11 +94,11 @@ msgstr ""
 
 #: src/widgets/window.rs:72
 msgid "Keep on Top with Workspaces"
-msgstr ""
+msgstr "ワークスペースを使いこなしましょう"
 
 #: src/widgets/window.rs:73
 msgid "Easily organize windows with the workspaces view."
-msgstr ""
+msgstr "ワークスペースビューでウィンドウを簡単に整理できます。"
 
 #: src/widgets/window.rs:82
 msgid "Up/Down for the Overview"

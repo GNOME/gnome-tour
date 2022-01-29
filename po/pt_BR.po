@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-26 19:41+0000\n"
-"PO-Revision-Date: 2022-01-26 17:10-0300\n"
+"POT-Creation-Date: 2022-01-29 11:03+0000\n"
+"PO-Revision-Date: 2022-01-29 19:38-0300\n"
 "Last-Translator: Matheus Barbosa <mdpb.matheus@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -111,12 +111,12 @@ msgstr "É isso aí. Tenha um ótimo dia!"
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obter mais conselho e dicas, veja o aplicativo Ajuda."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/paginator.rs:78
-msgid "Learn about the key features in {} {}."
-msgstr "Aprenda sobre os recursos-chave no {} {}."
+#: src/widgets/paginator.rs:79
+#| msgid "Learn about the key features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "Aprenda sobre os recursos-chave no {name} {version}."
 
-#: src/widgets/paginator.rs:81
+#: src/widgets/paginator.rs:84
 msgid "Start the Tour"
 msgstr "Iniciar o tour"
 

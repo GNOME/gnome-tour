@@ -7,12 +7,13 @@ mod imp {
     use glib::once_cell::sync::Lazy;
     use glib::{ParamFlags, ParamSpec, ParamSpecString, Value};
     use gtk::glib::once_cell::sync::OnceCell;
+    use std::cell::RefCell;
 
     #[derive(Debug, Default)]
     pub struct ImagePageWidget {
         pub(super) resource_uri: OnceCell<String>,
         pub(super) head: OnceCell<String>,
-        pub(super) body: OnceCell<String>,
+        pub(super) body: RefCell<String>,
         pub(super) picture: gtk::Picture,
     }
 
@@ -105,7 +106,7 @@ mod imp {
                         "Body",
                         "The body of the page",
                         None,
-                        ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY,
+                        ParamFlags::READWRITE | ParamFlags::CONSTRUCT,
                     ),
                 ]
             });
@@ -124,8 +125,9 @@ mod imp {
                     self.head.set(head).unwrap();
                 }
                 "body" => {
-                    let body = value.get().unwrap();
-                    self.body.set(body).unwrap();
+                    if let Some(body) = value.get::<Option<String>>().unwrap() {
+                        self.body.replace(body);
+                    }
                 }
                 _ => unimplemented!(),
             }
@@ -135,7 +137,7 @@ mod imp {
             match pspec.name() {
                 "resource-uri" => self.resource_uri.get().to_value(),
                 "head" => self.head.get().to_value(),
-                "body" => self.body.get().to_value(),
+                "body" => self.body.borrow().to_value(),
                 _ => unimplemented!(),
             }
         }
@@ -157,5 +159,9 @@ impl ImagePageWidget {
             ("body", &body),
         ])
         .unwrap()
+    }
+
+    pub fn set_body(&self, body: &str) {
+        self.set_property("body", &body);
     }
 }

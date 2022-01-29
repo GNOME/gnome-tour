@@ -1,3 +1,4 @@
+use crate::utils::i18n_f;
 use adw::prelude::*;
 use gtk::subclass::prelude::*;
 use gtk::{gio, glib};
@@ -16,6 +17,8 @@ mod imp {
     pub struct Window {
         #[template_child]
         pub(super) paginator: TemplateChild<PaginatorWidget>,
+        #[template_child]
+        pub(super) welcome_page: TemplateChild<ImagePageWidget>,
     }
 
     #[glib::object_subclass]
@@ -42,6 +45,15 @@ mod imp {
             if config::PROFILE == "Devel" {
                 widget.add_css_class("devel");
             }
+            let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
+            let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
+
+            let body = i18n_f(
+                // Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+                "Learn about the key features in {name} {version}.",
+                &[("name", &name), ("version", &version)],
+            );
+            self.welcome_page.set_body(&body);
             self.parent_constructed(widget);
         }
     }

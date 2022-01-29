@@ -21,8 +21,6 @@ fn main() {
     glib::set_application_name(&gettext("Tour"));
     glib::set_prgname(Some("Tour"));
 
-    gtk::init().expect("Unable to start GTK3");
-
     let res = gio::Resource::load(config::RESOURCES_FILE).expect("Could not load resources");
     gio::resources_register(&res);
 

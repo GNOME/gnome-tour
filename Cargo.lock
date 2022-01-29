@@ -328,6 +328,7 @@ dependencies = [
  "libadwaita",
  "log",
  "pretty_env_logger",
+ "regex",
 ]
 
 [[package]]

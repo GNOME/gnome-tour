@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-26 19:41+0000\n"
-"PO-Revision-Date: 2022-01-27 16:58+0200\n"
+"POT-Creation-Date: 2022-01-29 11:03+0000\n"
+"PO-Revision-Date: 2022-01-29 19:32+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -48,17 +48,14 @@ msgid "The GNOME Project"
 msgstr "Проєкт GNOME"
 
 #: data/resources/ui/paginator.ui:27
-#| msgid "_Previous"
 msgid "Previous"
 msgstr "Назад"
 
 #: data/resources/ui/paginator.ui:40
-#| msgid "_Next"
 msgid "Next"
 msgstr "Далі"
 
 #: data/resources/ui/paginator.ui:53
-#| msgid "_Start"
 msgid "Start"
 msgstr "Початок"
 
@@ -115,12 +112,12 @@ msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Щоб отримати додаткові поради та підказки, зверніться до програми «Довідка»."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/paginator.rs:78
-msgid "Learn about the key features in {} {}."
-msgstr "Дізнайтеся більше про ключові можливості {} {}."
+#: src/widgets/paginator.rs:79
+#| msgid "Learn about the key features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "Дізнайтеся більше про ключові можливості {name} {version}."
 
-#: src/widgets/paginator.rs:81
+#: src/widgets/paginator.rs:84
 msgid "Start the Tour"
 msgstr "Почати тур"
 

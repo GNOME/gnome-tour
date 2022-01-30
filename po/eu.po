@@ -1,13 +1,13 @@
 # Basque translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2020, 2021.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2020, 2021, 2022.
 #
 msgid ""
 msgstr "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-10-27 15:00+0000\n"
-"PO-Revision-Date: 2021-09-04 06:55+0000\n"
+"POT-Creation-Date: 2022-01-30 10:50+0000\n"
+"PO-Revision-Date: 2022-01-30 10:00+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -16,7 +16,7 @@ msgstr "Project-Id-Version: gnome-tour master\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:20
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Bisita"
 
@@ -44,77 +44,77 @@ msgstr "Leiho nagusia"
 msgid "The GNOME Project"
 msgstr "GNOME proiektua"
 
-#: src/widgets/pages/welcome.rs:159
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Aurrekoa"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Hurrengoa"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Hasiera"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Hasi bisita"
 
-#: src/widgets/pages/welcome.rs:168
-msgid "Learn about the key features in {} {}."
-msgstr "Ezagutu {} {} bertsioaren eginbide nagusiak."
-
-#: src/widgets/paginator.rs:33
-msgid "_Start"
-msgstr "_Hasi"
-
-#: src/widgets/paginator.rs:35
-msgid "_Next"
-msgstr "H_urrengoa"
-
-#: src/widgets/paginator.rs:36 src/widgets/paginator.rs:37
-msgid "_Close"
-msgstr "_Itxi"
-
-#: src/widgets/paginator.rs:38
-msgid "_Previous"
-msgstr "_Aurrekoa"
-
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Ikuspegi orokorra"
 
-#: src/widgets/window.rs:53
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr "Sakatu Super tekla aplikazio eta leiho irekiak ikusteko."
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Idatzi zerbait bilaketa egiteko"
 
-#: src/widgets/window.rs:63
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "Idatzi ikuspegi orokorrean bilaketa egiteko. Abiarazi aplikazioak, aurkitu gauzak."
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Eutsi goiari laneko areen bidez"
 
-#: src/widgets/window.rs:73
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Ordenatu leihoak errazago laneko areen ikuspegia erabilita."
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Gora/behera ikuspegi orokorrerako"
 
-#: src/widgets/window.rs:83
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "Ukipen-pantailetan, mugitu hiru hatz bertikalean. Probatu ezazu!"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Eskuinera/ezkerrera laneko areak erabiltzeko"
 
-#: src/widgets/window.rs:93
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontalean. Probatu ezazu!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "Hori da dena. Ondo ibili!"
 
-#: src/widgets/window.rs:104
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Aholku eta argibide gehiago eskuratzeko, begiratu laguntza."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Ezagutu {name} {version} bertsioaren eginbide nagusiak."
+
+#~ msgid "_Close"
+#~ msgstr "_Itxi"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Zeureganatu aplikazioak"

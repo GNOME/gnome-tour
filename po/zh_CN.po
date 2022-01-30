@@ -2,23 +2,25 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Boyuan Yang <073plan@gmail.com>, 2020.
+# lumingzh <lumingzh@qq.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-03 13:56-0400\n"
-"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
-"Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
+"POT-Creation-Date: 2022-01-29 11:03+0000\n"
+"PO-Revision-Date: 2022-01-29 19:15+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
+"Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Gtranslator 41.0\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "导览"
 
@@ -46,77 +48,77 @@ msgstr "主窗口"
 msgid "The GNOME Project"
 msgstr "GNOME 项目"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "开始导览"
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "上一页"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "了解 {} {} 中的关键功能。"
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "下一页"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "开始(_S)"
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "开始"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "前进(_N)"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "关闭(_C)"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "后退(_P)"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "获得概览"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "按下 Super（徽标）键以查看窗口和应用。"
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "直接键入文本以搜索"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "在概览界面输入文本进行搜索。启动应用、寻找文件。"
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "使用工作区掌控系统"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr "使用工作区视图轻松管理窗口。"
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "向上/向下以查看概览"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "在触摸板上使用三指竖直滑动。试试吧！"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "向左/向右以查看工作区"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "在触摸板上使用三指水平滑动。试试吧！"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "就是这些了。祝您有美好的一天！"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr "如需更多建议和提示，请参考“帮助”程序。"
+
+#: src/widgets/paginator.rs:79
+#| msgid "Learn about the key features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "了解 {name} {version} 中的关键功能。"
+
+#: src/widgets/paginator.rs:84
+msgid "Start the Tour"
+msgstr "开始导览"
+
+#~ msgid "_Close"
+#~ msgstr "关闭(_C)"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "让应用为你所用"
@@ -130,7 +132,9 @@ msgstr "如需更多建议和提示，请参考“帮助”程序。"
 #~ msgid "Welcome to {} {}"
 #~ msgstr "欢迎来到 {} {}"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
 #~ msgstr "你好！欢迎使用本导览程序来上手使用系统并掌握基本的使用方法。"
 
 #~ msgid "_No Thanks"
@@ -139,7 +143,9 @@ msgstr "如需更多建议和提示，请参考“帮助”程序。"
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "活动视图也可用于切换窗口和执行搜索。"
 
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
 #~ msgstr "在活动视图中，只需直接开始打字便可搜索应用、设置和其它更多内容。"
 
 #~ msgid "Click the time to see notifications"
@@ -157,5 +163,6 @@ msgstr "如需更多建议和提示，请参考“帮助”程序。"
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "使用“软件”程序查找并安装应用"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
 #~ msgstr "使用浏览、搜索功能并查看我们的推荐项来发现精彩的应用程序。"

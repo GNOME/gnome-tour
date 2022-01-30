@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2022-01-23 14:15+0000\n"
-"PO-Revision-Date: 2022-01-29 10:16+0000\n"
+"PO-Revision-Date: 2022-01-30 10:49+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <translation-team-is@lists.sourceforge.org>\n"
 "Language: is\n"
@@ -36,7 +36,7 @@ msgstr "Móttaka notanda og kynning á GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr ""
+msgstr "Leiðsögn og upphafskynning á GNOME."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:15
 msgid "Main Window"
@@ -76,7 +76,7 @@ msgstr "Fá yfirlit"
 
 #: src/widgets/window.rs:52
 msgid "Press the Super key to see open windows and apps."
-msgstr ""
+msgstr "Ýttu á Super-lykil (Windows-lykill) til að sjá opna glugga og forrit."
 
 #: src/widgets/window.rs:61
 msgid "Just Type to Search"
@@ -84,15 +84,15 @@ msgstr "Skrifaðu til að leita"
 
 #: src/widgets/window.rs:62
 msgid "Type in the overview to search. Launch apps, find things."
-msgstr ""
+msgstr "Skrifaðu inn í yfirlitið til að leita. Ræstu forrit, finndu hluti."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"
-msgstr ""
+msgstr "Halda efst með vinnusvæðum"
 
 #: src/widgets/window.rs:72
 msgid "Easily organize windows with the workspaces view."
-msgstr ""
+msgstr "Skipulegðu glugga á einfaldan hátt með vinnusvæðasýninni."
 
 #: src/widgets/window.rs:81
 msgid "Up/Down for the Overview"
@@ -101,6 +101,7 @@ msgstr "Upp/Niður til að sjá yfirlitið"
 #: src/widgets/window.rs:82
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
+"Á snertiplatta skaltu nota þriggja-fingra lóðréttar strokur. Prófaðu bara!"
 
 #: src/widgets/window.rs:91
 msgid "Left/Right for Workspaces"
@@ -109,6 +110,7 @@ msgstr "Vinstri/Hægri fyrir vinnusvæði"
 #: src/widgets/window.rs:92
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
+"Á snertiplatta skaltu nota þriggja-fingra láréttar strokur. Prófaðu bara!"
 
 #: src/widgets/window.rs:102
 msgid "That's it. Have a nice day!"
@@ -116,4 +118,4 @@ msgstr "Þá er það komið. Hafðu það gott í dag!"
 
 #: src/widgets/window.rs:103
 msgid "To get more advice and tips, see the Help app."
-msgstr ""
+msgstr "Til að fá fleiri ábendingar og hollráð, skaltu nota hjálparforritið."

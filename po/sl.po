@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-26 19:41+0000\n"
-"PO-Revision-Date: 2022-01-26 22:29+0100\n"
+"POT-Creation-Date: 2022-01-30 19:40+0000\n"
+"PO-Revision-Date: 2022-01-31 18:43+0100\n"
 "Last-Translator: Matej Urbančič <mateju@src.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -32,7 +32,7 @@ msgstr "Pozdrav in uvod"
 
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;Vodnik;vodič;pozdrav;"
+msgstr "Gnome;GTK;Vodnik;vodič;pozdrav;tour;zagon;pomoč;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter"
@@ -40,7 +40,7 @@ msgstr "Vodič GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "Vodena predstavitev in dobrodošlica v namizje GNOME:"
+msgstr "Vodena predstavitev z dobrodošlico v namizje GNOME."
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:15
 msgid "Main Window"
@@ -63,67 +63,67 @@ msgid "Start"
 msgstr "Začni"
 
 #: data/resources/ui/window.ui:11
+msgid "Start the Tour"
+msgstr "Začni z vodenjem"
+
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Skok na predogled"
 
-#: data/resources/ui/window.ui:12
-msgid "Press the Super key to see open windows and apps."
-msgstr "Pritisnite na gumb Dejavnosti za seznam oken in programov."
-
 #: data/resources/ui/window.ui:18
-msgid "Just Type to Search"
-msgstr "Enostavno začnite tipkati za iskanje"
+msgid "Press the Super key to see open windows and apps."
+msgstr "Pritisnite na gumb Dejavnosti za prikaz seznama oken in programov."
 
-#: data/resources/ui/window.ui:19
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr ""
-"V pregledno okno vtipkajte besedilo za iskanje, zaženite programe, poiščite "
-"karkoli."
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr "Enostavno vpišite besedilo za začetek iskanja"
 
 #: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+"V pregledno okno vpišite besedilo za iskanje, zaženite programe, poiščite "
+"karkoli."
+
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Ohranite okna na vrhu z novimi delovnimi površinami"
 
-#: data/resources/ui/window.ui:26
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Enostavno upravljanje z okni v novem pogledu delovnih površin."
 
-#: data/resources/ui/window.ui:32
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Gor/Dol za pregled"
 
-#: data/resources/ui/window.ui:33
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
-"Na sledilni ploščici lahko uporabite triprsten poteg za navpičen pomik. "
+"Na sledilni ploščici lahko uporabite triprstni poteg za navpičen pomik. "
 "Poskusite!"
 
-#: data/resources/ui/window.ui:39
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Levo/Desno za prehod med delovnimi površinami"
 
-#: data/resources/ui/window.ui:40
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
-"Na sledilni ploščici lahko uporabite triprsten poteg za vodoraven pomik. "
+"Na sledilni ploščici lahko uporabite triprstni poteg za vodoraven pomik. "
 "Poskusite!"
 
-#: data/resources/ui/window.ui:46
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
-msgstr "To je vse. Želimo vam prijetno uporabo!"
+msgstr "To je vse. Želimo vam prijetno delo!"
 
-#: data/resources/ui/window.ui:47
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Za več nasvetov in namigov si oglejte Pomoč."
 
 #. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/paginator.rs:78
-msgid "Learn about the key features in {} {}."
-msgstr "Spoznajte nove in pomembne novosti {} {}."
-
-#: src/widgets/paginator.rs:81
-msgid "Start the Tour"
-msgstr "Začni z vodenjem"
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Spoznajte pomembne novosti namizja {name} {version}."
 
 #~ msgid "_Close"
 #~ msgstr "_Zapri"

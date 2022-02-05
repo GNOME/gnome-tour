@@ -2,25 +2,25 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Yosef Or Boczko <yoseforb@gmail.com>, 2020.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2020-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-07 20:32+0000\n"
-"PO-Revision-Date: 2021-09-23 12:04+0300\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"POT-Creation-Date: 2022-01-29 11:03+0000\n"
+"PO-Revision-Date: 2022-02-06 00:55+0200\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
-"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "סיור מודרך"
 
@@ -48,77 +48,80 @@ msgstr "חלון ראשי"
 msgid "The GNOME Project"
 msgstr "מיזם GNOME"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "התחלת הסיור"
+#: data/resources/ui/paginator.ui:27
+#| msgid "_Previous"
+msgid "Previous"
+msgstr "הקודם"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "תיאור יכולות המפתח ב־{} {}."
+#: data/resources/ui/paginator.ui:40
+#| msgid "_Next"
+msgid "Next"
+msgstr "הבא"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "ה_תחלה"
+#: data/resources/ui/paginator.ui:53
+#| msgid "_Start"
+msgid "Start"
+msgstr "התחלה"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_הבא"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_סגירה"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "ה_קודם"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "הצגת סקירה"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "לחיצה על מקש סופר (Windows) תציג את החלונות והיישומים הפתוחים."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "יש להקליד לחיפוש"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "הקלדה בסקירה תבצע חיפוש. כך מפעילים יישומים ומוצאים כל מיני דברים."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "מרחבי עבודה משאירים אותך במרכז העניינים"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr "אפשר לארגן חלונות בקלות עם תצוגת מרחבי העבודה."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "למעלה/למטה לסקירה"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "במשטח מגע, ניתן להשתמש במשיכות אנכיות בשלוש אצבעות. כדאי לנסות!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "שמאל/ימין למרחבי עבודה"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "‫במשטח מגע, ניתן להשתמש במשיכות אופקיות בשלוש אצבעות. כדאי לנסות!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "זה הכול. המשך יום נעים!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
+
+#: src/widgets/paginator.rs:79
+#| msgid "Learn about the key features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "ללמוד על התכונות העיקריות ב־‏{name} {version}."
+
+#: src/widgets/paginator.rs:84
+msgid "Start the Tour"
+msgstr "התחלת הסיור"
+
+#~ msgid "_Close"
+#~ msgstr "_סגירה"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "התאמת יישומים לטעמך"
@@ -132,8 +135,12 @@ msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
 #~ msgid "Welcome to {} {}"
 #~ msgstr "ברוך בואך אל ‏{}‏ {}"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "שלום! השתמשו בסיור המודרך על מנת ללמוד על הדרך שלך ב־GNOME ולגלות תכונות מהותיות."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "שלום! השתמשו בסיור המודרך על מנת ללמוד על הדרך שלך ב־GNOME ולגלות תכונות "
+#~ "מהותיות."
 
 #~ msgid "_No Thanks"
 #~ msgstr "_לא תודה"
@@ -141,7 +148,9 @@ msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "תצוגת פעילויות יכולה לשמש גם כמעבר בין חלונות וכן לחיפוש."
 
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
 #~ msgstr "בתצוגת פעילויות, יש רק להקליד על מנת לחפש יישומים, הגדרות ועוד."
 
 #~ msgid "Click the time to see notifications"
@@ -159,5 +168,6 @@ msgstr "לקבלת עצות, יש לפתוח את היישום עזרה."
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "שימוש בתכנה על מנת למצוא ולהתקין יישומים"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
 #~ msgstr "לגלות יישומים מדהימים על ידי חיפוש, דפדוף והמלצות שלנו."

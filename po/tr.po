@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the gnome-tour package.
 #
 # Sabri Ünal <libreajans@gmail.com>, 2020.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2020, 2021.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2020, 2021, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-07 20:32+0000\n"
-"PO-Revision-Date: 2021-09-09 22:22+0300\n"
+"POT-Creation-Date: 2022-01-29 11:03+0000\n"
+"PO-Revision-Date: 2022-02-14 01:07+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-POOTLE-MTIME: 1429307949.000000\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Gezinti"
 
@@ -50,77 +50,76 @@ msgstr "Ana Pencere"
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "Gezintiyi Başlat"
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Önceki"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "{} {} içindeki ana özellikleri öğren."
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Sonraki"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Başlat"
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Başlat"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_İleri"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Kapat"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Önceki"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "Genel Bakış At"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "Açık pencereleri ve uygulamaları görmek için Super tuşuna bas."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "Yalnız Yazarak Ara"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "Genel görünümde aramak için yaz. Uygulama başlat, bir şeyler bul."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "Çalışma Alanlarından Bilgilen"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr "Çalışma alanları görünümüyle pencereleri kolayca örgütle."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "Genel Bakış için Aşağı/Yukarı"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "Dokunmatik yüzeyde üç parmakla dikey sürüklemeler yap. Şimdi dene!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "Çalışma Alanları için Sağ/Sol"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Dokunmatik yüzeyde üç parmakla yatay sürüklemeler yap. Şimdi dene!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "İşte bu. İyi günler!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
+
+#: src/widgets/paginator.rs:79
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version} ana özelliklerini öğren."
+
+#: src/widgets/paginator.rs:84
+msgid "Start the Tour"
+msgstr "Gezintiyi Başlat"
+
+#~ msgid "_Close"
+#~ msgstr "_Kapat"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Uygulamalara Egemen Ol"
@@ -137,14 +136,21 @@ msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
 #~ msgid "_No Thanks"
 #~ msgstr "_Kalsın"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "Hu hu! Önemli özellikleri keşfetmek ve çevreyi öğrenmek tura katılın."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Hu hu! Önemli özellikleri keşfetmek ve çevreyi öğrenmek tura katılın."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "Etkinlikler görünümü, pencereler arası geçiş ve aramada kullanılır."
 
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
-#~ msgstr "Etkinlikler görünümünde yazarak uygulamaları, ayarları ve diğerlerini arayın."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "Etkinlikler görünümünde yazarak uygulamaları, ayarları ve diğerlerini "
+#~ "arayın."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Bildirimleri görmek için saate tıklayın"
@@ -156,13 +162,17 @@ msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
 #~ msgstr "Sistem bilgisini ve ayarları görüntüle"
 
 #~ msgid "Get an overview of the system status and quickly change settings."
-#~ msgstr "Sistem durumuyla ilgili genel bilgi alın ve ayarları hızlıca değiştirin."
+#~ msgstr ""
+#~ "Sistem durumuyla ilgili genel bilgi alın ve ayarları hızlıca değiştirin."
 
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Uygulama bulmak ve kurmak için Yazılımlar’ı kullanın"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr "Arayarak, göz atarak ve önerilerimizi kullanarak harika uygulamalar keşfedin."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Arayarak, göz atarak ve önerilerimizi kullanarak harika uygulamalar "
+#~ "keşfedin."
 
 #~ msgid "GNOME Tour"
 #~ msgstr "GNOME Turu"
@@ -189,16 +199,29 @@ msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
 #~ msgstr "Tura Katıl"
 
 #~ msgid "You can also view open windows, search and use workspaces."
-#~ msgstr "Ayrıca açık pencereleri görüntüleyebilir, çalışma alanlarını arayabilir ve kullanabilirsiniz."
+#~ msgstr ""
+#~ "Ayrıca açık pencereleri görüntüleyebilir, çalışma alanlarını arayabilir "
+#~ "ve kullanabilirsiniz."
 
-#~ msgid "Search can be used to launch apps, find settings, do calculations and much more."
-#~ msgstr "Arama, uygulamaları başlatmak, ayarları bulmak, hesaplamalar yapmak ve daha çoğu için kullanılabilir."
+#~ msgid ""
+#~ "Search can be used to launch apps, find settings, do calculations and "
+#~ "much more."
+#~ msgstr ""
+#~ "Arama, uygulamaları başlatmak, ayarları bulmak, hesaplamalar yapmak ve "
+#~ "daha çoğu için kullanılabilir."
 
-#~ msgid "This includes notifications, media controls, calendar events, the weather and world clocks."
-#~ msgstr "Bu; bildirimleri, ortam denetimlerini, takvim etkinliklerini, hava durumunu ve dünya saatlerini içerir."
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "Bu; bildirimleri, ortam denetimlerini, takvim etkinliklerini, hava "
+#~ "durumunu ve dünya saatlerini içerir."
 
-#~ msgid "The Software app makes it easy to find and install all the apps you need."
-#~ msgstr "Yazılım uygulaması, gereksindiğiniz tüm uygulamaları bulmayı ve yüklemeyi kolaylaştırır."
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "Yazılım uygulaması, gereksindiğiniz tüm uygulamaları bulmayı ve yüklemeyi "
+#~ "kolaylaştırır."
 
 #~ msgid "Learn More"
 #~ msgstr "Daha Çoğunu Öğren"

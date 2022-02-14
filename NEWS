@@ -1,3 +1,9 @@
+gnome-tour 42.beta
+===================
+* Port to GTK4 / libadwaita
+* Drop the video feature
+* i18n fixes and translations updates
+
 gnome-tour 41.rc
 ===================
 * content: add back workspaces slide

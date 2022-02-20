@@ -1,14 +1,14 @@
 # Lithuanian translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Aurimas Černius <aurisc4@gmail.com>, 2020-2021.
+# Aurimas Černius <aurisc4@gmail.com>, 2020-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-02 18:14+0300\n"
+"POT-Creation-Date: 2022-01-29 11:03+0000\n"
+"PO-Revision-Date: 2022-02-20 15:02+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Gtranslator 40.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Turas"
 
@@ -48,86 +48,85 @@ msgstr "Pagrindinis langas"
 msgid "The GNOME Project"
 msgstr "GNOME projektas"
 
-#: src/widgets/pages/welcome.rs:151
-msgid "Start the Tour"
-msgstr "Pradėti turą"
+#: data/resources/ui/paginator.ui:27
+#| msgid "_Previous"
+msgid "Previous"
+msgstr "Ankstesnis"
 
-#: src/widgets/pages/welcome.rs:161
-#| msgid "Learn about new and essential features in {} {}."
-msgid "Learn about the key features in {} {}."
-msgstr "Sužinokite apie naujas bei esmines savybes {} {}."
+#: data/resources/ui/paginator.ui:40
+#| msgid "_Next"
+msgid "Next"
+msgstr "Kitas"
 
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Pradėti"
+#: data/resources/ui/paginator.ui:53
+#| msgid "_Start"
+msgid "Start"
+msgstr "Pradėti"
 
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Kitas"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Užverti"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Ankstesnis"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:11
 msgid "Get an Overview"
 msgstr "Eiti į apžvalgą"
 
-#: src/widgets/window.rs:52
-#| msgid "Press Activities to see open windows and apps."
+#: data/resources/ui/window.ui:12
 msgid "Press the Super key to see open windows and apps."
 msgstr "Spauskite Super klavišą ir matysite atvertus langus bei programas."
 
-#: src/widgets/window.rs:61
-#| msgid "Just type to search"
+#: data/resources/ui/window.ui:18
 msgid "Just Type to Search"
 msgstr "Tiesiog rašykite paieškai pradėti"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Rašykite apžvalgoje paieškai pradėti. Paleiskite programas, raskite dalykus."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
 msgstr "Išlaikykite viršuje su darbo sritimis"
 
-#: src/widgets/window.rs:72
-#| msgid "Easily organize windows with the new workspaces view."
+#: data/resources/ui/window.ui:26
 msgid "Easily organize windows with the workspaces view."
 msgstr "Lengvai tvarkykite langus su darbo sričių rodiniu."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:32
 msgid "Up/Down for the Overview"
 msgstr "Aukštyn/žemyn apžvalgoje"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "Naudodami jutiklinį kilimėlį, naudokite vertikalius perbraukimus trimis "
 "pirštais. Pabandykite!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
 msgstr "Kairėn/dešinėn darbo srityse"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Jutikliniame kilimėlyje, naudokite horizontalius perbraukimus trimis "
 "pirštais. Išbandykite!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"
 msgstr "Tai viskas, Geros dienos!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:47
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daugiau patarimų galite gauti Žinyno programoje."
+
+#: src/widgets/paginator.rs:79
+#| msgid "Learn about the key features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "Sužinokite apie naujas bei esmines savybes {name} {version}."
+
+#: src/widgets/paginator.rs:84
+msgid "Start the Tour"
+msgstr "Pradėti turą"
+
+#~ msgid "_Close"
+#~ msgstr "_Užverti"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Pasidarykite savo programas"

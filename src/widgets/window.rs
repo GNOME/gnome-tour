@@ -112,5 +112,6 @@ impl Window {
             .add_page(last_page.widget.upcast::<gtk::Widget>());
 
         self.widget.add(&self.paginator.borrow().widget);
+        self.paginator.borrow().start_btn.grab_focus();
     }
 }

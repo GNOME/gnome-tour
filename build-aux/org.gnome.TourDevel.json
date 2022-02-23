@@ -22,7 +22,6 @@
             "--share=network"
         ],
         "env" : {
-            "CARGO_HOME" : "/run/build/gnome-tour/cargo",
             "RUST_BACKTRACE" : "1",
             "GTK_DEBUG" : "interactive"
         }

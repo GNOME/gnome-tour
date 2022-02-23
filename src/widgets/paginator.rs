@@ -14,7 +14,7 @@ pub struct PaginatorWidget {
     pages: RefCell<Vec<gtk::Widget>>,
     current_page: RefCell<u32>,
     next_btn: gtk::Button,
-    start_btn: gtk::Button,
+    pub start_btn: gtk::Button,
     finish_btn: gtk::Button,
     close_btn: gtk::Button,
     previous_btn: gtk::Button,
@@ -177,6 +177,13 @@ impl PaginatorWidget {
             let pages = &self.pages.borrow();
             let page = pages.get(page_nr as usize).unwrap();
             self.carousel.scroll_to(page);
+            if page_nr == self.carousel.get_n_pages() - 1 {
+                self.finish_btn.grab_focus();
+            } else if page_nr >= 1 {
+                self.next_btn.grab_focus();
+            } else {
+                self.start_btn.grab_focus();
+            }
         }
     }
 }

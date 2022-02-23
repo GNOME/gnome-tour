@@ -64,7 +64,7 @@ impl WelcomePageWidget {
     }
 
     fn init(&self) {
-        let container = gtk::BoxBuilder::new()
+        let container = gtk::Box::builder()
             .orientation(gtk::Orientation::Vertical)
             .spacing(0)
             .expand(true)
@@ -73,8 +73,8 @@ impl WelcomePageWidget {
             .margin_top(24)
             .margin_bottom(24)
             .build();
-        self.widget.get_style_context().add_class("page");
-        self.widget.get_style_context().add_class("welcome-page");
+        self.widget.style_context().add_class("page");
+        self.widget.style_context().add_class("welcome-page");
 
         #[cfg(not(feature = "video"))]
         let header = {
@@ -88,22 +88,14 @@ impl WelcomePageWidget {
         let header = {
             let video_widget = self
                 .player
-                .get_pipeline()
-                .get_property("video-sink")
-                .unwrap()
-                .get::<gst::Element>()
-                .expect("The player of a VideoPlayerWidget should not use the default sink.")
-                .unwrap()
-                .get_property("widget")
-                .unwrap()
-                .get::<gtk::Widget>()
-                .unwrap()
-                .unwrap();
+                .pipeline()
+                .property::<gst::Element>("video-sink")
+                .property::<gtk::Widget>("widget");
 
             video_widget.set_size_request(-1, 360);
             video_widget.set_property("ignore-alpha", &false).unwrap();
             video_widget.show();
-            video_widget.get_style_context().add_class("video");
+            video_widget.style_context().add_class("video");
             video_widget
         };
 
@@ -117,7 +109,7 @@ impl WelcomePageWidget {
                 clone!(@strong self.player as player => move |action| {
                     match action {
                         Action::VideoReady => player.play(),
-                        Action::VideoUp => header.get_style_context().add_class("playing"),
+                        Action::VideoUp => header.style_context().add_class("playing"),
                     };
                     glib::Continue(true)
                 }),
@@ -142,7 +134,7 @@ impl WelcomePageWidget {
             gtk::timeout_add(
                 500,
                 clone!(@strong self.player as player => move || {
-                    player.set_uri(&video_file.get_uri());
+                    player.set_uri(&video_file.uri());
                     glib::Continue(false)
                 }),
             );
@@ -150,18 +142,18 @@ impl WelcomePageWidget {
 
         let title = gtk::Label::new(Some(&gettext("Start the Tour")));
         title.set_margin_top(36);
-        title.get_style_context().add_class("large-title");
+        title.style_context().add_class("large-title");
         title.show();
         container.add(&title);
 
-        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
-        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
+        let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
+        let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
         // Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
         let text = gtk::Label::new(Some(&i18n_f(
             "Learn about new and essential features in {} {}.",
             &[&name, &version],
         )));
-        text.get_style_context().add_class("body");
+        text.style_context().add_class("body");
         text.set_margin_top(12);
         text.show();
         container.add(&text);

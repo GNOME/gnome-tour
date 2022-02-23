@@ -5,7 +5,6 @@ use gio::prelude::*;
 use glib::clone;
 use gtk::prelude::*;
 use log::info;
-use std::env;
 use std::{cell::RefCell, rc::Rc};
 
 pub struct Application {
@@ -15,8 +14,7 @@ pub struct Application {
 
 impl Application {
     pub fn new() -> Rc<Self> {
-        let app =
-            gtk::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE).unwrap();
+        let app = gtk::Application::new(Some(config::APP_ID), gio::ApplicationFlags::FLAGS_NONE);
 
         let application = Rc::new(Self {
             app,
@@ -103,7 +101,7 @@ impl Application {
     fn setup_css(&self) {
         let p = gtk::CssProvider::new();
         gtk::CssProvider::load_from_resource(&p, "/org/gnome/Tour/style.css");
-        if let Some(screen) = gdk::Screen::get_default() {
+        if let Some(screen) = gdk::Screen::default() {
             gtk::StyleContext::add_provider_for_screen(&screen, &p, 500);
         }
     }
@@ -113,7 +111,6 @@ impl Application {
         info!("Version: {} ({})", config::VERSION, config::PROFILE);
         info!("Datadir: {}", config::PKGDATADIR);
 
-        let args: Vec<String> = env::args().collect();
-        self.app.run(&args);
+        self.app.run();
     }
 }

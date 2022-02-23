@@ -4,7 +4,7 @@ use gtk::prelude::*;
 use std::cell::RefCell;
 use std::rc::Rc;
 
-use libhandy::prelude::{CarouselExt, CarouselIndicatorDotsExt, HeaderBarExt};
+use libhandy::prelude::*;
 
 pub struct PaginatorWidget {
     pub widget: gtk::Box,
@@ -43,7 +43,7 @@ impl PaginatorWidget {
 
     pub fn try_next(&self) -> Option<()> {
         let p = *self.current_page.borrow() + 1;
-        if p == self.carousel.get_n_pages() {
+        if p == self.carousel.n_pages() {
             return None;
         }
         self.set_page(p);
@@ -68,10 +68,10 @@ impl PaginatorWidget {
     }
 
     fn update_position(&self) {
-        let position = self.carousel.get_position();
+        let position = self.carousel.position();
         let page_nr = position.round() as u32;
 
-        let n_pages = self.carousel.get_n_pages() as f64;
+        let n_pages = self.carousel.n_pages() as f64;
         let forelast_page = n_pages - 2.0;
         let last_page = n_pages - 1.0;
 
@@ -104,24 +104,20 @@ impl PaginatorWidget {
     fn init(&self, p: Rc<Self>) {
         self.carousel_dots.show();
         self.carousel_dots.set_carousel(Some(&self.carousel));
-        self.carousel.set_property_expand(true);
+        self.carousel.set_expand(true);
         self.carousel.set_animation_duration(300);
         self.carousel.show();
 
         self.carousel
-            .connect_property_position_notify(clone!(@weak p => move |_| {
+            .connect_position_notify(clone!(@weak p => move |_| {
                 p.update_position();
             }));
-        self.start_btn
-            .get_style_context()
-            .add_class("suggested-action");
+        self.start_btn.style_context().add_class("suggested-action");
         self.start_btn.set_use_underline(true);
         self.start_btn.set_action_name(Some("app.start-tour"));
         self.start_btn.show();
 
-        self.next_btn
-            .get_style_context()
-            .add_class("suggested-action");
+        self.next_btn.style_context().add_class("suggested-action");
         self.next_btn.set_use_underline(true);
         self.next_btn.set_action_name(Some("app.next-page"));
 
@@ -130,7 +126,7 @@ impl PaginatorWidget {
         self.close_btn.show();
 
         self.finish_btn
-            .get_style_context()
+            .style_context()
             .add_class("suggested-action");
         self.finish_btn.set_use_underline(true);
         self.finish_btn.set_action_name(Some("app.quit"));
@@ -173,11 +169,11 @@ impl PaginatorWidget {
     }
 
     pub fn set_page(&self, page_nr: u32) {
-        if page_nr < self.carousel.get_n_pages() {
+        if page_nr < self.carousel.n_pages() {
             let pages = &self.pages.borrow();
             let page = pages.get(page_nr as usize).unwrap();
             self.carousel.scroll_to(page);
-            if page_nr == self.carousel.get_n_pages() - 1 {
+            if page_nr == self.carousel.n_pages() - 1 {
                 self.finish_btn.grab_focus();
             } else if page_nr >= 1 {
                 self.next_btn.grab_focus();

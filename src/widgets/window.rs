@@ -40,7 +40,7 @@ impl Window {
 
         // Devel Profile
         if PROFILE == "Devel" {
-            self.widget.get_style_context().add_class("devel");
+            self.widget.style_context().add_class("devel");
         }
         self.paginator
             .borrow_mut()
@@ -95,8 +95,8 @@ impl Window {
             .upcast::<gtk::Widget>(),
         );
 
-        let name = glib::get_os_info("NAME").unwrap_or_else(|| "GNOME".into());
-        let version = glib::get_os_info("VERSION").unwrap_or_else(|| "".into());
+        let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
+        let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
         let last_page = ImagePageWidget::new(
             "/org/gnome/Tour/ready-to-go.svg",
             // Translators: The following string is formatted as "We hope that you enjoy GNOME 40"
@@ -106,7 +106,7 @@ impl Window {
             ),
             gettext("To get more advice and tips, see the Help app."),
         );
-        last_page.widget.get_style_context().add_class("last-page");
+        last_page.widget.style_context().add_class("last-page");
         self.paginator
             .borrow_mut()
             .add_page(last_page.widget.upcast::<gtk::Widget>());

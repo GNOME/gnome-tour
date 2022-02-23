@@ -15,12 +15,12 @@ impl ImagePageWidget {
     }
 
     fn init(&self, resource_uri: &str, head: String, body: String) {
-        self.widget.set_property_expand(true);
-        self.widget.get_style_context().add_class("page");
+        self.widget.set_expand(true);
+        self.widget.style_context().add_class("page");
         self.widget.set_halign(gtk::Align::Fill);
         self.widget.set_valign(gtk::Align::Fill);
 
-        let container = gtk::BoxBuilder::new()
+        let container = gtk::Box::builder()
             .orientation(gtk::Orientation::Vertical)
             .spacing(12)
             .halign(gtk::Align::Center)
@@ -37,17 +37,17 @@ impl ImagePageWidget {
         image.show();
         container.add(&image);
 
-        let head_label = gtk::LabelBuilder::new()
+        let head_label = gtk::Label::builder()
             .label(&head)
             .justify(gtk::Justification::Center)
             .valign(gtk::Align::Center)
             .margin_top(36)
             .build();
-        head_label.get_style_context().add_class("page-title");
+        head_label.style_context().add_class("page-title");
         head_label.show();
         container.add(&head_label);
 
-        let body_label = gtk::LabelBuilder::new()
+        let body_label = gtk::Label::builder()
             .label(&body)
             .lines(2)
             .wrap(true)
@@ -55,7 +55,7 @@ impl ImagePageWidget {
             .valign(gtk::Align::Center)
             .margin_top(12)
             .build();
-        body_label.get_style_context().add_class("page-body");
+        body_label.style_context().add_class("page-body");
         body_label.show();
         container.add(&body_label);
 

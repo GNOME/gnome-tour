@@ -11,8 +11,10 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/master/data/resources/screenshots/screenshot1.png</image>
-      <caption>Main Window</caption>
+      <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/HEAD/data/resources/screenshots/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/HEAD/data/resources/screenshots/screenshot2.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-tour</url>

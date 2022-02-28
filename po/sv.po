@@ -1,16 +1,16 @@
 # Swedish translation for gnome-tour.
-# Copyright © 2020-2021 gnome-tour's COPYRIGHT HOLDER
+# Copyright © 2020-2022 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2020, 2021.
-# Luna Jernberg <droidbittin@gmail.com>, 2021.
+# Luna Jernberg <droidbittin@gmail.com>, 2021, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-03 12:48+0200\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"POT-Creation-Date: 2022-02-24 18:19+0000\n"
+"PO-Revision-Date: 2022-01-29 20:03+0100\n"
+"Last-Translator: Luna Jernberg <droidbittin@gmail.com>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Poedit 3.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Rundtur"
 
@@ -40,85 +40,84 @@ msgstr "GNOME:s rundtur och hälsare"
 msgid "A guided tour and greeter for GNOME."
 msgstr "En guidad rundtur och hälsare till GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Huvudfönster"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Föregående"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Nästa"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Starta"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Starta rundturen"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Lär dig om de viktigaste funktionerna i {} {}."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Starta"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Nästa"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "S_täng"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Föregående"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Få en översikt"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr "Tryck på Super-tangenten för att se öppna fönster och program."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Skriv något för att börja söka"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "Skriv i översikten för att söka. Starta program och hitta saker."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Håll dig uppdaterad med arbetsytor"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Ordna enkelt fönster med arbetsytevyn."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Upp/ner för översikt"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "Använd vertikala svep med tre fingrar på en styrplatta. Testa nu!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Vänster/höger för arbetsytor"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Använd horisontella svep med tre fingrar på en styrplatta. Testa nu!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "Det var allt. Ha det så bra!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "För mer råd och tips, se programmet Hjälp."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Lär dig om de viktigaste funktionerna i {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Huvudfönster"
+
+#~ msgid "_Close"
+#~ msgstr "S_täng"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Gör program till dina egna"
@@ -135,20 +134,31 @@ msgstr "För mer råd och tips, se programmet Hjälp."
 #~ msgid "_No Thanks"
 #~ msgstr "_Nej tack"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "Hej du! Ta rundturen för att lära dig hitta och upptäck viktiga funktioner."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Hej du! Ta rundturen för att lära dig hitta och upptäck viktiga "
+#~ "funktioner."
 
 #~ msgid "The activities view can also be used to switch windows and search."
-#~ msgstr "Aktivitetsvyn kan också användas för att växla fönster och för sökning."
+#~ msgstr ""
+#~ "Aktivitetsvyn kan också användas för att växla fönster och för sökning."
 
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
-#~ msgstr "Börja bara skriva i aktivitetsvyn för att söka program, inställningar med mera."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "Börja bara skriva i aktivitetsvyn för att söka program, inställningar med "
+#~ "mera."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Klicka på tiden för att se aviseringar"
 
 #~ msgid "The notifications popover also includes personal planning tools."
-#~ msgstr "Kontextfönstret för aviseringar inkluderar också verktyg för personlig planering."
+#~ msgstr ""
+#~ "Kontextfönstret för aviseringar inkluderar också verktyg för personlig "
+#~ "planering."
 
 #~ msgid "View system information and settings"
 #~ msgstr "Visa systeminformation och inställningar"
@@ -159,8 +169,11 @@ msgstr "För mer råd och tips, se programmet Hjälp."
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Använd Programvara för att hitta och installera program"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr "Upptäck fantastiska program genom sökning, bläddring samt våra rekommendationer."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Upptäck fantastiska program genom sökning, bläddring samt våra "
+#~ "rekommendationer."
 
 #~ msgid "Activities Overview"
 #~ msgstr "Översiktsvyn Aktiviteter"
@@ -174,8 +187,11 @@ msgstr "För mer råd och tips, se programmet Hjälp."
 #~ msgid "Software"
 #~ msgstr "Programvara"
 
-#~ msgid "The Software app makes it easy to find and install all the apps you need."
-#~ msgstr "Programmet Programvara gör det enkelt att hitta och installera alla program som du behöver."
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "Programmet Programvara gör det enkelt att hitta och installera alla "
+#~ "program som du behöver."
 
 #~ msgid "Learn More"
 #~ msgstr "Lär dig mer"

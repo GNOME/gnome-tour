@@ -1,8 +1,8 @@
 # Korean translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# DaeHyun Sung <sungdh86@gmail.com>, 2020.
 # Changwoo Ryu <cwryu@debian.org>, 2021.
+# DaeHyun Sung <sungdh86+git@gmail.com>, 2020, 2022.
 #
 #
 # - gnome-shell에서 "Overview"는 "현재 활동". 일치하도록 번역한다.
@@ -11,18 +11,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-03 16:51+0900\n"
-"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"POT-Creation-Date: 2022-02-24 18:19+0000\n"
+"PO-Revision-Date: 2022-03-01 23:05+0900\n"
+"Last-Translator: DaeHyun Sung <sungdh86+git@gmail.com>\n"
 "Language-Team: Korean <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "둘러보기"
 
@@ -42,82 +43,81 @@ msgstr "그놈 둘러보기 및 안내"
 msgid "A guided tour and greeter for GNOME."
 msgstr "그놈 데스크톱을 위한 둘러보기 및 안내."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "메인 창"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "그놈 프로젝트"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "이전"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "다음"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "시작"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "둘러보기 시작"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "{} {}의 주요 기능을 알아봅니다."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "시작(_S)"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "다음(_N)"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "닫기(_C)"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "이전(_P)"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "현재 활동 보기"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr "Super 키를 누르면 열려 있는 창과 앱을 봅니다."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "입력하여 검색"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr "현재 활동에서 입력해서 검색합니다. 앱을 실행하고 필요한 항목을 찾습니다."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "작업 공간에서 항상 위에 놓기"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "작업 공간 뷰를 이용하면 쉽게 창을 정리합니다."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "현재 활동은 위/아래 화살표"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "터치패드에서는 세 손가락으로 위아래로 스와이프합니다. 한 번 해 보세요!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "작업 공간은 왼쪽/오른쪽 화살표"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "터치패드에서는 세 손가락으로 좌우로 스와이프합니다. 한 번 해 보세요!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "여기까지입니다. 즐거운 하루 보내세요!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "더 많은 조언과 팁을 보려면, 도움말 앱을 보세요."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version}의 주요 기능을 알아봅니다."
+
+#~ msgid "Main Window"
+#~ msgstr "메인 창"
+
+#~ msgid "_Close"
+#~ msgstr "닫기(_C)"

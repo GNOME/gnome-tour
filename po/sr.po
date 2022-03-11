@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-07 20:32+0000\n"
-"PO-Revision-Date: 2021-09-20 07:08+0200\n"
+"POT-Creation-Date: 2022-02-24 18:19+0000\n"
+"PO-Revision-Date: 2022-03-11 17:41+0100\n"
 "Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Обилазак"
 
@@ -41,88 +41,87 @@ msgstr "Гномова добродошлица и водич"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Водич за Гном."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Главни прозор"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "Гномов пројекат"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Претходно"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Следеће"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Покрени"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Покрени обилазак"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Сазнајте више о кључним могућностима окружења {} {}."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Покрени"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Следеће"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Затвори"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Претходно"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Покрените преглед"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr "Притисните тастер Супер да бисте видели отворене прозоре и програме."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Само куцајте за почетак претраживања"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Куцајте у прегледу за претраживање. Покрените програме, проналазите ствари."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Држите при врху уз помоћ радних простора"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Лагано уређујте прозоре уз помоћ прегледа радних простора."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Стрелица горе или доле за преглед"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "На додирној табли, користите вертикално превлачење са три прста. Пробајте!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Стрелица лево или десно за радне просторе"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "На додирној табли, користите хоризонтално превлачење са три прста. Пробајте!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "То је то. Све најбоље!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "За више савета и трикова, погледајте програм „Помоћ“."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Сазнајте више о кључним могућностима окружења {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Главни прозор"
+
+#~ msgid "_Close"
+#~ msgstr "_Затвори"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Направите програме које поседујете"

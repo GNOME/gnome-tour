@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-10-27 15:00+0000\n"
-"PO-Revision-Date: 2022-01-23 15:14+0100\n"
+"POT-Creation-Date: 2022-02-24 18:19+0000\n"
+"PO-Revision-Date: 2022-03-15 17:45+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <gnome-it-list@gnome.org>\n"
 "Language: it\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Visita guidata"
 
@@ -39,86 +39,79 @@ msgstr "Visita guidata e accoglienza per GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Una visita guidata e un messaggio di accoglienza per GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Finestra principale"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "Il progetto GNOME"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Precedente"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Successivo"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Avvia"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Avvia la visita"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Scopri le funzionalità essenziali in {} {}."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Avvia"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Successivo"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Chiudi"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Precedente"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Ottieni una panoramica"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr "Premi Super per visualizzare finestre e app aperte."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Ti basta digitare per cercare"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Quando ti trovi nella panoramica, digita per eseguire una ricerca, lanciare "
 "applicazioni o trovare quello che ti serve."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Tieniti al passo con gli spazi di lavoro"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr ""
 "Organizza facilmente le finestre con la visualizzazione degli spazi di "
 "lavoro."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Su/Giù per la panoramica"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "Con un touchpad usa scorrimenti verticali a tre dita. Prova!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Sinistra/Destra per gli spazi di lavoro"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "Con un touchpad, usa scorrimenti orizzontali a tre dita. Prova!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "Questo è tutto, buona giornata!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per maggiore aiuto o consigli, consulta l'app Aiuto."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Scopri le funzionalità essenziali in {name} {version}."

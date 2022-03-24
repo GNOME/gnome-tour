@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-01 17:41+0300\n"
+"POT-Creation-Date: 2022-02-24 18:19+0000\n"
+"PO-Revision-Date: 2022-03-24 13:25+0200\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Greek <gnome-el-list@gnome.org>\n"
 "Language: el\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Ξενάγηση"
 
@@ -39,92 +39,91 @@ msgstr "Ξενάγηση και Υποδοχή του GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Ξενάγηση και υποδοχή για το GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Κυρίως παράθυρο"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "Το έργο GNOME"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Προηγούμενο"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Επόμενο"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Έναρξη"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Έναρξη της ξενάγησης"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Μάθετε για τα βασικά χαρακτηριστικά στο {} {}."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "Έ_ναρξη"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Επόμενο"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Κλείσιμο"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Προηγούμενο"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Δείτε μια επισκόπηση"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr ""
 "Πατήστε το Super key για να δείτε τα ανοιχτά παράθυρα και τις εφαρμογές."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Απλώς πληκτρολογήστε για αναζήτηση"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Πληκτρολογήστε στην επισκόπηση για αναζήτηση. Εκκινήστε εφαρμογές, βρείτε "
 "πράγματα."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Συνεχίστε με τους χώρους εργασίας"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Οργανώστε εύκολα τα παράθυρα με την προβολή των χώρων εργασίας."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Πάνω/Κάτω για την επισκόπηση"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "Στην επιφάνεια αφής, χρησιμοποιήστε κάθετη ολίσθηση τριών δακτύλων. Δοκίμασέ "
 "το!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Αριστερά/Δεξιά για χώρους εργασίας"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Στην επιφάνεια αφής, χρησιμοποιήστε οριζόντια ολίσθηση τριών δακτύλων. "
 "Δοκίμασέ το!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "Αυτό είναι. Να έχετε μια όμορφη μέρα!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Για περισσότερες συμβουλές, ανατρέξτε στην εφαρμογή Βοήθεια."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Μάθετε για τα βασικά χαρακτηριστικά στο {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Κυρίως παράθυρο"
+
+#~ msgid "_Close"
+#~ msgstr "_Κλείσιμο"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Κάντε τις εφαρμογές δικές σας"

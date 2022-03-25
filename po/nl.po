@@ -1,14 +1,14 @@
 # Dutch translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Nathan Follens <nfollens@gnome.org>, 2020-2021.
+# Nathan Follens <nfollens@gnome.org>, 2020-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-02 16:05+0200\n"
+"POT-Creation-Date: 2022-02-24 18:19+0000\n"
+"PO-Revision-Date: 2022-03-25 10:43+0100\n"
 "Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Rondleiding"
 
@@ -39,91 +39,90 @@ msgstr "Rondleiding door en ontmoeting met Gnome"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Een gegidste rondleiding door en ontmoeting met Gnome."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Hoofdvenster"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "Het Gnome-project"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Vorige"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Volgende"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Beginnen"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Rondleiding beginnen"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Kom meer te weten over de belangrijkste functies in {} {}."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "_Beginnen"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "Volge_nde"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Sluiten"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "Vo_rige"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Verkrijg een overzicht"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr ""
 "Druk op de Super-toets om geopende vensters en toepassingen te bekijken."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Zoeken is heel eenvoudig: begin gewoon te typen"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Typ in het overzicht om te zoeken. Start toepassingen en vind wat u zoekt."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Hou het overzichtelijk met werkbladen"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Organiseer vensters eenvoudig met het werkbladoverzicht."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Omhoog/omlaag voor het overzicht"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "Gebruik verticale veegbewegingen met drie vingers op een touchpad. Probeer "
 "het eens uit!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Links/rechts voor werkbladen"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Gebruik horizontale veegbewegingen met drie vingers op een touchpad. Probeer "
 "het eens uit!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "Dat is alles. Fijne dag nog!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Bekijk de Hulp-toepassing voor meer advies en tips."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Kom meer te weten over de belangrijkste functies in {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Hoofdvenster"
+
+#~ msgid "_Close"
+#~ msgstr "_Sluiten"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Bemeester uw toepassingen"

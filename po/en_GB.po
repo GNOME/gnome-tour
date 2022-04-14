@@ -2,14 +2,14 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Zander Brown <zbrown@gnome.org>, 2020-2021.
-# Bruce Cowan <bruce@bcowan.me.uk>, 2020-2021.
+# Bruce Cowan <bruce@bcowan.me.uk>, 2020-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-14 11:20+0000\n"
+"POT-Creation-Date: 2022-03-04 12:10+0000\n"
+"PO-Revision-Date: 2022-03-24 13:03+0000\n"
 "Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
 "Language-Team: English - United Kingdom <en@li.org>\n"
 "Language: en_GB\n"
@@ -17,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.38.0\n"
+"X-Generator: Gtranslator 41.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Tour"
 
@@ -40,89 +40,94 @@ msgstr "GNOME Tour and Greeter"
 msgid "A guided tour and greeter for GNOME."
 msgstr "A guided tour and greeter for GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Main Window"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
-#: src/widgets/pages/welcome.rs:151
-#| msgid "_Start Tour"
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Previous"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Next"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Start"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Start the Tour"
 
-#: src/widgets/pages/welcome.rs:161
-#| msgid "Learn about new and essential features in GNOME 40."
-msgid "Learn about new and essential features in {} {}."
-msgstr "Learn about new and essential features in {} {}."
-
-#: src/widgets/paginator.rs:32
-#| msgid "_Start Tour"
-msgid "_Start"
-msgstr "_Start"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Next"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "_Close"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Previous"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Get an Overview"
 
-#: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "Press Activities to see open windows and apps."
+#: data/resources/ui/window.ui:18
+msgid "Press the Super key to see open windows and apps."
+msgstr "Press the Super key to see open windows and apps."
 
-#: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "Make Apps Your Own"
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr "Just Type to Search"
 
-#: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "Arrange the app grid to your liking."
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Type in the overview to search. Launch apps, find things."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Keep on Top with Workspaces"
 
-#: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "Easily organise windows with the new workspaces view."
+#: data/resources/ui/window.ui:32
+msgid "Easily organize windows with the workspaces view."
+msgstr "Easily organise windows with the workspaces view."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Up/Down for the Overview"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "On a touchpad, use three-finger vertical swipes. Try it!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Left/Right for Workspaces"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "On a touchpad, use three-finger horizontal swipes. Try it!"
 
-#: src/widgets/window.rs:104
-#| msgid "That's it! We hope that you enjoy {}."
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "That's it! We hope that you enjoy {} {}."
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr "That's it. Enjoy the rest of your day!"
 
-#: src/widgets/window.rs:107
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "To get more advice and tips, see the Help app."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "Learn about the key features in {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Main Window"
+
+#~ msgid "_Close"
+#~ msgstr "_Close"
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Make Apps Your Own"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Arrange the app grid to your liking."
+
+#~| msgid "That's it! We hope that you enjoy {}."
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "That's it! We hope that you enjoy {} {}."
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Welcome to {} {}"
@@ -142,9 +147,6 @@ msgstr "To get more advice and tips, see the Help app."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "The activities view can also be used to switch windows and search."
-
-#~ msgid "Just type to search"
-#~ msgstr "Just type to search"
 
 #~ msgid ""
 #~ "In the activities view, just start typing to search for apps, settings "

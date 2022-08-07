@@ -87,27 +87,15 @@ mod imp {
         fn properties() -> &'static [ParamSpec] {
             static PROPERTIES: Lazy<Vec<ParamSpec>> = Lazy::new(|| {
                 vec![
-                    ParamSpecString::new(
-                        "resource-uri",
-                        "Resource URI",
-                        "Resource URI of the image",
-                        None,
-                        ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY,
-                    ),
-                    ParamSpecString::new(
-                        "head",
-                        "Head",
-                        "The title of the page",
-                        None,
-                        ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY,
-                    ),
-                    ParamSpecString::new(
-                        "body",
-                        "Body",
-                        "The body of the page",
-                        None,
-                        ParamFlags::READWRITE | ParamFlags::CONSTRUCT,
-                    ),
+                    ParamSpecString::builder("resource-uri")
+                        .flags(ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY)
+                        .build(),
+                    ParamSpecString::builder("head")
+                        .flags(ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY)
+                        .build(),
+                    ParamSpecString::builder("body")
+                        .flags(ParamFlags::READWRITE | ParamFlags::CONSTRUCT)
+                        .build(),
                 ]
             });
             PROPERTIES.as_ref()

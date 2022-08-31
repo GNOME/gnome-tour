@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-02-27 18:40+0200\n"
+"POT-Creation-Date: 2022-07-26 07:21+0000\n"
+"PO-Revision-Date: 2022-08-31 20:41+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: Finnish <lokalisointi-lista@googlegroups.com>\n"
 "Language: fi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -73,7 +73,7 @@ msgstr "Sen kun vain kirjoitat hakeaksesi"
 
 #: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Kirjoita yleisnäkymässä etsiäksesi. Käynnistä sovelluksia, löydä asioida."
+msgstr "Kirjoita yleisnäkymässä etsiäksesi. Käynnistä sovelluksia, löydä asioita."
 
 #: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"

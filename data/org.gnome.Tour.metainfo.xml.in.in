@@ -20,9 +20,9 @@
   <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-tour</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-tour/issues</url>
   <url type="donation">http://www.gnome.org/friends/</url>
-  <content_rating type="oars-1.0" />
+  <content_rating type="oars-1.1" />
   <releases>
-    <release version="43.beta" date="2022-08-07" type="development" />
+    <release version="43.0" date="2022-09-20" />
     <release version="40.0" date="2021-03-23" />
     <release version="3.38.0" date="2020-09-15" />
     <release version="3.37.92" date="2020-09-08" type="development" />

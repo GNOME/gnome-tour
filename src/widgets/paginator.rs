@@ -9,7 +9,7 @@ mod imp {
     use super::*;
     use std::cell::{Cell, RefCell};
 
-    #[derive(Debug, gtk::CompositeTemplate)]
+    #[derive(Default, Debug, gtk::CompositeTemplate)]
     #[template(resource = "/org/gnome/Tour/ui/paginator.ui")]
     pub struct PaginatorWidget {
         #[template_child]
@@ -23,20 +23,6 @@ mod imp {
         #[template_child]
         pub(super) previous_btn: TemplateChild<gtk::Button>,
         pub(super) going_backward: Cell<bool>,
-    }
-
-    impl Default for PaginatorWidget {
-        fn default() -> Self {
-            Self {
-                carousel: TemplateChild::default(),
-                start_btn: TemplateChild::default(),
-                next_btn: TemplateChild::default(),
-                previous_btn: TemplateChild::default(),
-                pages: RefCell::default(),
-                current_page: Cell::new(0),
-                going_backward: Cell::new(false),
-            }
-        }
     }
 
     #[glib::object_subclass]

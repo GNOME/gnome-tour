@@ -167,8 +167,6 @@ impl PaginatorWidget {
         let can_target_start = opacity_next < f64::EPSILON;
         let can_target_next = opacity_next > 0_f64 && position <= forelast_page;
 
-        log::debug!("page number {}/{}", page_nr, last_page);
-
         imp.start_btn.set_opacity(opacity_start);
         imp.start_btn.set_visible(opacity_start > 0_f64);
         imp.start_btn.set_can_target(can_target_start);

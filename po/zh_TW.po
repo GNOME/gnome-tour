@@ -2,23 +2,25 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Cheng-Chia Tseng <pswo10680@gmail.com>, 2020.
+# Freddy Cheng <freddy4212@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-05-10 16:38+0000\n"
-"PO-Revision-Date: 2021-06-03 11:17+0800\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"POT-Creation-Date: 2022-05-20 11:01+0000\n"
+"PO-Revision-Date: 2022-05-26 07:45+0800\n"
+"Last-Translator: Freddy Cheng <freddy4212@gmail.com>\n"
+"Language-Team: Chinese - Taiwan <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Gtranslator 42.0\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "導覽"
 
@@ -36,92 +38,102 @@ msgstr "GNOME 導覽與歡迎程式"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "GNOME 的介紹導覽與歡迎程式。"
+msgstr "GNOME 的介紹導覽與歡迎應用程式。"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "主視窗"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "GNOME 專案"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "上一步"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "下一步"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "開始"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "開始導覽"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "瞭解 {} {} 新特色與重要功能。"
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "開始(_S)"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "下一步(_N)"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "關閉(_C)"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "上一步(_P)"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
-msgstr "全局概覽"
+msgstr "全域概覽"
 
-#: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "按下「概覽」可以查看開啟的視窗與程式。"
+#: data/resources/ui/window.ui:18
+msgid "Press the Super key to see open windows and apps."
+msgstr "按下 Super 鍵可以查看開啟的視窗與應用程式。"
 
-#: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "讓程式貼合您需求"
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr "輸入即可搜尋"
 
-#: src/widgets/window.rs:62
-msgid "Arrange the app grid to your liking."
-msgstr "依您喜好編排程式格櫃。"
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "在概覽中輸入文字可以使用搜尋，能夠啟動應用程式或找尋東西。"
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
-msgstr "俯瞰全覽工作空間"
+msgstr "俯瞰工作區"
 
-#: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "透過新的工作空間檢視輕鬆整理視窗。"
+#: data/resources/ui/window.ui:32
+msgid "Easily organize windows with the workspaces view."
+msgstr "輕鬆管理工作區中開啟的視窗。"
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
-msgstr "上/下進入「概覽」"
+msgstr "上下滑動進入概覽"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "在觸控板上，用三隻指頭同時垂直撥滑。試試吧！"
+msgstr "試試看在觸控板上使用三隻手指垂直滑動。"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
-msgstr "左/右切換「工作空間」"
+msgstr "左右滑動切換工作區"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "在觸控板上，用三隻指頭同時水平撥滑。試試吧！"
+msgstr "試試看在觸控板上使用三隻手指水平滑動。"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "就這樣！希望您能好好享受 {} {}。"
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr "就這樣囉！祝您使用愉快。"
 
-#: src/widgets/window.rs:107
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
-msgstr "如果想要知道更多建議或要訣，請參見《求助》程式。"
+msgstr "想知道更多使用建議或訣竅的話，請參見《求助》應用程式。"
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:53
+msgid "Learn about the key features in {name} {version}."
+msgstr "了解 {name} {version} 的主要操作。"
+
+#~ msgid "Main Window"
+#~ msgstr "主視窗"
+
+#~ msgid "_Close"
+#~ msgstr "關閉(_C)"
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "讓程式貼合您需求"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "依您喜好編排程式格櫃。"
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "就這樣！希望您能好好享受 {} {}。"
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "歡迎來到 {} {}"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
 #~ msgstr "嗨！您好，請隨我四處看看，一起踏上重要功能的探索之旅。"
 
 #~ msgid "_No Thanks"
@@ -130,10 +142,9 @@ msgstr "如果想要知道更多建議或要訣，請參見《求助》程式。
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr "活動的概覽檢視畫面也可以用來切換視窗或是搜尋。"
 
-#~ msgid "Just type to search"
-#~ msgstr "輸入即可搜尋"
-
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
 #~ msgstr "在概覽檢視畫面中，只要開始輸入文字就能搜尋程式、設定或其他等等。"
 
 #~ msgid "Click the time to see notifications"
@@ -151,5 +162,6 @@ msgstr "如果想要知道更多建議或要訣，請參見《求助》程式。
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "使用《軟體》可以尋找與安裝程式"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
 #~ msgstr "透過搜尋、瀏覽以及我們的推薦名單來探索好用的程式。"

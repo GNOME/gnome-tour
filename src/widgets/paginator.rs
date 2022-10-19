@@ -42,7 +42,9 @@ mod imp {
     }
 
     impl ObjectImpl for PaginatorWidget {
-        fn constructed(&self, obj: &Self::Type) {
+        fn constructed(&self) {
+            self.parent_constructed();
+            let obj = self.instance();
             let layout_manager = obj
                 .layout_manager()
                 .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
@@ -66,24 +68,17 @@ mod imp {
             }));
 
             obj.add_controller(&controller);
-
-            self.parent_constructed(obj);
         }
     }
     impl WidgetImpl for PaginatorWidget {}
     impl BoxImpl for PaginatorWidget {}
     impl BuildableImpl for PaginatorWidget {
-        fn add_child(
-            &self,
-            buildable: &Self::Type,
-            builder: &gtk::Builder,
-            child: &glib::Object,
-            type_: Option<&str>,
-        ) {
+        fn add_child(&self, builder: &gtk::Builder, child: &glib::Object, type_: Option<&str>) {
             if !self.carousel.is_bound() {
-                self.parent_add_child(buildable, builder, child, type_);
+                self.parent_add_child(builder, child, type_);
             } else {
-                buildable.add_page(child.clone().downcast::<gtk::Widget>().unwrap());
+                self.instance()
+                    .add_page(child.clone().downcast::<gtk::Widget>().unwrap());
             }
         }
     }
@@ -97,7 +92,7 @@ glib::wrapper! {
 
 impl PaginatorWidget {
     pub fn new() -> Self {
-        glib::Object::new(&[]).unwrap()
+        glib::Object::new(&[])
     }
 
     pub fn try_next(&self) -> Option<()> {

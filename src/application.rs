@@ -1,13 +1,7 @@
 use crate::config;
-use crate::utils;
 use crate::widgets::Window;
 use adw::prelude::*;
-use gtk::{
-    gio,
-    glib::{self, clone},
-    subclass::prelude::*,
-};
-use log::info;
+use gtk::{gio, glib, subclass::prelude::*};
 
 mod imp {
     use super::*;
@@ -28,66 +22,55 @@ mod imp {
 
     impl ObjectImpl for Application {}
     impl ApplicationImpl for Application {
-        fn activate(&self, application: &Self::Type) {
-            let window = Window::new(application);
+        fn activate(&self) {
+            self.parent_activate();
+            let application = self.instance();
+
+            let window = Window::new(&application);
             application.add_window(&window);
             window.present();
             self.window.set(window.downgrade()).unwrap();
-            self.parent_activate(application);
         }
 
-        fn startup(&self, application: &Self::Type) {
+        fn startup(&self) {
+            self.parent_startup();
+            let application = self.instance();
             // Quit
-            utils::action(
-                application,
-                "quit",
-                clone!(@weak application => move |_, _| {
-                    application.quit();
-                }),
-            );
-
+            let quit = gio::ActionEntry::builder("quit")
+                .activate(move |app: &Self::Type, _, _| app.quit())
+                .build();
             // Start Tour
-            utils::action(
-                application,
-                "start-tour",
-                clone!(@weak application => move |_, _| {
-                    application.window().start_tour();
-                }),
-            );
-
+            let start_tour = gio::ActionEntry::builder("start-tour")
+                .activate(move |app: &Self::Type, _, _| app.window().start_tour())
+                .build();
             // Skip Tour
-            utils::action(
-                application,
-                "skip-tour",
-                clone!(@weak application => move |_, _| {
-                    application.quit();
-                }),
-            );
-
-            utils::action(
-                application,
-                "next-page",
-                clone!(@weak application => move |_, _| {
-                    let window = application.window();
+            let skip_tour = gio::ActionEntry::builder("skip-tour")
+                .activate(move |app: &Self::Type, _, _| app.quit())
+                .build();
+            // Next page
+            let next_page = gio::ActionEntry::builder("next-page")
+                .activate(move |app: &Self::Type, _, _| {
+                    let window = app.window();
                     if window.paginator().try_next().is_none() {
                         window.close();
                     }
-                }),
-            );
-
-            utils::action(
-                application,
-                "previous-page",
-                clone!(@weak application => move |_, _| {
-                    let window = application.window();
+                })
+                .build();
+            // Previous page
+            let previous_page = gio::ActionEntry::builder("previous-page")
+                .activate(move |app: &Self::Type, _, _| {
+                    let window = app.window();
                     if window.paginator().try_previous().is_none() {
                         window.reset_tour();
                     }
-                }),
-            );
+                })
+                .build();
+            application
+                .add_action_entries([quit, start_tour, skip_tour, next_page, previous_page])
+                .unwrap();
+
             application.set_accels_for_action("app.quit", &["<Control>q"]);
             application.set_accels_for_action("app.skip-tour", &["Escape"]);
-            self.parent_startup(application);
         }
     }
     impl GtkApplicationImpl for Application {}
@@ -107,7 +90,6 @@ impl Application {
             ("application-id", &config::APP_ID),
             ("resource-base-path", &Some("/org/gnome/Tour")),
         ])
-        .unwrap()
     }
 
     fn window(&self) -> Window {
@@ -115,9 +97,9 @@ impl Application {
     }
 
     pub fn run() {
-        info!("GNOME Tour ({})", config::APP_ID);
-        info!("Version: {} ({})", config::VERSION, config::PROFILE);
-        info!("Datadir: {}", config::PKGDATADIR);
+        log::info!("GNOME Tour ({})", config::APP_ID);
+        log::info!("Version: {} ({})", config::VERSION, config::PROFILE);
+        log::info!("Datadir: {}", config::PKGDATADIR);
         let app = Self::new();
         gtk::prelude::ApplicationExtManual::run(&app);
     }

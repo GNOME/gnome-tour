@@ -5,7 +5,7 @@ use gtk::subclass::prelude::*;
 mod imp {
     use super::*;
     use glib::once_cell::sync::Lazy;
-    use glib::{ParamFlags, ParamSpec, ParamSpecString, Value};
+    use glib::{ParamSpec, ParamSpecString, Value};
     use gtk::glib::once_cell::sync::OnceCell;
     use std::cell::RefCell;
 
@@ -25,7 +25,9 @@ mod imp {
     }
 
     impl ObjectImpl for ImagePageWidget {
-        fn constructed(&self, obj: &Self::Type) {
+        fn constructed(&self) {
+            self.parent_constructed();
+            let obj = self.instance();
             let layout_manager = obj
                 .layout_manager()
                 .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
@@ -81,27 +83,22 @@ mod imp {
             container.append(&body_label);
 
             obj.append(&clamp);
-            self.parent_constructed(obj);
         }
 
         fn properties() -> &'static [ParamSpec] {
             static PROPERTIES: Lazy<Vec<ParamSpec>> = Lazy::new(|| {
                 vec![
                     ParamSpecString::builder("resource-uri")
-                        .flags(ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY)
+                        .construct_only()
                         .build(),
-                    ParamSpecString::builder("head")
-                        .flags(ParamFlags::READWRITE | ParamFlags::CONSTRUCT_ONLY)
-                        .build(),
-                    ParamSpecString::builder("body")
-                        .flags(ParamFlags::READWRITE | ParamFlags::CONSTRUCT)
-                        .build(),
+                    ParamSpecString::builder("head").construct_only().build(),
+                    ParamSpecString::builder("body").construct().build(),
                 ]
             });
             PROPERTIES.as_ref()
         }
 
-        fn set_property(&self, _obj: &Self::Type, _id: usize, value: &Value, pspec: &ParamSpec) {
+        fn set_property(&self, _id: usize, value: &Value, pspec: &ParamSpec) {
             match pspec.name() {
                 "resource-uri" => {
                     let resource_uri: String = value.get().unwrap();
@@ -121,7 +118,7 @@ mod imp {
             }
         }
 
-        fn property(&self, _obj: &Self::Type, _id: usize, pspec: &ParamSpec) -> Value {
+        fn property(&self, _id: usize, pspec: &ParamSpec) -> Value {
             match pspec.name() {
                 "resource-uri" => self.resource_uri.get().to_value(),
                 "head" => self.head.get().to_value(),
@@ -146,7 +143,6 @@ impl ImagePageWidget {
             ("head", &head),
             ("body", &body),
         ])
-        .unwrap()
     }
 
     pub fn set_body(&self, body: &str) {

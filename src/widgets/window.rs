@@ -37,7 +37,9 @@ mod imp {
     }
 
     impl ObjectImpl for Window {
-        fn constructed(&self, widget: &Self::Type) {
+        fn constructed(&self) {
+            self.parent_constructed();
+            let widget = self.instance();
             widget.set_icon_name(Some(config::APP_ID));
 
             // Devel Profile
@@ -53,7 +55,6 @@ mod imp {
                 &[("name", &name), ("version", &version)],
             );
             self.welcome_page.set_body(&body);
-            self.parent_constructed(widget);
         }
     }
     impl WidgetImpl for Window {}
@@ -70,7 +71,7 @@ glib::wrapper! {
 
 impl Window {
     pub fn new(app: &Application) -> Self {
-        glib::Object::new(&[("application", app)]).unwrap()
+        glib::Object::new(&[("application", app)])
     }
 
     pub fn paginator(&self) -> PaginatorWidget {

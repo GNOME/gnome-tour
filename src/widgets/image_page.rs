@@ -67,7 +67,7 @@ mod imp {
                 .margin_top(36)
                 .build();
             obj.bind_property("head", &head_label, "label")
-                .flags(glib::BindingFlags::SYNC_CREATE)
+                .sync_create()
                 .build();
 
             head_label.add_css_class("title-1");
@@ -81,7 +81,7 @@ mod imp {
                 .margin_top(12)
                 .build();
             obj.bind_property("body", &body_label, "label")
-                .flags(glib::BindingFlags::SYNC_CREATE)
+                .sync_create()
                 .build();
             container.append(&body_label);
 

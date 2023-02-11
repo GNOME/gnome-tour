@@ -54,7 +54,7 @@ mod imp {
                 "Learn about the key features in {name} {version}.",
                 &[("name", &name), ("version", &version)],
             );
-            self.welcome_page.set_body(&body);
+            self.welcome_page.set_body(body);
         }
     }
     impl WidgetImpl for Window {}

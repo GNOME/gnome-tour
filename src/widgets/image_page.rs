@@ -4,16 +4,19 @@ use gtk::subclass::prelude::*;
 
 mod imp {
     use super::*;
-    use glib::once_cell::sync::Lazy;
-    use glib::{ParamSpec, ParamSpecString, Value};
+    use glib::{ParamSpec, Properties, Value};
     use gtk::glib::once_cell::sync::OnceCell;
     use std::cell::RefCell;
 
-    #[derive(Debug, Default)]
+    #[derive(Debug, Default, Properties)]
+    #[properties(wrapper_type = super::ImagePageWidget)]
     pub struct ImagePageWidget {
+        #[property(get, set= Self::set_resource_uri, construct_only)]
         pub(super) resource_uri: OnceCell<String>,
+        #[property(get, set, construct_only)]
         pub(super) head: OnceCell<String>,
-        pub(super) body: RefCell<String>,
+        #[property(get, set, construct)]
+        pub(super) body: RefCell<Option<String>>,
         pub(super) picture: gtk::Picture,
     }
 
@@ -86,49 +89,26 @@ mod imp {
         }
 
         fn properties() -> &'static [ParamSpec] {
-            static PROPERTIES: Lazy<Vec<ParamSpec>> = Lazy::new(|| {
-                vec![
-                    ParamSpecString::builder("resource-uri")
-                        .construct_only()
-                        .build(),
-                    ParamSpecString::builder("head").construct_only().build(),
-                    ParamSpecString::builder("body").construct().build(),
-                ]
-            });
-            PROPERTIES.as_ref()
+            Self::derived_properties()
         }
 
-        fn set_property(&self, _id: usize, value: &Value, pspec: &ParamSpec) {
-            match pspec.name() {
-                "resource-uri" => {
-                    let resource_uri: String = value.get().unwrap();
-                    self.picture.set_resource(Some(&resource_uri));
-                    self.resource_uri.set(resource_uri).unwrap();
-                }
-                "head" => {
-                    let head = value.get().unwrap();
-                    self.head.set(head).unwrap();
-                }
-                "body" => {
-                    if let Some(body) = value.get::<Option<String>>().unwrap() {
-                        self.body.replace(body);
-                    }
-                }
-                _ => unimplemented!(),
-            }
+        fn set_property(&self, id: usize, value: &Value, pspec: &ParamSpec) {
+            self.derived_set_property(id, value, pspec)
         }
 
-        fn property(&self, _id: usize, pspec: &ParamSpec) -> Value {
-            match pspec.name() {
-                "resource-uri" => self.resource_uri.get().to_value(),
-                "head" => self.head.get().to_value(),
-                "body" => self.body.borrow().to_value(),
-                _ => unimplemented!(),
-            }
+        fn property(&self, id: usize, pspec: &ParamSpec) -> Value {
+            self.derived_property(id, pspec)
         }
     }
     impl WidgetImpl for ImagePageWidget {}
     impl BoxImpl for ImagePageWidget {}
+
+    impl ImagePageWidget {
+        fn set_resource_uri(&self, resource_uri: &str) {
+            self.picture.set_resource(Some(resource_uri));
+            self.resource_uri.set(resource_uri.to_owned()).unwrap();
+        }
+    }
 }
 
 glib::wrapper! {
@@ -143,9 +123,5 @@ impl ImagePageWidget {
             .property("head", &head)
             .property("body", &body)
             .build()
-    }
-
-    pub fn set_body(&self, body: &str) {
-        self.set_property("body", &body);
     }
 }

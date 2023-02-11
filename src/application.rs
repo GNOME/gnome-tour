@@ -94,11 +94,11 @@ impl Application {
         self.imp().window.get().and_then(|w| w.upgrade()).unwrap()
     }
 
-    pub fn run() {
+    pub fn run() -> glib::ExitCode {
         log::info!("GNOME Tour ({})", config::APP_ID);
         log::info!("Version: {} ({})", config::VERSION, config::PROFILE);
         log::info!("Datadir: {}", config::PKGDATADIR);
         let app = Self::new();
-        gtk::prelude::ApplicationExtManual::run(&app);
+        app.run()
     }
 }

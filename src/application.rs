@@ -24,7 +24,7 @@ mod imp {
     impl ApplicationImpl for Application {
         fn activate(&self) {
             self.parent_activate();
-            let application = self.instance();
+            let application = self.obj();
 
             let window = Window::new(&application);
             application.add_window(&window);
@@ -34,7 +34,7 @@ mod imp {
 
         fn startup(&self) {
             self.parent_startup();
-            let application = self.instance();
+            let application = self.obj();
             // Quit
             let quit = gio::ActionEntry::builder("quit")
                 .activate(move |app: &Self::Type, _, _| app.quit())
@@ -65,9 +65,7 @@ mod imp {
                     }
                 })
                 .build();
-            application
-                .add_action_entries([quit, start_tour, skip_tour, next_page, previous_page])
-                .unwrap();
+            application.add_action_entries([quit, start_tour, skip_tour, next_page, previous_page]);
 
             application.set_accels_for_action("app.quit", &["<Control>q"]);
             application.set_accels_for_action("app.skip-tour", &["Escape"]);
@@ -86,10 +84,10 @@ glib::wrapper! {
 impl Application {
     #[allow(clippy::new_without_default)]
     pub fn new() -> Self {
-        glib::Object::new(&[
-            ("application-id", &config::APP_ID),
-            ("resource-base-path", &Some("/org/gnome/Tour")),
-        ])
+        glib::Object::builder()
+            .property("application-id", &config::APP_ID)
+            .property("resource-base-path", &Some("/org/gnome/Tour"))
+            .build()
     }
 
     fn window(&self) -> Window {

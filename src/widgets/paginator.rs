@@ -44,7 +44,7 @@ mod imp {
     impl ObjectImpl for PaginatorWidget {
         fn constructed(&self) {
             self.parent_constructed();
-            let obj = self.instance();
+            let obj = self.obj();
             let layout_manager = obj
                 .layout_manager()
                 .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
@@ -67,7 +67,7 @@ mod imp {
                 gtk::Inhibit(false)
             }));
 
-            obj.add_controller(&controller);
+            obj.add_controller(controller);
         }
     }
     impl WidgetImpl for PaginatorWidget {}
@@ -77,7 +77,7 @@ mod imp {
             if !self.carousel.is_bound() {
                 self.parent_add_child(builder, child, type_);
             } else {
-                self.instance()
+                self.obj()
                     .add_page(child.clone().downcast::<gtk::Widget>().unwrap());
             }
         }
@@ -92,7 +92,7 @@ glib::wrapper! {
 
 impl PaginatorWidget {
     pub fn new() -> Self {
-        glib::Object::new(&[])
+        glib::Object::new()
     }
 
     pub fn try_next(&self) -> Option<()> {

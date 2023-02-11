@@ -27,7 +27,7 @@ mod imp {
     impl ObjectImpl for ImagePageWidget {
         fn constructed(&self) {
             self.parent_constructed();
-            let obj = self.instance();
+            let obj = self.obj();
             let layout_manager = obj
                 .layout_manager()
                 .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
@@ -55,7 +55,7 @@ mod imp {
             clamp.set_child(Some(&container));
 
             self.picture.set_can_shrink(false);
-            self.picture.set_keep_aspect_ratio(true);
+            self.picture.set_content_fit(gtk::ContentFit::Contain);
             container.append(&self.picture);
 
             let head_label = gtk::Label::builder()
@@ -138,11 +138,11 @@ glib::wrapper! {
 
 impl ImagePageWidget {
     pub fn new(resource_uri: &str, head: String, body: String) -> Self {
-        glib::Object::new::<Self>(&[
-            ("resource-uri", &resource_uri),
-            ("head", &head),
-            ("body", &body),
-        ])
+        glib::Object::builder()
+            .property("resource-uri", &resource_uri)
+            .property("head", &head)
+            .property("body", &body)
+            .build()
     }
 
     pub fn set_body(&self, body: &str) {

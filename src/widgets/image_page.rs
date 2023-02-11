@@ -33,7 +33,7 @@ mod imp {
             let obj = self.obj();
             let layout_manager = obj
                 .layout_manager()
-                .map(|l| l.downcast::<gtk::BoxLayout>().unwrap())
+                .and_downcast::<gtk::BoxLayout>()
                 .unwrap();
             layout_manager.set_orientation(gtk::Orientation::Vertical);
             obj.add_css_class("page");

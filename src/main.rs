@@ -14,9 +14,9 @@ fn main() {
     // Prepare i18n
     setlocale(LocaleCategory::LcAll, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR)
-        .unwrap_or_else(|_| panic!("Unable to bind text domain for {}", GETTEXT_PACKAGE));
+        .unwrap_or_else(|_| panic!("Unable to bind text domain for {GETTEXT_PACKAGE}"));
     textdomain(GETTEXT_PACKAGE)
-        .unwrap_or_else(|_| panic!("Unable to switch to text domain {}", GETTEXT_PACKAGE));
+        .unwrap_or_else(|_| panic!("Unable to switch to text domain {GETTEXT_PACKAGE}"));
 
     glib::set_application_name(&gettext("Tour"));
     glib::set_prgname(Some("Tour"));

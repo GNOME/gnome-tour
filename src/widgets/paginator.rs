@@ -91,10 +91,6 @@ glib::wrapper! {
 }
 
 impl PaginatorWidget {
-    pub fn new() -> Self {
-        glib::Object::new()
-    }
-
     pub fn try_next(&self) -> Option<()> {
         let imp = self.imp();
         let p = imp.current_page.get() + 1;
@@ -187,11 +183,5 @@ impl PaginatorWidget {
             let page = pages.get(page_nr as usize).unwrap();
             imp.carousel.scroll_to(page, true);
         }
-    }
-}
-
-impl Default for PaginatorWidget {
-    fn default() -> Self {
-        Self::new()
     }
 }

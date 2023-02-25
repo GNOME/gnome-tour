@@ -82,14 +82,6 @@ glib::wrapper! {
 }
 
 impl Application {
-    #[allow(clippy::new_without_default)]
-    pub fn new() -> Self {
-        glib::Object::builder()
-            .property("application-id", &config::APP_ID)
-            .property("resource-base-path", &Some("/org/gnome/Tour"))
-            .build()
-    }
-
     fn window(&self) -> Window {
         self.imp().window.get().and_then(|w| w.upgrade()).unwrap()
     }
@@ -98,7 +90,15 @@ impl Application {
         log::info!("GNOME Tour ({})", config::APP_ID);
         log::info!("Version: {} ({})", config::VERSION, config::PROFILE);
         log::info!("Datadir: {}", config::PKGDATADIR);
-        let app = Self::new();
-        app.run()
+        Self::default().run()
+    }
+}
+
+impl Default for Application {
+    fn default() -> Self {
+        glib::Object::builder()
+            .property("application-id", config::APP_ID)
+            .property("resource-base-path", "/org/gnome/Tour")
+            .build()
     }
 }

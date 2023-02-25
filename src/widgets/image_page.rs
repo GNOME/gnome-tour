@@ -115,13 +115,3 @@ glib::wrapper! {
     pub struct ImagePageWidget(ObjectSubclass<imp::ImagePageWidget>)
         @extends gtk::Widget, gtk::Box;
 }
-
-impl ImagePageWidget {
-    pub fn new(resource_uri: &str, head: String, body: String) -> Self {
-        glib::Object::builder()
-            .property("resource-uri", &resource_uri)
-            .property("head", &head)
-            .property("body", &body)
-            .build()
-    }
-}

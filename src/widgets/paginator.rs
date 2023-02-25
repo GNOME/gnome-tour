@@ -110,7 +110,7 @@ impl PaginatorWidget {
         Some(())
     }
 
-    pub fn add_page(&self, page: impl IsA<gtk::Widget>) {
+    fn add_page(&self, page: impl IsA<gtk::Widget>) {
         let imp = self.imp();
         let page_nr = imp.pages.borrow().len();
         imp.carousel.insert(&page, page_nr as i32);

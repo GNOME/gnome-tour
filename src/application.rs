@@ -39,36 +39,10 @@ mod imp {
             let quit = gio::ActionEntry::builder("quit")
                 .activate(move |app: &Self::Type, _, _| app.quit())
                 .build();
-            // Start Tour
-            let start_tour = gio::ActionEntry::builder("start-tour")
-                .activate(move |app: &Self::Type, _, _| app.window().start_tour())
-                .build();
-            // Skip Tour
-            let skip_tour = gio::ActionEntry::builder("skip-tour")
-                .activate(move |app: &Self::Type, _, _| app.quit())
-                .build();
-            // Next page
-            let next_page = gio::ActionEntry::builder("next-page")
-                .activate(move |app: &Self::Type, _, _| {
-                    let window = app.window();
-                    if window.paginator().try_next().is_none() {
-                        window.close();
-                    }
-                })
-                .build();
-            // Previous page
-            let previous_page = gio::ActionEntry::builder("previous-page")
-                .activate(move |app: &Self::Type, _, _| {
-                    let window = app.window();
-                    if window.paginator().try_previous().is_none() {
-                        window.reset_tour();
-                    }
-                })
-                .build();
-            application.add_action_entries([quit, start_tour, skip_tour, next_page, previous_page]);
+            application.add_action_entries([quit]);
 
             application.set_accels_for_action("app.quit", &["<Control>q"]);
-            application.set_accels_for_action("app.skip-tour", &["Escape"]);
+            application.set_accels_for_action("win.skip-tour", &["Escape"]);
         }
     }
     impl GtkApplicationImpl for Application {}
@@ -82,10 +56,6 @@ glib::wrapper! {
 }
 
 impl Application {
-    fn window(&self) -> Window {
-        self.imp().window.get().and_then(|w| w.upgrade()).unwrap()
-    }
-
     pub fn run() -> glib::ExitCode {
         log::info!("GNOME Tour ({})", config::APP_ID);
         log::info!("Version: {} ({})", config::VERSION, config::PROFILE);

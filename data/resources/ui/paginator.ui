@@ -23,7 +23,7 @@
             <property name="icon-name">left-large-symbolic</property>
             <property name="halign">start</property>
             <property name="valign">center</property>
-            <property name="action-name">app.previous-page</property>
+            <property name="action-name">win.previous-page</property>
             <property name="tooltip-text" translatable="yes">Previous</property>
             <style>
               <class name="circular" />
@@ -36,7 +36,7 @@
             <property name="icon-name">right-large-symbolic</property>
             <property name="halign">end</property>
             <property name="valign">center</property>
-            <property name="action-name">app.next-page</property>
+            <property name="action-name">win.next-page</property>
             <property name="tooltip-text" translatable="yes">Next</property>
             <style>
               <class name="circular" />
@@ -49,7 +49,7 @@
             <property name="icon-name">right-large-symbolic</property>
             <property name="halign">end</property>
             <property name="valign">center</property>
-            <property name="action-name">app.start-tour</property>
+            <property name="action-name">win.start-tour</property>
             <property name="tooltip-text" translatable="yes">Start</property>
             <style>
               <class name="suggested-action" />

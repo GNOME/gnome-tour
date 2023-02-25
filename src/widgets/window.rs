@@ -29,6 +29,24 @@ mod imp {
 
         fn class_init(klass: &mut Self::Class) {
             klass.bind_template();
+            // Start Tour
+            klass.install_action("win.start-tour", None, |win, _, _| win.start_tour());
+            // Skip Tour
+            klass.install_action("win.skip-tour", None, |win, _, _| {
+                win.application().unwrap().quit();
+            });
+            // Next page
+            klass.install_action("win.next-page", None, |win, _, _| {
+                if win.imp().paginator.try_next().is_none() {
+                    win.close();
+                }
+            });
+            // Previous page
+            klass.install_action("win.previous-page", None, |win, _, _| {
+                if win.imp().paginator.try_previous().is_none() {
+                    win.reset_tour();
+                }
+            });
         }
 
         fn instance_init(obj: &glib::subclass::InitializingObject<Self>) {
@@ -72,10 +90,6 @@ glib::wrapper! {
 impl Window {
     pub fn new(app: &Application) -> Self {
         glib::Object::builder().property("application", app).build()
-    }
-
-    pub fn paginator(&self) -> PaginatorWidget {
-        self.imp().paginator.clone()
     }
 
     pub fn start_tour(&self) {

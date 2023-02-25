@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <template class="PaginatorWidget" parent="GtkBox">
+    <property name="orientation">vertical</property>
     <child>
       <object class="GtkHeaderBar">
         <property name="show-title-buttons">True</property>
@@ -61,8 +62,14 @@
           <object class="AdwCarousel" id="carousel">
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
+            <signal name="notify::position" handler="on_position_notify" swapped="true" />
           </object>
         </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkEventControllerKey">
+          <signal name="key-pressed" handler="on_key_pressed" swapped="true" />
       </object>
     </child>
   </template>

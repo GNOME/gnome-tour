@@ -1,9 +1,4 @@
-use gtk::prelude::*;
-use gtk::{
-    gdk,
-    glib::{self, clone},
-    subclass::prelude::*,
-};
+use gtk::{gdk, glib, prelude::*, subclass::prelude::*};
 
 mod imp {
     use super::*;
@@ -33,7 +28,8 @@ mod imp {
         type Interfaces = (gtk::Buildable,);
 
         fn class_init(klass: &mut Self::Class) {
-            Self::bind_template(klass);
+            klass.bind_template();
+            klass.bind_template_instance_callbacks();
         }
 
         fn instance_init(obj: &glib::subclass::InitializingObject<Self>) {
@@ -44,30 +40,8 @@ mod imp {
     impl ObjectImpl for PaginatorWidget {
         fn constructed(&self) {
             self.parent_constructed();
-            let obj = self.obj();
-            let layout_manager = obj
-                .layout_manager()
-                .and_downcast::<gtk::BoxLayout>()
-                .unwrap();
-            layout_manager.set_orientation(gtk::Orientation::Vertical);
             self.carousel
                 .set_scroll_params(&adw::SpringParams::new(1.0, 0.5, 300.0));
-            self.carousel
-                .connect_position_notify(clone!(@weak obj => move |_| {
-                    obj.update_position();
-                }));
-
-            let controller = gtk::EventControllerKey::new();
-            controller.connect_key_pressed(clone!(@weak obj => @default-return gtk::Inhibit(true), move |_controller, keyval, _keycode, _state| {
-                if keyval == gdk::Key::Right {
-                    obj.try_next();
-                } else if keyval == gdk::Key::Left {
-                    obj.try_previous();
-                }
-                gtk::Inhibit(false)
-            }));
-
-            obj.add_controller(controller);
         }
     }
     impl WidgetImpl for PaginatorWidget {}
@@ -90,6 +64,7 @@ glib::wrapper! {
         @implements gtk::Buildable;
 }
 
+#[gtk::template_callbacks]
 impl PaginatorWidget {
     pub fn try_next(&self) -> Option<()> {
         let imp = self.imp();
@@ -116,10 +91,21 @@ impl PaginatorWidget {
         imp.carousel.insert(&page, page_nr as i32);
         imp.pages.borrow_mut().push(page.upcast());
 
-        self.update_position();
+        self.on_position_notify();
     }
 
-    fn update_position(&self) {
+    #[template_callback]
+    fn on_key_pressed(&self, keyval: gdk::Key) -> gtk::Inhibit {
+        if keyval == gdk::Key::Right {
+            self.try_next();
+        } else if keyval == gdk::Key::Left {
+            self.try_previous();
+        }
+        gtk::Inhibit(false)
+    }
+
+    #[template_callback]
+    fn on_position_notify(&self) {
         let imp = self.imp();
 
         let position = imp.carousel.position();

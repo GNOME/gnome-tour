@@ -1,16 +1,12 @@
-use crate::utils::i18n_f;
-use adw::prelude::*;
-use gtk::subclass::prelude::*;
+use adw::{prelude::*, subclass::prelude::*};
 use gtk::{gio, glib};
 
 use super::paginator::PaginatorWidget;
-use crate::Application;
+use crate::{utils::i18n_f, Application};
 
 mod imp {
     use super::*;
-    use crate::config;
-    use crate::widgets::ImagePageWidget;
-    use adw::subclass::prelude::*;
+    use crate::{config, widgets::ImagePageWidget};
 
     #[derive(Debug, Default, gtk::CompositeTemplate)]
     #[template(resource = "/org/gnome/Tour/ui/window.ui")]
@@ -68,7 +64,8 @@ mod imp {
             let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
 
             let body = i18n_f(
-                // Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+                // Translators: The following string is formated as "Learn about new and essential
+                // features in GNOME 3.36" for example
                 "Learn about the key features in {name} {version}.",
                 &[("name", &name), ("version", &version)],
             );

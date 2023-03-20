@@ -1,8 +1,9 @@
 use gtk::{gdk, glib, prelude::*, subclass::prelude::*};
 
 mod imp {
-    use super::*;
     use std::cell::{Cell, RefCell};
+
+    use super::*;
 
     #[derive(Default, Debug, gtk::CompositeTemplate)]
     #[template(resource = "/org/gnome/Tour/ui/paginator.ui")]

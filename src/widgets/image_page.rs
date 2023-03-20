@@ -1,11 +1,11 @@
-use gtk::glib;
-use gtk::prelude::*;
-use gtk::subclass::prelude::*;
+use gtk::{glib, prelude::*, subclass::prelude::*};
 
 mod imp {
-    use super::*;
-    use gtk::glib::once_cell::sync::OnceCell;
     use std::cell::RefCell;
+
+    use glib::once_cell::sync::OnceCell;
+
+    use super::*;
 
     #[derive(Debug, Default, glib::Properties, gtk::CompositeTemplate)]
     #[properties(wrapper_type = super::ImagePageWidget)]

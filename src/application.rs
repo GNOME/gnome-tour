@@ -1,12 +1,12 @@
-use crate::config;
-use crate::widgets::Window;
-use adw::prelude::*;
-use gtk::{gio, glib, subclass::prelude::*};
+use adw::{prelude::*, subclass::prelude::*};
+use gtk::{gio, glib};
+
+use crate::{config, widgets::Window};
 
 mod imp {
+    use glib::{once_cell::sync::OnceCell, WeakRef};
+
     use super::*;
-    use adw::subclass::prelude::*;
-    use gtk::glib::{once_cell::sync::OnceCell, WeakRef};
 
     #[derive(Debug, Default)]
     pub struct Application {

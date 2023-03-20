@@ -69,7 +69,7 @@
     </child>
     <child>
       <object class="GtkEventControllerKey">
-          <signal name="key-pressed" handler="on_key_pressed" swapped="true" />
+        <signal name="key-pressed" handler="on_key_pressed" swapped="true" />
       </object>
     </child>
   </template>

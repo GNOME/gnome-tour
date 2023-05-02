@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-09-02 18:33+0200\n"
-"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
+"POT-Creation-Date: 2023-01-25 19:46+0000\n"
+"PO-Revision-Date: 2023-04-18 14:47+0300\n"
+"Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
+"gmail [dot] com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -17,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Tur"
 
@@ -40,90 +41,89 @@ msgstr "Tur ce vă introduce în GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Un tur ghidat și o persoană care vă introduce în GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Fereastra principală"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:41
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:27
+msgid "Previous"
+msgstr "Anterior"
+
+#: data/resources/ui/paginator.ui:40
+msgid "Next"
+msgstr "Următor"
+
+#: data/resources/ui/paginator.ui:53
+msgid "Start"
+msgstr "Începe"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "Începeți turul"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about the key features in {} {}."
-msgstr "Aflați despre funcționalitățile esențiale din {} {}."
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "Î_ncepe"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "_Următor"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "În_chide"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "_Anterior"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Obțineți o vedere de ansamblu"
 
-#: src/widgets/window.rs:52
+#: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
 msgstr "Apăsați tasta Super pentru a vedea ferestrele deschise și aplicațiile."
 
-#: src/widgets/window.rs:61
+#: data/resources/ui/window.ui:24
 msgid "Just Type to Search"
 msgstr "Doar tastați pentru a căuta"
 
-#: src/widgets/window.rs:62
+#: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
 "Tastați în privirea de ansamblu pentru a căuta. Lansați aplicații și găsiți "
 "lucruri."
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "Fiți la curent cu spațiile de lucru"
 
-#: src/widgets/window.rs:72
+#: data/resources/ui/window.ui:32
 msgid "Easily organize windows with the workspaces view."
 msgstr "Organizați ușor ferestrele cu vizualizarea de spații de lucru."
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "Sus/jos pentru vederea de ansmablu"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr ""
 "Cu un touchpad, folosiți tragerile verticale cu trei degete. Încercați-le!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "Stânga/dreapta pentru spații de lucru"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr ""
 "Cu un touchpad, folosiți tragerile orizontale cu trei degete. Încercați-le!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:52
 msgid "That's it. Have a nice day!"
 msgstr "Asta este totul. Să aveți o zi plăcută!"
 
-#: src/widgets/window.rs:103
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
+
+#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
+#: src/widgets/window.rs:54
+msgid "Learn about the key features in {name} {version}."
+msgstr "Aflați despre funcționalitățile esențiale din {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Fereastra principală"
+
+#~ msgid "_Close"
+#~ msgstr "În_chide"
 
 #~ msgid "Make Apps Your Own"
 #~ msgstr "Însușiți-vă aplicațiile"

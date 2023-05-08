@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-07-27 11:37+0000\n"
+"POT-Creation-Date: 2023-05-05 14:05+0000\n"
 "PO-Revision-Date: 2022-07-30 22:53+0300\n"
 "Last-Translator: Aleksandr Melman <Alexmelman88@gmail.com>\n"
 "Language-Team: Russian <Alexmelman88@gmail.com>\n"
@@ -44,21 +44,21 @@ msgstr "Экскурсия и Приветствие GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "Управляемая экскурсия и приветсвие для GNOME."
+msgstr "Управляемая экскурсия и приветствие для GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:28
 msgid "Previous"
 msgstr "Назад"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:41
 msgid "Next"
 msgstr "Далее"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:54
 msgid "Start"
 msgstr "Начать"
 
@@ -122,8 +122,9 @@ msgstr ""
 "Чтобы получить дополнительные советы и рекомендации, обратитесь к приложению "
 "Справка."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formated as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Узнайте о ключевых функциях в {name} {version}."
 

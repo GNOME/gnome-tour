@@ -1,4 +1,5 @@
-use gtk::{gdk, glib, prelude::*, subclass::prelude::*};
+use adw::subclass::prelude::*;
+use gtk::{gdk, glib, prelude::*};
 
 mod imp {
     use std::cell::{Cell, RefCell};
@@ -24,7 +25,7 @@ mod imp {
     #[glib::object_subclass]
     impl ObjectSubclass for PaginatorWidget {
         const NAME: &'static str = "PaginatorWidget";
-        type ParentType = gtk::Box;
+        type ParentType = adw::Bin;
         type Type = super::PaginatorWidget;
         type Interfaces = (gtk::Buildable,);
 
@@ -46,7 +47,7 @@ mod imp {
         }
     }
     impl WidgetImpl for PaginatorWidget {}
-    impl BoxImpl for PaginatorWidget {}
+    impl BinImpl for PaginatorWidget {}
     impl BuildableImpl for PaginatorWidget {
         fn add_child(&self, builder: &gtk::Builder, child: &glib::Object, type_: Option<&str>) {
             if !self.carousel.is_bound() {

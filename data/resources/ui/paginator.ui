@@ -1,72 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <template class="PaginatorWidget" parent="GtkBox">
-    <property name="orientation">vertical</property>
-    <child>
-      <object class="GtkHeaderBar">
-        <property name="show-title-buttons">True</property>
-        <property name="title-widget">
-          <object class="AdwCarouselIndicatorDots" id="carousel_dots">
-            <property name="carousel">carousel</property>
+  <template class="PaginatorWidget" parent="AdwBin">
+    <property name="child">
+      <object class="AdwToolbarView">
+        <child type="top">
+          <object class="GtkHeaderBar">
+            <property name="title-widget">
+              <object class="AdwCarouselIndicatorDots" id="carousel_dots">
+                <property name="carousel">carousel</property>
+              </object>
+            </property>
+          </object>
+        </child>
+        <property name="content">
+          <object class="GtkOverlay" id="previous_overlay">
+            <property name="valign">center</property>
+            <child type="overlay">
+              <object class="GtkButton" id="previous_btn">
+                <property name="margin-start">12</property>
+                <property name="icon-name">left-large-symbolic</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="action-name">win.previous-page</property>
+                <property name="tooltip-text" translatable="yes">Previous</property>
+                <style>
+                  <class name="circular" />
+                </style>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="next_btn">
+                <property name="margin-end">12</property>
+                <property name="icon-name">right-large-symbolic</property>
+                <property name="halign">end</property>
+                <property name="valign">center</property>
+                <property name="action-name">win.next-page</property>
+                <property name="tooltip-text" translatable="yes">Next</property>
+                <style>
+                  <class name="circular" />
+                </style>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="start_btn">
+                <property name="margin-end">12</property>
+                <property name="icon-name">right-large-symbolic</property>
+                <property name="halign">end</property>
+                <property name="valign">center</property>
+                <property name="action-name">win.start-tour</property>
+                <property name="tooltip-text" translatable="yes">Start</property>
+                <style>
+                  <class name="suggested-action" />
+                  <class name="circular" />
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="AdwCarousel" id="carousel">
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <signal name="notify::position" handler="on_position_notify" swapped="true" />
+              </object>
+            </child>
           </object>
         </property>
-        <style>
-          <class name="flat" />
-        </style>
       </object>
-    </child>
-    <child>
-      <object class="GtkOverlay" id="previous_overlay">
-        <property name="valign">center</property>
-        <child type="overlay">
-          <object class="GtkButton" id="previous_btn">
-            <property name="margin-start">12</property>
-            <property name="icon-name">left-large-symbolic</property>
-            <property name="halign">start</property>
-            <property name="valign">center</property>
-            <property name="action-name">win.previous-page</property>
-            <property name="tooltip-text" translatable="yes">Previous</property>
-            <style>
-              <class name="circular" />
-            </style>
-          </object>
-        </child>
-        <child type="overlay">
-          <object class="GtkButton" id="next_btn">
-            <property name="margin-end">12</property>
-            <property name="icon-name">right-large-symbolic</property>
-            <property name="halign">end</property>
-            <property name="valign">center</property>
-            <property name="action-name">win.next-page</property>
-            <property name="tooltip-text" translatable="yes">Next</property>
-            <style>
-              <class name="circular" />
-            </style>
-          </object>
-        </child>
-        <child type="overlay">
-          <object class="GtkButton" id="start_btn">
-            <property name="margin-end">12</property>
-            <property name="icon-name">right-large-symbolic</property>
-            <property name="halign">end</property>
-            <property name="valign">center</property>
-            <property name="action-name">win.start-tour</property>
-            <property name="tooltip-text" translatable="yes">Start</property>
-            <style>
-              <class name="suggested-action" />
-              <class name="circular" />
-            </style>
-          </object>
-        </child>
-        <child>
-          <object class="AdwCarousel" id="carousel">
-            <property name="hexpand">True</property>
-            <property name="vexpand">True</property>
-            <signal name="notify::position" handler="on_position_notify" swapped="true" />
-          </object>
-        </child>
-      </object>
-    </child>
+    </property>
     <child>
       <object class="GtkEventControllerKey">
         <signal name="key-pressed" handler="on_key_pressed" swapped="true" />

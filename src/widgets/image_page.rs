@@ -1,9 +1,7 @@
 use gtk::{glib, prelude::*, subclass::prelude::*};
 
 mod imp {
-    use std::cell::RefCell;
-
-    use glib::once_cell::sync::OnceCell;
+    use std::cell::{OnceCell, RefCell};
 
     use super::*;
 

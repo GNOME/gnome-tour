@@ -97,13 +97,13 @@ impl PaginatorWidget {
     }
 
     #[template_callback]
-    fn on_key_pressed(&self, keyval: gdk::Key) -> glib::ControlFlow {
+    fn on_key_pressed(&self, keyval: gdk::Key) -> glib::Propagation {
         if keyval == gdk::Key::Right {
             self.try_next();
         } else if keyval == gdk::Key::Left {
             self.try_previous();
         }
-        glib::ControlFlow::Continue
+        glib::Propagation::Proceed
     }
 
     #[template_callback]

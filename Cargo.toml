@@ -1,6 +1,6 @@
 [package]
 name = "gnome-tour"
-version = "44.0.0"
+version = "45.0.0"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
 edition = "2021"
 

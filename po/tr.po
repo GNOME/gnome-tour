@@ -1,5 +1,5 @@
 # Turkish translation for gnome-tour.
-# Copyright (C) 2020-2022 gnome-tour's COPYRIGHT HOLDER
+# Copyright (C) 2020-2023 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
 # Sabri Ünal <libreajans@gmail.com>, 2020.
@@ -9,10 +9,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-07-26 07:21+0000\n"
+"POT-Creation-Date: 2023-05-08 12:38+0000\n"
 "PO-Revision-Date: 2022-02-14 01:07+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,19 +42,19 @@ msgstr "GNOME Gezintisi ve Karşılayıcı"
 msgid "A guided tour and greeter for GNOME."
 msgstr "GNOME için kılavuzlu gezinti ve karşılayıcı."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:28
 msgid "Previous"
 msgstr "Önceki"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:41
 msgid "Next"
 msgstr "Sonraki"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:54
 msgid "Start"
 msgstr "Başlat"
 
@@ -110,7 +110,8 @@ msgstr "İşte bu. İyi günler!"
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formated as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "{name} {version} ana özelliklerini öğren."

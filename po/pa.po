@@ -2,13 +2,13 @@
 # Copyright (C) 2021 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
-# A S Alam <amanpreet.alam@gmail.com>, 2021.
+# A S Alam <amanpreet.alam@gmail.com>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2021-02-19 09:23+0000\n"
-"PO-Revision-Date: 2021-03-14 11:02-0700\n"
+"POT-Creation-Date: 2023-05-05 14:05+0000\n"
+"PO-Revision-Date: 2023-08-20 17:18-0700\n"
 "Last-Translator: A S Alam <aalam@satluj.org>\n"
 "Language-Team: Punjabi <punjab-translation@googlegroups.com>\n"
 "Language: pa\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:19
+#: src/main.rs:21
 msgid "Tour"
 msgstr "ਟੂਰ"
 
@@ -39,86 +39,101 @@ msgstr "ਗਨੋਮ ਟੂਰ ਤੇ ਸਵਾਗਤੀ"
 msgid "A guided tour and greeter for GNOME."
 msgstr "ਗਨੋਮ ਲਈ ਸੇਧ ਦਿੰਦਾ ਟੂਰ ਤੇ ਸਵਾਗਤੀ ਹੈ।"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "ਮੁੱਖ ਵਿੰਡੋ"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
 msgid "The GNOME Project"
 msgstr "ਗਨੋਮ ਪਰੋਜੈਕਟ"
 
-#: src/widgets/pages/welcome.rs:151
+#: data/resources/ui/paginator.ui:28
+#| msgid "_Previous"
+msgid "Previous"
+msgstr "ਪਿੱਛੇ"
+
+#: data/resources/ui/paginator.ui:41
+#| msgid "_Next"
+msgid "Next"
+msgstr "ਅੱਗੇ"
+
+#: data/resources/ui/paginator.ui:54
+#| msgid "_Start"
+msgid "Start"
+msgstr "ਸ਼ੁਰੂ ਕਰੋ"
+
+#: data/resources/ui/window.ui:11
 msgid "Start the Tour"
 msgstr "ਟੂਰ ਸ਼ੁਰੂ ਕਰੋ"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "Learn about new and essential features in {} {}."
-msgstr "{} {} ਵਿੱਚ ਨਵੇਂ ਅਤੇ ਜ਼ਰੂਰੀ ਫ਼ੀਚਰਾਂ ਬਾਰੇ ਸਿੱਖੋ।"
-
-#: src/widgets/paginator.rs:32
-msgid "_Start"
-msgstr "ਸ਼ੁਰੂ ਕਰੋ(_S)"
-
-#: src/widgets/paginator.rs:33
-msgid "_Next"
-msgstr "ਅੱਗੇ(_N)"
-
-#: src/widgets/paginator.rs:34 src/widgets/paginator.rs:35
-msgid "_Close"
-msgstr "ਬੰਦ ਕਰੋ(_C)"
-
-#: src/widgets/paginator.rs:36
-msgid "_Previous"
-msgstr "ਪਿੱਛੇ(_P)"
-
-#: src/widgets/window.rs:51
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "ਸਾਰ ਵੇਖੋ"
 
-#: src/widgets/window.rs:52
-msgid "Press Activities to see open windows and apps."
-msgstr "ਖੁੱਲ੍ਹੀਆਂ ਵਿੰਡੋ ਅਤੇ ਐਪਾਂ ਵੇਖਣ ਲਈ ਸਰਗਰਮੀਆਂ ਨੂੰ ਦਬਾਓ।"
+#: data/resources/ui/window.ui:18
+#| msgid "Press Activities to see open windows and apps."
+msgid "Press the Super key to see open windows and apps."
+msgstr "ਖੁੱਲ੍ਹੀਆਂ ਵਿੰਡੋ ਅਤੇ ਐਪਾਂ ਵੇਖਣ ਲਈ ਸੁਪਰ ਸਵਿੱਚ ਨੂੰ ਦਬਾਓ।"
 
-#: src/widgets/window.rs:61
-msgid "Make Apps Your Own"
-msgstr "ਐਪਾਂ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲੋ"
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr "ਬੱਸ ਖੋਜੋ ਵਿੱਚ ਲਿਖੋ"
 
-#: src/widgets/window.rs:62
-#| msgid "Arrange the app grid so it makes sense for you."
-msgid "Arrange the app grid to your liking."
-msgstr "ਐਪ ਗਰਿੱਡ ਦਾ ਇੰਤਜ਼ਾਮ ਜਿਵੇਂ ਤੁਹਾਨੂੰ ਪਸੰਦ ਆਵੇ, ਉਂਝ ਕਰੋ।"
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "ਖੋਜਣ ਲਈ ਸਾਰ ਵਿੱਚ ਲਿਖੋ। ਐਪਾਂ ਚਲਾਓ ਅਤੇ ਚੀਜ਼ਾਂ ਲੱਭੋ।"
 
-#: src/widgets/window.rs:71
+#: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
 msgstr "ਵਰਕਸਪੇਸ ਬਾਰੇ ਸਮਝੋ"
 
-#: src/widgets/window.rs:72
-msgid "Easily organize windows with the new workspaces view."
-msgstr "ਨਵੀਂ ਵਰਕਸਪੇਸ ਝਲਕ ਨਾਲ ਵਿੰਡੋ ਦਾ ਸੌਖੀ ਤਰ੍ਹਾਂ ਇੰਤਜ਼ਾਮ ਕਰੋ।"
+#: data/resources/ui/window.ui:32
+#| msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
+msgstr "ਵਰਕਸਪੇਸ ਝਲਕ ਨਾਲ ਵਿੰਡੋ ਦਾ ਸੌਖੀ ਤਰ੍ਹਾਂ ਇੰਤਜ਼ਾਮ ਕਰੋ।"
 
-#: src/widgets/window.rs:81
+#: data/resources/ui/window.ui:38
 msgid "Up/Down for the Overview"
 msgstr "ਸੰਖੇਪ ਝਲਕ ਲਈ ਉੱਤੇ/ਹੇਠਾਂ"
 
-#: src/widgets/window.rs:82
+#: data/resources/ui/window.ui:39
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 msgstr "ਟੱਚ ਪੈਡ ਉੱਤੇ, 3 ਉਗਲਾਂ ਨਾਲ ਖੜ੍ਹਵੇਂ ਰੂਪ ਵਿੱਚ ਸਰਕਾਓ। ਵਰਤ ਕੇ ਵੇਖੋ!"
 
-#: src/widgets/window.rs:91
+#: data/resources/ui/window.ui:45
 msgid "Left/Right for Workspaces"
 msgstr "ਵਰਕਸਪੇਸਾਂ ਲਈ ਸੱਜੇ/ਖੱਬੇ"
 
-#: src/widgets/window.rs:92
+#: data/resources/ui/window.ui:46
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 msgstr "ਟੱਚ ਪੈਡ ਉੱਤੇ, 3 ਉਂਗਲਾਂ ਲੇਟਵੇਂ ਰੂਪ ਵਿੱਚ ਵਰਤੋਂ। ਵਰਤ ਕੇ ਵੇਖੋ!"
 
-#: src/widgets/window.rs:104
-msgid "That's it! We hope that you enjoy {} {}."
-msgstr "ਪੂਰਾ ਹੋ ਗਿਆ! ਸਾਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਤੁਸੀਂ {} {} ਦਾ ਆਨੰਦ ਮਾਣੋਗੇ।"
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr "ਬੱਸ ਐਨਾ ਹੀ ਹੈ। ਮੌਜਾਂ ਮਾਣੋ!"
 
-#: src/widgets/window.rs:107
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "ਹੋਰ ਸਲਾਹ ਤੇ ਟੋਟਕੇ ਲੈਣ ਲਈ, ਮਦਦ ਐਪ ਨੂੰ ਵੇਖੋ।"
+
+#. Translators: The following string is formated as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+#| msgid "Learn about new and essential features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version} ਦੇ ਜ਼ਰੂਰੀ ਫ਼ੀਚਰਾਂ ਬਾਰੇ ਸਿੱਖੋ।"
+
+#~ msgid "Main Window"
+#~ msgstr "ਮੁੱਖ ਵਿੰਡੋ"
+
+#~ msgid "_Close"
+#~ msgstr "ਬੰਦ ਕਰੋ(_C)"
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "ਐਪਾਂ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲੋ"
+
+#~| msgid "Arrange the app grid so it makes sense for you."
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "ਐਪ ਗਰਿੱਡ ਦਾ ਇੰਤਜ਼ਾਮ ਜਿਵੇਂ ਤੁਹਾਨੂੰ ਪਸੰਦ ਆਵੇ, ਉਂਝ ਕਰੋ।"
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "ਪੂਰਾ ਹੋ ਗਿਆ! ਸਾਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਤੁਸੀਂ {} {} ਦਾ ਆਨੰਦ ਮਾਣੋਗੇ।"
 
 #~ msgid "Welcome to {} {}"
 #~ msgstr "{} {} ਲਈ ਜੀ ਆਇਆਂ ਨੂੰ"

@@ -64,7 +64,7 @@ mod imp {
             let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
 
             let body = i18n_f(
-                // Translators: The following string is formated as "Learn about new and essential
+                // Translators: The following string is formatted as "Learn about new and essential
                 // features in GNOME 3.36" for example
                 "Learn about the key features in {name} {version}.",
                 &[("name", &name), ("version", &version)],

@@ -1,24 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Esperanto translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Carmen Bianca BAKKER <carmen@carmenbianca.eu>, 2020.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2020-09-15 22:45+0000\n"
-"PO-Revision-Date: 2020-09-17 22:37+0200\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2023-05-05 14:05+0000\n"
+"PO-Revision-Date: 2023-09-15 22:32+0200\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <gnome-eo-list@gnome.org>\n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
-"Last-Translator: Carmen Bianca BAKKER <carmen@carmenbianca.eu>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: eo\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 42.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Rondvojaĝo"
 
@@ -31,104 +33,139 @@ msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
-msgid "GNOME Tour and Greeter."
-msgstr "GNOME Rondvojaĝo kaj Enkonduko."
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME Rondvojaĝo kaj Enkonduko"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
 msgstr "Gvida rondvojaĝo kaj enkonduko por GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Ĉefa fenestro"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
 msgid "The GNOME Project"
 msgstr "La projekto GNOME"
 
-#. Translators: The following string is formated as "Welcome to GNOME 3.36" for example
-#: src/widgets/pages/welcome.rs:145
-msgid "Welcome to {} {}"
-msgstr "Bonvenon al {} {}"
+#: data/resources/ui/paginator.ui:28
+msgid "Previous"
+msgstr "Antaŭa"
 
-#: src/widgets/pages/welcome.rs:151
-msgid ""
-"Hi there! Take the tour to learn your way around and discover essential "
-"features."
-msgstr ""
-"Saluton! Aliĝu al la rondvojaĝo por ekscii bazan uzadon kaj malkovri "
-"havendajn funkciojn."
+#: data/resources/ui/paginator.ui:41
+msgid "Next"
+msgstr "Sekva"
 
-#: src/widgets/pages/welcome.rs:161
-msgid "_No Thanks"
-msgstr "_Ne, dankon"
+#: data/resources/ui/paginator.ui:54
+msgid "Start"
+msgstr "Komenco"
 
-#: src/widgets/pages/welcome.rs:169
-msgid "_Start Tour"
-msgstr "_Komenci rondvojaĝon"
+#: data/resources/ui/window.ui:11
+msgid "Start the Tour"
+msgstr "Komenci la rondvojaĝon"
 
-#: src/widgets/paginator.rs:31
-msgid "_Next"
-msgstr "_Sekva"
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "Akiri superrigardon"
 
-#: src/widgets/paginator.rs:32
-msgid "_Close"
-msgstr "_Fermi"
+#: data/resources/ui/window.ui:18
+msgid "Press the Super key to see open windows and apps."
+msgstr "Premu la Super-klavon por vidi malfermitajn fenestrojn kaj apojn."
 
-#: src/widgets/paginator.rs:33
-msgid "_Previous"
-msgstr "_Antaŭa"
-
-#: src/widgets/window.rs:50
-msgid "Open Activities to launch apps"
-msgstr "Malfermi Agojn por lanĉi aplikaĵojn"
-
-#: src/widgets/window.rs:51
-msgid "The activities view can also be used to switch windows and search."
-msgstr ""
-"La Agoj-superrigardon oni povas ankaŭ uzi por ŝanĝi fenestrojn kaj serĉi."
-
-#: src/widgets/window.rs:60
-msgid "Just type to search"
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
 msgstr "Simple tajpu por serĉi"
 
-#: src/widgets/window.rs:61
-msgid ""
-"In the activities view, just start typing to search for apps, settings and "
-"more."
-msgstr ""
-"En la Agoj-superrigardo, simple komencu tajpadon por serĉi aplikaĵojn, "
-"agordojn, kaj pli."
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "Tajpu en la superrigardon por serĉi. Lanĉu programojn, trovu aferojn."
 
-#: src/widgets/window.rs:70
-msgid "Click the time to see notifications"
-msgstr "Alklaku la tempon por vidi sciigojn"
+#: data/resources/ui/window.ui:31
+msgid "Keep on Top with Workspaces"
+msgstr "Observi aferojn per laborspacoj"
 
-#: src/widgets/window.rs:71
-msgid "The notifications popover also includes personal planning tools."
-msgstr "La sciiga menuo ankaŭ inkluzivas ilojn por planado."
+#: data/resources/ui/window.ui:32
+msgid "Easily organize windows with the workspaces view."
+msgstr "Facile organizi fenestrojn kun la vido de laborspacoj."
 
-#: src/widgets/window.rs:80
-msgid "View system information and settings"
-msgstr "Montri sistemajn informojn kaj agordojn"
+#: data/resources/ui/window.ui:38
+msgid "Up/Down for the Overview"
+msgstr "Supren/Malsupren por la superrigardo"
 
-#: src/widgets/window.rs:81
-msgid "Get an overview of the system status and quickly change settings."
-msgstr "Akiru superrigardon de la sistema stato kaj rapide ŝanĝu agordojn."
+#: data/resources/ui/window.ui:39
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "Sur tuŝplato, uzu tri-fingrojn vertikalajn svingojn. Provu ĝin!"
 
-#: src/widgets/window.rs:90
-msgid "Use Software to find and install apps"
-msgstr "Uzu Programaron por trovi kaj instali aplikaĵojn"
+#: data/resources/ui/window.ui:45
+msgid "Left/Right for Workspaces"
+msgstr "Maldekstre/Dekstre por laborspacoj"
 
-#: src/widgets/window.rs:91
-msgid "Discover great apps through search, browsing and our recommendations."
-msgstr "Trovu bonegajn aplikaĵojn tra serĉo, foliumado, kaj niaj rekomendoj."
+#: data/resources/ui/window.ui:46
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "Sur tuŝplato, uzu tri-fingrojn horizontalajn svingojn. Provu ĝin!"
 
-#. Translators: The following string is formated as "We hope that you enjoy GNOME"
-#: src/widgets/window.rs:101
-msgid "That's it! We hope that you enjoy {}."
-msgstr "Jen la fino de la rondvojaĝo! Ni esperas, ke vi ŝatos {}."
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr "Jen ĝi. Havu bonan tagon!"
 
-#: src/widgets/window.rs:102
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Por pli da konsiloj, vidu la programon Helpo."
+
+#. Translators: The following string is formated as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "Lernu pri la ĉefaj funkcioj en {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Ĉefa fenestro"
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Bonvenon al {} {}"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Saluton! Aliĝu al la rondvojaĝo por ekscii bazan uzadon kaj malkovri "
+#~ "havendajn funkciojn."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Ne, dankon"
+
+#~ msgid "_Close"
+#~ msgstr "_Fermi"
+
+#~ msgid "Open Activities to launch apps"
+#~ msgstr "Malfermi Agojn por lanĉi aplikaĵojn"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr ""
+#~ "La Agoj-superrigardon oni povas ankaŭ uzi por ŝanĝi fenestrojn kaj serĉi."
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "En la Agoj-superrigardo, simple komencu tajpadon por serĉi aplikaĵojn, "
+#~ "agordojn, kaj pli."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Alklaku la tempon por vidi sciigojn"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "La sciiga menuo ankaŭ inkluzivas ilojn por planado."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Montri sistemajn informojn kaj agordojn"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Akiru superrigardon de la sistema stato kaj rapide ŝanĝu agordojn."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr "Uzu Programaron por trovi kaj instali aplikaĵojn"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Trovu bonegajn aplikaĵojn tra serĉo, foliumado, kaj niaj rekomendoj."
+
+#~ msgid "That's it! We hope that you enjoy {}."
+#~ msgstr "Jen la fino de la rondvojaĝo! Ni esperas, ke vi ŝatos {}."

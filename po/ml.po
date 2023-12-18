@@ -1,0 +1,118 @@
+# Malayalam translation for gnome-tour.
+# Copyright (C) 2023 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# mbk <aakashpr975@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2023-09-17 06:54+0000\n"
+"PO-Revision-Date: 2023-11-29 21:09+0530\n"
+"Last-Translator: \n"
+"Language-Team: Malayalam <l10n@lists.smc.org.in>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.1\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:21
+msgid "Tour"
+msgstr "പര്യടനം"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+#, fuzzy
+msgid "Greeter & Tour"
+msgstr "അഭിവാദികനും പര്യടനവും"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "ഗ്നോം;ജിറ്റികെ;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+#, fuzzy
+msgid "GNOME Tour and Greeter"
+msgstr "ഗ്നോം പര്യടനവും അഭിവാദികനും"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+#, fuzzy
+msgid "A guided tour and greeter for GNOME."
+msgstr "ഗ്നോമിനായുള്ള ഒരു മാര്‍ഗ്ഗദര്‍ശി പര്യടനവും അഭിവാദ്യവും."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
+msgid "The GNOME Project"
+msgstr "ഗ്നോം  പദ്ധതി"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "പൂര്‍വ്വം"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "അടുത്തത്"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "തുടങ്ങുക"
+
+#: data/resources/ui/window.ui:11
+msgid "Start the Tour"
+msgstr "പര്യടനം തുടങ്ങുക"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "ഒരു അവലോകനം നേടുക"
+
+#: data/resources/ui/window.ui:18
+msgid "Press the Super key to see open windows and apps."
+msgstr "തുറന്ന വിൻഡോകളും ആപ്പുകളും കാണാൻ സൂപ്പർ കീ അമർത്തുക."
+
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr "തിരയാൻ കേവലം ടൈപ്പ് ചെയ്യുക"
+
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "തിരയാൻ അവലോകനത്തിൽ ടൈപ്പ് ചെയ്യുക. ആപ്പുകൾ സമാരംഭിക്കുക, കാര്യങ്ങൾ കണ്ടെത്തുക."
+
+#: data/resources/ui/window.ui:31
+msgid "Keep on Top with Workspaces"
+msgstr "പ്രവർത്തനത്തലങ്ങൾക്കൊപ്പം മുകളിൽ തുടരുക"
+
+#: data/resources/ui/window.ui:32
+msgid "Easily organize windows with the workspaces view."
+msgstr "പ്രവര്‍ത്തനതല ദൃശ്യം ഉപയോഗിച്ച് വിൻഡോകൾ എളുപ്പത്തിൽ ക്രമീകരിക്കുക."
+
+#: data/resources/ui/window.ui:38
+msgid "Up/Down for the Overview"
+msgstr "അവലോകനത്തിനായി മുകളിലേക്ക്/താഴേക്ക്"
+
+#: data/resources/ui/window.ui:39
+#, fuzzy
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "ഒരു ടച്ച്പാഡിൽ, മൂന്ന് വിരലുകളുള്ള ലംബ സ്വൈപ്പുകൾ ഉപയോഗിക്കുക. ശ്രമിക്കു!"
+
+#: data/resources/ui/window.ui:45
+msgid "Left/Right for Workspaces"
+msgstr "പ്രവർത്തനതലത്തിനു ഇടത്/വലത്"
+
+#: data/resources/ui/window.ui:46
+#, fuzzy
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "ഒരു ടച്ച്പാഡിൽ, മൂന്ന് വിരലുകളുള്ള തിരശ്ചീന സ്വൈപ്പുകൾ ഉപയോഗിക്കുക. ശ്രമിക്കുക!"
+
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr "അത്രതന്നെ. ഒരു നല്ല ദിനം ആശംസിക്കുന്നു!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "കൂടുതൽ ഉപദേശങ്ങളും നുറുങ്ങുകളും ലഭിക്കുന്നതിന്, ഹെല്പ് ആപ്പ് സന്ദർശിക്കുക."
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version}-ലെ പ്രധാന സവിശേഷതകളെ കുറിച്ച് അറിയുക."

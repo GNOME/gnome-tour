@@ -1,0 +1,144 @@
+# Tamil translation for gnome-tour.
+# Copyright (C) 2021 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Ridhubharan Venkatachalam <ridhudon@gmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2023-09-04 06:42+0000\n"
+"PO-Revision-Date: 2021-05-11 17:39+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Tamil <ta@li.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Language: ta\n"
+"X-Source-Language: C\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:21
+msgid "Tour"
+msgstr "சுற்றுலா"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "வரவேற்பு & சுற்றுலா"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+#, fuzzy
+msgid "Gnome;GTK;"
+msgstr "க்னோம்;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "க்னோம் சுற்றுலா மற்றும் வரவேற்பு"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "க்னோம்மிற்கான வழிகாட்டப்பட்ட சுற்றுலா மற்றும் வரவேற்பு."
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
+#, fuzzy
+msgid "The GNOME Project"
+msgstr "தி க்னோம் திட்டப்பணி"
+
+#: data/resources/ui/paginator.ui:25
+#, fuzzy
+#| msgid "_Previous"
+msgid "Previous"
+msgstr "(_P) முந்தையது"
+
+#: data/resources/ui/paginator.ui:38
+#, fuzzy
+#| msgid "_Next"
+msgid "Next"
+msgstr "(_N) அடுத்து"
+
+#: data/resources/ui/paginator.ui:51
+#, fuzzy
+#| msgid "_Start"
+msgid "Start"
+msgstr "(_S) தொடங்கு"
+
+#: data/resources/ui/window.ui:11
+msgid "Start the Tour"
+msgstr "சுற்றுலாவைத் தொடங்கு"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "ஒரு கண்ணோட்டத்தைப் பெறுங்கள்"
+
+#: data/resources/ui/window.ui:18
+#, fuzzy
+#| msgid "Press Activities to see open windows and apps."
+msgid "Press the Super key to see open windows and apps."
+msgstr "திறந்த சாளரங்கள் மற்றும் பயன்பாடுகளைக் காண செயல்பாடுகளை அழுத்தவும்."
+
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr ""
+
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr ""
+
+#: data/resources/ui/window.ui:31
+msgid "Keep on Top with Workspaces"
+msgstr "பணியிடங்களின் உதவியுடன் பலவற்றை அறிந்திருங்கள்"
+
+#: data/resources/ui/window.ui:32
+#, fuzzy
+#| msgid "Easily organize windows with the new workspaces view."
+msgid "Easily organize windows with the workspaces view."
+msgstr "புதிய பணியிடக் காட்சியுடன் சாளரங்களை எளிதாக ஒழுங்கமைக்கலாம்."
+
+#: data/resources/ui/window.ui:38
+msgid "Up/Down for the Overview"
+msgstr "மேற்பார்வைக்கு மேல்/கீழ்"
+
+#: data/resources/ui/window.ui:39
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "தொடுதளத்தில், மூன்று விரல்களால் செங்குத்தாக தேய்க்கலாம். இதை முயற்சி செய்யுங்கள்!"
+
+#: data/resources/ui/window.ui:45
+msgid "Left/Right for Workspaces"
+msgstr "பணியிடங்களுக்கு இடது/வலது"
+
+#: data/resources/ui/window.ui:46
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "தொடுதளத்தில், மூன்று விரல்களால் கிடைமட்டமாக தேய்க்கலாம். இதை முயற்சி செய்யுங்கள்!"
+
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr ""
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "மேலும் ஆலோசனை மற்றும் உதவிக்குறிப்புகளைப் பெற, உதவி பயன்பாட்டைப் பார்க்கவும்."
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+#, fuzzy
+#| msgid "Learn about new and essential features in {} {}."
+msgid "Learn about the key features in {name} {version}."
+msgstr "{} {} இல் புதிய மற்றும் அத்தியாவசிய அம்சங்களைப் பற்றி அறிக."
+
+#~ msgid "Main Window"
+#~ msgstr "முதன்மை சாளரம்"
+
+#~ msgid "_Close"
+#~ msgstr "(_C) மூடு"
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "பயன்பாடுகளை உங்களுக்கு சொந்தமாக்குங்கள்"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "பயன்பாட்டு கட்டத்தை உங்கள் விருப்பப்படி ஏற்பாடு செய்யுங்கள்."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "அவ்வளவுதான்! நீங்கள் மகிழ்வீர்கள் என்று நாங்கள் நம்புகிறோம் {} {}."

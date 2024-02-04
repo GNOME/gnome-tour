@@ -4,7 +4,8 @@ use gtk::{gio, glib};
 use crate::{config, widgets::Window};
 
 mod imp {
-    use glib::{once_cell::sync::OnceCell, WeakRef};
+    use glib::WeakRef;
+    use std::cell::OnceCell;
 
     use super::*;
 

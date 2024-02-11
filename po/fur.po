@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-04-12 09:15+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-09 16:52+0000\n"
+"PO-Revision-Date: 2024-02-11 13:19+0100\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <f.t.public@gmail.com>\n"
 "Language: fur\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Editor: HaiPO 1.2 b1\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3
-#: data/org.gnome.Tour.metainfo.xml.in.in:7 src/main.rs:21
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:21
 msgid "Tour"
 msgstr "Visite vuidade"
 
@@ -39,80 +39,127 @@ msgstr "Visite vuidade e benvignût di GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Une visite vuidade e il benvignût su GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "Il progjet GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Precedent"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Sucessîf"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Scomence"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Scomence la visite"
+msgid "Let's Begin"
+msgstr "Scomencìn"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Viôt une panoramiche"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Frache il tast Super par viodi i barcons vierts e lis aplicazions."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"La panoramiche e mostre dutis lis aplicazions e i barcons. Frace il tast "
+"Super (Windows) par vierzile."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Al baste scrivi par cirî"
+msgid "Powerful Search"
+msgstr "Ricercje poderose"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Scrîf te panoramiche par cirî. Inviâ aplicazions, cjatâ robis."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Par cirî ti baste scomençâ a scrivi te panoramiche. Tu puedis doprâ la "
+"ricercje par inviâ aplicazions, cjatâ files, fâ calcui e tant altri."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Tegniti inzornât cui spazis di lavôr"
+msgid "Stay Organized With Workspaces"
+msgstr "Reste ben organizât cui spazis di lavôr"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Organize cun facilitât i barcons cu la viodude dai spazis di lavôr."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organize i tiei barcons, spostiju in diviers spazis di lavôr. Tu puedis fâlu "
+"strissinantju te panoramiche."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Sù/Jù pe panoramiche"
+msgid "Swipe Up and Down"
+msgstr "Scor in sù e in jù"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Suntun touchpad, dopre i scoriments verticâls a trê-dêts. Provilu!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Par vierzi in mût svelt la panoramiche cuntun touchpad, scor in sù cun trê "
+"dêts."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Çampe/Diestre pai spazis di lavôr"
+msgid "Swipe Left and Right"
+msgstr "Scor a çampe e a drete"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Suntun touchpad, dopre i scoriments orizontâls a trê-dêts. Provilu!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "Par spostâsi tra i spazis di lavôr, fâs scori trê dêts in orizontâl."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Dut achì. Buine zornade!"
+msgid "That's It!"
+msgstr "Dut achì!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Par otignî plui conseis e sugjeriments, bute un voli ae aplicazion Jutori."
 
-#. Translators: The following string is formated as "Learn about new and
-#. essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Scuvierç lis funzionalitâts principâls in {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Scomence la visite"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Frache il tast Super par viodi i barcons vierts e lis aplicazions."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Al baste scrivi par cirî"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "Scrîf te panoramiche par cirî. Inviâ aplicazions, cjatâ robis."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Tegniti inzornât cui spazis di lavôr"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Sù/Jù pe panoramiche"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Suntun touchpad, dopre i scoriments verticâls a trê-dêts. Provilu!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Çampe/Diestre pai spazis di lavôr"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "Suntun touchpad, dopre i scoriments orizontâls a trê-dêts. Provilu!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Dut achì. Buine zornade!"
 
 #~ msgid "Main Window"
 #~ msgstr "Barcon principâl"
@@ -144,12 +191,12 @@ msgstr "Scuvierç lis funzionalitâts principâls in {name} {version}."
 
 #~ msgid "The activities view can also be used to switch windows and search."
 #~ msgstr ""
-#~ "Si pues doprâ la viodude des ativitâts par passâ di un barcon a chel altri e"
-#~ " par cirî."
+#~ "Si pues doprâ la viodude des ativitâts par passâ di un barcon a chel "
+#~ "altri e par cirî."
 
 #~ msgid ""
-#~ "In the activities view, just start typing to search for apps, settings and "
-#~ "more."
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
 #~ msgstr ""
 #~ "Inte viodude des ativitâts, al baste tacâ a scrivi par cirî aplicazions, "
 #~ "impostazions e altri."
@@ -173,7 +220,8 @@ msgstr "Scuvierç lis funzionalitâts principâls in {name} {version}."
 #~ msgid "Use Software to find and install apps"
 #~ msgstr "Dopre Software par cjatâ e instalâ aplicazions"
 
-#~ msgid "Discover great apps through search, browsing and our recommendations."
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
 #~ msgstr ""
-#~ "Scuvierç grandiosis aplicazions gracie ae ricercje, navigazion e aes nestris"
-#~ " racomandazions."
+#~ "Scuvierç grandiosis aplicazions gracie ae ricercje, navigazion e aes "
+#~ "nestris racomandazions."

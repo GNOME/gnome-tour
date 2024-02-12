@@ -16,7 +16,9 @@
     <file compressed="true" alias="leftright-bg.svg">resources/assets/leftright-bg.svg</file>
   </gresource>
   <gresource prefix="/org/gnome/Tour/icons/scalable/actions">
-    <file compressed="true" alias="left-large-symbolic.svg">resources/left-large-symbolic.svg</file>
-    <file compressed="true" alias="right-large-symbolic.svg">resources/right-large-symbolic.svg</file>
+    <file compressed="true" alias="prev-large-symbolic.svg">resources/left-large-symbolic.svg</file>
+    <file compressed="true" alias="prev-large-symbolic-rtl.svg">resources/right-large-symbolic.svg</file>
+    <file compressed="true" alias="next-large-symbolic.svg">resources/right-large-symbolic.svg</file>
+    <file compressed="true" alias="next-large-symbolic-rtl.svg">resources/left-large-symbolic.svg</file>
   </gresource>
 </gresources>

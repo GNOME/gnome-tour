@@ -18,7 +18,7 @@
             <child type="overlay">
               <object class="GtkButton" id="previous_btn">
                 <property name="margin-start">12</property>
-                <property name="icon-name">left-large-symbolic</property>
+                <property name="icon-name">prev-large-symbolic</property>
                 <property name="halign">start</property>
                 <property name="valign">center</property>
                 <property name="action-name">win.previous-page</property>
@@ -31,7 +31,7 @@
             <child type="overlay">
               <object class="GtkButton" id="next_btn">
                 <property name="margin-end">12</property>
-                <property name="icon-name">right-large-symbolic</property>
+                <property name="icon-name">next-large-symbolic</property>
                 <property name="halign">end</property>
                 <property name="valign">center</property>
                 <property name="action-name">win.next-page</property>
@@ -44,7 +44,7 @@
             <child type="overlay">
               <object class="GtkButton" id="start_btn">
                 <property name="margin-end">12</property>
-                <property name="icon-name">right-large-symbolic</property>
+                <property name="icon-name">next-large-symbolic</property>
                 <property name="halign">end</property>
                 <property name="valign">center</property>
                 <property name="action-name">win.start-tour</property>

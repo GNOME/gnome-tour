@@ -2,15 +2,15 @@
 # Copyright (C) 2020-2023 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
-# Sabri Ünal <libreajans@gmail.com>, 2020.
-# Emin Tufan Çetin <etcetin@gmail.com>, 2020, 2021, 2022.
+# Sabri Ünal <libreajans@gmail.com>, 2020, 2024.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2020, 2021, 2022, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2023-05-08 12:38+0000\n"
-"PO-Revision-Date: 2022-02-14 01:07+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-10 10:15+0000\n"
+"PO-Revision-Date: 2024-02-13 17:57+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.4.3\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-POOTLE-MTIME: 1429307949.000000\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
@@ -42,76 +42,125 @@ msgstr "GNOME Gezintisi ve Karşılayıcı"
 msgid "A guided tour and greeter for GNOME."
 msgstr "GNOME için kılavuzlu gezinti ve karşılayıcı."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:42
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
-#: data/resources/ui/paginator.ui:28
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Önceki"
 
-#: data/resources/ui/paginator.ui:41
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Sonraki"
 
-#: data/resources/ui/paginator.ui:54
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Başlat"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Gezintiyi Başlat"
+msgid "Let's Begin"
+msgstr "Haydi Başlayalım"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Genel Bakış At"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Açık pencereleri ve uygulamaları görmek için Super tuşuna bas."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Genel görünüm, tüm uygulama ve pencerelerinizi gösterir. Açmak için Süper "
+"(Windows) tuşuna basın."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Yalnız Yazarak Ara"
+msgid "Powerful Search"
+msgstr "Güçlü Arama"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Genel görünümde aramak için yaz. Uygulama başlat, bir şeyler bul."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Aramak için, genel görünümde doğrudan yazmaya başlayın. Aramayı uygulamaları "
+"başlatmak, dosyaları bulmak, hesaplamak ve dahası için kullanabilirsiniz."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Çalışma Alanlarından Bilgilen"
+msgid "Stay Organized With Workspaces"
+msgstr "Çalışma Alanlarıyla Düzenli Kal"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Çalışma alanları görünümüyle pencereleri kolayca örgütle."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Pencerelerinizi başka çalışma alanlarına taşıyarak düzenleyin. Bu, genel "
+"görünümde sürükleyerek yapılabilir."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Genel Bakış için Aşağı/Yukarı"
+msgid "Swipe Up and Down"
+msgstr "Yukarı ve Aşağı Kaydır"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Dokunmatik yüzeyde üç parmakla dikey sürüklemeler yap. Şimdi dene!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Dokunmatik yüzey ile genel görünümü açmak için üç parmağınızla yukarı "
+"kaydırın."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Çalışma Alanları için Sağ/Sol"
+msgid "Swipe Left and Right"
+msgstr "Sola ve Sağa Kaydır"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Dokunmatik yüzeyde üç parmakla yatay sürüklemeler yap. Şimdi dene!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Çalışma alanları arasında geçiş yapmak için üç parmağınızı yatay olarak "
+"kaydırın."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "İşte bu. İyi günler!"
+msgid "That's It!"
+msgstr "İşte Bu!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
 
-#. Translators: The following string is formated as "Learn about new and essential
+#. Translators: The following string is formatted as "Learn about new and essential
 #. features in GNOME 3.36" for example
 #: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "{name} {version} ana özelliklerini öğren."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Gezintiyi Başlat"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Açık pencereleri ve uygulamaları görmek için Super tuşuna bas."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Yalnız Yazarak Ara"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "Genel görünümde aramak için yaz. Uygulama başlat, bir şeyler bul."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Çalışma Alanlarından Bilgilen"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Genel Bakış için Aşağı/Yukarı"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Dokunmatik yüzeyde üç parmakla dikey sürüklemeler yap. Şimdi dene!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Çalışma Alanları için Sağ/Sol"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "Dokunmatik yüzeyde üç parmakla yatay sürüklemeler yap. Şimdi dene!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "İşte bu. İyi günler!"

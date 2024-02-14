@@ -1,13 +1,13 @@
 # Basque translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2020, 2021, 2022.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2020, 2021, 2022, 2024.
 #
 msgid ""
 msgstr "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-30 10:50+0000\n"
-"PO-Revision-Date: 2022-01-30 10:00+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-11 13:45+0000\n"
+"PO-Revision-Date: 2024-02-14 10:00+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -36,82 +36,123 @@ msgstr "GNOME Bisita eta Ongietorria"
 msgid "A guided tour and greeter for GNOME."
 msgstr "GNOMEren bisita gidatua eta ongietorria"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Leiho nagusia"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "GNOME proiektua"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Aurrekoa"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Hasiera"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Hasi bisita"
+msgid "Let's Begin"
+msgstr "Has gaitezen"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Ikuspegi orokorra"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Sakatu Super tekla aplikazio eta leiho irekiak ikusteko."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr "Ikuspegi orokorrean zure aplikazio eta leiho guztiak ikusiko dituzu. Sakatu Super (Windows) tekla ikuspegi orokorra irekitzeko."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Idatzi zerbait bilaketa egiteko"
+msgid "Powerful Search"
+msgstr "Bilaketa boteretsua"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Idatzi ikuspegi orokorrean bilaketa egiteko. Abiarazi aplikazioak, aurkitu gauzak."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr "Bilaketak egiteko, hasi idazten zuzenean ikuspegi orokorrean. Aplikazioak abiarazteko, fitxategiak bilatzeko, kalkuluak egiteko eta beste hainbat zereginetarako erabili dezakezu bilaketa."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Eutsi goiari laneko areen bidez"
+msgid "Stay Organized With Workspaces"
+msgstr "Eduki mahaigaina aratz laneko areen bidez"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Ordenatu leihoak errazago laneko areen ikuspegia erabilita."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr "Antolatu zure leihoak laneko areen bidez. Horretarako, arrastatu leihoak ikuspegi orokorraren barruan."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Gora/behera ikuspegi orokorrerako"
+msgid "Swipe Up and Down"
+msgstr "Mugitu hatza gora eta behera"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Ukipen-pantailetan, mugitu hiru hatz bertikalean. Probatu ezazu!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "Ikuspegi orokorra ukipen-panel batean irekitzeko, mugitu hiru hatz gorantz."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Eskuinera/ezkerrera laneko areak erabiltzeko"
+msgid "Swipe Left and Right"
+msgstr "Mugitu hatza ezkerrera eta eskuinera"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontalean. Probatu ezazu!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "Laneko areen artean mugitzeko, mugitu hiru hatz horizontalean."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Hori da dena. Ondo ibili!"
+msgid "That's It!"
+msgstr "Hori da dena."
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Aholku eta argibide gehiago eskuratzeko, begiratu laguntza."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Ezagutu {name} {version} bertsioaren eginbide nagusiak."
+
+#~ msgid "Main Window"
+#~ msgstr "Leiho nagusia"
+
+#~ msgid "Start the Tour"
+#~ msgstr "Hasi bisita"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Sakatu Super tekla aplikazio eta leiho irekiak ikusteko."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Idatzi zerbait bilaketa egiteko"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Idatzi ikuspegi orokorrean bilaketa egiteko. Abiarazi aplikazioak, "
+#~ "aurkitu gauzak."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Eutsi goiari laneko areen bidez"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Gora/behera ikuspegi orokorrerako"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Ukipen-pantailetan, mugitu hiru hatz bertikalean. Probatu ezazu!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Eskuinera/ezkerrera laneko areak erabiltzeko"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "Ukipen-pantailetan, mugitu hiru hatz horizontalean. Probatu ezazu!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Hori da dena. Ondo ibili!"
 
 #~ msgid "_Close"
 #~ msgstr "_Itxi"
@@ -192,13 +233,6 @@ msgstr "Ezagutu {name} {version} bertsioaren eginbide nagusiak."
 
 #~ msgid "Search"
 #~ msgstr "Bilatu"
-
-#~ msgid ""
-#~ "Search can be used to launch apps, find settings, do calculations and "
-#~ "much more."
-#~ msgstr ""
-#~ "Bilaketa hainbat ekintza gauzatzeko erabil daiteke: aplikazioak "
-#~ "abiarazteko, ezarpenak aurkitzeko, kalkuluak egiteko eta abar."
 
 #~ msgid "Date & Time"
 #~ msgstr "Data eta ordua"

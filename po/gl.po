@@ -7,17 +7,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-30 10:50+0000\n"
-"PO-Revision-Date: 2022-02-01 00:34+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-11 13:45+0000\n"
+"PO-Revision-Date: 2024-02-15 00:45+0100\n"
 "Last-Translator: Fran Dieguez <fran.dieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 40.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-DL-Team: gl\n"
 "X-DL-Module: gnome-tour\n"
 "X-DL-Branch: master\n"
@@ -45,84 +45,131 @@ msgstr "Benvida e tour de GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Un tour guiado e benvida a GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Pantalla principal"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "O Proxecto GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Anterior"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Seguinte"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Comezar"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Comezar o tour"
+msgid "Let's Begin"
+msgstr "Comecemos"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Obteña unha vista xeral"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Prema a tecla Super para ver as xanelas e aplicacións."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"A vista xeral móstralle todas as súas aplicacións e xanelas. Prema a tecla "
+"«Super» (Windows) para abrila."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Simplemente escriba para buscar"
+msgid "Powerful Search"
+msgstr "Busca potenciada"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Escriba na vista xeral para buscar, iniciar aplicacións, atopar cousas..."
+"Para buscar, simplemente comece a escribir na vista xeral. Pode usar a busca "
+"para iniciar aplicacións, buscar ficheiros, facer cálculos e moito máis."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Controle os Espazos de traballo"
+msgid "Stay Organized With Workspaces"
+msgstr "Mantéñase organizado cos espazos de traballo"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Organice as xanelas de forma doada coa vista de espazos de traballo."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organice as súas xanelas movéndoas en distintos espazos de traballo. Isto "
+"pode realizarse arrastrándoas na vista xeral."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Arriba/Abaixo para entrar na Vista xeral"
+msgid "Swipe Up and Down"
+msgstr "Desprazar para arriba e abaixo"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Nunha área táctil, desprace verticalmente tres dedos. Próbeo!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Para abrir rapidamente a vista xeral coa área táctil, desprace para arriba "
+"con 3 dedos."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Dereita/Esquerda para moverse entre espazos de traballo"
+msgid "Swipe Left and Right"
+msgstr "Desprazar á esquerda e dereita"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Nunha área táctil, desprace horizontalmente tres dedos. Próbeo!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Para moverse entre os espazos de traballo, desprace 3 dedos horizontalmente."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Isto é todo. Teña un bo día!"
+msgid "That's It!"
+msgstr "Isto é todo!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
-msgstr "Para obter máis consellos e trucos, consulte na aplicación «Axuda»"
+msgstr "Para obter máis consellos e trucos, consulte na aplicación «Axuda»."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
-#| msgid "Learn about the key features in {} {}."
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Saiba máis sobre as características esenciais en {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Pantalla principal"
+
+#~ msgid "Start the Tour"
+#~ msgstr "Comezar o tour"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Prema a tecla Super para ver as xanelas e aplicacións."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Simplemente escriba para buscar"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Escriba na vista xeral para buscar, iniciar aplicacións, atopar cousas..."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Controle os Espazos de traballo"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Arriba/Abaixo para entrar na Vista xeral"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Nunha área táctil, desprace verticalmente tres dedos. Próbeo!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Dereita/Esquerda para moverse entre espazos de traballo"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "Nunha área táctil, desprace horizontalmente tres dedos. Próbeo!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Isto é todo. Teña un bo día!"
 
 #~ msgid "_Close"
 #~ msgstr "_Pechar"

@@ -2,24 +2,24 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
-# Matej Urbančič <mateju@src.gnome.org>, 2020–2022.
+# Matej Urbančič <mateju@src.gnome.org>, 2020–2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-30 19:40+0000\n"
-"PO-Revision-Date: 2022-01-31 18:43+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-14 23:46+0000\n"
+"PO-Revision-Date: 2024-02-17 08:12+0100\n"
 "Last-Translator: Matej Urbančič <mateju@src.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -42,88 +42,135 @@ msgstr "Vodič GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Vodena predstavitev z dobrodošlico v namizje GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Glavno okno"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
-msgstr "Predhodna"
+msgstr "Predhodno"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
-msgstr "Naslednja"
+msgstr "Naslednje"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Začni"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Začni z vodenjem"
+msgid "Let's Begin"
+msgstr "Začnimo"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
-msgstr "Skok na predogled"
+msgstr "Skok na Predogled"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Pritisnite na gumb Dejavnosti za prikaz seznama oken in programov."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Pregledno namizje prikaže vse odprte programe in vsa okna. Če ga želite "
+"odpreti, pritisnite tipko Super (Windows)."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Enostavno vpišite besedilo za začetek iskanja"
+msgid "Powerful Search"
+msgstr "Zmogljivo iskanje"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"V pregledno okno vpišite besedilo za iskanje, zaženite programe, poiščite "
-"karkoli."
+"Če želite iskati, začnite tipkati v polje pregleda. Z iskanjem lahko "
+"zaženete programe, poiščete datoteke, opravite izračune in še mnogo več."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Ohranite okna na vrhu z novimi delovnimi površinami"
+msgid "Stay Organized With Workspaces"
+msgstr "Razporedite si okna na delovne površine."
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Enostavno upravljanje z okni v novem pogledu delovnih površin."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Položaj oken lahko razporedite tako, da jih premaknete v različne delovne "
+"prostore. To lahko storite že v pregledu."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Gor/Dol za pregled"
+msgid "Swipe Up and Down"
+msgstr "Potegnite gor in dol"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"Na sledilni ploščici lahko uporabite triprstni poteg za navpičen pomik. "
-"Poskusite!"
+"Za hitro odpiranje pregleda s sledilno ploščico, potegnite navzgor s tremi "
+"prsti."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Levo/Desno za prehod med delovnimi površinami"
+msgid "Swipe Left and Right"
+msgstr "Potegnite levo in deslo"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr ""
-"Na sledilni ploščici lahko uporabite triprstni poteg za vodoraven pomik. "
-"Poskusite!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "Za premik med delovnimi prostori, potegnite s tremi prsti vodoravno"
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "To je vse. Želimo vam prijetno delo!"
+msgid "That's It!"
+msgstr "In to je to!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Za več nasvetov in namigov si oglejte Pomoč."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Spoznajte pomembne novosti namizja {name} {version}."
+
+#~ msgid "Main Window"
+#~ msgstr "Glavno okno"
+
+#~ msgid "Start the Tour"
+#~ msgstr "Začni z vodenjem"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Pritisnite na gumb Dejavnosti za prikaz seznama oken in programov."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Enostavno vpišite besedilo za začetek iskanja"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "V pregledno okno vpišite besedilo za iskanje, zaženite programe, poiščite "
+#~ "karkoli."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Ohranite okna na vrhu z novimi delovnimi površinami"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Gor/Dol za pregled"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Na sledilni ploščici lahko uporabite triprstni poteg za navpičen pomik. "
+#~ "Poskusite!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Levo/Desno za prehod med delovnimi površinami"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Na sledilni ploščici lahko uporabite triprstni poteg za vodoraven pomik. "
+#~ "Poskusite!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "To je vse. Želimo vam prijetno delo!"
 
 #~ msgid "_Close"
 #~ msgstr "_Zapri"

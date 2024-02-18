@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2021-09-01 10:01+0000\n"
-"PO-Revision-Date: 2021-02-14 16:53+0100\n"
+"PO-Revision-Date: 2024-02-18 16:53+0100\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
 "Language: ca\n"
@@ -85,7 +85,7 @@ msgstr "Simplement escriviu per a cercar"
 
 #: src/widgets/window.rs:62
 msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Introduïu en el resum per a cercar. Inicieu aplicacions, cerqueu coses."
+msgstr "Escriviu en vista general per a cercar. Inicieu aplicacions, cerqueu coses."
 
 #: src/widgets/window.rs:71
 msgid "Keep on Top with Workspaces"

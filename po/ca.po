@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
 "POT-Creation-Date: 2022-01-29 11:03+0000\n"
-"PO-Revision-Date: 2022-02-12 10:46+0100\n"
+"PO-Revision-Date: 2024-02-18 10:46+0100\n"
 "Last-Translator: maite guix <maite.guix@me.com>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
 "Language: ca\n"
@@ -72,7 +72,7 @@ msgstr "Simplement escriviu per a cercar"
 
 #: data/resources/ui/window.ui:19
 msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Introduïu en el resum per a cercar. Inicieu aplicacions, cerqueu coses."
+msgstr "Escriviu en la vista general per a cercar. Inicieu aplicacions, cerqueu coses."
 
 #: data/resources/ui/window.ui:25
 msgid "Keep on Top with Workspaces"
@@ -88,7 +88,7 @@ msgstr "Amunt/avall per a la visió general"
 
 #: data/resources/ui/window.ui:33
 msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Amb un ratolí tàctil, llisca tres dits verticalment. Proveu-ho!"
+msgstr "Amb un ratolí tàctil, useu el lliscament vertical amb tres dits. Proveu-ho!"
 
 #: data/resources/ui/window.ui:39
 msgid "Left/Right for Workspaces"
@@ -96,7 +96,7 @@ msgstr "Esquerra/dreta per als espais de treball"
 
 #: data/resources/ui/window.ui:40
 msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Amb un ratolí tàctil, llisca tres dits horitzontalment. Proveu-ho!"
+msgstr "Amb un ratolí tàctil, useu el lliscament horitzontal amb tres dits. Proveu-ho!"
 
 #: data/resources/ui/window.ui:46
 msgid "That's it. Have a nice day!"

@@ -10,7 +10,13 @@ use application::Application;
 use config::{GETTEXT_PACKAGE, LOCALEDIR};
 
 fn main() -> glib::ExitCode {
-    env_logger::init();
+    let mut log_builder = env_logger::builder();
+    // Compatibility G_MESSAGES_DEBUG env var
+    if !glib::log_writer_default_would_drop(glib::LogLevel::Debug, Some("gnome_tour")) {
+        log_builder.filter_module("gnome_tour", log::LevelFilter::Debug);
+    }
+    log_builder.init();
+
     // Prepare i18n
     setlocale(LocaleCategory::LcAll, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR)

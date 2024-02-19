@@ -10,7 +10,7 @@ use application::Application;
 use config::{GETTEXT_PACKAGE, LOCALEDIR};
 
 fn main() -> glib::ExitCode {
-    pretty_env_logger::init();
+    env_logger::init();
     // Prepare i18n
     setlocale(LocaleCategory::LcAll, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR)

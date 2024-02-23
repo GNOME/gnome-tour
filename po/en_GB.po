@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the gnome-tour package.
 # Zander Brown <zbrown@gnome.org>, 2020-2021.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2020-2022.
+# Andi Chandler <andi@gowling.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-03-04 12:10+0000\n"
-"PO-Revision-Date: 2022-03-24 13:03+0000\n"
-"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-22 17:41+0000\n"
+"PO-Revision-Date: 2024-02-23 12:10+0000\n"
+"Last-Translator: Andi Chandler <andi@gowling.com>\n"
 "Language-Team: English - United Kingdom <en@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 41.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Tour"
 
@@ -40,78 +41,125 @@ msgstr "GNOME Tour and Greeter"
 msgid "A guided tour and greeter for GNOME."
 msgstr "A guided tour and greeter for GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Previous"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Next"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Start"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Start the Tour"
+msgid "Let's Begin"
+msgstr "Let's Begin"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Get an Overview"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Press the Super key to see open windows and apps."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Just Type to Search"
+msgid "Powerful Search"
+msgstr "Powerful Search"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Keep on Top with Workspaces"
+msgid "Stay Organized With Workspaces"
+msgstr "Stay Organised With Workspaces"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Easily organise windows with the workspaces view."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organise your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Up/Down for the Overview"
+msgid "Swipe Up and Down"
+msgstr "Swipe Up and Down"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Left/Right for Workspaces"
+msgid "Swipe Left and Right"
+msgstr "Swipe Left and Right"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "To move between workspaces, swipe three fingers horizontally."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "That's it. Enjoy the rest of your day!"
+msgid "That's It!"
+msgstr "That's It!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "To get more advice and tips, see the Help app."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Learn about the key features in {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Start the Tour"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Press the Super key to see open windows and apps."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Just Type to Search"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "Type in the overview to search. Launch apps, find things."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Keep on Top with Workspaces"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Up/Down for the Overview"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "On a touchpad, use three-finger vertical swipes. Try it!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Left/Right for Workspaces"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "On a touchpad, use three-finger horizontal swipes. Try it!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "That's it. Enjoy the rest of your day!"
 
 #~ msgid "Main Window"
 #~ msgstr "Main Window"

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2024 Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-24 23:24+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-02-24 23:25+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 :"
 " 2);\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -39,86 +39,133 @@ msgstr "GNOME ceļvedis un sveicējs"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Ceļvedis un sveicējs GNOME darbvirsmai."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "GNOME projekts"
 
-#: data/resources/ui/paginator.ui:27
-#| msgid "_Previous"
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Iepriekšējais"
 
-#: data/resources/ui/paginator.ui:40
-#| msgid "_Next"
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Nākamais"
 
-#: data/resources/ui/paginator.ui:53
-#| msgid "_Start"
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Sākums"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Sākt ceļojumu"
+msgid "Let's Begin"
+msgstr "Sāksim"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Iegūt pārskatu"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Spiediet Super taustiņu, lai atvērtu logus un lietotnes."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Pārskats rāda visas jūsu lietotnes un logus. Spiediet taustiņu Super"
+" (Windows), lai to atvērtu."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Vienkārši sāciet rakstīt, lai meklētu"
+msgid "Powerful Search"
+msgstr "Jaudīgā meklēšana"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Lai meklētu, sāciet rakstīt pārskata režīmā. Palaidiet lietotnes, atrodiet "
-"lietas."
+"Lai meklētu, pārskatā sāciet rakstīt. Jūs varat izmantot meklēšanu, lai"
+" palaistu lietotnes, meklēt datnes, rēķināt un vēl."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Pārvaldiet darbvietas"
+#| msgid "Easily organize windows with the workspaces view."
+msgid "Stay Organized With Workspaces"
+msgstr "Organizējiet savu darbu ar darbvietām"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Viegli organizējiet logus darbtelpu skatā."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organizējiet savus logus, pārvietojot tos starp darbvietām. To var izdarīt,"
+" tos velkot pārskatā."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Uz augšu/leju pārskatam"
+msgid "Swipe Up and Down"
+msgstr "Velciet augšup un lejup"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"Uz skārienpaliktņa izmantojiet trīs pirkstu vertikālo vilkšanu. Pamēģiniet!"
+"Lai ātri atvērtu pārskatu ar paliktni, velciet augšup ar trīs pirkstiem."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Pa labi/kreisi darbvirsmām"
+msgid "Swipe Left and Right"
+msgstr "Velciet pa kreisi un pa labi"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid "To move between workspaces, swipe three fingers horizontally."
 msgstr ""
-"Uz skārienpaliktņa izmantojiet trīs pirkstu horizontālo vilkšanu. Pamēģiniet!"
+"Lai pārvietotos starp darbvietām, velciet horizontāli ar trīs pirkstiem."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Tas arī viss. Lai jums jauka diena!"
+msgid "That's It!"
+msgstr "Tas arī viss!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Lai iegūtu palīdzību un padomus, skatiet Palīdzības lietotni."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
-#| msgid "Learn about the key features in {} {}."
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Uzziniet par galvenajām iespējām {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Sākt ceļojumu"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Spiediet Super taustiņu, lai atvērtu logus un lietotnes."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Vienkārši sāciet rakstīt, lai meklētu"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Lai meklētu, sāciet rakstīt pārskata režīmā. Palaidiet lietotnes, "
+#~ "atrodiet lietas."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Pārvaldiet darbvietas"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Uz augšu/leju pārskatam"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Uz skārienpaliktņa izmantojiet trīs pirkstu vertikālo vilkšanu. "
+#~ "Pamēģiniet!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Pa labi/kreisi darbvirsmām"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Uz skārienpaliktņa izmantojiet trīs pirkstu horizontālo vilkšanu. "
+#~ "Pamēģiniet!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Tas arī viss. Lai jums jauka diena!"
 
 #~ msgid "Main Window"
 #~ msgstr "Galvenais logs"
@@ -174,3 +221,4 @@ msgstr "Uzziniet par galvenajām iespējām {name} {version}."
 
 #~ msgid "That's it! We hope that you enjoy {}."
 #~ msgstr "Tas arī viss! Mēs ceram, ka jums patiks {}."
+

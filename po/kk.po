@@ -6,16 +6,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-12 22:44+0500\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-02-24 23:53+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -38,80 +38,127 @@ msgstr "GNOME туры және қарсы алу"
 msgid "A guided tour and greeter for GNOME."
 msgstr "GNOME үшін арналған тур және қарсы алушы."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "GNOME жобасы"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Алдыңғы"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Келесі"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Бастау"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Турды бастау"
+msgid "Let's Begin"
+msgstr "Бастайық"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Жалпы шолуды алу"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Ашық терезелер мен қолданбаларды көру үшін Super пернесін басыңыз."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Шолу барлық бағдарламалар мен терезелерді көрсетеді. Оны ашу үшін Super "
+"(Windows) кілтін басыңыз."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Іздеу үшін теріңіз"
+msgid "Powerful Search"
+msgstr "Қуатты іздеу"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Белсенділік көрінісінде іздеу үшін теріңіз. Қолданбаларды жөнелтіп, "
-"нәрселерді табыңыз."
+"Іздеу үшін шолуда теруді бастаңыз. Қолданбаларды іске қосу, файлдарды табу, "
+"есептеулерді орындау және т.б. үшін іздеуді пайдалануға болады."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Жұмыс орындарын толықтай қолданыңыз"
+msgid "Stay Organized With Workspaces"
+msgstr "Жұмыс орындары көмегімен жұмысты реттелген күйде ұстаңыз"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Жұмыс орындары көрінісімен терезелерді оңай реттеңіз."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Терезелерді әр түрлі жұмыс орындарына жылжыту арқылы ұйымдастырыңыз. Мұны "
+"шолуда оларды апару арқылы жасауға болады."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Көрініс үшін жоғары/төмен басыңыз"
+msgid "Swipe Up and Down"
+msgstr "Жоғары және төмен айналдыру"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Тачпадта үш саусақты вертикалды өткізу қолданыңыз. Қазір көріңіз!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "Шолуды тачпадпен тез ашу үшін үш саусақпен жоғары айналдырыңыз."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Жұмыс орындары үшін сол/оң жақты басыңыз"
+msgid "Swipe Left and Right"
+msgstr "Солға және оңға айналдыру"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Тачпадта үш саусақты горизонталды өткізу қолданыңыз. Қазір көріңіз!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Жұмыс орындары арасында жылжу үшін үш саусақты көлденеңінен айналдырыңыз."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Ал, болды. Жақсы күн тілейміз!"
+msgid "That's It!"
+msgstr "Дайын!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Қосымша кеңестер алу үшін Көмек қолданбасын қараңыз."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "{name} {version} ішіндегі маңызды мүмкіндіктер туралы біліңіз."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Турды бастау"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Ашық терезелер мен қолданбаларды көру үшін Super пернесін басыңыз."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Іздеу үшін теріңіз"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Белсенділік көрінісінде іздеу үшін теріңіз. Қолданбаларды жөнелтіп, "
+#~ "нәрселерді табыңыз."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Жұмыс орындарын толықтай қолданыңыз"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Көрініс үшін жоғары/төмен басыңыз"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Тачпадта үш саусақты вертикалды өткізу қолданыңыз. Қазір көріңіз!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Жұмыс орындары үшін сол/оң жақты басыңыз"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "Тачпадта үш саусақты горизонталды өткізу қолданыңыз. Қазір көріңіз!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Ал, болды. Жақсы күн тілейміз!"
 
 #~ msgid "Main Window"
 #~ msgstr "Басты терезе"

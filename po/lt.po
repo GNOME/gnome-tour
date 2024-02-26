@@ -6,18 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-29 11:03+0000\n"
-"PO-Revision-Date: 2022-02-20 15:02+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-02-26 22:41+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 40.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -40,90 +40,136 @@ msgstr "GNOME turas ir pasisveikinimas"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Turas su gidu ir pasisveikinimas GNOME aplinkai."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Pagrindinis langas"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "GNOME projektas"
 
-#: data/resources/ui/paginator.ui:27
-#| msgid "_Previous"
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Ankstesnis"
 
-#: data/resources/ui/paginator.ui:40
-#| msgid "_Next"
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Kitas"
 
-#: data/resources/ui/paginator.ui:53
-#| msgid "_Start"
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Pradėti"
 
 #: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "Pradėkime"
+
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Eiti į apžvalgą"
 
-#: data/resources/ui/window.ui:12
-msgid "Press the Super key to see open windows and apps."
-msgstr "Spauskite Super klavišą ir matysite atvertus langus bei programas."
-
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Just Type to Search"
-msgstr "Tiesiog rašykite paieškai pradėti"
-
-#: data/resources/ui/window.ui:19
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
 msgstr ""
-"Rašykite apžvalgoje paieškai pradėti. Paleiskite programas, raskite dalykus."
+"Ši apžvalga rodo visas jūsų programas bei langus. Spauskite Super (Windows) "
+"klavišą jai atverti."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "Galinga paieška"
 
 #: data/resources/ui/window.ui:25
-msgid "Keep on Top with Workspaces"
-msgstr "Išlaikykite viršuje su darbo sritimis"
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Paieškai pradėti, tiesiog rašykite apžvalgoje. Galite naudoti paiešką "
+"programoms paleisti, skaičiavimams atlikti ir kt."
 
-#: data/resources/ui/window.ui:26
-msgid "Easily organize windows with the workspaces view."
-msgstr "Lengvai tvarkykite langus su darbo sričių rodiniu."
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "Lengvai tvarkykite susitvarkykite su darbo sričių rodiniu"
 
 #: data/resources/ui/window.ui:32
-msgid "Up/Down for the Overview"
-msgstr "Aukštyn/žemyn apžvalgoje"
-
-#: data/resources/ui/window.ui:33
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
 msgstr ""
-"Naudodami jutiklinį kilimėlį, naudokite vertikalius perbraukimus trimis "
-"pirštais. Pabandykite!"
+"Sutvarkykite savo langus perkeldami juos į skirtingas darbo sritis. Tai "
+"galite padaryti tampydami juos apžvalgoje."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "Perbraukite aukštyn arba žemyn"
 
 #: data/resources/ui/window.ui:39
-msgid "Left/Right for Workspaces"
-msgstr "Kairėn/dešinėn darbo srityse"
-
-#: data/resources/ui/window.ui:40
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"Jutikliniame kilimėlyje, naudokite horizontalius perbraukimus trimis "
-"pirštais. Išbandykite!"
+"Greitam apžvalgos atvėrimui jutikliniu kilimėliu, perbraukite aukštyn trimis "
+"pirštais."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "Perbraukite kairės arba dešinėn"
 
 #: data/resources/ui/window.ui:46
-msgid "That's it. Have a nice day!"
-msgstr "Tai viskas, Geros dienos!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Judėjimui tarp darbo sričių, perbraukite horizontaliai trimis pirštais."
 
-#: data/resources/ui/window.ui:47
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "Tai viskas!"
+
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Daugiau patarimų galite gauti Žinyno programoje."
 
-#: src/widgets/paginator.rs:79
-#| msgid "Learn about the key features in {} {}."
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Sužinokite apie naujas bei esmines savybes {name} {version}."
 
-#: src/widgets/paginator.rs:84
-msgid "Start the Tour"
-msgstr "Pradėti turą"
+#~ msgid "Main Window"
+#~ msgstr "Pagrindinis langas"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Spauskite Super klavišą ir matysite atvertus langus bei programas."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Tiesiog rašykite paieškai pradėti"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Rašykite apžvalgoje paieškai pradėti. Paleiskite programas, raskite "
+#~ "dalykus."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Išlaikykite viršuje su darbo sritimis"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Aukštyn/žemyn apžvalgoje"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Naudodami jutiklinį kilimėlį, naudokite vertikalius perbraukimus trimis "
+#~ "pirštais. Pabandykite!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Kairėn/dešinėn darbo srityse"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Jutikliniame kilimėlyje, naudokite horizontalius perbraukimus trimis "
+#~ "pirštais. Išbandykite!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Tai viskas, Geros dienos!"
+
+#~ msgid "Start the Tour"
+#~ msgstr "Pradėti turą"
 
 #~ msgid "_Close"
 #~ msgstr "_Užverti"

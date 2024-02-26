@@ -1,23 +1,22 @@
 # Spanish translation for gnome-tour.
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2020-2021.
-# Daniel Mustieles García <daniel.mustieles@gmail.com>, 2021-2022.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2021-2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-29 11:03+0000\n"
-"PO-Revision-Date: 2022-02-07 13:43+0100\n"
-"Last-Translator: Daniel Mustieles García <daniel.mustieles@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-02-26 13:46+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 41.0\n"
+"X-Generator: Gtranslator 45.3\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -40,92 +39,137 @@ msgstr "GNOME Tour y bienvenida"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Un tour guiado y una bienvenida a GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Ventana principal"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "El Proyecto GNOME"
 
-#: data/resources/ui/paginator.ui:27
-#| msgid "_Previous"
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Anterior"
 
-#: data/resources/ui/paginator.ui:40
-#| msgid "_Next"
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Siguiente"
 
-#: data/resources/ui/paginator.ui:53
-#| msgid "_Start"
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Empezar"
 
 #: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "Comenzar"
+
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Obtener una visión general"
 
-#: data/resources/ui/window.ui:12
-msgid "Press the Super key to see open windows and apps."
-msgstr ""
-"Pulse la tecla Súper para ver todas las ventanas y aplicaciones abiertas."
-
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Just Type to Search"
-msgstr "Simplemente escriba para buscar"
-
-#: data/resources/ui/window.ui:19
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
 msgstr ""
-"Escriba en la vista general para buscar. Lanzar aplicaciones, buscar cosas."
+"La vista general le muestra todas las aplicaciones y ventanas. Pulse la "
+"tecla Súper (Windows) para abrirla."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "Búsqueda potente"
 
 #: data/resources/ui/window.ui:25
-msgid "Keep on Top with Workspaces"
-msgstr "Estar al día con las áreas de trabajo"
-
-#: data/resources/ui/window.ui:26
-msgid "Easily organize windows with the workspaces view."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Organizar las ventanas fácilmente con la nueva vista de áreas de trabajo."
+"Para buscar, empiece a escribir en la vista general. Se puede usar para "
+"lanzar aplicaciones, buscar archivos, hacer cálculos y mucho más."
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "Organizarse con las áreas de trabajo"
 
 #: data/resources/ui/window.ui:32
-msgid "Up/Down for the Overview"
-msgstr "Subir/baja en la vista general"
-
-#: data/resources/ui/window.ui:33
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
 msgstr ""
-"En un panel táctil use los desplazamientos verticales con tres dedos. "
-"¡Pruébelo!"
+"Organice sus ventanas moviéndolas a diferentes áreas de trabajo. Esto se "
+"puede hacer arrastrándolas en la vita general."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "Deslizar arriba y abajo"
 
 #: data/resources/ui/window.ui:39
-msgid "Left/Right for Workspaces"
-msgstr "Izquierda/derecha para áreas de trabajo"
-
-#: data/resources/ui/window.ui:40
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"En un panel táctil use los desplazamientos horizontales con tres dedos. "
-"¡Pruébelo!"
+"Para abrir rápidamente la vista general con un panel táctil, deslice tres "
+"dedos hacia arriba."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "Deslizar a la derecha y la izquierda"
 
 #: data/resources/ui/window.ui:46
-msgid "That's it. Have a nice day!"
-msgstr "Eso es todo. Que tenga un buen día."
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Para moverse entre áreas de trabajo, deslice tres dedos horizontalmente."
 
-#: data/resources/ui/window.ui:47
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "Eso es todo"
+
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Para obtener más consejos y pistas consulte la aplicación Ayuda."
 
-#: src/widgets/paginator.rs:79
-#| msgid "Learn about the key features in {} {}."
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Aprender más sobre las características esenciales en {name} {version}."
 
-#: src/widgets/paginator.rs:84
-msgid "Start the Tour"
-msgstr "Empezar el tour"
+#~ msgid "Main Window"
+#~ msgstr "Ventana principal"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr ""
+#~ "Pulse la tecla Súper para ver todas las ventanas y aplicaciones abiertas."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Simplemente escriba para buscar"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Escriba en la vista general para buscar. Lanzar aplicaciones, buscar "
+#~ "cosas."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Estar al día con las áreas de trabajo"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Subir/baja en la vista general"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "En un panel táctil use los desplazamientos verticales con tres dedos. "
+#~ "¡Pruébelo!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Izquierda/derecha para áreas de trabajo"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "En un panel táctil use los desplazamientos horizontales con tres dedos. "
+#~ "¡Pruébelo!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Eso es todo. Que tenga un buen día."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Empezar el tour"
 
 #~ msgid "_Close"
 #~ msgstr "_Cerrar"
@@ -206,13 +250,6 @@ msgstr "Empezar el tour"
 
 #~ msgid "Search"
 #~ msgstr "Buscar"
-
-#~ msgid ""
-#~ "Search can be used to launch apps, find settings, do calculations and "
-#~ "much more."
-#~ msgstr ""
-#~ "La búsqueda se puede usar para lanzar aplicaciones, buscar opciones de "
-#~ "configuración, hacer cálculos y mucho más."
 
 #~ msgid "Date & Time"
 #~ msgstr "Fecha y Hora"

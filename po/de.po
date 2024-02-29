@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
-"POT-Creation-Date: 2024-02-11 13:45+0000\n"
-"PO-Revision-Date: 2024-02-18 20:37+0100\n"
-"Last-Translator: Philipp Kiemle <philipp.kiemle@gmail.com>\n"
+"POT-Creation-Date: 2024-02-26 22:41+0000\n"
+"PO-Revision-Date: 2024-02-29 17:49+0100\n"
+"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Einführung"
 
@@ -63,7 +63,7 @@ msgstr "Starten"
 
 #: data/resources/ui/window.ui:11
 msgid "Let's Begin"
-msgstr ""
+msgstr "Los geht's"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
@@ -75,22 +75,21 @@ msgid ""
 "The overview shows all your apps and windows. Press the Super (Windows) key "
 "to open it."
 msgstr ""
+"Die Übersicht zeigt alle Anwendungen und Fenster. Drücken Sie die Super-"
+"Taste (auch Windows-Taste genannt), um die Übersicht zu öffnen."
 
 #: data/resources/ui/window.ui:24
 msgid "Powerful Search"
-msgstr ""
+msgstr "Leistungsstarke Suche"
 
 #: data/resources/ui/window.ui:25
-#, fuzzy
-#| msgid ""
-#| "Search can be used to launch apps, find settings, do calculations and "
-#| "much more."
 msgid ""
 "To search, just start typing in the overview. You can use search to launch "
 "apps, find files, perform calculations, and more."
 msgstr ""
-"Die Suche kann dazu genutzt werden, um Apps zu starten, Einstellungen zu "
-"finden, Berechnungen auszuführen und vieles mehr."
+"Um zu suchen, tippen Sie in der Übersicht einfach los. Sie können die Suche "
+"verwenden, um Anwendungen zu starten, Dateien zu finden, Berechnungen "
+"durchzuführen und mehr."
 
 #: data/resources/ui/window.ui:31
 msgid "Stay Organized With Workspaces"
@@ -101,6 +100,8 @@ msgid ""
 "Organize your windows by moving them into different workspaces. This can be "
 "done by dragging them in the overview."
 msgstr ""
+"Organisieren Sie Ihre Fenster, indem Sie sie auf verschiedene Arbeitsflächen "
+"verschieben. Das erreichen Sie durch Ziehen in der Übersicht."
 
 #: data/resources/ui/window.ui:38
 msgid "Swipe Up and Down"
@@ -110,10 +111,12 @@ msgstr "Nach oben und unten wischen"
 msgid ""
 "To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
+"Wischen Sie mit drei Fingern nach oben, um die Übersicht mit einem Tastfeld "
+"schnell zu öffnen."
 
 #: data/resources/ui/window.ui:45
 msgid "Swipe Left and Right"
-msgstr "Nach links und rechts streichen"
+msgstr "Nach links und rechts wischen"
 
 #: data/resources/ui/window.ui:46
 msgid "To move between workspaces, swipe three fingers horizontally."

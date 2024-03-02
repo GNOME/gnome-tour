@@ -1,23 +1,23 @@
 # Hungarian translation for gnome-tour.
-# Copyright (C) 2020, 2021, 2022, 2023 Free Software Foundation, Inc.
+# Copyright (C) 2020, 2021, 2022, 2023, 2024 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-tour package.
 #
-# Balázs Meskó <mesko.balazs at fsf dot hu>, 2020, 2021.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2020, 2021, 2022, 2023.
+# Balázs Meskó <mesko.balazs at fsf dot hu>, 2020, 2021, 2024.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2023-01-25 19:46+0000\n"
-"PO-Revision-Date: 2023-03-11 00:36+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-03-02 12:09+0100\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
-"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -40,78 +40,95 @@ msgstr "GNOME bemutató és köszöntő"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Vezetett bemutató és köszöntő a GNOME számára."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Előző"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Következő"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Indítás"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Bemutató indítása"
+msgid "Let's Begin"
+msgstr "Lássunk neki"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Áttekintés"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
 msgstr ""
-"Nyomja meg a Super billentyűt az ablakok és alkalmazások megtekintéséhez."
+"Az áttekintés megjeleníti az összes alkalmazást és ablakot. Nyomja meg a"
+" Super (Windows) billentyűt a megnyitásához."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Csak gépeljen a kereséshez"
+msgid "Powerful Search"
+msgstr "Sokoldalú keresés"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Gépeljen az áttekintésben a kereséshez. Indítson el alkalmazásokat, keressen"
-" dolgokat."
+"A kereséshez csak kezdjen gépelni az áttekintésben. Használhatja a keresőt "
+"alkalmazások indítására, fájlok keresésére, számolások elvégzésére és még "
+"sok másra."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Legyen tájékozott a munkaterületekkel"
+#| msgid "Easily organize windows with the workspaces view."
+msgid "Stay Organized With Workspaces"
+msgstr "Legyen szervezett a munkaterületekkel"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Szervezze az ablakokat könnyedén a munkaterületek nézettel."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Rendszerezze az ablakait úgy, hogy különböző munkaterületekre helyezi őket. "
+"Ez az áttekintésben történő húzásukkal tehető meg."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Fel/le az áttekintéshez"
+msgid "Swipe Up and Down"
+msgstr "Csúsztatás fel és le"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Érintőtáblán használja a háromujjas függőleges seprést. Próbálja ki!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Az áttekintés érintőtáblával történő gyors megnyitásához csúsztassa felfelé "
+"három ujját."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Balra/jobbra a munkaterületekhez"
+msgid "Swipe Left and Right"
+msgstr "Csúsztatás balra és jobbra"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Érintőtáblán használja a háromujjas vízszintes seprést. Próbálja ki!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "A munkaterületek közti váltáshoz csúsztassa vízszintesen három ujját."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Ennyi volt. Legyen szép napja!"
+msgid "That's It!"
+msgstr "És ennyi!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Hogy több tanácsot és tippet kapjon, nézze meg a Súgó alkalmazást."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:54
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Ismerje meg a {name} {version} kulcsfontosságú funkcióit."

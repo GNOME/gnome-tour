@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2023-05-05 14:05+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-09 16:52+0000\n"
 "PO-Revision-Date: 2022-07-30 22:53+0300\n"
 "Last-Translator: Aleksandr Melman <Alexmelman88@gmail.com>\n"
 "Language-Team: Russian <Alexmelman88@gmail.com>\n"
@@ -46,75 +46,85 @@ msgstr "Экскурсия и Приветствие GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Управляемая экскурсия и приветствие для GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:42
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "The GNOME Project"
 
-#: data/resources/ui/paginator.ui:28
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Назад"
 
-#: data/resources/ui/paginator.ui:41
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Далее"
 
-#: data/resources/ui/paginator.ui:54
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Начать"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Начать Экскурсию"
+msgid "Let's Begin"
+msgstr "Давайте начнем"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Режим Обзора"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Нажмите клавишу Super, чтобы увидеть открытые окна и приложения."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"В Обзоре отображаются все ваши приложения и окна. Нажмите клавишу Super (Windows) "
+"чтобы открыть его."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Просто введите слово для Поиска"
+msgid "Powerful Search"
+msgstr "Мощный поиск"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Введите критерий поиска в режиме Обзора. Запускайте приложения, находите "
-"нужные вещи."
+"Для поиска просто начните вводить текст в Обзоре. С помощью поиска можно запускать "
+"приложения, находить файлы, выполнять вычисления и многое другое."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Продолжите работу с Рабочими столами"
+msgid "Stay Organized With Workspaces"
+msgstr "Организуйте рабочее пространство"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Легко управляйте окнами с помощью просмотра Рабочих столов."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Организуйте окна, перемещая их в разные Рабочие столы. Это можно сделать, "
+"перетаскивая окна в Обзоре."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Вверх/Вниз в режиме Обзора"
+msgid "Swipe Up and Down"
+msgstr "Проведите вверх и вниз"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"На сенсорной панели, используйте вертикальные движения тремя пальцами. "
-"Попробуйте!"
+"Чтобы быстро открыть Обзор с помощью сенсорной панели, проведите тремя пальцами вверх."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Влево/Вправо на Рабочих столах"
+msgid "Swipe Left and Right"
+msgstr "Проведите влево и вправо"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr ""
-"На сенсорной панели, используйте горизонтальные движения тремя пальцами. "
-"Попробуйте!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "Чтобы перемещаться между Рабочими столами, проведите тремя пальцами по горизонтали."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Вот и все. Хорошего дня!"
+msgid "That's It!"
+msgstr "Вот и всё!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
@@ -122,11 +132,47 @@ msgstr ""
 "Чтобы получить дополнительные советы и рекомендации, обратитесь к приложению "
 "Справка."
 
-#. Translators: The following string is formated as "Learn about new and essential
+#. Translators: The following string is formatted as "Learn about new and essential
 #. features in GNOME 3.36" for example
 #: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Узнайте о ключевых функциях в {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Начать Экскурсию"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Нажмите клавишу Super, чтобы увидеть открытые окна и приложения."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Просто введите слово для Поиска"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Введите критерий поиска в режиме Обзора. Запускайте приложения, находите "
+#~ "нужные вещи."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Продолжите работу с Рабочими столами"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Вверх/Вниз в режиме Обзора"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "На сенсорной панели, используйте вертикальные движения тремя пальцами. "
+#~ "Попробуйте!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Влево/Вправо на Рабочих столах"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "На сенсорной панели, используйте горизонтальные движения тремя пальцами. "
+#~ "Попробуйте!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Вот и все. Хорошего дня!"
 
 #~ msgid "Main Window"
 #~ msgstr "Главное Окно"

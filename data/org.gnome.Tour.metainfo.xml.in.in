@@ -24,6 +24,11 @@
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-tour</url>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="46.rc" date="2024-03-03" type="development">
+      <description>
+        <p>String improvements and updated translations.</p>
+      </description>
+    </release>
     <release version="44.0" date="2023-03-20" />
     <release version="43.0" date="2022-09-20" />
     <release version="40.0" date="2021-03-23" />

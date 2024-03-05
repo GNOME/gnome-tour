@@ -17,11 +17,12 @@
       <image>https://gitlab.gnome.org/GNOME/gnome-tour/raw/HEAD/data/resources/screenshots/screenshot2.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-tour</url>
+  <url type="homepage">https://apps.gnome.org/Tour/</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-tour/issues</url>
   <url type="donation">https://www.gnome.org/donate/</url>
   <url type="translate">https://l10n.gnome.org/module/gnome-tour/</url>
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-tour</url>
+  <url type="contribute">https://welcome.gnome.org/en/app/Tour/</url>
   <content_rating type="oars-1.1" />
   <releases>
     <release version="46.rc" date="2024-03-03" type="development">

@@ -2,13 +2,14 @@
 # Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # scootergrisen, 2020-2021.
+# Alan Mortensen <alanmortensen.am@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-06 12:41+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-03-06 16:49+0100\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -39,78 +40,125 @@ msgstr "GNOME Rundvisning og velkomst"
 msgid "A guided tour and greeter for GNOME."
 msgstr "En guidet rundvisning og velkomst til GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Forrige"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Næste"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Start"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Start rundvisningen"
+msgid "Let's Begin"
+msgstr "Lad os komme i gang"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Se oversigten"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Tryk på Super-tasten for at se åbne vinduer og programmer."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Oversigten viser alle dine programmer og vinduer. Tryk på Super-/Windows-"
+"tasten for at åbne den."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Skriv for at søge"
+msgid "Powerful Search"
+msgstr "Funktionsrig søgning"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Skriv i oversigten for at søge. Kør programmer, find ting."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Skriv i oversigten for at begynde at søge. Søgning kan bruges til at starte "
+"programmer, finde filer, foretage udregninger og meget mere."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Få overblik med arbejdsområder"
+msgid "Stay Organized With Workspaces"
+msgstr "Hold styr på dit skrivebord/dine vinduer med arbejdsområder"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Opstil let vinduer med arbejdsområdevisningen."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organisér dine vinduer ved at flytte dem til forskellige arbejdsområder. Det "
+"kan du gøre ved at trække dem i oversigten."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Op/ned for oversigten"
+msgid "Swipe Up and Down"
+msgstr "Stryg op og ned"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "På en pegeplade bruges trefingers lodret strygning. Prøv det!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Åbn hurtigt oversigten ved at stryge op med tre fingre på en pegeplade."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Venstre/højre for arbejdsområder"
+msgid "Swipe Left and Right"
+msgstr "Stryg til højre og venstre"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "På en pegeplade bruges trefingers vandret strygning. Prøv det!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "Stryg vandret med tre fingre for at bevæge dig mellem arbejdsområder."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Det var det. Hav en fortsat god dag!"
+msgid "That's It!"
+msgstr "Det var det!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Få flere råd og tips i programmet Hjælp."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Lær om de primære funktioner i {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Start rundvisningen"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Tryk på Super-tasten for at se åbne vinduer og programmer."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Skriv for at søge"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "Skriv i oversigten for at søge. Kør programmer, find ting."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Få overblik med arbejdsområder"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Op/ned for oversigten"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "På en pegeplade bruges trefingers lodret strygning. Prøv det!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Venstre/højre for arbejdsområder"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "På en pegeplade bruges trefingers vandret strygning. Prøv det!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Det var det. Hav en fortsat god dag!"
 
 #~ msgid "Main Window"
 #~ msgstr "Hovedvindue"
@@ -187,13 +235,6 @@ msgstr "Lær om de primære funktioner i {name} {version}."
 
 #~ msgid "Search"
 #~ msgstr "Søg"
-
-#~ msgid ""
-#~ "Search can be used to launch apps, find settings, do calculations and "
-#~ "much more."
-#~ msgstr ""
-#~ "Søgning kan bruges til at starte programmer, finde indstillinger, "
-#~ "foretage udregninger og meget mere."
 
 #~ msgid "Date & Time"
 #~ msgstr "Dato & klokkeslæt"

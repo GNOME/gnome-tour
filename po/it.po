@@ -1,14 +1,14 @@
 # Italian translation for gnome-tour.
-# Copyright (C) 2020, 2021i, 2022 Free Software Foundations, Inc.
+# Copyright (C) 2020, 2021i, 2022, 2024 Free Software Foundations, Inc.
 # This file is distributed under the same license as the gnome-tour package.
-# Milo Casagrande <milo@milo.name>, 2020, 2021, 2022.
+# Milo Casagrande <milo@milo.name>, 2020, 2021, 2022, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-15 17:45+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-19 14:34+0000\n"
+"PO-Revision-Date: 2024-02-28 14:41+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <gnome-it-list@gnome.org>\n"
 "Language: it\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.1\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Visita guidata"
 
@@ -39,79 +39,95 @@ msgstr "Visita guidata e accoglienza per GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Una visita guidata e un messaggio di accoglienza per GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "Il progetto GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Precedente"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Successivo"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Avvia"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Avvia la visita"
+msgid "Let's Begin"
+msgstr "Cominciamo"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Ottieni una panoramica"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Premi Super per visualizzare finestre e app aperte."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"La panoramica mostra tutte le tue app e finestre. Premere il tasto Super "
+"(Windows) per aprirla."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Ti basta digitare per cercare"
+msgid "Powerful Search"
+msgstr "Ricerca potente"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Quando ti trovi nella panoramica, digita per eseguire una ricerca, lanciare "
-"applicazioni o trovare quello che ti serve."
+"Per effettuare la ricerca, basta iniziare a digitare nella panoramica. È "
+"possibile utilizzare la ricerca per avviare app, trovare file, eseguire "
+"calcoli e altro ancora."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Tieniti al passo con gli spazi di lavoro"
+msgid "Stay Organized With Workspaces"
+msgstr "Restare organizzati con gli spazi di lavoro"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
 msgstr ""
-"Organizza facilmente le finestre con la visualizzazione degli spazi di "
-"lavoro."
+"È possibile organizzare le finestre spostandole in diverse aree di lavoro. "
+"Questo può essere fatto trascinandole nella panoramica."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Su/Giù per la panoramica"
+msgid "Swipe Up and Down"
+msgstr "Scorrere in su e giù"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Con un touchpad usa scorrimenti verticali a tre dita. Prova!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Per aprire rapidamente la panoramica con un touchpad, scorrere verso l'alto "
+"con tre dita."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Sinistra/Destra per gli spazi di lavoro"
+msgid "Swipe Left and Right"
+msgstr "Scorrere verso sinistra e destra"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Con un touchpad, usa scorrimenti orizzontali a tre dita. Prova!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Per spostarsi tra le aree di lavoro, scorrere orizzontalmente con tre dita."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Questo è tutto, buona giornata!"
+msgid "That's It!"
+msgstr "Questo è tutto!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
-msgstr "Per maggiore aiuto o consigli, consulta l'app Aiuto."
+msgstr "Per maggiore aiuto o consigli, consultare l'app Aiuto."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Scopri le funzionalità essenziali in {name} {version}."

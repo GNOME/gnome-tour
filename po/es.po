@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
-"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-26 12:47+0000\n"
 "PO-Revision-Date: 2024-02-26 13:46+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Gtranslator 45.3\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Tour"
 
@@ -95,7 +95,7 @@ msgid ""
 "done by dragging them in the overview."
 msgstr ""
 "Organice sus ventanas moviéndolas a diferentes áreas de trabajo. Esto se "
-"puede hacer arrastrándolas en la vita general."
+"puede hacer arrastrándolas en la vista general."
 
 #: data/resources/ui/window.ui:38
 msgid "Swipe Up and Down"

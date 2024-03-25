@@ -1,0 +1,278 @@
+# Serbian translation for gnome-tour.
+# Copyright (C) 2020 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Marko Kostić <marko.m.kostic@gmail.com>, 2020.
+# Marko M. Kostić <marko.m.kostic@gmail.com>, 2020.
+# Leco <gerovid@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-03-18 21:09+0000\n"
+"PO-Revision-Date: 2024-03-23 16:56+0100\n"
+"Last-Translator: Leco <gerovid@gmail.com>\n"
+"Language-Team: Serbian <gnome-sr@googlegroups.com>>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
+"X-Generator: Gtranslator 45.3\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:27
+msgid "Tour"
+msgstr "Obilazak"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Vodič i obilazak"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;Gnom;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "Gnomova dobrodošlica i vodič"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "Vodič za Gnom."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
+msgid "The GNOME Project"
+msgstr "Gnomov projekat"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "Prethodno"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "Sledeće"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "Pokreni"
+
+#: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "Hajde da krenemo"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "Pokrenite pregled"
+
+#. Translators: 'Windows' is referring to the operating system and should not be translated
+#: data/resources/ui/window.ui:18
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Ovaj pregled prikazuje sve vaše aplikacije i prozore. Pritisnite Super (Vindous) "
+"taster kako bi mu pristupili."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "Moćna pretraga"
+
+#: data/resources/ui/window.ui:25
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Samo počnite da kucate u pregledu da bi pretražili računar. Možete koristiti "
+"pretragu da pogrenete aplikacije, pronađete datoteke, izračunate vrednosti, "
+"i još mnogo toga."
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "Organizujte se uz pomoć radnih prostora"
+
+#: data/resources/ui/window.ui:32
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organizujete prozore premeštajući ih na različite radne prostore. Ovo "
+"možete uraditi tako što ih prevučete u pregledu."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "Prevucite gore i dole"
+
+#: data/resources/ui/window.ui:39
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Da brzo otvorite pregled, prevucite nagore sa tri prsta preko dodirne table."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "Prevucite levo i desno"
+
+#: data/resources/ui/window.ui:46
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Da pređete na sledeće radni prostor prevucite tri prsta horizontalno."
+
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "To je to!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "Za više saveta i trikova, pogledajte program „Pomoć“."
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "Saznajte više o glavnim mogućnostima okruženja {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Pokreni obilazak"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr ""
+#~ "Pritisnite taster Super da biste videli otvorene prozore i programe."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Samo kucajte za početak pretraživanja"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Kucajte u pregledu za pretraživanje. Pokrenite programe, pronalazite "
+#~ "stvari."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Držite pri vrhu uz pomoć radnih prostora"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Strelica gore ili dole za pregled"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Na dodirnoj tabli, koristite vertikalno prevlačenje sa tri prsta. Probajte!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Strelica levo ili desno za radne prostore"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Na dodirnoj tabli, koristite horizontalno prevlačenje sa tri prsta. "
+#~ "Probajte!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "To je to. Sve najbolje!"
+
+#~ msgid "Main Window"
+#~ msgstr "Glavni prozor"
+
+#~ msgid "_Close"
+#~ msgstr "_Zatvori"
+
+#~ msgid "Make Apps Your Own"
+#~ msgstr "Napravite programe koje posedujete"
+
+#~ msgid "Arrange the app grid to your liking."
+#~ msgstr "Preuredite mrežu programa po sopstvenoj volji."
+
+#~ msgid "That's it! We hope that you enjoy {} {}."
+#~ msgstr "To je to! Nadamo se da će vam se svideti {} {}."
+
+#~ msgid "Welcome to {} {}"
+#~ msgstr "Dobro došli u {} {}"
+
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr "Zdravo! Započnite obilazak da biste naučili osnove."
+
+#~ msgid "_No Thanks"
+#~ msgstr "_Ne, hvala"
+
+#~ msgid "The activities view can also be used to switch windows and search."
+#~ msgstr ""
+#~ "Dugme „Aktivnosti“ se može koristiti za promenu prozora i za pretragu."
+
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings "
+#~ "and more."
+#~ msgstr ""
+#~ "U pregledu aktivnosti, samo započnite sa kucanjem za pretraživanje "
+#~ "programa, podešavanja i ostalih stvari."
+
+#~ msgid "Click the time to see notifications"
+#~ msgstr "Kliknite na vreme da biste videli vaša obaveštenja"
+
+#~ msgid "The notifications popover also includes personal planning tools."
+#~ msgstr "Iskakući prozor obaveštenja takođe sadrži alatke za lično planiranje."
+
+#~ msgid "View system information and settings"
+#~ msgstr "Pogledajte podatke o sistemu i podešavanja"
+
+#~ msgid "Get an overview of the system status and quickly change settings."
+#~ msgstr "Pogledajte stanje sistema i brzo promenite podešavanja."
+
+#~ msgid "Use Software to find and install apps"
+#~ msgstr ""
+#~ "Koristite „Programi“ aplikaciju za pronalaženje i instaliranje programa"
+
+#~ msgid ""
+#~ "Discover great apps through search, browsing and our recommendations."
+#~ msgstr ""
+#~ "Otkrijte odlične programe kroz pretragu, pregledanje i koristeći naše "
+#~ "preporuke."
+
+#~ msgid "GNOME Tour"
+#~ msgstr "Gnomov vodič"
+
+#~ msgid "Take the Tour"
+#~ msgstr "Započni obilazak"
+
+#~ msgid "Activities Overview"
+#~ msgstr "Pregled aktivnosti"
+
+#~ msgid "You can also view open windows, search and use workspaces."
+#~ msgstr ""
+#~ "Takođe možete pogledati otvorene prozore, pretraživati i koristiti radne "
+#~ "prostore."
+
+#~ msgid "Search"
+#~ msgstr "Pretraga"
+
+#~ msgid "Date & Time"
+#~ msgstr "Datum i vreme"
+
+#~ msgid ""
+#~ "This includes notifications, media controls, calendar events, the weather "
+#~ "and world clocks."
+#~ msgstr ""
+#~ "U ovo su uključena obaveštenja, upravljanje puštanjem medija, događaji iz "
+#~ "kalendara, vreme i svetski satovi."
+
+#~ msgid "System Menu"
+#~ msgstr "Sistemski izbornik"
+
+#~ msgid "Software"
+#~ msgstr "Programi"
+
+#~ msgid ""
+#~ "The Software app makes it easy to find and install all the apps you need."
+#~ msgstr ""
+#~ "Programi vam omogućavaju da na lak način nađete i instalirate potrebne "
+#~ "programe."
+
+#~ msgid "Learn More"
+#~ msgstr "Saznajte više"
+
+#~ msgid "That's it! To learn more, see the Help"
+#~ msgstr "To je to! Ako želite da saznate više, otvorite program Pomoć"
+
+#~ msgid "The help app contains information, tips and tricks."
+#~ msgstr "Program za pomoć sadrži dodatne podatke, savete i trikove."

@@ -3,25 +3,26 @@
 # This file is distributed under the same license as the gnome-tour package.
 # Марко Костић <marko.m.kostic@gmail.com>, 2020.
 # Марко М. Костић <marko.m.kostic@gmail.com>, 2020.
+# Leco <gerovid@gmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-11 17:41+0100\n"
-"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
-"Language-Team: Serbian <gnome-sr@googlegroups.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-03-18 21:09+0000\n"
+"PO-Revision-Date: 2024-03-23 16:56+0100\n"
+"Last-Translator: Leco <gerovid@gmail.com>\n"
+"Language-Team: Serbian <gnome-sr@googlegroups.com>>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 3.0.1\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
+"X-Generator: Gtranslator 45.3\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Обилазак"
 
@@ -41,81 +42,133 @@ msgstr "Гномова добродошлица и водич"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Водич за Гном."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
 msgid "The GNOME Project"
 msgstr "Гномов пројекат"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Претходно"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Следеће"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Покрени"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Покрени обилазак"
+msgid "Let's Begin"
+msgstr "Хајде да кренемо"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Покрените преглед"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Притисните тастер Супер да бисте видели отворене прозоре и програме."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Овај преглед приказује све ваше апликације и прозоре. Притисните Супер (Виндоус) "
+"тастер како би му приступили."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Само куцајте за почетак претраживања"
+msgid "Powerful Search"
+msgstr "Моћна претрага"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Куцајте у прегледу за претраживање. Покрените програме, проналазите ствари."
+"Само почните да куцате у прегледу да би претражили рачунар. Можете користити "
+"претрагу да погренете апликације, пронађете датотеке, израчунате вредности, "
+"и још много тога."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Држите при врху уз помоћ радних простора"
+msgid "Stay Organized With Workspaces"
+msgstr "Организујте се уз помоћ радних простора"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Лагано уређујте прозоре уз помоћ прегледа радних простора."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Организујете прозоре премештајући их на различите радне просторе. Ово "
+"можете урадити тако што их превучете у прегледу."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Стрелица горе или доле за преглед"
+msgid "Swipe Up and Down"
+msgstr "Превуците горе и доле"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"На додирној табли, користите вертикално превлачење са три прста. Пробајте!"
+"Да брзо отворите преглед, превуците нагоре са три прста преко додирне табле."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Стрелица лево или десно за радне просторе"
+msgid "Swipe Left and Right"
+msgstr "Превуците лево и десно"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid "To move between workspaces, swipe three fingers horizontally."
 msgstr ""
-"На додирној табли, користите хоризонтално превлачење са три прста. Пробајте!"
+"Да пређете на следеће радни простор превуците три прста хоризонтално."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "То је то. Све најбоље!"
+msgid "That's It!"
+msgstr "То је то!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "За више савета и трикова, погледајте програм „Помоћ“."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
-msgstr "Сазнајте више о кључним могућностима окружења {name} {version}."
+msgstr "Сазнајте више о главним могућностима окружења {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Покрени обилазак"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr ""
+#~ "Притисните тастер Супер да бисте видели отворене прозоре и програме."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Само куцајте за почетак претраживања"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Куцајте у прегледу за претраживање. Покрените програме, проналазите "
+#~ "ствари."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Држите при врху уз помоћ радних простора"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Стрелица горе или доле за преглед"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "На додирној табли, користите вертикално превлачење са три прста. Пробајте!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Стрелица лево или десно за радне просторе"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "На додирној табли, користите хоризонтално превлачење са три прста. "
+#~ "Пробајте!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "То је то. Све најбоље!"
 
 #~ msgid "Main Window"
 #~ msgstr "Главни прозор"
@@ -192,13 +245,6 @@ msgstr "Сазнајте више о кључним могућностима о�
 
 #~ msgid "Search"
 #~ msgstr "Претрага"
-
-#~ msgid ""
-#~ "Search can be used to launch apps, find settings, do calculations and "
-#~ "much more."
-#~ msgstr ""
-#~ "Претрага се може користити за покретање програма, претраживање "
-#~ "подешавања, рачунање и још понешто."
 
 #~ msgid "Date & Time"
 #~ msgstr "Датум и време"

@@ -2,19 +2,22 @@
 # Copyright (C) 2022 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # Hemish <hemish04082005@gmail.com>, 2022
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-10-19 15:27+0000\n"
-"PO-Revision-Date: 2022-11-09 02:20+0530\n"
-"Last-Translator: Hemish <hemish04082005@gmail.com>\n"
-"Language-Team: Hindi <indlinux-hindi@lists.sourceforge.net> https://indlinux.org/hindi\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-04-02 19:26+0530\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 46.0\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -23,89 +26,138 @@ msgstr "दौरा"
 
 #: data/org.gnome.Tour.desktop.in.in:4
 msgid "Greeter & Tour"
-msgstr "अभिवादन और दौरा"
+msgstr "स्वागतकर्ता एवं दौरा"
 
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;गनोम;ग्नोम;जीटीके;गतक"
+msgstr "Gnome;GTK;गनोम;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter"
-msgstr "गनोम (GNOME) दौरा एवं अभिवादक"
+msgstr "GNOME दौरा और स्वागतकर्ता"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "गनोम (GNOME) के लिए एक निर्देशित दौरा और अभिवादन।"
+msgstr "GNOME के लिए एक निर्देशित दौरा और स्वागतकर्ता।"
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
-msgstr "दी गनोम प्रोजेक्ट (The GNOME Project)"
+msgstr "GNOME परियोजना"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "पिछला"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "अगला"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
-msgstr "शुरू करें"
+msgstr "प्रारंभ"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "दौरा शुरू करें"
+msgid "Let's Begin"
+msgstr "आइए शुरू करें"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "एक अवलोकन प्राप्त करें"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "खुली हुई विंडो और ऐप्स देखने के लिए कुंजीपटल पर सुपर (Super) कुंजी दबाएँ।"
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"अवलोकन आपके सभी ऐप्स और विंडो दिखाता है। इसे खोलने के लिए Super (Windows) कुंजी दबाएँ।"
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "खोजने के लिए बस टाइप करें"
+msgid "Powerful Search"
+msgstr "शक्तिशाली खोज"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "खोजने के लिए अवलोकन (overview) में लिखें। ऐप्स लॉन्च करें व चीजें ढूँढें।"
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"खोजने के लिए, बस अवलोकन में लिखना प्रारंभ करें। आप ऐप्स लॉन्च करने, फाइलें ढूंढने, गणना करने "
+"और बहुत कुछ करने के लिए खोज का उपयोग कर सकते हैं।"
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "कार्यस्थानों का उपयोग कर शीर्ष पर रहें"
+msgid "Stay Organized With Workspaces"
+msgstr "कार्यस्थलों के साथ व्यवस्थित रहें"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "कार्यस्थान दृश्य (workspaces view) का उपयोग कर आसानी से विंडो व्यवस्थित करें।"
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"अपनी विंडो को विभिन्न कार्यस्थानों में ले जाकर व्यवस्थित करें। यह उन्हें अवलोकन में खींचकर "
+"किया जा सकता है."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "अवलोकन (Overview) के लिए ऊपर/नीचे"
+msgid "Swipe Up and Down"
+msgstr "ऊपर और नीचे स्वाइप करें"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "टचपैड पर, तीन-उंगली वाले लंबवत (vertical) स्वाइप का उपयोग करें। इसका प्रयोग करके देखें!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "टचपैड से अवलोकन को शीघ्रता से खोलने के लिए, तीन अंगुलियों से ऊपर की ओर स्वाइप करें।"
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "कार्यस्थानों (workspaces) के लिए बाएँ/दाएँ"
+msgid "Swipe Left and Right"
+msgstr "बाएँ और दाएँ स्वाइप करें"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "टचपैड पर, तीन-उंगली वाले क्षैतिज (horizontal) स्वाइप का उपयोग करें। इसका प्रयोग करके देखें!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "कार्यस्थानों के बीच जाने के लिए, तीन अंगुलियों से क्षैतिज रूप से स्वाइप करें।"
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "बस यही था। आपका दिन शुभ हो!"
+msgid "That's It!"
+msgstr "इतना ही!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
-msgstr "अधिक सलाह और सुझाव प्राप्त करने के लिए, Help (सहायता) ऐप देखें।"
+msgstr "अधिक सलाह और सुझाव प्राप्त करने के लिए, सहायता ऐप देखें।"
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:54
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "{name} {version} में प्रमुख विशेषताओं के बारे में जानें।"
+
+#~ msgid "Start the Tour"
+#~ msgstr "दौरा शुरू करें"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "खुली हुई विंडो और ऐप्स देखने के लिए कुंजीपटल पर सुपर (Super) कुंजी दबाएँ।"
+
+#~ msgid "Just Type to Search"
+#~ msgstr "खोजने के लिए बस टाइप करें"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "खोजने के लिए अवलोकन (overview) में लिखें। ऐप्स लॉन्च करें व चीजें ढूँढें।"
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "कार्यस्थानों का उपयोग कर शीर्ष पर रहें"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "अवलोकन (Overview) के लिए ऊपर/नीचे"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "टचपैड पर, तीन-उंगली वाले लंबवत (vertical) स्वाइप का उपयोग करें। इसका प्रयोग करके "
+#~ "देखें!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "कार्यस्थानों (workspaces) के लिए बाएँ/दाएँ"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "टचपैड पर, तीन-उंगली वाले क्षैतिज (horizontal) स्वाइप का उपयोग करें। इसका प्रयोग "
+#~ "करके देखें!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "बस यही था। आपका दिन शुभ हो!"

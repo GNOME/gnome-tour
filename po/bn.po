@@ -1,0 +1,112 @@
+# Bengali translation for gnome-tour.
+# Copyright (C) 2023 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# abdunnafialif <abdunnafialif@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
+"POT-Creation-Date: 2023-08-21 00:20+0000\n"
+"PO-Revision-Date: 2023-08-21 00:20+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Bengali <bn@li.org>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:21
+msgid "Tour"
+msgstr "সফর"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "স্বাগতকারী ও সফর"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "গ্নোম;জিটিকে"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "গ্নোমের সফর ও স্বাগতকারী"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "গ্নোমের নির্দেশনামূলক সফর এবং স্বাগতকারী"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
+msgid "The GNOME Project"
+msgstr "গ্নোম প্রকল্প"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "পূর্ববর্তী"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "পরবর্তী"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "শুরু"
+
+#: data/resources/ui/window.ui:11
+msgid "Start the Tour"
+msgstr "সফর শুরু করুন"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "একটি সার্বিক দৃশ্য দেখুন"
+
+#: data/resources/ui/window.ui:18
+msgid "Press the Super key to see open windows and apps."
+msgstr "সুপার কি চেপে খোলা থাকা উইন্ডো ও অ্যাপগুলো দেখুন।"
+
+#: data/resources/ui/window.ui:24
+msgid "Just Type to Search"
+msgstr "অনুসন্ধান করতে শুধু লিখা শুরু করুন"
+
+#: data/resources/ui/window.ui:25
+msgid "Type in the overview to search. Launch apps, find things."
+msgstr "সার্বিক দৃশ্যে থাকাকালে অনুসন্ধান করতে লিখা শুরু করুন। অ্যাপ চালান, জিনিসপত্র খুঁজুন।"
+
+#: data/resources/ui/window.ui:31
+msgid "Keep on Top with Workspaces"
+msgstr "কার্যক্ষেত্র ব্যাবহার করে সব হাতের মুঠোয় রাখুন"
+
+#: data/resources/ui/window.ui:32
+msgid "Easily organize windows with the workspaces view."
+msgstr "কার্যক্ষেত্র দৃশ্য থেকে সহজেই উইন্ডোগুলো সাজান"
+
+#: data/resources/ui/window.ui:38
+msgid "Up/Down for the Overview"
+msgstr "উপরে/নিচে করে সার্বিক দৃশ্য দেখুন"
+
+#: data/resources/ui/window.ui:39
+msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgstr "টাচপ্যাডের ক্ষেত্রে, তিন আঙুল দিয়ে উপরে-নিচে ঘষুন। চেষ্টা করে দেখুন!"
+
+#: data/resources/ui/window.ui:45
+msgid "Left/Right for Workspaces"
+msgstr "ডান/বাম করে কার্যক্ষেত্র বদলান"
+
+#: data/resources/ui/window.ui:46
+msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgstr "টাচপ্যাডের ক্ষেত্রে, তিন আঙুল দিয়ে ডানে-বামে ঘষুন। চেষ্টা করে দেখুন!"
+
+#: data/resources/ui/window.ui:52
+msgid "That's it. Have a nice day!"
+msgstr "এটুকুই। আপনার দিনটি শুভ হোক!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "আরও পরামর্শ এবং টিপস পেতে 'সহায়তা' অ্যাপটি দেখুন।"
+
+#. Translators: The following string is formated as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version} এর নতুন বৈশিষ্ট্যমূলক গুণাবলী সম্পর্কে আরও জানুন।"

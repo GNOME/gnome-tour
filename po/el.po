@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-24 13:25+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-04-29 02:36+0300\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Greek <gnome-el-list@gnome.org>\n"
 "Language: el\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -39,85 +39,135 @@ msgstr "Ξενάγηση και Υποδοχή του GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Ξενάγηση και υποδοχή για το GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "Το έργο GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Επόμενο"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Έναρξη"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Έναρξη της ξενάγησης"
+msgid "Let's Begin"
+msgstr "Ας αρχίσουμε"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Δείτε μια επισκόπηση"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
 msgstr ""
-"Πατήστε το Super key για να δείτε τα ανοιχτά παράθυρα και τις εφαρμογές."
+"Η επισκόπηση εμφανίζει όλες τις εφαρμογές και τα παράθυρά σας. Πατήστε το "
+"πλήκτρο Super (Windows) για να την ανοίξετε."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Απλώς πληκτρολογήστε για αναζήτηση"
+msgid "Powerful Search"
+msgstr "Αποτελεσματική αναζήτηση"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Πληκτρολογήστε στην επισκόπηση για αναζήτηση. Εκκινήστε εφαρμογές, βρείτε "
-"πράγματα."
+"Για να κάνετε μια αναζήτηση, απλώς αρχίστε να πληκτρολογείτε στην "
+"επισκόπηση. Μπορείτε να χρησιμοποιήσετε την αναζήτηση για να εκκινήσετε "
+"εφαρμογές, να βρείτε αρχεία, να εκτελέσετε υπολογισμούς και πολλά άλλα."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Συνεχίστε με τους χώρους εργασίας"
+msgid "Stay Organized With Workspaces"
+msgstr "Μείνετε οργανωμένοι με τους χώρους εργασίας"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Οργανώστε εύκολα τα παράθυρα με την προβολή των χώρων εργασίας."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Οργανώστε τα παράθυρά σας μετακινώντας τα σε διαφορετικούς χώρους εργασίας. "
+"Αυτό μπορεί να γίνει σύροντάς τα στην επισκόπηση."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Πάνω/Κάτω για την επισκόπηση"
+msgid "Swipe Up and Down"
+msgstr "Σύρετε προς τα πάνω και προς τα κάτω"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"Στην επιφάνεια αφής, χρησιμοποιήστε κάθετη ολίσθηση τριών δακτύλων. Δοκίμασέ "
-"το!"
+"Για να ανοίξετε γρήγορα την επισκόπηση με το touchpad, σύρετε προς τα πάνω "
+"με τρία δάχτυλα."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Αριστερά/Δεξιά για χώρους εργασίας"
+msgid "Swipe Left and Right"
+msgstr "Σύρετε προς τα αριστερά και προς τα δεξιά"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid "To move between workspaces, swipe three fingers horizontally."
 msgstr ""
-"Στην επιφάνεια αφής, χρησιμοποιήστε οριζόντια ολίσθηση τριών δακτύλων. "
-"Δοκίμασέ το!"
+"Για να μετακινηθείτε μεταξύ χώρων εργασίας, σύρετε τρία δάχτυλα οριζόντια."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Αυτό είναι. Να έχετε μια όμορφη μέρα!"
+msgid "That's It!"
+msgstr "Αυτό ήταν!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Για περισσότερες συμβουλές, ανατρέξτε στην εφαρμογή Βοήθεια."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Μάθετε για τα βασικά χαρακτηριστικά στο {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Έναρξη της ξενάγησης"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr ""
+#~ "Πατήστε το Super key για να δείτε τα ανοιχτά παράθυρα και τις εφαρμογές."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Απλώς πληκτρολογήστε για αναζήτηση"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Πληκτρολογήστε στην επισκόπηση για αναζήτηση. Εκκινήστε εφαρμογές, βρείτε "
+#~ "πράγματα."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Συνεχίστε με τους χώρους εργασίας"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Πάνω/Κάτω για την επισκόπηση"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Στην επιφάνεια αφής, χρησιμοποιήστε κάθετη ολίσθηση τριών δακτύλων. "
+#~ "Δοκίμασέ το!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Αριστερά/Δεξιά για χώρους εργασίας"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Στην επιφάνεια αφής, χρησιμοποιήστε οριζόντια ολίσθηση τριών δακτύλων. "
+#~ "Δοκίμασέ το!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Αυτό είναι. Να έχετε μια όμορφη μέρα!"
 
 #~ msgid "Main Window"
 #~ msgstr "Κυρίως παράθυρο"

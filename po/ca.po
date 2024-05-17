@@ -6,19 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-01-29 11:03+0000\n"
-"PO-Revision-Date: 2024-02-18 10:46+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-22 17:41+0000\n"
+"PO-Revision-Date: 2024-05-16 16:27+0200\n"
 "Last-Translator: maite guix <maite.guix@me.com>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Visita guiada"
 
@@ -38,81 +38,139 @@ msgstr "Benvinguda i visita guiada per al GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Una visita guiada i benvinguda per al GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:15
-msgid "Main Window"
-msgstr "Finestra principal"
-
-#: data/org.gnome.Tour.metainfo.xml.in.in:38
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "El projecte GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Anterior"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Següent"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Inicia"
 
 #: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "Comencem"
+
+#: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Obteniu una visió general"
 
-#: data/resources/ui/window.ui:12
-msgid "Press the Super key to see open windows and apps."
-msgstr "Premeu la tecla Súper per a veure les finestres i aplicacions obertes."
-
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Just Type to Search"
-msgstr "Simplement escriviu per a cercar"
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"La vista general mostra totes les aplicacions i finestres. Premeu la tecla "
+"Súper (Windows) per a obrir-la."
 
-#: data/resources/ui/window.ui:19
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Escriviu en la vista general per a cercar. Inicieu aplicacions, cerqueu coses."
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr ""
 
 #: data/resources/ui/window.ui:25
-msgid "Keep on Top with Workspaces"
-msgstr "Controleu els espais de treball"
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Per a cercar, simplement comenceu a escriure a la vista general. Es pot "
+"utilitzar la cerca per llançar aplicacions, trobar fitxers, realitzar "
+"càlculs i molt més."
 
-#: data/resources/ui/window.ui:26
-msgid "Easily organize windows with the workspaces view."
-msgstr "Organitzeu fàcilment les finestres amb la vista dels espais de treball."
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "Manteniu-vos organitzats amb espais de treball"
 
 #: data/resources/ui/window.ui:32
-msgid "Up/Down for the Overview"
-msgstr "Amunt/avall per a la visió general"
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organitzeu les finestres movent-les cap als diferents espais de treball. "
+"Això es pot fer arrossegant-les cap a la vista general."
 
-#: data/resources/ui/window.ui:33
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Amb un ratolí tàctil, useu el lliscament vertical amb tres dits. Proveu-ho!"
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "Llisqueu amunt i avall"
 
 #: data/resources/ui/window.ui:39
-msgid "Left/Right for Workspaces"
-msgstr "Esquerra/dreta per als espais de treball"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Per obrir ràpidament la vista general amb un ratolí tàctil, llisqueu amunt "
+"amb tres dits."
 
-#: data/resources/ui/window.ui:40
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Amb un ratolí tàctil, useu el lliscament horitzontal amb tres dits. Proveu-ho!"
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "Llisqueu a dreta i esquerra"
 
 #: data/resources/ui/window.ui:46
-msgid "That's it. Have a nice day!"
-msgstr "Això és tot. Que tingueu un bon dia!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Per moure's entre els diferents espais de treball, llisqueu horitzontalment "
+"amb tres dits."
 
-#: data/resources/ui/window.ui:47
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "Això és tot!"
+
+#: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
 
-#: src/widgets/paginator.rs:79
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Descobriu les característiques essencials a {name} {version}."
 
-#: src/widgets/paginator.rs:84
-msgid "Start the Tour"
-msgstr "Comenceu la visita guiada"
+#~ msgid "Main Window"
+#~ msgstr "Finestra principal"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr ""
+#~ "Premeu la tecla Súper per a veure les finestres i aplicacions obertes."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Simplement escriviu per a cercar"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Escriviu en la vista general per a cercar. Inicieu aplicacions, cerqueu "
+#~ "coses."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Controleu els espais de treball"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Amunt/avall per a la visió general"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Amb un ratolí tàctil, useu el lliscament vertical amb tres dits. Proveu-"
+#~ "ho!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Esquerra/dreta per als espais de treball"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Amb un ratolí tàctil, useu el lliscament horitzontal amb tres dits. "
+#~ "Proveu-ho!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Això és tot. Que tingueu un bon dia!"
+
+#~ msgid "Start the Tour"
+#~ msgstr "Comenceu la visita guiada"
 
 #~ msgid "_Close"
 #~ msgstr "_Tanca"

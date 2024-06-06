@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
-"POT-Creation-Date: 2024-02-22 17:41+0000\n"
-"PO-Revision-Date: 2024-05-16 16:27+0200\n"
+"POT-Creation-Date: 2024-05-17 09:13+0000\n"
+"PO-Revision-Date: 2024-06-06 16:27+0200\n"
 "Last-Translator: maite guix <maite.guix@me.com>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
 "Language: ca\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:27
+#: data/org.gnome.Tour.desktop.in.in:3
+#: data/org.gnome.Tour.metainfo.xml.in.in:7 src/main.rs:27
 msgid "Tour"
 msgstr "Visita guiada"
 
@@ -39,7 +39,7 @@ msgid "A guided tour and greeter for GNOME."
 msgstr "Una visita guiada i benvinguda per al GNOME."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.Tour.metainfo.xml.in.in:45
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
 msgid "The GNOME Project"
 msgstr "El projecte GNOME"
 
@@ -63,7 +63,8 @@ msgstr "Comencem"
 msgid "Get an Overview"
 msgstr "Obteniu una visió general"
 
-#. Translators: 'Windows' is referring to the operating system and should not be translated
+#. Translators: 'Windows' is referring to the operating system and should not
+#. be translated
 #: data/resources/ui/window.ui:18
 msgid ""
 "The overview shows all your apps and windows. Press the Super (Windows) key "
@@ -74,7 +75,7 @@ msgstr ""
 
 #: data/resources/ui/window.ui:24
 msgid "Powerful Search"
-msgstr ""
+msgstr "Cerca potent"
 
 #: data/resources/ui/window.ui:25
 msgid ""
@@ -126,7 +127,8 @@ msgstr "Això és tot!"
 msgid "To get more advice and tips, see the Help app."
 msgstr "Per a obtenir més consells i suggeriments, vegeu l'aplicació Ajuda."
 
-#. Translators: The following string is formatted as "Learn about new and essential
+#. Translators: The following string is formatted as "Learn about new and
+#. essential
 #. features in GNOME 3.36" for example
 #: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
@@ -155,16 +157,15 @@ msgstr "Descobriu les característiques essencials a {name} {version}."
 
 #~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
 #~ msgstr ""
-#~ "Amb un ratolí tàctil, useu el lliscament vertical amb tres dits. Proveu-"
-#~ "ho!"
+#~ "Amb un ratolí tàctil, useu el lliscament vertical amb tres dits. Proveu-ho!"
 
 #~ msgid "Left/Right for Workspaces"
 #~ msgstr "Esquerra/dreta per als espais de treball"
 
 #~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
 #~ msgstr ""
-#~ "Amb un ratolí tàctil, useu el lliscament horitzontal amb tres dits. "
-#~ "Proveu-ho!"
+#~ "Amb un ratolí tàctil, useu el lliscament horitzontal amb tres dits. Proveu-"
+#~ "ho!"
 
 #~ msgid "That's it. Have a nice day!"
 #~ msgstr "Això és tot. Que tingueu un bon dia!"

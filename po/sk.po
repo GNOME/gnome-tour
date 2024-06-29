@@ -6,17 +6,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-03-11 09:12+0100\n"
-"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
+"POT-Creation-Date: 2024-02-18 19:04+0000\n"
+"PO-Revision-Date: 2024-06-29 10:50+0200\n"
+"Last-Translator: Jose Riha <jose1711@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -37,80 +37,127 @@ msgstr "Prehliadka a privítanie prostredia GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "Ukážková prehliadka a privítanie pre prostredie GNOME."
+msgstr "Komentovaná prehliadka a privítanie do prostredia GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:45
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Predchádzajúca"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Ďalšia"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Spustiť"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Spustenie prehliadky"
+msgid "Let's Begin"
+msgstr "Pustime sa do toho"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Získajte prehľad"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Stlačte klávesu Super na zobrazenie otvorených okien a aplikácií."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key to "
+"open it."
+msgstr ""
+"Prehľad zobrazuje všetky vaše aplikácie a okná. Stlačením klávesu Super "
+"(Windows)ich otvoríte."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Na vyhľadávanie stačí písať"
+msgid "Powerful Search"
+msgstr "Mocné vyhľadávanie"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Písaním do prehľadu vyhľadáte. Spúšťajte aplikácie, nájdite veci."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch apps, "
+"find files, perform calculations, and more."
+msgstr ""
+"Pre rýchle hľadanie začnite písať do prehľadu. Pomocou vyhľadávania môžete "
+"spúšťať aplikácie, hľadať súbory, robiť výpočty a ďalšie."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Zostaňte nad vecou s pracovnými priestormi"
+#| msgid "Easily organize windows with the workspaces view."
+msgid "Stay Organized With Workspaces"
+msgstr "Udržujte poriadok pomocou pracovných priestorov"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Jednoducho organizujte okná pomocou zobrazenia pracovných priestorov."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be done "
+"by dragging them in the overview."
+msgstr ""
+"Urobte si poriadok v oknách ich presunutím na rôzne pracovné priestory. To môžete "
+"uskutočniť presunutím myšou v prehľade."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Nahor/nadol pre prehľad"
+msgid "Swipe Up and Down"
+msgstr "Prejdite prstom hore a dole"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Na touchpade použite zvislé posúvanie tromi prstami. Skúste to!"
+msgid "To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Pre rýchle otvorenie prehľadu pomocou touchpadu prejdite troma prstami nahor."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Vľavo/vpravo pre pracovné priestory"
+msgid "Swipe Left and Right"
+msgstr "Prejdite prstom doľava a doprava"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Na touchpade použite vodorovné posúvanie tromi prstami. Skúste to!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "Pre prechod medzi pracovnými priestormi prejdite troma prstami vodorovne."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "To je všetko. Prajeme pekný deň!"
+msgid "That's It!"
+msgstr "A to je všetko!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Na získanie viacerých rád a tipov si prezrite aplikáciu Pomocník."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
-msgstr "Dozveďte sa o kľúčových funkciách prostredia {name} {version}."
+msgstr "Zoznámte sa kľúčovými funkciami prostredia {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Spustenie prehliadky"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Stlačte klávesu Super na zobrazenie otvorených okien a aplikácií."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Na vyhľadávanie stačí písať"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "Písaním do prehľadu vyhľadáte. Spúšťajte aplikácie, nájdite veci."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Zostaňte nad vecou s pracovnými priestormi"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Nahor/nadol pre prehľad"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Na touchpade použite zvislé posúvanie tromi prstami. Skúste to!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Vľavo/vpravo pre pracovné priestory"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "Na touchpade použite vodorovné posúvanie tromi prstami. Skúste to!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "To je všetko. Prajeme pekný deň!"
 
 #~ msgid "Main Window"
 #~ msgstr "Hlavné okno"
@@ -121,8 +168,12 @@ msgstr "Dozveďte sa o kľúčových funkciách prostredia {name} {version}."
 #~ msgid "Welcome to {} {}"
 #~ msgstr "Vitajte v prostredí {} {}"
 
-#~ msgid "Hi there! Take the tour to learn your way around and discover essential features."
-#~ msgstr "Zdravím! Prezrite si prehliadku, aby ste si osvojili svoj spôsob používania a objavili základné funkcie."
+#~ msgid ""
+#~ "Hi there! Take the tour to learn your way around and discover essential "
+#~ "features."
+#~ msgstr ""
+#~ "Zdravím! Prezrite si prehliadku, aby ste si osvojili svoj spôsob používania a "
+#~ "objavili základné funkcie."
 
 #~ msgid "_No Thanks"
 #~ msgstr "_Nie ďakujem"
@@ -131,16 +182,21 @@ msgstr "Dozveďte sa o kľúčových funkciách prostredia {name} {version}."
 #~ msgstr "Otvorením Aktivít spustíte aplikácie"
 
 #~ msgid "The activities view can also be used to switch windows and search."
-#~ msgstr "Zobrazenie aktivít môže byť tiež použité na prepínanie okien a vyhľadávanie."
+#~ msgstr ""
+#~ "Zobrazenie aktivít môže byť tiež použité na prepínanie okien a vyhľadávanie."
 
-#~ msgid "In the activities view, just start typing to search for apps, settings and more."
-#~ msgstr "V zobrazení aktivít stačí začať písať a vyhľadáte aplikácie, nastavenia a iné."
+#~ msgid ""
+#~ "In the activities view, just start typing to search for apps, settings and "
+#~ "more."
+#~ msgstr ""
+#~ "V zobrazení aktivít stačí začať písať a vyhľadáte aplikácie, nastavenia a iné."
 
 #~ msgid "Click the time to see notifications"
 #~ msgstr "Kliknutím na čas zobrazíte upozornenia"
 
 #~ msgid "The notifications popover also includes personal planning tools."
-#~ msgstr "Vyskakovacie okno s oznámeniami tiež obsahuje nástroje na osobné plánovanie."
+#~ msgstr ""
+#~ "Vyskakovacie okno s oznámeniami tiež obsahuje nástroje na osobné plánovanie."
 
 #~ msgid "View system information and settings"
 #~ msgstr "Zobrazte systémové informácie a nastavenia"
@@ -152,7 +208,9 @@ msgstr "Dozveďte sa o kľúčových funkciách prostredia {name} {version}."
 #~ msgstr "Použite aplikáciu Softvér na nájdenie a inštaláciu aplikácií"
 
 #~ msgid "Discover great apps through search, browsing and our recommendations."
-#~ msgstr "Preskúmajte skvelé aplikácie prostredníctvom vyhľadávania, prehliadania a našich odporúčaní."
+#~ msgstr ""
+#~ "Preskúmajte skvelé aplikácie prostredníctvom vyhľadávania, prehliadania a "
+#~ "našich odporúčaní."
 
 #~ msgid "That's it! We hope that you enjoy {}."
 #~ msgstr "To je všetko! Dúfame, že si užijete distribúciu {}."

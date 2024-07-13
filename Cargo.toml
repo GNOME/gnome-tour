@@ -6,9 +6,9 @@ edition = "2021"
 
 
 [dependencies]
-gtk = { package = "gtk4", version = "0.8", features = ["gnome_45"] }
+gtk = { package = "gtk4", version = "0.9", features = ["gnome_47"] }
 log = "0.4"
 gettext-rs = { version = "0.7", features = ["gettext-system"] }
-adw = { package = "libadwaita", version = "0.6" }
+adw = { package = "libadwaita", version = "0.7" }
 env_logger = "0.11"
 regex = "1.5"

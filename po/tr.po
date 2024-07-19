@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
-"POT-Creation-Date: 2024-02-10 10:15+0000\n"
-"PO-Revision-Date: 2024-02-13 17:57+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"POT-Creation-Date: 2024-02-22 17:41+0000\n"
+"PO-Revision-Date: 2024-05-07 11:37+0300\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-POOTLE-MTIME: 1429307949.000000\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Gezinti"
 
@@ -30,9 +30,10 @@ msgstr "Gezinti"
 msgid "Greeter & Tour"
 msgstr "Karşılayıcı ve Gezinti"
 
+# https://gitlab.gnome.org/GNOME/glib/-/issues/443 hatası sebebiyle ingilizce hallerini de koruyalım.
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
-msgstr "Gnome;GTK;"
+msgstr "Gnome;GTK;Tour;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter"

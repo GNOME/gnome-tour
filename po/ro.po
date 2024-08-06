@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2023-01-25 19:46+0000\n"
-"PO-Revision-Date: 2023-04-18 14:47+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-07-05 15:12+0000\n"
+"PO-Revision-Date: 2024-08-06 10:53+0300\n"
 "Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
 "gmail [dot] com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Tur"
 
@@ -41,83 +41,135 @@ msgstr "Tur ce vă introduce în GNOME"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Un tur ghidat și o persoană care vă introduce în GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
 msgid "The GNOME Project"
 msgstr "Proiectul GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Anterior"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Următor"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Începe"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Începeți turul"
+msgid "Let's Begin"
+msgstr "Să începem"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Obțineți o vedere de ansamblu"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Apăsați tasta Super pentru a vedea ferestrele deschise și aplicațiile."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Prezentarea generală vă arată toate aplicațiile și ferestrele. Apăsați tasta "
+"Super (Windows) pentru a o deschide."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Doar tastați pentru a căuta"
+msgid "Powerful Search"
+msgstr "Căutare puternică"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
 msgstr ""
-"Tastați în privirea de ansamblu pentru a căuta. Lansați aplicații și găsiți "
-"lucruri."
+"Pentru a căuta, începeți să tastați în prezentarea generală. Căutarea poate "
+"fi utilizată pentru a lansa aplicații, a găsi fișiere, a efectua calcule și "
+"multe altele."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Fiți la curent cu spațiile de lucru"
+msgid "Stay Organized With Workspaces"
+msgstr "Rămâneți organizat cu spațiile de lucru"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Organizați ușor ferestrele cu vizualizarea de spații de lucru."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Organizați-vă ferestrele prin mutarea acestora în spații de lucru diferite. "
+"Acest lucru poate fi făcut prin tragerea lor în prezentarea generală."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Sus/jos pentru vederea de ansmablu"
+msgid "Swipe Up and Down"
+msgstr "Glisare în sus și în jos"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
-"Cu un touchpad, folosiți tragerile verticale cu trei degete. Încercați-le!"
+"Pentru a deschide rapid prezentarea generală cu un touchpad, glisați în sus "
+"cu trei degete."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Stânga/dreapta pentru spații de lucru"
+msgid "Swipe Left and Right"
+msgstr "Glisare la stânga și la dreapta"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+msgid "To move between workspaces, swipe three fingers horizontally."
 msgstr ""
-"Cu un touchpad, folosiți tragerile orizontale cu trei degete. Încercați-le!"
+"Pentru a vă muta între spațiile de lucru, glisați trei degete orizontal."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Asta este totul. Să aveți o zi plăcută!"
+msgid "That's It!"
+msgstr "Asta e tot!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr ""
 "Pentru a obține mai multe sfaturi și îndrumări, consultați aplicația Ajutor."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:54
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Aflați despre funcționalitățile esențiale din {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Începeți turul"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr ""
+#~ "Apăsați tasta Super pentru a vedea ferestrele deschise și aplicațiile."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Doar tastați pentru a căuta"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Tastați în privirea de ansamblu pentru a căuta. Lansați aplicații și "
+#~ "găsiți lucruri."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Fiți la curent cu spațiile de lucru"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Sus/jos pentru vederea de ansmablu"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr ""
+#~ "Cu un touchpad, folosiți tragerile verticale cu trei degete. Încercați-le!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Stânga/dreapta pentru spații de lucru"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Cu un touchpad, folosiți tragerile orizontale cu trei degete. Încercați-"
+#~ "le!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Asta este totul. Să aveți o zi plăcută!"
 
 #~ msgid "Main Window"
 #~ msgstr "Fereastra principală"
@@ -209,13 +261,6 @@ msgstr "Aflați despre funcționalitățile esențiale din {name} {version}."
 #~ msgstr ""
 #~ "Puteți, de asemenea, să vizualizați ferestrele deschise, să căutați și să "
 #~ "utilizați spațiile de lucru."
-
-#~ msgid ""
-#~ "Search can be used to launch apps, find settings, do calculations and "
-#~ "much more."
-#~ msgstr ""
-#~ "Căutarea poate fi utilizată pentru a lansa aplicații, căuta configurări, "
-#~ "face calcule și mult mai multe."
 
 #~ msgid ""
 #~ "This includes notifications, media controls, calendar events, the weather "

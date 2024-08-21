@@ -6,20 +6,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-11-16 18:05+0000\n"
-"PO-Revision-Date: 2022-12-30 23:51+0300\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-08-06 18:32+0000\n"
+"PO-Revision-Date: 2024-08-22 00:33+0300\n"
 "Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 3.2.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Знаёмства"
 
@@ -39,75 +40,128 @@ msgstr "Знаёмства з GNOME і вітанне"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Вітанне і пакрокавае знаёмства з GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
 msgid "The GNOME Project"
 msgstr "Праект GNOME"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Назад"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Далей"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Пачаць"
 
 #: data/resources/ui/window.ui:11
-msgid "Start the Tour"
-msgstr "Пачаць знаёмства"
+msgid "Let's Begin"
+msgstr "Давайце пачнём"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
 msgstr "Агляд"
 
+#. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid "Press the Super key to see open windows and apps."
-msgstr "Націсніце кнопку Super, каб убачыць усе адкрытыя вокны і праграмы."
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"У рэжыме «Агляд» паказваюцца ўсе вашы праграмы і вокны. Каб яго адкрыць, "
+"націсніце клавішу Super (Windows)."
 
 #: data/resources/ui/window.ui:24
-msgid "Just Type to Search"
-msgstr "Проста ўвядзіце пошукавы запыт"
+msgid "Powerful Search"
+msgstr "Поўнафункцыянальны пошук"
 
 #: data/resources/ui/window.ui:25
-msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Пачніце друкаваць у рэжыме Агляду, каб нешта знайсці. Запускайце праграмы, шукайце патрэбныя рэчы."
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Для пошуку проста пачніце ўводзіць тэкст у рэжыме «Агляд». Праз пошук можна "
+"запускаць праграмы, знаходзіць файлы, выконваць вылічэнні і шмат іншага."
 
 #: data/resources/ui/window.ui:31
-msgid "Keep on Top with Workspaces"
-msgstr "Праца з Працоўнымі прасторамі"
+msgid "Stay Organized With Workspaces"
+msgstr "Упарадкаванне праз Працоўныя прасторы"
 
 #: data/resources/ui/window.ui:32
-msgid "Easily organize windows with the workspaces view."
-msgstr "Простае ўпарадкаванне вокнаў праз рыжым Працоўных прастор."
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Перамяшчайце вокны паміж працоўнымі прасторамі, каб упарадкаваць Гэта можна "
+"рабіць і перацягваннем у рэжыме «Агляд»."
 
 #: data/resources/ui/window.ui:38
-msgid "Up/Down for the Overview"
-msgstr "Жэсты ўверх і ўніз для рэжыму Агляду"
+msgid "Swipe Up and Down"
+msgstr "Жэсты ўверх і ўніз"
 
 #: data/resources/ui/window.ui:39
-msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-msgstr "Вертыкальныя рухі трыма пальцамі па сэнсарнай панэлі. Паспрабуйце!"
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Каб хутка адкрыць «Агляд» праз сэнсарную панэль, трэба правесці трыма "
+"пальцамі ўверх."
 
 #: data/resources/ui/window.ui:45
-msgid "Left/Right for Workspaces"
-msgstr "Жэсты ўправа і ўлева для Працоўных прастор"
+msgid "Swipe Left and Right"
+msgstr "Жэсты ўлева і ўправа"
 
 #: data/resources/ui/window.ui:46
-msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-msgstr "Гарызантальныя рухі трыма пальцамі па сэнсарнай панэлі. Паспрабуйце!"
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Каб перамясціцца з адной працоўнай прасторы на другую з дапамогай сэнсарнай "
+"панэлі, трэба правесці трыма пальцамі ўлева або ўправа."
 
 #: data/resources/ui/window.ui:52
-msgid "That's it. Have a nice day!"
-msgstr "Вось і ўсё. Добрага дня!"
+msgid "That's It!"
+msgstr "Вось и всё!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
 msgstr "Дадатковыя парады і падказкі, глядзіце ў праграме «Даведка»."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:54
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Даведайцеся пра асноўныя функцыі {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "Пачаць знаёмства"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "Націсніце кнопку Super, каб убачыць усе адкрытыя вокны і праграмы."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "Проста ўвядзіце пошукавы запыт"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr ""
+#~ "Пачніце друкаваць у рэжыме Агляду, каб нешта знайсці. Запускайце "
+#~ "праграмы, шукайце патрэбныя рэчы."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "Праца з Працоўнымі прасторамі"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "Жэсты ўверх і ўніз для рэжыму Агляду"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "Вертыкальныя рухі трыма пальцамі па сэнсарнай панэлі. Паспрабуйце!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "Жэсты ўправа і ўлева для Працоўных прастор"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr ""
+#~ "Гарызантальныя рухі трыма пальцамі па сэнсарнай панэлі. Паспрабуйце!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "Вось і ўсё. Добрага дня!"

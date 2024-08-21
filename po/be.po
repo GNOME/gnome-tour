@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
 "POT-Creation-Date: 2024-08-06 18:32+0000\n"
-"PO-Revision-Date: 2024-08-22 00:33+0300\n"
+"PO-Revision-Date: 2024-08-22 01:51+0300\n"
 "Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: data/resources/ui/window.ui:52
 msgid "That's It!"
-msgstr "Вось и всё!"
+msgstr "Вось і ўсё!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."

@@ -1,15 +1,15 @@
 # Turkish translation for gnome-tour.
-# Copyright (C) 2020-2023 gnome-tour's COPYRIGHT HOLDER
+# Copyright (C) 2020-2024 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 #
-# Sabri Ünal <libreajans@gmail.com>, 2020, 2024.
+# Sabri Ünal <yakushabb@gmail.com>, 2020, 2024.
 # Emin Tufan Çetin <etcetin@gmail.com>, 2020, 2021, 2022, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
-"POT-Creation-Date: 2024-02-22 17:41+0000\n"
+"POT-Creation-Date: 2024-08-06 18:32+0000\n"
 "PO-Revision-Date: 2024-05-07 11:37+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Türkçe <takim@gnome.org.tr>\n"
@@ -44,7 +44,7 @@ msgid "A guided tour and greeter for GNOME."
 msgstr "GNOME için kılavuzlu gezinti ve karşılayıcı."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.Tour.metainfo.xml.in.in:45
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
 msgid "The GNOME Project"
 msgstr "GNOME Projesi"
 
@@ -136,32 +136,3 @@ msgstr "Daha çok öneri ve ipucu almak için Yardım uygulamasına bak."
 msgid "Learn about the key features in {name} {version}."
 msgstr "{name} {version} ana özelliklerini öğren."
 
-#~ msgid "Start the Tour"
-#~ msgstr "Gezintiyi Başlat"
-
-#~ msgid "Press the Super key to see open windows and apps."
-#~ msgstr "Açık pencereleri ve uygulamaları görmek için Super tuşuna bas."
-
-#~ msgid "Just Type to Search"
-#~ msgstr "Yalnız Yazarak Ara"
-
-#~ msgid "Type in the overview to search. Launch apps, find things."
-#~ msgstr "Genel görünümde aramak için yaz. Uygulama başlat, bir şeyler bul."
-
-#~ msgid "Keep on Top with Workspaces"
-#~ msgstr "Çalışma Alanlarından Bilgilen"
-
-#~ msgid "Up/Down for the Overview"
-#~ msgstr "Genel Bakış için Aşağı/Yukarı"
-
-#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
-#~ msgstr "Dokunmatik yüzeyde üç parmakla dikey sürüklemeler yap. Şimdi dene!"
-
-#~ msgid "Left/Right for Workspaces"
-#~ msgstr "Çalışma Alanları için Sağ/Sol"
-
-#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
-#~ msgstr "Dokunmatik yüzeyde üç parmakla yatay sürüklemeler yap. Şimdi dene!"
-
-#~ msgid "That's it. Have a nice day!"
-#~ msgstr "İşte bu. İyi günler!"

@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
-"POT-Creation-Date: 2024-02-18 19:04+0000\n"
-"PO-Revision-Date: 2024-03-02 12:09+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-08-06 18:32+0000\n"
+"PO-Revision-Date: 2024-09-10 23:02+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
 "Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Lokalize 23.08.4\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: src/main.rs:27
 msgid "Tour"
 msgstr "Bemutató"
 
@@ -41,7 +41,7 @@ msgid "A guided tour and greeter for GNOME."
 msgstr "Vezetett bemutató és köszöntő a GNOME számára."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.Tour.metainfo.xml.in.in:45
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
@@ -71,8 +71,8 @@ msgid ""
 "The overview shows all your apps and windows. Press the Super (Windows) key "
 "to open it."
 msgstr ""
-"Az áttekintés megjeleníti az összes alkalmazást és ablakot. Nyomja meg a"
-" Super (Windows) billentyűt a megnyitásához."
+"Az áttekintés megjeleníti az összes alkalmazást és ablakot. Nyomja meg a "
+"Super (Windows) billentyűt a megnyitásához."
 
 #: data/resources/ui/window.ui:24
 msgid "Powerful Search"
@@ -88,7 +88,6 @@ msgstr ""
 "sok másra."
 
 #: data/resources/ui/window.ui:31
-#| msgid "Easily organize windows with the workspaces view."
 msgid "Stay Organized With Workspaces"
 msgstr "Legyen szervezett a munkaterületekkel"
 
@@ -131,4 +130,5 @@ msgstr "Hogy több tanácsot és tippet kapjon, nézze meg a Súgó alkalmazást
 #. features in GNOME 3.36" for example
 #: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
-msgstr "Ismerje meg a {name} {version} kulcsfontosságú funkcióit."
+msgstr "Ismerje meg a(z) {name} {version} kulcsfontosságú funkcióit."
+

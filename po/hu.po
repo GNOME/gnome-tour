@@ -1,23 +1,23 @@
 # Hungarian translation for gnome-tour.
-# Copyright (C) 2020, 2021, 2022, 2023 Free Software Foundation, Inc.
+# Copyright (C) 2020, 2021, 2022, 2023, 2024 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-tour package.
 #
 # Balázs Meskó <mesko.balazs at fsf dot hu>, 2020, 2021.
-# Balázs Úr <ur.balazs at fsf dot hu>, 2020, 2021, 2022, 2023.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2023-01-25 19:46+0000\n"
-"PO-Revision-Date: 2023-03-11 00:36+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-02-11 13:45+0000\n"
+"PO-Revision-Date: 2024-09-10 23:03+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
-"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language-Team: Hungarian <openscope at fsf dot hu>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.2\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -40,19 +40,19 @@ msgstr "GNOME bemutató és köszöntő"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Vezetett bemutató és köszöntő a GNOME számára."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Előző"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Következő"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Indítás"
 
@@ -76,8 +76,8 @@ msgstr "Csak gépeljen a kereséshez"
 #: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
 msgstr ""
-"Gépeljen az áttekintésben a kereséshez. Indítson el alkalmazásokat, keressen"
-" dolgokat."
+"Gépeljen az áttekintésben a kereséshez. Indítson el alkalmazásokat, keressen "
+"dolgokat."
 
 #: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
@@ -111,7 +111,9 @@ msgstr "Ennyi volt. Legyen szép napja!"
 msgid "To get more advice and tips, see the Help app."
 msgstr "Hogy több tanácsot és tippet kapjon, nézze meg a Súgó alkalmazást."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:54
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
-msgstr "Ismerje meg a {name} {version} kulcsfontosságú funkcióit."
+msgstr "Ismerje meg a(z) {name} {version} kulcsfontosságú funkcióit."
+

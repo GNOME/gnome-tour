@@ -11,11 +11,9 @@ base_id = 'org.gnome.Tour'
 
 dependency('glib-2.0', version: '>= 2.64')
 dependency('gio-2.0', version: '>= 2.56')
-dependency('gdk-pixbuf-2.0')
 dependency('gtk4', version: '>= 4.4')
 dependency('libadwaita-1', version: '>= 1')
 
-glib_compile_resources = find_program('glib-compile-resources', required: true)
 desktop_file_validate = find_program('desktop-file-validate', required: false)
 appstreamcli = find_program('appstreamcli', required: false)
 cargo = find_program('cargo')

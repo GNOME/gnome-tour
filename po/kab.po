@@ -2,20 +2,27 @@
 # Copyright (C) 2024 gnome-tour's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-tour package.
 # ZiriSut <rgebbid@gmail.com>, 2024.
+# ButterflyOfFire <butterflyoffire@protonmail.com>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
-"POT-Creation-Date: 2024-03-15 19:04+0000\n"
-"PO-Revision-Date: 2024-03-18 10:05+0100\n"
-"Last-Translator: sa\n"
-"Language-Team: Kabyle <kab@li.org>\n"
+"POT-Creation-Date: 2024-09-14 15:47+0000\n"
+"PO-Revision-Date: 2024-10-05 15:38+0100\n"
+"Last-Translator: ButterflyOfFire <butterflyoffire@protonmail.com>\n"
+"Language-Team: Kabyle\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Gtranslator 46.1\n"
+"X-DL-Lang: kab\n"
+"X-DL-Module: gnome-tour\n"
+"X-DL-Branch: main\n"
+"X-DL-Domain: po\n"
+"X-DL-State: Translating\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:27
@@ -125,4 +132,4 @@ msgstr "I wakken ad tawiḍ ugar n yiwellihen, wali deg usnas Tallalt."
 #. features in GNOME 3.36" for example
 #: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
-msgstr "Γeṛ Ɛvef tmahilin n tsura deg {name} {version}."
+msgstr "Issin ugar ɣef tmahilin tigejdanin deg {name} {version}."

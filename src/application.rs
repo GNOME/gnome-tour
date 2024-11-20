@@ -28,6 +28,11 @@ mod imp {
             self.parent_activate();
             let application = self.obj();
 
+            if let Some(window) = application.active_window() {
+                window.present();
+                return;
+            }
+
             let window = Window::new(&application);
             application.add_window(&window);
             window.present();

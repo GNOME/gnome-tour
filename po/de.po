@@ -11,17 +11,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues\n"
-"POT-Creation-Date: 2022-02-24 18:19+0000\n"
-"PO-Revision-Date: 2022-02-27 15:55+0100\n"
-"Last-Translator: Tim Sabsch <tim@sabsch.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-09-10 21:06+0000\n"
+"PO-Revision-Date: 2024-11-04 22:02+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:21
@@ -44,19 +44,19 @@ msgstr "GNOME Tour und Begrüßer"
 msgid "A guided tour and greeter for GNOME."
 msgstr "Eine geführte Tour und Begrüßung für GNOME."
 
-#: data/org.gnome.Tour.metainfo.xml.in.in:41
+#: data/org.gnome.Tour.metainfo.xml.in.in:42
 msgid "The GNOME Project"
 msgstr "Das GNOME-Projekt"
 
-#: data/resources/ui/paginator.ui:27
+#: data/resources/ui/paginator.ui:25
 msgid "Previous"
 msgstr "Zurück"
 
-#: data/resources/ui/paginator.ui:40
+#: data/resources/ui/paginator.ui:38
 msgid "Next"
 msgstr "Weiter"
 
-#: data/resources/ui/paginator.ui:53
+#: data/resources/ui/paginator.ui:51
 msgid "Start"
 msgstr "Starten"
 
@@ -66,7 +66,7 @@ msgstr "Die Einführung starten"
 
 #: data/resources/ui/window.ui:17
 msgid "Get an Overview"
-msgstr "Einen Überblick erhalten"
+msgstr "Den Überblick behalten"
 
 #: data/resources/ui/window.ui:18
 msgid "Press the Super key to see open windows and apps."
@@ -79,7 +79,9 @@ msgstr "Fangen Sie zum Suchen einfach an zu tippen"
 
 #: data/resources/ui/window.ui:25
 msgid "Type in the overview to search. Launch apps, find things."
-msgstr "Tippen Sie in der Übersicht, um zu suchen oder Anwendungen zu starten."
+msgstr ""
+"Tippen Sie in der Übersicht, um zu suchen. Starten Sie so Anwendungen oder "
+"suchen Sie etwas."
 
 #: data/resources/ui/window.ui:31
 msgid "Keep on Top with Workspaces"
@@ -117,8 +119,9 @@ msgstr "Das war's. Haben Sie einen schönen Tag!"
 msgid "To get more advice and tips, see the Help app."
 msgstr "Weitere Erklärungen und Tipps finden Sie in der Hilfe-Anwendung."
 
-#. Translators: The following string is formated as "Learn about new and essential features in GNOME 3.36" for example
-#: src/widgets/window.rs:53
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
 msgid "Learn about the key features in {name} {version}."
 msgstr "Lernen Sie die wesentlichen Funktionen von {name} {version} kennen."
 

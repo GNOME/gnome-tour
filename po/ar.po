@@ -1,0 +1,160 @@
+# Arabic translation for gnome-tour.
+# Copyright (C) 2022 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Ali Aljishi <ahj696@hotmail.com>, 2022.
+# Khalid Abu Shawarib <khalid.shawarib@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2024-07-05 15:12+0000\n"
+"PO-Revision-Date: 2025-03-14 22:24+0300\n"
+"Last-Translator: Khalid Abu Shawarib <khalid.shawarib@gmail.com>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 47.1\n"
+"Plural-Forms: nplurals=6; plural= n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:27
+msgid "Tour"
+msgstr "جَوْلَة"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "مُرحِّب وجولة"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;جنوم;جي تي كي;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "جولة ومُرحِّب GNOME «غنوم»"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "جولة تعريفيَّة ومُرحِّبٌ لـGNOME «غنوم»."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:51
+msgid "The GNOME Project"
+msgstr "مشروع GNOME «غنوم»"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "السابق"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "التالي"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "ابدأ"
+
+#: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "لنبدأ"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "خُذ نظرةً عامَّةً"
+
+#. Translators: 'Windows' is referring to the operating system and should not be translated
+#: data/resources/ui/window.ui:18
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"المنظور العام يظهر كل التطبيقات والنوافذ. إضغط مفتاح Super (ويندوز) لفتحه."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "بحث قويّ"
+
+#: data/resources/ui/window.ui:25
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"لتبدأ بحثًا، إبدأ الطباعة مباشرة. يمكنك استعمال البحث لتشغيل التطبيقات، إيجاد "
+"الملفات، إجراء حسابات، وغيرها."
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "إبقى منظمًا بمساحات العمل."
+
+#: data/resources/ui/window.ui:32
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"نظِّم النوافذ من خلال تحريكهم إلى مساحات عمل مختلفة. يمكنك فعل ذلك بسحبهم في "
+"المنظور العام."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "اسحب إلى الأعلى والأسفل"
+
+#: data/resources/ui/window.ui:39
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "لفتح المنظور بسرعة باستخدام لوحة لمس، اسحب إلى الأعلى بثلاث أصابع."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "اسحب إلى اليسار واليمين"
+
+#: data/resources/ui/window.ui:46
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "تحرك بين مساحات العمل بالسحب أفقيًا بثلاث أصابع"
+
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "هذا كل شيء!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "استخدم تطبيق المساعدة لتحصل على المزيد من النصائح والتلميحات."
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "اطَّلع على المزايا الرئيسة في {name} {version}."
+
+#~ msgid "Start the Tour"
+#~ msgstr "ابدأ الجولة"
+
+#~ msgid "Press the Super key to see open windows and apps."
+#~ msgstr "اضغط مفتاح Super لترى النوافذ والتطبيقات المفتوحة."
+
+#~ msgid "Just Type to Search"
+#~ msgstr "اكتب لتبحث"
+
+#~ msgid "Type in the overview to search. Launch apps, find things."
+#~ msgstr "اكتب في النظرة العامَّة لتبحث وتُشغِّل التطبيقات وتعثر على الأشياء."
+
+#~ msgid "Keep on Top with Workspaces"
+#~ msgstr "واكِب الأعمال باستخدام مساحات العمل"
+
+#~ msgid "Up/Down for the Overview"
+#~ msgstr "فوق\\تحت لتُظهر المنظور العام"
+
+#~ msgid "On a touchpad, use three-finger vertical swipes. Try it!"
+#~ msgstr "اسحب رأسيًّا بثلاثة أصابع على لوحة اللمس. جرِّب هذا!"
+
+#~ msgid "Left/Right for Workspaces"
+#~ msgstr "يسار\\يمين لمساحات العمل"
+
+#~ msgid "On a touchpad, use three-finger horizontal swipes. Try it!"
+#~ msgstr "اسحب أفقيًّا بثلاثة أصابع على لوحة اللمس. جرِّب هذا!"
+
+#~ msgid "That's it. Have a nice day!"
+#~ msgstr "انتهينا. طاب يومك!"

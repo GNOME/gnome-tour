@@ -7,20 +7,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour\n"
-"POT-Creation-Date: 2024-02-18 19:04+0000\n"
-"PO-Revision-Date: 2024-04-01 01:08+0530\n"
-"Last-Translator: rohamm <rewatnaath@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2025-03-15 10:38+0000\n"
+"PO-Revision-Date: 2025-03-17 19:25+0545\n"
+"Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
 "Language-Team: Nepali\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 46.0\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
-#: src/main.rs:21
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7 src/main.rs:27
 msgid "Tour"
 msgstr "भ्रमण गर्नुहोस्"
 
@@ -38,10 +37,10 @@ msgstr "जिनोम टुर र ग्रिटर"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."
-msgstr "जिनोमका लागि मार्गदर्शन टुर र ग्रिटर"
+msgstr "जिनोमका लागि निर्देशित भ्रमण र अभिनन्दनकर्ता।."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.Tour.metainfo.xml.in.in:45
+#: data/org.gnome.Tour.metainfo.xml.in.in:53
 msgid "The GNOME Project"
 msgstr "जिनोम परियोजना"
 
@@ -67,10 +66,9 @@ msgstr "अवलोकन प्राप्त गर्नुहोस्"
 
 #. Translators: 'Windows' is referring to the operating system and should not be translated
 #: data/resources/ui/window.ui:18
-msgid ""
-"The overview shows all your apps and windows. Press the Super (Windows) key "
-"to open it."
+msgid "The overview shows all your apps and windows. Press the Super (Windows) key to open it."
 msgstr ""
+"सिंहावलोकनले तपाईंको सबै अनुप्रयोगहरू र सञ्झ्यालहरू देखाउँछ। यसलाई खोल्न सुपर (विन्डोज) कुञ्जी थिच्नुहोस् ।."
 
 #: data/resources/ui/window.ui:24
 msgid "Powerful Search"
@@ -78,9 +76,11 @@ msgstr "शक्तिशाली खोज"
 
 #: data/resources/ui/window.ui:25
 msgid ""
-"To search, just start typing in the overview. You can use search to launch "
-"apps, find files, perform calculations, and more."
+"To search, just start typing in the overview. You can use search to launch apps, find files, "
+"perform calculations, and more."
 msgstr ""
+"खोजी गर्न, बस सिंहावलोकनमा टाइप गर्न सुरु गर्नुहोस्। तपाईं अनुप्रयोगहरू सुरू गर्न, फाइलहरू फेला पार्न, गणनाहरू "
+"प्रदर्शन गर्न, र अधिक प्रयोग गर्न सक्नुहुन्छ।."
 
 #: data/resources/ui/window.ui:31
 msgid "Stay Organized With Workspaces"
@@ -88,18 +88,19 @@ msgstr "कार्यस्थान संग संगठित रहनु
 
 #: data/resources/ui/window.ui:32
 msgid ""
-"Organize your windows by moving them into different workspaces. This can be "
-"done by dragging them in the overview."
+"Organize your windows by moving them into different workspaces. This can be done by dragging "
+"them in the overview."
 msgstr ""
+"तपाईँका सञ्झ्यालहरूलाई विभिन्न कार्यस्थानहरूमा सार्दै व्यवस्थित गर्नुहोस् । यो तिनीहरूलाई सिंहावलोकनमा तानेर "
+"गर्न सकिन्छ।."
 
 #: data/resources/ui/window.ui:38
 msgid "Swipe Up and Down"
 msgstr "माथि र तल स्वाइप गर्नुहोस्"
 
 #: data/resources/ui/window.ui:39
-msgid ""
-"To quickly open the overview with a touchpad, swipe up with three fingers."
-msgstr ""
+msgid "To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "टचप्याडको साथ सिंहावलोकन छिटो खोल्न, तीन औंलाहरूले स्वाइप गर्नुहोस्।."
 
 #: data/resources/ui/window.ui:45
 msgid "Swipe Left and Right"
@@ -107,15 +108,15 @@ msgstr "बायाँ र दायाँ स्वाइप गर्नु�
 
 #: data/resources/ui/window.ui:46
 msgid "To move between workspaces, swipe three fingers horizontally."
-msgstr ""
+msgstr "कार्यक्षेत्रहरू बीच सार्न, तीन औंलाहरू तेर्सो रूपमा स्वाइप गर्नुहोस्।."
 
 #: data/resources/ui/window.ui:52
 msgid "That's It!"
-msgstr "गजब "
+msgstr "यत्ति नै हो!"
 
 #: data/resources/ui/window.ui:53
 msgid "To get more advice and tips, see the Help app."
-msgstr "थप सल्लाह र सुझाव प्राप्त गर्न मद्दत अनुप्रयोग हेर्नुहोस्।"
+msgstr "थप सल्लाह र सुझाव प्राप्त गर्न मद्दत अनुप्रयोग हेर्नुहोस्।."
 
 #. Translators: The following string is formatted as "Learn about new and essential
 #. features in GNOME 3.36" for example
@@ -133,8 +134,7 @@ msgstr "{name} {version} मा कुञ्जी विशेषताहर�
 #~ msgstr "खोजी गर्न टाईप गर्नुहोस्"
 
 #~ msgid "Type in the overview to search. Launch apps, find things."
-#~ msgstr ""
-#~ "खोजी गर्न सहिदृश्य टाइप गर्नुहोस् । अनुप्रयोग सुरुआत गर्नुहोस्, वस्तुहरू फेला पार्नुहोस् ।"
+#~ msgstr "खोजी गर्न सहिदृश्य टाइप गर्नुहोस् । अनुप्रयोग सुरुआत गर्नुहोस्, वस्तुहरू फेला पार्नुहोस् ।"
 
 #~ msgid "Keep on Top with Workspaces"
 #~ msgstr "कार्यस्थानसँग माथि राख्नुहोस्"

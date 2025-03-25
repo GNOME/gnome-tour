@@ -1,0 +1,133 @@
+# Uzbek (Latin) translation for gnome-tour.
+# Copyright (C) 2025 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Elchin Toyirov <elchintoyirov@gmail.com>,  2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2025-03-17 14:11+0000\n"
+"PO-Revision-Date: 2025-03-25 10:08+0500\n"
+"Last-Translator: \n"
+"Language-Team: Uzbek (Latin) <uz@li.org>\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+
+#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:27
+msgid "Tour"
+msgstr "Sayohat"
+
+#: data/org.gnome.Tour.desktop.in.in:4
+msgid "Greeter & Tour"
+msgstr "Salomlashuv va Sayohat"
+
+#: data/org.gnome.Tour.desktop.in.in:9
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME Sayohat va Salomlashuv"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "GNOME uchun ekskursiya va salomlashuv."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:53
+msgid "The GNOME Project"
+msgstr "GNOME loyihasi"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "Oldingi"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "Keyingi"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "Boshlash"
+
+#: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "Qani ketdik"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "Sharh olish"
+
+#. Translators: 'Windows' is referring to the operating system and should not be translated
+#: data/resources/ui/window.ui:18
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"Sharhda barcha ilova va oynalaringiz ko‘rsatilgan. Uni ochish uchun Super "
+"(Windows) tugmasini bosing."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "Kuchli qidiruv"
+
+#: data/resources/ui/window.ui:25
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Qidirish uchun sharhga ma'lumot yozishni boshlang. Ilovalarni ishga "
+"tushirish, fayllarni topish, hisob-kitoblarni bajarish va boshqalar uchun "
+"qidiruvdan foydalanishingiz mumkin."
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "Ish maydonlari bilan tartibli bo‘ling"
+
+#: data/resources/ui/window.ui:32
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Oynalaringizni turli ish joylariga ko‘chirish orqali tartiblang. Buni ularni "
+"sharhda tortish orqali amalga oshirish mumkin."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "Barmoq bilan tepaga va pastga suring"
+
+#: data/resources/ui/window.ui:39
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Sensorli panel yordamida xulosani tez ochish uchun uchta barmoq bilan tepaga "
+"suring."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "Chap va o‘ngga surish"
+
+#: data/resources/ui/window.ui:46
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"Ish joylari orasida harakatlanish uchun uchta barmoqni gorizontal "
+"yo‘nalishda suring."
+
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "Shu xolos!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "Batafsil maslahat va tavsiyalar uchun Yordam ilovasiga kiring."
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version}dagi asosiy funksiyalar haqida batafsil."

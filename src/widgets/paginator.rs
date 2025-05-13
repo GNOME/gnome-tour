@@ -62,7 +62,7 @@ mod imp {
 
 glib::wrapper! {
     pub struct PaginatorWidget(ObjectSubclass<imp::PaginatorWidget>)
-        @extends gtk::Widget, gtk::Box,
+        @extends gtk::Widget, adw::Bin,
         @implements gtk::Buildable;
 }
 

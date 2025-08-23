@@ -54,5 +54,6 @@ mod imp {
 
 glib::wrapper! {
     pub struct ImagePageWidget(ObjectSubclass<imp::ImagePageWidget>)
-        @extends gtk::Widget;
+        @extends gtk::Widget,
+        @implements gtk::Accessible, gtk::Buildable, gtk::ConstraintTarget;
 }

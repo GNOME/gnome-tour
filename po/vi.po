@@ -25,7 +25,7 @@ msgstr "Thăm quan"
 
 #: data/org.gnome.Tour.desktop.in.in:4
 msgid "Greeter & Tour"
-msgstr "Giới thiệu & Thăm quan"
+msgstr "Giới thiệu &amp; Thăm quan"
 
 #: data/org.gnome.Tour.desktop.in.in:9
 msgid "Gnome;GTK;"
@@ -33,7 +33,7 @@ msgstr "Gnome;GTK;"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:8
 msgid "GNOME Tour and Greeter"
-msgstr "Giới thiệu & Thăm quan GNOME"
+msgstr "Giới thiệu &amp; Thăm quan GNOME"
 
 #: data/org.gnome.Tour.metainfo.xml.in.in:10
 msgid "A guided tour and greeter for GNOME."

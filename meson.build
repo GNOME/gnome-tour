@@ -1,6 +1,6 @@
 project('gnome-tour',
         'rust',
-        version: '48.1',
+        version: '49.0',
         license: 'GPL-3.0-or-later',
 	meson_version : '>= 0.59')
 

@@ -1,3 +1,10 @@
+gnome-tour 49.0
+===============
+* dist-vendor: Sync with template
+* Add D-Bus service file
+* Don't set prgname
+* Translations updates
+
 gnome-tour 48.1
 ===============
 * Fix gettext-sys pkg name

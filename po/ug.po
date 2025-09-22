@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2025-09-10 19:41+0000\n"
+"PO-Revision-Date: 2025-09-22 11:20-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: \n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.7\n"
+
+#: data/org.gnome.Tour.desktop.in.in:2 data/org.gnome.Tour.metainfo.xml.in.in:7 src/main.rs:27
+msgid "Tour"
+msgstr "ساياھەت"
+
+#: data/org.gnome.Tour.desktop.in.in:3
+msgid "Greeter & Tour"
+msgstr "سالام ۋە ساياھەت"
+
+#: data/org.gnome.Tour.desktop.in.in:8
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME سالام ۋە ساياھەت"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "GNOME نىڭ سالام ۋە ساياھەت يېتەكچىسى."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:53
+msgid "The GNOME Project"
+msgstr "GNOME قۇرۇلۇشى"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "ئالدىنقى"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "كېيىنكى"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "باشلا"
+
+#: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "باشلايلى"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "ئىخچام كۆرۈنۈشكە ئېرىشىش"
+
+#. Translators: 'Windows' is referring to the operating system and should not be translated
+#: data/resources/ui/window.ui:18
+msgid "The overview shows all your apps and windows. Press the Super (Windows) key to open it."
+msgstr "ئىخچام كۆرۈنۈش بارلىق پىروگرامما ۋە كۆزنەكنى كۆرسىتىدۇ. Super (Windows)  بېسىلسا ئۇنى ئاچىدۇ."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "كۈچلۈك ئىزدەش ئىقتىدارى"
+
+#: data/resources/ui/window.ui:25
+msgid "To search, just start typing in the overview. You can use search to launch apps, find files, perform calculations, and more."
+msgstr "ئىزدەشتە، ئىخچام كۆرۈنۈشتە بىۋاسىتە خەت بېسىلسىلا بولىدۇ. ئىزدەشنى ئىشلىتىپ پىروگرامما قوزغىتىش، ھۆججەت ئىزدەش، ھېسابلاش ئېلىپ بېرىش قاتارلىقلارنى قىلغىلى بولىدۇ."
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "خىزمەت بوشلۇقى رەتلىك تۇرىدۇ"
+
+#: data/resources/ui/window.ui:32
+msgid "Organize your windows by moving them into different workspaces. This can be done by dragging them in the overview."
+msgstr "كۆزنەكنى پەرقلىق خىزمەت بوشلۇقىغا يۆتكەش ئارقىلىق تەشكىللەيدۇ. بۇ مەشغۇلاتنى ئىخچام كۆرۈنۈشتە سۆرەپ تاشلاش ئارقىلىق تاماملىغىلى بولىدۇ."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "ئۈستى ۋە ئاستىغا سىيرى"
+
+#: data/resources/ui/window.ui:39
+msgid "To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "سەزگۈر تاختىدا تېز سۈرئەتتە ئىخچام كۆرۈنۈشنى ئېچىشتا، ئۈچ بارماقتا ئۈستىگە سىيرىلىدۇ."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "ئوڭ ۋە سولغا سىيرى"
+
+#: data/resources/ui/window.ui:46
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "ئوخشىمىغان خىزمەت بوشلۇقى ئارىسىدا يۆتكەشتە، ئۈچ بارماق توغرىسىغا سىيرىلىدۇ."
+
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "مانا مۇشۇنداق!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "تېخىمۇ كۆپ تەۋسىيە ۋە ئەسكەرتىشنى ياردەم پىروگراممىسىدىن كۆرۈڭ."
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version} نىڭ مۇھىم ئىقتىدارلىرى ھەققىدىكى مول بىلىم."

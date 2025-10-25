@@ -7,26 +7,26 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-tour master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
-"POT-Creation-Date: 2025-02-13 01:04+0000\n"
-"PO-Revision-Date: 2025-02-27 08:40+1100\n"
+"POT-Creation-Date: 2025-10-14 20:52+0000\n"
+"PO-Revision-Date: 2025-10-25 13:14+0200\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Occitan <totenoc@gmail.com>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 
-#: data/org.gnome.Tour.desktop.in.in:3 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: data/org.gnome.Tour.desktop.in.in:2 data/org.gnome.Tour.metainfo.xml.in.in:7
 #: src/main.rs:27
 msgid "Tour"
 msgstr "Visita guidada"
 
-#: data/org.gnome.Tour.desktop.in.in:4
+#: data/org.gnome.Tour.desktop.in.in:3
 msgid "Greeter & Tour"
 msgstr "Acuèlh e visita guidada"
 
-#: data/org.gnome.Tour.desktop.in.in:9
+#: data/org.gnome.Tour.desktop.in.in:8
 msgid "Gnome;GTK;"
 msgstr "Gnome;GTK;"
 
@@ -39,7 +39,7 @@ msgid "A guided tour and greeter for GNOME."
 msgstr "Una visita guidada e un acuèlh per GNOME."
 
 #. developer_name tag deprecated with Appstream 1.0
-#: data/org.gnome.Tour.metainfo.xml.in.in:51
+#: data/org.gnome.Tour.metainfo.xml.in.in:58
 msgid "The GNOME Project"
 msgstr "Lo projècte GNOME"
 
@@ -69,6 +69,8 @@ msgid ""
 "The overview shows all your apps and windows. Press the Super (Windows) key "
 "to open it."
 msgstr ""
+"La vista d'ensemble mòstra totas vòstras aplicacions e fenèstras. Quichatz "
+"sus la tòca Super (Windows) per la dobrir."
 
 #: data/resources/ui/window.ui:24
 msgid "Powerful Search"
@@ -92,23 +94,28 @@ msgid ""
 "Organize your windows by moving them into different workspaces. This can be "
 "done by dragging them in the overview."
 msgstr ""
+"Organizatz vòstras fenèstras en las desplaçant dins diferents espacis de "
+"trabalh. Aquò se pòt far en las lisant dins la vista d'ensemble."
 
 #: data/resources/ui/window.ui:38
 msgid "Swipe Up and Down"
-msgstr ""
+msgstr "Fasètz lisar cap amont e cap aval"
 
 #: data/resources/ui/window.ui:39
 msgid ""
 "To quickly open the overview with a touchpad, swipe up with three fingers."
 msgstr ""
+"Per obrir rapidament la vista generala amb un pavat tactil, lisatz vèrs lo "
+"naut amb tres dets."
 
 #: data/resources/ui/window.ui:45
 msgid "Swipe Left and Right"
-msgstr ""
+msgstr "Fasètz lisar a esquèrra e a drecha"
 
 #: data/resources/ui/window.ui:46
 msgid "To move between workspaces, swipe three fingers horizontally."
 msgstr ""
+"Per passar d'un espaci de trabalh a l'autre, lisatz tres dets orizontalament."
 
 #: data/resources/ui/window.ui:52
 msgid "That's It!"

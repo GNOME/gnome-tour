@@ -1,8 +1,10 @@
 use adw::{prelude::*, subclass::prelude::*};
+use formatx::formatx;
+use gettextrs::gettext;
 use gtk::{gio, glib};
 
 use super::paginator::PaginatorWidget;
-use crate::{Application, utils::i18n_f};
+use crate::Application;
 
 mod imp {
     use super::*;
@@ -63,12 +65,14 @@ mod imp {
             let name = glib::os_info("NAME").unwrap_or_else(|| "GNOME".into());
             let version = glib::os_info("VERSION").unwrap_or_else(|| "".into());
 
-            let body = i18n_f(
+            let body = formatx!(
                 // Translators: The following string is formatted as "Learn about new and essential
                 // features in GNOME 3.36" for example
-                "Learn about the key features in {name} {version}.",
-                &[("name", &name), ("version", &version)],
-            );
+                gettext("Learn about the key features in {name} {version}."),
+                name = name,
+                version = version,
+            )
+            .expect("Wrong format in translated string");
             self.welcome_page.set_body(body);
         }
     }

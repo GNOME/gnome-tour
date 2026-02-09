@@ -1,7 +1,7 @@
 [package]
 name = "gnome-tour"
 authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 gtk = { package = "gtk4", version = "0.11.0-alpha.3", features = ["v4_4"] }

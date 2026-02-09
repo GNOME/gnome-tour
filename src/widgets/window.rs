@@ -2,7 +2,7 @@ use adw::{prelude::*, subclass::prelude::*};
 use gtk::{gio, glib};
 
 use super::paginator::PaginatorWidget;
-use crate::{utils::i18n_f, Application};
+use crate::{Application, utils::i18n_f};
 
 mod imp {
     use super::*;

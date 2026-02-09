@@ -9,7 +9,7 @@ gnome = import('gnome')
 
 base_id = 'org.gnome.Tour'
 
-dependency('glib-2.0', version: '>= 2.64')
+dependency('glib-2.0', version: '>= 2.68')
 dependency('gio-2.0', version: '>= 2.56')
 dependency('gtk4', version: '>= 4.4')
 dependency('libadwaita-1', version: '>= 1')

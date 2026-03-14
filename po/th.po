@@ -1,0 +1,123 @@
+# Thai translation for gnome-tour.
+# Copyright (C) 2026 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Chonrapat Kemmuang <chonrapath2at@gmail.com>,  2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour main\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-tour/issues/\n"
+"POT-Creation-Date: 2026-02-27 21:16+0000\n"
+"PO-Revision-Date: 2026-03-14 10:06+0700\n"
+"Last-Translator: Chonrapat Kemmuang <chonrapath2at@gmail.com>\n"
+"Language-Team: Thai <th@li.org>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#: data/org.gnome.Tour.desktop.in.in:2 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:27
+msgid "Tour"
+msgstr "แนะนำการใช้งาน"
+
+#: data/org.gnome.Tour.desktop.in.in:3
+msgid "Greeter & Tour"
+msgstr "ผู้ต้อนรับและแนะนำการใช้งาน"
+
+#: data/org.gnome.Tour.desktop.in.in:8
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "แนะนำการใช้งานและผู้ต้อนรับของ GNOME"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "แนะนำการใช้งานและผู้ต้อนรับสำหรับ GNOME"
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:63
+msgid "The GNOME Project"
+msgstr "โครงการ GNOME"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "ก่อนหน้า"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "ถัดไป"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "เริ่ม"
+
+#: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "มาเริ่มกันเลย"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "ดูภาพรวม"
+
+#. Translators: 'Windows' is referring to the operating system and should not be translated
+#: data/resources/ui/window.ui:18
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key to open it."
+msgstr "หน้าภาพรวมจะแสดงแอปและหน้าต่างทั้งหมดของคุณ กดปุ่ม Super (Windows) เพื่อเปิด"
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "การค้นหาที่ทรงพลัง"
+
+#: data/resources/ui/window.ui:25
+msgid ""
+"To search, just start typing in the overview. You can use search to launch apps, find "
+"files, perform calculations, and more."
+msgstr ""
+"หากต้องการค้นหา เพียงเริ่มพิมพ์ในหน้าภาพรวม คุณสามารถใช้การค้นหาเพื่อเรียกใช้แอป ค้นหาไฟล์ คำนวณเลข และอื่น ๆ "
+"อีกมากมาย"
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "จัดระเบียบอยู่เสมอด้วยพื้นที่ทำงาน"
+
+#: data/resources/ui/window.ui:32
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be done by "
+"dragging them in the overview."
+msgstr "จัดระเบียบหน้าต่างของคุณโดยการย้ายไปยังพื้นที่ทำงานต่าง ๆ ซึ่งทำได้โดยการลากหน้าต่างเหล่านั้นในหน้าภาพรวม"
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "ปัดนิ้วขึ้นและลง"
+
+#: data/resources/ui/window.ui:39
+msgid "To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr "เพื่อเปิดภาพรวมอย่างรวดเร็วด้วยทัชแพด ให้ปัดนิ้วขึ้นด้วยสามนิ้ว"
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "ปัดนิ้วไปทางซ้ายและขวา"
+
+#: data/resources/ui/window.ui:46
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr "หากต้องการเคลื่อนย้ายระหว่างพื้นที่ทำงาน ให้ปัดสามนิ้วในแนวนอน"
+
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "เพียงเท่านี้ละ!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "หากต้องการคำแนะนำและเคล็ดลับเพิ่มเติม โปรดดูที่แอป 'ความช่วยเหลือ'"
+
+#. Translators: The following string is formatted as "Learn about new and essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:69
+#, rust-format
+msgid "Learn about the key features in {name} {version}."
+msgstr "เรียนรู้เกี่ยวกับคุณสมบัติหลักใน {name} {version}"

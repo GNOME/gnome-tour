@@ -25,7 +25,7 @@
   <url type="contribute">https://welcome.gnome.org/app/Tour/</url>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="50.rc" date="2026-02-27">
+    <release version="50.0" date="2026-04-03">
       <description>
         <p>Updated translations.</p>
       </description>

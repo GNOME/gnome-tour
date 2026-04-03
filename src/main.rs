@@ -3,7 +3,6 @@ use gtk::{gio, glib};
 
 mod application;
 mod config;
-mod utils;
 mod widgets;
 
 use application::Application;

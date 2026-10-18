@@ -1,0 +1,135 @@
+# Azerbaijani translation for gnome-tour.
+# Copyright (C) 2026 gnome-tour's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-tour package.
+# Ramal Rahimov <jhoaluman@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-tour\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 16:37+0000\n"
+"PO-Revision-Date: 2026-10-19 02:28+0300\n"
+"Last-Translator: Ramal Rəhimov <jhoaluman@gmail.com>\n"
+"Language-Team: Azerbaijani <contact@azelinux.com>\n"
+"Language: az\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/org.gnome.Tour.desktop.in.in:2 data/org.gnome.Tour.metainfo.xml.in.in:7
+#: src/main.rs:29
+msgid "Tour"
+msgstr "Tur"
+
+#: data/org.gnome.Tour.desktop.in.in:3
+msgid "Greeter & Tour"
+msgstr "Salamlama və tur"
+
+#: data/org.gnome.Tour.desktop.in.in:8
+msgid "Gnome;GTK;"
+msgstr "Gnome;GTK;tur;salamlama;bələdçi;"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:8
+msgid "GNOME Tour and Greeter"
+msgstr "GNOME turu və salamlama"
+
+#: data/org.gnome.Tour.metainfo.xml.in.in:10
+msgid "A guided tour and greeter for GNOME."
+msgstr "GNOME üçün bələdçi tur və salamlama."
+
+#. developer_name tag deprecated with Appstream 1.0
+#: data/org.gnome.Tour.metainfo.xml.in.in:63
+#: data/org.gnome.Tour.metainfo.xml.in.in:65
+msgid "The GNOME Project"
+msgstr "GNOME Layihəsi"
+
+#: data/resources/ui/paginator.ui:25
+msgid "Previous"
+msgstr "Əvvəlki"
+
+#: data/resources/ui/paginator.ui:38
+msgid "Next"
+msgstr "Növbəti"
+
+#: data/resources/ui/paginator.ui:51
+msgid "Start"
+msgstr "Başla"
+
+#: data/resources/ui/window.ui:11
+msgid "Let's Begin"
+msgstr "Başlayaq"
+
+#: data/resources/ui/window.ui:17
+msgid "Get an Overview"
+msgstr "İcmala baxın"
+
+#. Translators: 'Windows' is referring to the operating system and should not
+#. be translated
+#: data/resources/ui/window.ui:18
+msgid ""
+"The overview shows all your apps and windows. Press the Super (Windows) key "
+"to open it."
+msgstr ""
+"İcmal bütün tətbiqlərinizi və pəncərələrinizi göstərir. Onu açmaq üçün Super "
+"(Windows) düyməsinə basın."
+
+#: data/resources/ui/window.ui:24
+msgid "Powerful Search"
+msgstr "Güclü axtarış"
+
+#: data/resources/ui/window.ui:25
+msgid ""
+"To search, just start typing in the overview. You can use search to launch "
+"apps, find files, perform calculations, and more."
+msgstr ""
+"Axtarmaq üçün icmalda sadəcə yazmağa başlayın. Axtarışdan tətbiqləri "
+"başlatmaq, faylları tapmaq, hesablamalar aparmaq və daha çoxu üçün istifadə "
+"edə bilərsiniz."
+
+#: data/resources/ui/window.ui:31
+msgid "Stay Organized With Workspaces"
+msgstr "İş sahələri ilə nizamlı qalın"
+
+#: data/resources/ui/window.ui:32
+msgid ""
+"Organize your windows by moving them into different workspaces. This can be "
+"done by dragging them in the overview."
+msgstr ""
+"Pəncərələrinizi müxtəlif iş sahələrinə köçürərək nizamlayın. Bunu icmalda "
+"onları sürükləyərək edə bilərsiniz."
+
+#: data/resources/ui/window.ui:38
+msgid "Swipe Up and Down"
+msgstr "Yuxarı və aşağı sürüşdürün"
+
+#: data/resources/ui/window.ui:39
+msgid ""
+"To quickly open the overview with a touchpad, swipe up with three fingers."
+msgstr ""
+"Toxunma paneli ilə icmalı tez açmaq üçün üç barmaqla yuxarı sürüşdürün."
+
+#: data/resources/ui/window.ui:45
+msgid "Swipe Left and Right"
+msgstr "Sola və sağa sürüşdürün"
+
+#: data/resources/ui/window.ui:46
+msgid "To move between workspaces, swipe three fingers horizontally."
+msgstr ""
+"İş sahələri arasında keçmək üçün üç barmağı üfüqi istiqamətdə sürüşdürün."
+
+#: data/resources/ui/window.ui:52
+msgid "That's It!"
+msgstr "Bu qədər!"
+
+#: data/resources/ui/window.ui:53
+msgid "To get more advice and tips, see the Help app."
+msgstr "Daha çox məsləhət və tövsiyələr üçün Kömək tətbiqinə baxın."
+
+#. Translators: The following string is formatted as "Learn about new and
+#. essential
+#. features in GNOME 3.36" for example
+#: src/widgets/window.rs:71
+#, rust-format
+msgid "Learn about the key features in {name} {version}."
+msgstr "{name} {version} versiyasının əsas xüsusiyyətləri ilə tanış olun."

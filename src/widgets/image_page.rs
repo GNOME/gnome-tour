@@ -16,7 +16,7 @@ mod imp {
         #[property(get, set, construct)]
         pub(super) body: RefCell<Option<String>>,
         #[template_child]
-        pub(super) picture: TemplateChild<gtk::Picture>,
+        pub(super) svg_widget: TemplateChild<gtk::Widget>,
         #[template_child]
         pub(super) container: TemplateChild<gtk::Box>,
     }
@@ -47,7 +47,8 @@ mod imp {
     impl ImagePageWidget {
         fn set_resource_uri(&self, resource_uri: &str) {
             self.resource_uri.set(resource_uri.to_owned()).unwrap();
-            self.picture.set_resource(Some(resource_uri));
+            // GtkSvgWidget isn't exposed by gtk4-rs yet, so set its property directly.
+            self.svg_widget.set_property("resource", resource_uri);
         }
     }
 }

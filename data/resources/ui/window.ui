@@ -34,14 +34,14 @@
         </child>
         <child>
           <object class="ImagePageWidget">
-            <property name="resource-uri">/org/gnome/Tour/blank.svg</property>
+            <property name="resource-uri">/org/gnome/Tour/swipe-updown.svg</property>
             <property name="head" translatable="yes">Swipe Up and Down</property>
             <property name="body" translatable="yes">To quickly open the overview with a touchpad, swipe up with three fingers.</property>
           </object>
         </child>
         <child>
           <object class="ImagePageWidget">
-            <property name="resource-uri">/org/gnome/Tour/blank.svg</property>
+            <property name="resource-uri">/org/gnome/Tour/swipe-leftright.svg</property>
             <property name="head" translatable="yes">Swipe Left and Right</property>
             <property name="body" translatable="yes">To move between workspaces, swipe three fingers horizontally.</property>
           </object>

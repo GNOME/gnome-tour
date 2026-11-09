@@ -20,9 +20,8 @@
         <property name="margin-start">12</property>
         <property name="margin-end">12</property>
         <child>
-          <object class="GtkPicture" id="picture">
-            <property name="can-shrink">true</property>
-            <property name="content-fit">contain</property>
+          <object class="GtkSvgWidget" id="svg_widget">
+            <property name="height-request">240</property>
           </object>
         </child>
         <child>
